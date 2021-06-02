@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using KimtToo.VisualReactive;
 
 namespace Capa_Presentacion
 {
-    public partial class main_window : Form
+    public partial class frmSubMenu : UserControl
     {
-        public main_window()
+
+        public frmSubMenu()
         {
             InitializeComponent();
+            if (Program.IsInDesignMode()) return;
+            hider.Height = 30;
+
+            VSReactive<int>.Subscribe("menu", e => tabControl1.SelectedIndex = e);
         }
     }
 }

@@ -16,7 +16,16 @@ namespace Capa_Presentacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new main_window());
+            Application.Run(new frmMainWindow());
+        }
+
+        public static bool IsInDesignMode()
+        {
+            if (Application.ExecutablePath.IndexOf("devenv.exe", StringComparison.OrdinalIgnoreCase) > -1)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
