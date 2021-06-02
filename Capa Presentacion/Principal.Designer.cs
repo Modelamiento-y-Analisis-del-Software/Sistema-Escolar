@@ -69,7 +69,7 @@ namespace Capa_Presentacion
             this.pnlMainMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMainMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMainMenu.Name = "pnlMainMenu";
-            this.pnlMainMenu.Size = new System.Drawing.Size(55, 761);
+            this.pnlMainMenu.Size = new System.Drawing.Size(55, 749);
             this.pnlMainMenu.TabIndex = 0;
             // 
             // bunifuButton4
@@ -498,7 +498,7 @@ namespace Capa_Presentacion
             this.frmSubMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.frmSubMenu1.Location = new System.Drawing.Point(0, 74);
             this.frmSubMenu1.Name = "frmSubMenu1";
-            this.frmSubMenu1.Size = new System.Drawing.Size(200, 687);
+            this.frmSubMenu1.Size = new System.Drawing.Size(200, 675);
             this.frmSubMenu1.TabIndex = 1;
             // 
             // pnlSubMenu
@@ -509,7 +509,7 @@ namespace Capa_Presentacion
             this.pnlSubMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSubMenu.Location = new System.Drawing.Point(55, 0);
             this.pnlSubMenu.Name = "pnlSubMenu";
-            this.pnlSubMenu.Size = new System.Drawing.Size(200, 761);
+            this.pnlSubMenu.Size = new System.Drawing.Size(200, 749);
             this.pnlSubMenu.TabIndex = 2;
             // 
             // panel1
@@ -544,7 +544,7 @@ namespace Capa_Presentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1264, 761);
+            this.ClientSize = new System.Drawing.Size(1264, 749);
             this.Controls.Add(this.pnlSubMenu);
             this.Controls.Add(this.pnlMainMenu);
             this.menuTransition.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
