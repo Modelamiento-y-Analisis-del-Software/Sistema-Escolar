@@ -49,6 +49,7 @@ namespace Capa_Presentacion
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MouseDetect = new System.Windows.Forms.Timer(this.components);
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.pnlMainMenu.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoMini)).BeginInit();
@@ -68,8 +69,9 @@ namespace Capa_Presentacion
             this.menuTransition.SetDecoration(this.pnlMainMenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pnlMainMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMainMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlMainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMainMenu.Name = "pnlMainMenu";
-            this.pnlMainMenu.Size = new System.Drawing.Size(55, 749);
+            this.pnlMainMenu.Size = new System.Drawing.Size(73, 922);
             this.pnlMainMenu.TabIndex = 0;
             // 
             // bunifuButton4
@@ -121,7 +123,8 @@ namespace Capa_Presentacion
             this.bunifuButton4.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.menu;
             this.bunifuButton4.IdleIconRightImage = null;
             this.bunifuButton4.IndicateFocus = true;
-            this.bunifuButton4.Location = new System.Drawing.Point(0, 237);
+            this.bunifuButton4.Location = new System.Drawing.Point(0, 291);
+            this.bunifuButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuButton4.Name = "bunifuButton4";
             this.bunifuButton4.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton4.OnDisabledState.BorderRadius = 1;
@@ -155,7 +158,7 @@ namespace Capa_Presentacion
             this.bunifuButton4.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton4.OnPressedState.IconLeftImage = null;
             this.bunifuButton4.OnPressedState.IconRightImage = null;
-            this.bunifuButton4.Size = new System.Drawing.Size(55, 45);
+            this.bunifuButton4.Size = new System.Drawing.Size(73, 55);
             this.bunifuButton4.TabIndex = 6;
             this.bunifuButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuButton4.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -212,7 +215,8 @@ namespace Capa_Presentacion
             this.btnDocente.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.maestro;
             this.btnDocente.IdleIconRightImage = null;
             this.btnDocente.IndicateFocus = true;
-            this.btnDocente.Location = new System.Drawing.Point(0, 192);
+            this.btnDocente.Location = new System.Drawing.Point(0, 236);
+            this.btnDocente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDocente.Name = "btnDocente";
             this.btnDocente.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDocente.OnDisabledState.BorderRadius = 1;
@@ -246,7 +250,7 @@ namespace Capa_Presentacion
             this.btnDocente.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnDocente.OnPressedState.IconLeftImage = null;
             this.btnDocente.OnPressedState.IconRightImage = null;
-            this.btnDocente.Size = new System.Drawing.Size(55, 45);
+            this.btnDocente.Size = new System.Drawing.Size(73, 55);
             this.btnDocente.TabIndex = 5;
             this.btnDocente.Tag = "2";
             this.btnDocente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -305,7 +309,8 @@ namespace Capa_Presentacion
             this.btnEstudiante.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.student;
             this.btnEstudiante.IdleIconRightImage = null;
             this.btnEstudiante.IndicateFocus = true;
-            this.btnEstudiante.Location = new System.Drawing.Point(0, 147);
+            this.btnEstudiante.Location = new System.Drawing.Point(0, 181);
+            this.btnEstudiante.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEstudiante.Name = "btnEstudiante";
             this.btnEstudiante.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEstudiante.OnDisabledState.BorderRadius = 1;
@@ -339,7 +344,7 @@ namespace Capa_Presentacion
             this.btnEstudiante.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEstudiante.OnPressedState.IconLeftImage = null;
             this.btnEstudiante.OnPressedState.IconRightImage = null;
-            this.btnEstudiante.Size = new System.Drawing.Size(55, 45);
+            this.btnEstudiante.Size = new System.Drawing.Size(73, 55);
             this.btnEstudiante.TabIndex = 4;
             this.btnEstudiante.Tag = "1";
             this.btnEstudiante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -398,7 +403,8 @@ namespace Capa_Presentacion
             this.btnInicio.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.menu;
             this.btnInicio.IdleIconRightImage = null;
             this.btnInicio.IndicateFocus = true;
-            this.btnInicio.Location = new System.Drawing.Point(0, 102);
+            this.btnInicio.Location = new System.Drawing.Point(0, 126);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnInicio.OnDisabledState.BorderRadius = 1;
@@ -432,7 +438,7 @@ namespace Capa_Presentacion
             this.btnInicio.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnInicio.OnPressedState.IconLeftImage = null;
             this.btnInicio.OnPressedState.IconRightImage = null;
-            this.btnInicio.Size = new System.Drawing.Size(55, 45);
+            this.btnInicio.Size = new System.Drawing.Size(73, 55);
             this.btnInicio.TabIndex = 3;
             this.btnInicio.Tag = "0";
             this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -454,9 +460,10 @@ namespace Capa_Presentacion
             this.menuTransition.SetDecoration(this.bunifuPanel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(55, 102);
+            this.bunifuPanel1.Size = new System.Drawing.Size(73, 126);
             this.bunifuPanel1.TabIndex = 2;
             // 
             // imgLogoMini
@@ -464,9 +471,10 @@ namespace Capa_Presentacion
             this.imgLogoMini.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.menuTransition.SetDecoration(this.imgLogoMini, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.imgLogoMini.Image = ((System.Drawing.Image)(resources.GetObject("imgLogoMini.Image")));
-            this.imgLogoMini.Location = new System.Drawing.Point(5, 20);
+            this.imgLogoMini.Location = new System.Drawing.Point(7, 25);
+            this.imgLogoMini.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.imgLogoMini.Name = "imgLogoMini";
-            this.imgLogoMini.Size = new System.Drawing.Size(45, 50);
+            this.imgLogoMini.Size = new System.Drawing.Size(60, 62);
             this.imgLogoMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLogoMini.TabIndex = 0;
             this.imgLogoMini.TabStop = false;
@@ -496,9 +504,10 @@ namespace Capa_Presentacion
             // 
             this.menuTransition.SetDecoration(this.frmSubMenu1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.frmSubMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.frmSubMenu1.Location = new System.Drawing.Point(0, 74);
+            this.frmSubMenu1.Location = new System.Drawing.Point(0, 91);
+            this.frmSubMenu1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.frmSubMenu1.Name = "frmSubMenu1";
-            this.frmSubMenu1.Size = new System.Drawing.Size(200, 675);
+            this.frmSubMenu1.Size = new System.Drawing.Size(267, 831);
             this.frmSubMenu1.TabIndex = 1;
             // 
             // pnlSubMenu
@@ -507,9 +516,10 @@ namespace Capa_Presentacion
             this.pnlSubMenu.Controls.Add(this.panel1);
             this.menuTransition.SetDecoration(this.pnlSubMenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pnlSubMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSubMenu.Location = new System.Drawing.Point(55, 0);
+            this.pnlSubMenu.Location = new System.Drawing.Point(73, 0);
+            this.pnlSubMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlSubMenu.Name = "pnlSubMenu";
-            this.pnlSubMenu.Size = new System.Drawing.Size(200, 749);
+            this.pnlSubMenu.Size = new System.Drawing.Size(267, 922);
             this.pnlSubMenu.TabIndex = 2;
             // 
             // panel1
@@ -519,17 +529,19 @@ namespace Capa_Presentacion
             this.menuTransition.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 74);
+            this.panel1.Size = new System.Drawing.Size(267, 91);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.menuTransition.SetDecoration(this.pictureBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pictureBox1.Image = global::Capa_Presentacion.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 25);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 60);
+            this.pictureBox1.Size = new System.Drawing.Size(216, 74);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -539,15 +551,56 @@ namespace Capa_Presentacion
             this.MouseDetect.Enabled = true;
             this.MouseDetect.Tick += new System.EventHandler(this.MouseDetect_Tick);
             // 
+            // bunifuFormDock1
+            // 
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = true;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
             // frmMainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1264, 749);
+            this.ClientSize = new System.Drawing.Size(1685, 922);
             this.Controls.Add(this.pnlSubMenu);
             this.Controls.Add(this.pnlMainMenu);
             this.menuTransition.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema Escolar";
@@ -576,5 +629,6 @@ namespace Capa_Presentacion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private frmSubMenu frmSubMenu1;
+        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
     }
 }

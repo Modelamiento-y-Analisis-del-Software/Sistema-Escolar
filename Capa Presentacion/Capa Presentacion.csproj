@@ -155,6 +155,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrudAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudAlumno.Designer.cs">
+      <DependentUpon>CrudAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSubMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrudAlumno.resx">
+      <DependentUpon>CrudAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSubMenu.resx">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </EmbeddedResource>
