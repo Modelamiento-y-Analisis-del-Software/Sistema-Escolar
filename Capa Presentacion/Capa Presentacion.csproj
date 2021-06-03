@@ -161,6 +161,12 @@
     <Compile Include="CORECalificacion.Designer.cs">
       <DependentUpon>CORECalificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Coreplanificacioncurricular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coreplanificacioncurricular.Designer.cs">
+      <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrudAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,12 @@
     <Compile Include="frmSubMenu.Designer.cs">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenedordocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenedordocente.Designer.cs">
+      <DependentUpon>Mantenedordocente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,14 +193,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Silabo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Silabo.Designer.cs">
+      <DependentUpon>Silabo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CORECalificacion.resx">
       <DependentUpon>CORECalificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coreplanificacioncurricular.resx">
+      <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrudAlumno.resx">
       <DependentUpon>CrudAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSubMenu.resx">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenedordocente.resx">
+      <DependentUpon>Mantenedordocente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -198,6 +222,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Silabo.resx">
+      <DependentUpon>Silabo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
