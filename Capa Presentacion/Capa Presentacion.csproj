@@ -167,6 +167,12 @@
     <Compile Include="Coreplanificacioncurricular.Designer.cs">
       <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateEstudiante.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateEstudiante.Designer.cs">
+      <DependentUpon>CreateEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrudAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Coreplanificacioncurricular.resx">
       <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEstudiante.resx">
+      <DependentUpon>CreateEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrudAlumno.resx">
       <DependentUpon>CrudAlumno.cs</DependentUpon>
@@ -262,6 +271,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon\Maestro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\tutor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\search_white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -13,9 +13,31 @@ namespace Capa_Presentacion
 {
     public partial class frmMainWindow : Form
     {
+        
         public frmMainWindow()
         {
             InitializeComponent();
+            frmSubMenu1.MainWindow = this;
+            uscNewEstudent.MainWindow = this;
+            uscNewEstudent.keypress += new KeyPressEventHandler(TxtEstDni_KeyPress);
+        }
+
+        public void TxtEstDni_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                //el resto de teclas pulsadas se desactivan
+                e.Handled = true;
+            }
         }
 
         bool mnuExpanded = false;
@@ -46,5 +68,7 @@ namespace Capa_Presentacion
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
         }
+        
+        
     }
 }
