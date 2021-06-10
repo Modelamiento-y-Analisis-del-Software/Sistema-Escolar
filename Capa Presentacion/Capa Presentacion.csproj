@@ -173,6 +173,12 @@
     <Compile Include="CreateEstudiante.Designer.cs">
       <DependentUpon>CreateEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateTutor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateTutor.Designer.cs">
+      <DependentUpon>CreateTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrudAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateEstudiante.resx">
       <DependentUpon>CreateEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTutor.resx">
+      <DependentUpon>CreateTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrudAlumno.resx">
       <DependentUpon>CrudAlumno.cs</DependentUpon>

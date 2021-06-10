@@ -65,7 +65,6 @@ namespace Capa_Presentacion
             this.imgLogoMini = new System.Windows.Forms.PictureBox();
             this.menuTransition = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.pnlSubMenu = new System.Windows.Forms.Panel();
-            this.frmSubMenu1 = new Capa_Presentacion.frmSubMenu();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pagCentral = new Bunifu.UI.WinForms.BunifuPages();
@@ -100,12 +99,14 @@ namespace Capa_Presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.tpagEstRegistrar = new System.Windows.Forms.TabPage();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.uscNewEstudent = new Capa_Presentacion.CreateEstudiante();
             this.pnlTCEstudiante = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblTCEstudiante = new System.Windows.Forms.Label();
             this.MouseDetect = new System.Windows.Forms.Timer(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.createTutor1 = new Capa_Presentacion.CreateTutor();
+            this.uscNewEstudent = new Capa_Presentacion.CreateEstudiante();
+            this.frmSubMenu1 = new Capa_Presentacion.frmSubMenu();
             this.pnlMainMenu.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoMini)).BeginInit();
@@ -118,6 +119,7 @@ namespace Capa_Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
             this.bunifuPanel4.SuspendLayout();
             this.tpagRegTutor.SuspendLayout();
+            this.bunifuPanel7.SuspendLayout();
             this.bunifuPanel6.SuspendLayout();
             this.tpagEstGeneral.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
@@ -576,17 +578,6 @@ namespace Capa_Presentacion
             this.pnlSubMenu.Size = new System.Drawing.Size(200, 749);
             this.pnlSubMenu.TabIndex = 2;
             // 
-            // frmSubMenu1
-            // 
-            this.menuTransition.SetDecoration(this.frmSubMenu1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.frmSubMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.frmSubMenu1.Location = new System.Drawing.Point(0, 74);
-            this.frmSubMenu1.MainWindow = null;
-            this.frmSubMenu1.Margin = new System.Windows.Forms.Padding(4);
-            this.frmSubMenu1.Name = "frmSubMenu1";
-            this.frmSubMenu1.Size = new System.Drawing.Size(200, 675);
-            this.frmSubMenu1.TabIndex = 1;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
@@ -1003,12 +994,14 @@ namespace Capa_Presentacion
             this.bunifuPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuPanel7.AutoScroll = true;
             this.bunifuPanel7.BackgroundColor = System.Drawing.Color.White;
             this.bunifuPanel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel7.BackgroundImage")));
             this.bunifuPanel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel7.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel7.BorderRadius = 20;
             this.bunifuPanel7.BorderThickness = 1;
+            this.bunifuPanel7.Controls.Add(this.createTutor1);
             this.menuTransition.SetDecoration(this.bunifuPanel7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuPanel7.Location = new System.Drawing.Point(33, 98);
             this.bunifuPanel7.Name = "bunifuPanel7";
@@ -1423,19 +1416,6 @@ namespace Capa_Presentacion
             this.bunifuPanel2.Size = new System.Drawing.Size(931, 608);
             this.bunifuPanel2.TabIndex = 3;
             // 
-            // uscNewEstudent
-            // 
-            this.uscNewEstudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uscNewEstudent.BackColor = System.Drawing.Color.White;
-            this.menuTransition.SetDecoration(this.uscNewEstudent, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
-            this.uscNewEstudent.MainWindow = null;
-            this.uscNewEstudent.Name = "uscNewEstudent";
-            this.uscNewEstudent.Size = new System.Drawing.Size(828, 829);
-            this.uscNewEstudent.TabIndex = 0;
-            this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
-            // 
             // pnlTCEstudiante
             // 
             this.pnlTCEstudiante.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1516,6 +1496,41 @@ namespace Capa_Presentacion
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // createTutor1
+            // 
+            this.createTutor1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.createTutor1.BackColor = System.Drawing.Color.White;
+            this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.createTutor1.Location = new System.Drawing.Point(0, 15);
+            this.createTutor1.Name = "createTutor1";
+            this.createTutor1.Size = new System.Drawing.Size(899, 743);
+            this.createTutor1.TabIndex = 0;
+            // 
+            // uscNewEstudent
+            // 
+            this.uscNewEstudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uscNewEstudent.BackColor = System.Drawing.Color.White;
+            this.menuTransition.SetDecoration(this.uscNewEstudent, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
+            this.uscNewEstudent.MainWindow = null;
+            this.uscNewEstudent.Name = "uscNewEstudent";
+            this.uscNewEstudent.Size = new System.Drawing.Size(845, 936);
+            this.uscNewEstudent.TabIndex = 0;
+            this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
+            // 
+            // frmSubMenu1
+            // 
+            this.menuTransition.SetDecoration(this.frmSubMenu1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.frmSubMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.frmSubMenu1.Location = new System.Drawing.Point(0, 74);
+            this.frmSubMenu1.MainWindow = null;
+            this.frmSubMenu1.Margin = new System.Windows.Forms.Padding(4);
+            this.frmSubMenu1.Name = "frmSubMenu1";
+            this.frmSubMenu1.Size = new System.Drawing.Size(200, 675);
+            this.frmSubMenu1.TabIndex = 1;
+            // 
             // frmMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1542,6 +1557,7 @@ namespace Capa_Presentacion
             this.bunifuPanel4.ResumeLayout(false);
             this.bunifuPanel4.PerformLayout();
             this.tpagRegTutor.ResumeLayout(false);
+            this.bunifuPanel7.ResumeLayout(false);
             this.bunifuPanel6.ResumeLayout(false);
             this.bunifuPanel6.PerformLayout();
             this.tpagEstGeneral.ResumeLayout(false);
@@ -1609,5 +1625,6 @@ namespace Capa_Presentacion
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel6;
         private System.Windows.Forms.Label label3;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel7;
+        private CreateTutor createTutor1;
     }
 }
