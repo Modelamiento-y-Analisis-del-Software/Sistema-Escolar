@@ -24,5 +24,15 @@ namespace Capa_Presentacion
         {
             keypress?.Invoke(this, e);
         }
+
+        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGroupBox7_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1504,7 +1504,7 @@ namespace Capa_Presentacion
             this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.createTutor1.Location = new System.Drawing.Point(0, 15);
             this.createTutor1.Name = "createTutor1";
-            this.createTutor1.Size = new System.Drawing.Size(899, 743);
+            this.createTutor1.Size = new System.Drawing.Size(882, 743);
             this.createTutor1.TabIndex = 0;
             // 
             // uscNewEstudent
@@ -1516,7 +1516,7 @@ namespace Capa_Presentacion
             this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
             this.uscNewEstudent.MainWindow = null;
             this.uscNewEstudent.Name = "uscNewEstudent";
-            this.uscNewEstudent.Size = new System.Drawing.Size(845, 936);
+            this.uscNewEstudent.Size = new System.Drawing.Size(862, 1880);
             this.uscNewEstudent.TabIndex = 0;
             this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
             // 
