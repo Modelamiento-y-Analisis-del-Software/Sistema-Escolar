@@ -167,11 +167,11 @@
     <Compile Include="Coreplanificacioncurricular.Designer.cs">
       <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateEstudiante.cs">
+    <Compile Include="Matricular.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CreateEstudiante.Designer.cs">
-      <DependentUpon>CreateEstudiante.cs</DependentUpon>
+    <Compile Include="Matricular.Designer.cs">
+      <DependentUpon>Matricular.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateTutor.cs">
       <SubType>UserControl</SubType>
@@ -217,8 +217,8 @@
     <EmbeddedResource Include="Coreplanificacioncurricular.resx">
       <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateEstudiante.resx">
-      <DependentUpon>CreateEstudiante.cs</DependentUpon>
+    <EmbeddedResource Include="Matricular.resx">
+      <DependentUpon>Matricular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateTutor.resx">
       <DependentUpon>CreateTutor.cs</DependentUpon>

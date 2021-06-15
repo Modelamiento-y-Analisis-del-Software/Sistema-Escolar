@@ -105,7 +105,7 @@ namespace Capa_Presentacion
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.createTutor1 = new Capa_Presentacion.CreateTutor();
-            this.uscNewEstudent = new Capa_Presentacion.CreateEstudiante();
+            this.uscNewEstudent = new Capa_Presentacion.Matricular();
             this.frmSubMenu1 = new Capa_Presentacion.frmSubMenu();
             this.pnlMainMenu.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
@@ -329,7 +329,7 @@ namespace Capa_Presentacion
             this.btnEstudiante.TextMarginLeft = 0;
             this.btnEstudiante.TextPadding = new System.Windows.Forms.Padding(75, 0, 0, 0);
             this.btnEstudiante.UseDefaultRadiusAndThickness = true;
-            this.btnEstudiante.Click += new System.EventHandler(this.SideMenu_Click);
+            this.btnEstudiante.Click += new System.EventHandler(this.BtnEstudiante_Click);
             // 
             // btnTutor
             // 
@@ -422,7 +422,7 @@ namespace Capa_Presentacion
             this.btnTutor.TextMarginLeft = 0;
             this.btnTutor.TextPadding = new System.Windows.Forms.Padding(75, 0, 0, 0);
             this.btnTutor.UseDefaultRadiusAndThickness = true;
-            this.btnTutor.Click += new System.EventHandler(this.SideMenu_Click);
+            this.btnTutor.Click += new System.EventHandler(this.BtnTutor_Click);
             // 
             // btnInicio
             // 
@@ -1504,7 +1504,7 @@ namespace Capa_Presentacion
             this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.createTutor1.Location = new System.Drawing.Point(0, 15);
             this.createTutor1.Name = "createTutor1";
-            this.createTutor1.Size = new System.Drawing.Size(882, 743);
+            this.createTutor1.Size = new System.Drawing.Size(848, 743);
             this.createTutor1.TabIndex = 0;
             // 
             // uscNewEstudent
@@ -1516,7 +1516,7 @@ namespace Capa_Presentacion
             this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
             this.uscNewEstudent.MainWindow = null;
             this.uscNewEstudent.Name = "uscNewEstudent";
-            this.uscNewEstudent.Size = new System.Drawing.Size(862, 1880);
+            this.uscNewEstudent.Size = new System.Drawing.Size(853, 1795);
             this.uscNewEstudent.TabIndex = 0;
             this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
             // 
@@ -1609,7 +1609,7 @@ namespace Capa_Presentacion
         private System.Windows.Forms.Label lblTCEstudiante;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private CreateEstudiante uscNewEstudent;
+        private Matricular uscNewEstudent;
         private System.Windows.Forms.TabPage tpagTutGeneral;
         private System.Windows.Forms.TabPage tpagRegTutor;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;

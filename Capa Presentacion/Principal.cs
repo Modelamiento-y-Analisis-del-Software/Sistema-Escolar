@@ -69,6 +69,15 @@ namespace Capa_Presentacion
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
         }
         
-        
+        private void BtnTutor_Click(object sender, EventArgs e)
+        {
+            VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
+            PagCentral.SetPage("TutGeneral"); 
+        }
+        private void BtnEstudiante_Click(object sender, EventArgs e)
+        {
+            VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
+            PagCentral.SetPage("EstGeneral"); 
+        }
     }
 }

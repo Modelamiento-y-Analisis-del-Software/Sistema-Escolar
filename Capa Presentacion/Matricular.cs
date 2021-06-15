@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Capa_Presentacion
 {
-    public partial class CreateEstudiante : UserControl
+    public partial class Matricular : UserControl
     {
         public event KeyPressEventHandler keypress;
         public frmMainWindow MainWindow { get; set; }
-        public CreateEstudiante()
+        public Matricular()
         {
             InitializeComponent();
             

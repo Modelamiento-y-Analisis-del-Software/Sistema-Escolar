@@ -117,13 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuTextBox13.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAiAAAAAlCAYAAAB721KGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHkSURBVHhe7dsxattQAMdhjRlzhIwde5LOPUKXnqXQM/QK
+        XSNLllzvHuLJppBSVGGKCo5whVGfmgfFdEvsl+X74D/YT95/iOcMAODF5Xn+tq7r2/l83s5ms9HMzMzs
+        KZtaIjTFl9AW72Jm/C8cXk8PrVarrm3bse/7EQDgqaaW2O1243q93ldVdRda4yZmxz9TfDRNE38CAHA+
+        XdeNoTW+hgi5iumRZWVZvg918is+AwBwdpvNpg8R8jHmx+Pbj+kVCQDApez3++leyLeYH1lWFMXDMAzx
+        GADgMqbLqTE/smz6AABwaQIEAEhOgAAAyQkQACA5AQIAJCdAAIDkBAgAkJwAAQCSEyAAQHICBABIToAA
+        AMkJEAAgOQECACQnQACA5AQIAJCcAAEAkhMgAEByAgQASE6AAADJCRAAIDkBAgAkJ0AAgOQECACQ3EmA
+        FEUxHI/HeAQAcBknAVJV1V3XdfEIAOD8DofDWJZlF/Pjb4B82G63QzwHADi7pmnGuq4/x/zIsjzPr0KE
+        fO/7Pj4CAHA+01WPxWLxMzTHTcyPR+GL16FKftzf3/8eBi9DAIDnm8KjbdtxuVzuqqp6E7PjVIiQ6xAh
+        n4qieJguiZiZmZk9Z9MfXUJb3IbGeBVzAwDgJWTZHwXEtGGNw2j7AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="lblNuevoNo.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="lblNuevoSi.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuTextBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVoAAAAlCAYAAAADUiHWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
