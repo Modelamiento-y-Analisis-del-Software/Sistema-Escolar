@@ -38,9 +38,10 @@ namespace Capa_Presentacion
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -48,7 +49,7 @@ namespace Capa_Presentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -57,6 +58,7 @@ namespace Capa_Presentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlMainMenu = new System.Windows.Forms.Panel();
+            this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnDocente = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnEstudiante = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnTutor = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -65,6 +67,7 @@ namespace Capa_Presentacion
             this.imgLogoMini = new System.Windows.Forms.PictureBox();
             this.menuTransition = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.pnlSubMenu = new System.Windows.Forms.Panel();
+            this.frmSubMenu1 = new Capa_Presentacion.frmSubMenu();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pagCentral = new Bunifu.UI.WinForms.BunifuPages();
@@ -82,6 +85,7 @@ namespace Capa_Presentacion
             this.label2 = new System.Windows.Forms.Label();
             this.tpagRegTutor = new System.Windows.Forms.TabPage();
             this.bunifuPanel7 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.createTutor1 = new Capa_Presentacion.CreateTutor();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.tpagEstGeneral = new System.Windows.Forms.TabPage();
@@ -99,14 +103,12 @@ namespace Capa_Presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.tpagEstRegistrar = new System.Windows.Forms.TabPage();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.uscNewEstudent = new Capa_Presentacion.Matricular();
             this.pnlTCEstudiante = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblTCEstudiante = new System.Windows.Forms.Label();
             this.MouseDetect = new System.Windows.Forms.Timer(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.createTutor1 = new Capa_Presentacion.CreateTutor();
-            this.uscNewEstudent = new Capa_Presentacion.Matricular();
-            this.frmSubMenu1 = new Capa_Presentacion.frmSubMenu();
             this.pnlMainMenu.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoMini)).BeginInit();
@@ -133,6 +135,7 @@ namespace Capa_Presentacion
             // pnlMainMenu
             // 
             this.pnlMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
+            this.pnlMainMenu.Controls.Add(this.bunifuButton2);
             this.pnlMainMenu.Controls.Add(this.btnDocente);
             this.pnlMainMenu.Controls.Add(this.btnEstudiante);
             this.pnlMainMenu.Controls.Add(this.btnTutor);
@@ -144,6 +147,98 @@ namespace Capa_Presentacion
             this.pnlMainMenu.Name = "pnlMainMenu";
             this.pnlMainMenu.Size = new System.Drawing.Size(55, 749);
             this.pnlMainMenu.TabIndex = 0;
+            // 
+            // bunifuButton2
+            // 
+            this.bunifuButton2.AllowAnimations = false;
+            this.bunifuButton2.AllowMouseEffects = true;
+            this.bunifuButton2.AllowToggling = true;
+            this.bunifuButton2.AnimationSpeed = 200;
+            this.bunifuButton2.AutoGenerateColors = false;
+            this.bunifuButton2.AutoRoundBorders = false;
+            this.bunifuButton2.AutoSizeLeftIcon = false;
+            this.bunifuButton2.AutoSizeRightIcon = true;
+            this.bunifuButton2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuButton2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
+            this.bunifuButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton2.BackgroundImage")));
+            this.bunifuButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.ButtonText = "Cursos";
+            this.bunifuButton2.ButtonTextMarginLeft = 0;
+            this.bunifuButton2.ColorContrastOnClick = 45;
+            this.bunifuButton2.ColorContrastOnHover = 45;
+            this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges1;
+            this.menuTransition.SetDecoration(this.bunifuButton2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton2.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuButton2.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Idle;
+            this.bunifuButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuButton2.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton2.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButton2.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton2.IconLeftPadding = new System.Windows.Forms.Padding(17, 3, 3, 3);
+            this.bunifuButton2.IconMarginLeft = 11;
+            this.bunifuButton2.IconPadding = 10;
+            this.bunifuButton2.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bunifuButton2.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuButton2.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.bunifuButton2.IconSize = 20;
+            this.bunifuButton2.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
+            this.bunifuButton2.IdleBorderRadius = 1;
+            this.bunifuButton2.IdleBorderThickness = 1;
+            this.bunifuButton2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
+            this.bunifuButton2.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.course_26px;
+            this.bunifuButton2.IdleIconRightImage = null;
+            this.bunifuButton2.IndicateFocus = true;
+            this.bunifuButton2.Location = new System.Drawing.Point(0, 282);
+            this.bunifuButton2.Name = "bunifuButton2";
+            this.bunifuButton2.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.bunifuButton2.OnDisabledState.BorderRadius = 1;
+            this.bunifuButton2.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.OnDisabledState.BorderThickness = 1;
+            this.bunifuButton2.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bunifuButton2.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bunifuButton2.OnDisabledState.IconLeftImage = null;
+            this.bunifuButton2.OnDisabledState.IconRightImage = null;
+            this.bunifuButton2.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
+            this.bunifuButton2.onHoverState.BorderRadius = 1;
+            this.bunifuButton2.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.onHoverState.BorderThickness = 1;
+            this.bunifuButton2.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
+            this.bunifuButton2.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton2.onHoverState.IconLeftImage = null;
+            this.bunifuButton2.onHoverState.IconRightImage = null;
+            this.bunifuButton2.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
+            this.bunifuButton2.OnIdleState.BorderRadius = 1;
+            this.bunifuButton2.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.OnIdleState.BorderThickness = 1;
+            this.bunifuButton2.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
+            this.bunifuButton2.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton2.OnIdleState.IconLeftImage = global::Capa_Presentacion.Properties.Resources.course_26px;
+            this.bunifuButton2.OnIdleState.IconRightImage = null;
+            this.bunifuButton2.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
+            this.bunifuButton2.OnPressedState.BorderRadius = 1;
+            this.bunifuButton2.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bunifuButton2.OnPressedState.BorderThickness = 1;
+            this.bunifuButton2.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
+            this.bunifuButton2.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.bunifuButton2.OnPressedState.IconLeftImage = null;
+            this.bunifuButton2.OnPressedState.IconRightImage = null;
+            this.bunifuButton2.Size = new System.Drawing.Size(55, 45);
+            this.bunifuButton2.TabIndex = 7;
+            this.bunifuButton2.Tag = "4";
+            this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuButton2.TextMarginLeft = 0;
+            this.bunifuButton2.TextPadding = new System.Windows.Forms.Padding(75, 0, 0, 0);
+            this.bunifuButton2.UseDefaultRadiusAndThickness = true;
             // 
             // btnDocente
             // 
@@ -164,11 +259,11 @@ namespace Capa_Presentacion
             this.btnDocente.ColorContrastOnClick = 45;
             this.btnDocente.ColorContrastOnHover = 45;
             this.btnDocente.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnDocente.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnDocente.CustomizableEdges = borderEdges2;
             this.menuTransition.SetDecoration(this.btnDocente, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnDocente.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDocente.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -257,11 +352,11 @@ namespace Capa_Presentacion
             this.btnEstudiante.ColorContrastOnClick = 45;
             this.btnEstudiante.ColorContrastOnHover = 45;
             this.btnEstudiante.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnEstudiante.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnEstudiante.CustomizableEdges = borderEdges3;
             this.menuTransition.SetDecoration(this.btnEstudiante, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnEstudiante.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEstudiante.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -350,11 +445,11 @@ namespace Capa_Presentacion
             this.btnTutor.ColorContrastOnClick = 45;
             this.btnTutor.ColorContrastOnHover = 45;
             this.btnTutor.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnTutor.CustomizableEdges = borderEdges3;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnTutor.CustomizableEdges = borderEdges4;
             this.menuTransition.SetDecoration(this.btnTutor, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnTutor.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnTutor.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -443,11 +538,11 @@ namespace Capa_Presentacion
             this.btnInicio.ColorContrastOnClick = 45;
             this.btnInicio.ColorContrastOnHover = 45;
             this.btnInicio.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnInicio.CustomizableEdges = borderEdges4;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnInicio.CustomizableEdges = borderEdges5;
             this.menuTransition.SetDecoration(this.btnInicio, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnInicio.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnInicio.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -578,6 +673,17 @@ namespace Capa_Presentacion
             this.pnlSubMenu.Size = new System.Drawing.Size(200, 749);
             this.pnlSubMenu.TabIndex = 2;
             // 
+            // frmSubMenu1
+            // 
+            this.menuTransition.SetDecoration(this.frmSubMenu1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.frmSubMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.frmSubMenu1.Location = new System.Drawing.Point(0, 74);
+            this.frmSubMenu1.MainWindow = null;
+            this.frmSubMenu1.Margin = new System.Windows.Forms.Padding(4);
+            this.frmSubMenu1.Name = "frmSubMenu1";
+            this.frmSubMenu1.Size = new System.Drawing.Size(200, 675);
+            this.frmSubMenu1.TabIndex = 1;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
@@ -701,11 +807,11 @@ namespace Capa_Presentacion
             this.bunifuButton1.ColorContrastOnClick = 10;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges5;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges6;
             this.menuTransition.SetDecoration(this.bunifuButton1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1009,6 +1115,17 @@ namespace Capa_Presentacion
             this.bunifuPanel7.Size = new System.Drawing.Size(931, 608);
             this.bunifuPanel7.TabIndex = 4;
             // 
+            // createTutor1
+            // 
+            this.createTutor1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.createTutor1.BackColor = System.Drawing.Color.White;
+            this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.createTutor1.Location = new System.Drawing.Point(0, 15);
+            this.createTutor1.Name = "createTutor1";
+            this.createTutor1.Size = new System.Drawing.Size(780, 743);
+            this.createTutor1.TabIndex = 0;
+            // 
             // bunifuPanel6
             // 
             this.bunifuPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1093,11 +1210,11 @@ namespace Capa_Presentacion
             this.btnDeshabilitar.ColorContrastOnClick = 10;
             this.btnDeshabilitar.ColorContrastOnHover = 45;
             this.btnDeshabilitar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnDeshabilitar.CustomizableEdges = borderEdges6;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnDeshabilitar.CustomizableEdges = borderEdges7;
             this.menuTransition.SetDecoration(this.btnDeshabilitar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnDeshabilitar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDeshabilitar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1416,6 +1533,19 @@ namespace Capa_Presentacion
             this.bunifuPanel2.Size = new System.Drawing.Size(931, 608);
             this.bunifuPanel2.TabIndex = 3;
             // 
+            // uscNewEstudent
+            // 
+            this.uscNewEstudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uscNewEstudent.BackColor = System.Drawing.Color.White;
+            this.menuTransition.SetDecoration(this.uscNewEstudent, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
+            this.uscNewEstudent.MainWindow = null;
+            this.uscNewEstudent.Name = "uscNewEstudent";
+            this.uscNewEstudent.Size = new System.Drawing.Size(880, 1795);
+            this.uscNewEstudent.TabIndex = 0;
+            this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
+            // 
             // pnlTCEstudiante
             // 
             this.pnlTCEstudiante.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1495,41 +1625,6 @@ namespace Capa_Presentacion
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // createTutor1
-            // 
-            this.createTutor1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.createTutor1.BackColor = System.Drawing.Color.White;
-            this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.createTutor1.Location = new System.Drawing.Point(0, 15);
-            this.createTutor1.Name = "createTutor1";
-            this.createTutor1.Size = new System.Drawing.Size(848, 743);
-            this.createTutor1.TabIndex = 0;
-            // 
-            // uscNewEstudent
-            // 
-            this.uscNewEstudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uscNewEstudent.BackColor = System.Drawing.Color.White;
-            this.menuTransition.SetDecoration(this.uscNewEstudent, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
-            this.uscNewEstudent.MainWindow = null;
-            this.uscNewEstudent.Name = "uscNewEstudent";
-            this.uscNewEstudent.Size = new System.Drawing.Size(853, 1795);
-            this.uscNewEstudent.TabIndex = 0;
-            this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
-            // 
-            // frmSubMenu1
-            // 
-            this.menuTransition.SetDecoration(this.frmSubMenu1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.frmSubMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.frmSubMenu1.Location = new System.Drawing.Point(0, 74);
-            this.frmSubMenu1.MainWindow = null;
-            this.frmSubMenu1.Margin = new System.Windows.Forms.Padding(4);
-            this.frmSubMenu1.Name = "frmSubMenu1";
-            this.frmSubMenu1.Size = new System.Drawing.Size(200, 675);
-            this.frmSubMenu1.TabIndex = 1;
             // 
             // frmMainWindow
             // 
@@ -1626,5 +1721,6 @@ namespace Capa_Presentacion
         private System.Windows.Forms.Label label3;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel7;
         private CreateTutor createTutor1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
     }
 }

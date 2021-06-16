@@ -290,5 +290,8 @@
   <ItemGroup>
     <None Include="Resources\icon\search_white.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\course_26px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
