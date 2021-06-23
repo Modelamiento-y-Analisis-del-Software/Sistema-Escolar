@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31410.414
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Logica", "Capa Logica\Capa Logica.csproj", "{4ECEAD6B-7FCB-4C0F-AC8B-57F2DAB9633B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogica", "Capa Logica\CapaLogica.csproj", "{4ECEAD6B-7FCB-4C0F-AC8B-57F2DAB9633B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Entidad", "Capa Entidad\Capa Entidad.csproj", "{E88BF622-2128-49B3-9ECE-A9A2C72091D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidad", "Capa Entidad\CapaEntidad.csproj", "{E88BF622-2128-49B3-9ECE-A9A2C72091D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Datos", "Capa Datos\Capa Datos.csproj", "{4C6AF4A8-27BE-4ED4-AB06-BAB2DA563383}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "Capa Datos\CapaDatos.csproj", "{4C6AF4A8-27BE-4ED4-AB06-BAB2DA563383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa Presentacion", "Capa Presentacion\Capa Presentacion.csproj", "{929565EF-6524-4080-8EC0-10824BEF19AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacion", "Capa Presentacion\CapaPresentacion.csproj", "{929565EF-6524-4080-8EC0-10824BEF19AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
