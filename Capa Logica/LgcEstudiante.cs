@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaDatos;
+using CapaEntidad;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +8,13 @@ using System.Threading.Tasks;
 
 namespace CapaLogica
 {
-    class LgcEstudiante
+    public class LgcEstudiante
     {
+        public static LgcEstudiante Instancia { get; } = new LgcEstudiante();
 
+        public List<Estudiante> ListarEstudiantes() 
+        {
+            return SqlEstudiante.Instancia.ListarEstudiantes();
+        }
     }
 }
