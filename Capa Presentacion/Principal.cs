@@ -18,7 +18,6 @@ namespace Capa_Presentacion
         public frmMainWindow()
         {
             InitializeComponent();
-            ListarEstudiantesHabilitados();
             frmSubMenu1.MainWindow = this;
             uscNewEstudent.MainWindow = this;
             uscNewEstudent.keypress += new KeyPressEventHandler(TxtEstDni_KeyPress);
@@ -66,9 +65,14 @@ namespace Capa_Presentacion
 
         }
 
-        private void ListarEstudiantesHabilitados()
+        public void ListarEstudiantesHabilitados()
         {
             dgvEstudiantes.DataSource = LgcEstudiante.Instancia.ListarEstudiantesHabilitados();
+        }
+
+        public void ListarTutores()
+        {
+            dgvTutor.DataSource = LgcTutor.Instancia.ListarTutores();
         }
 
         private void SideMenu_Click(object sender, EventArgs e)
@@ -79,12 +83,14 @@ namespace Capa_Presentacion
         private void BtnTutor_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
-            PagCentral.SetPage("TutGeneral"); 
+            PagCentral.SetPage("TutGeneral");
+            ListarTutores();
         }
         private void BtnEstudiante_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
             PagCentral.SetPage("EstGeneral"); 
+            ListarEstudiantesHabilitados();
         }
     }
 }
