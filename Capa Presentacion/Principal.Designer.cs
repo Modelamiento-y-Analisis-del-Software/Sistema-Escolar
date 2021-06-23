@@ -72,6 +72,11 @@ namespace Capa_Presentacion
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pagCentral = new Bunifu.UI.WinForms.BunifuPages();
             this.tpagVacio = new System.Windows.Forms.TabPage();
+            this.tpagMatricular = new System.Windows.Forms.TabPage();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.uscNewEstudent = new Capa_Presentacion.Matricular();
+            this.pnlTCEstudiante = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lblTCEstudiante = new System.Windows.Forms.Label();
             this.tpagTutGeneral = new System.Windows.Forms.TabPage();
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -93,19 +98,8 @@ namespace Capa_Presentacion
             this.btnDeshabilitar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtSearchEst = new Bunifu.UI.WinForms.BunifuTextBox();
             this.dgvEstudiantes = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTituloGeneral = new Bunifu.UI.WinForms.BunifuPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tpagMatricular = new System.Windows.Forms.TabPage();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.uscNewEstudent = new Capa_Presentacion.Matricular();
-            this.pnlTCEstudiante = new Bunifu.UI.WinForms.BunifuPanel();
-            this.lblTCEstudiante = new System.Windows.Forms.Label();
             this.MouseDetect = new System.Windows.Forms.Timer(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -116,6 +110,9 @@ namespace Capa_Presentacion
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pagCentral.SuspendLayout();
+            this.tpagMatricular.SuspendLayout();
+            this.bunifuPanel2.SuspendLayout();
+            this.pnlTCEstudiante.SuspendLayout();
             this.tpagTutGeneral.SuspendLayout();
             this.bunifuPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
@@ -127,9 +124,6 @@ namespace Capa_Presentacion
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.pnlTituloGeneral.SuspendLayout();
-            this.tpagMatricular.SuspendLayout();
-            this.bunifuPanel2.SuspendLayout();
-            this.pnlTCEstudiante.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMainMenu
@@ -720,10 +714,10 @@ namespace Capa_Presentacion
             this.pagCentral.Location = new System.Drawing.Point(255, 0);
             this.pagCentral.Multiline = true;
             this.pagCentral.Name = "pagCentral";
-            this.pagCentral.Page = this.tpagMatricular;
-            this.pagCentral.PageIndex = 1;
-            this.pagCentral.PageName = "tpagMatricular";
-            this.pagCentral.PageTitle = "Matricular";
+            this.pagCentral.Page = this.tpagEstGeneral;
+            this.pagCentral.PageIndex = 4;
+            this.pagCentral.PageName = "tpagEstGeneral";
+            this.pagCentral.PageTitle = "EstGeneral";
             this.pagCentral.SelectedIndex = 0;
             this.pagCentral.Size = new System.Drawing.Size(1009, 749);
             this.pagCentral.TabIndex = 5;
@@ -754,6 +748,83 @@ namespace Capa_Presentacion
             this.tpagVacio.Size = new System.Drawing.Size(1001, 723);
             this.tpagVacio.TabIndex = 2;
             this.tpagVacio.Text = "Vacio";
+            // 
+            // tpagMatricular
+            // 
+            this.tpagMatricular.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tpagMatricular.Controls.Add(this.bunifuPanel2);
+            this.tpagMatricular.Controls.Add(this.pnlTCEstudiante);
+            this.menuTransition.SetDecoration(this.tpagMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.tpagMatricular.Location = new System.Drawing.Point(4, 4);
+            this.tpagMatricular.Name = "tpagMatricular";
+            this.tpagMatricular.Padding = new System.Windows.Forms.Padding(3);
+            this.tpagMatricular.Size = new System.Drawing.Size(1001, 723);
+            this.tpagMatricular.TabIndex = 1;
+            this.tpagMatricular.Text = "Matricular";
+            // 
+            // bunifuPanel2
+            // 
+            this.bunifuPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuPanel2.AutoScroll = true;
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BorderRadius = 20;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.uscNewEstudent);
+            this.menuTransition.SetDecoration(this.bunifuPanel2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuPanel2.Location = new System.Drawing.Point(33, 98);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(931, 608);
+            this.bunifuPanel2.TabIndex = 3;
+            // 
+            // uscNewEstudent
+            // 
+            this.uscNewEstudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.uscNewEstudent.BackColor = System.Drawing.Color.White;
+            this.menuTransition.SetDecoration(this.uscNewEstudent, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
+            this.uscNewEstudent.MainWindow = null;
+            this.uscNewEstudent.Name = "uscNewEstudent";
+            this.uscNewEstudent.Size = new System.Drawing.Size(829, 1950);
+            this.uscNewEstudent.TabIndex = 0;
+            this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
+            // 
+            // pnlTCEstudiante
+            // 
+            this.pnlTCEstudiante.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlTCEstudiante.BackgroundColor = System.Drawing.Color.White;
+            this.pnlTCEstudiante.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTCEstudiante.BackgroundImage")));
+            this.pnlTCEstudiante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlTCEstudiante.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlTCEstudiante.BorderRadius = 20;
+            this.pnlTCEstudiante.BorderThickness = 1;
+            this.pnlTCEstudiante.Controls.Add(this.lblTCEstudiante);
+            this.menuTransition.SetDecoration(this.pnlTCEstudiante, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.pnlTCEstudiante.Location = new System.Drawing.Point(33, 16);
+            this.pnlTCEstudiante.Name = "pnlTCEstudiante";
+            this.pnlTCEstudiante.ShowBorders = true;
+            this.pnlTCEstudiante.Size = new System.Drawing.Size(931, 57);
+            this.pnlTCEstudiante.TabIndex = 2;
+            // 
+            // lblTCEstudiante
+            // 
+            this.lblTCEstudiante.AutoSize = true;
+            this.lblTCEstudiante.BackColor = System.Drawing.Color.Transparent;
+            this.menuTransition.SetDecoration(this.lblTCEstudiante, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblTCEstudiante.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
+            this.lblTCEstudiante.ForeColor = System.Drawing.Color.DimGray;
+            this.lblTCEstudiante.Location = new System.Drawing.Point(22, 7);
+            this.lblTCEstudiante.Name = "lblTCEstudiante";
+            this.lblTCEstudiante.Size = new System.Drawing.Size(234, 37);
+            this.lblTCEstudiante.TabIndex = 0;
+            this.lblTCEstudiante.Text = "Nuevo Estudiante";
             // 
             // tpagTutGeneral
             // 
@@ -1123,7 +1194,7 @@ namespace Capa_Presentacion
             this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.createTutor1.Location = new System.Drawing.Point(0, 15);
             this.createTutor1.Name = "createTutor1";
-            this.createTutor1.Size = new System.Drawing.Size(746, 743);
+            this.createTutor1.Size = new System.Drawing.Size(729, 743);
             this.createTutor1.TabIndex = 0;
             // 
             // bunifuPanel6
@@ -1384,13 +1455,6 @@ namespace Capa_Presentacion
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvEstudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvEstudiantes.ColumnHeadersHeight = 40;
-            this.dgvEstudiantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column4,
-            this.Column3,
-            this.Column5,
-            this.Column6});
             this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -1433,42 +1497,6 @@ namespace Capa_Presentacion
             this.dgvEstudiantes.TabIndex = 0;
             this.dgvEstudiantes.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "DNI";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Apellidos";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nombres";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Grado";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Seccion";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
             // pnlTituloGeneral
             // 
             this.pnlTituloGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1499,83 +1527,6 @@ namespace Capa_Presentacion
             this.label1.Size = new System.Drawing.Size(158, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Estudiantes";
-            // 
-            // tpagMatricular
-            // 
-            this.tpagMatricular.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tpagMatricular.Controls.Add(this.bunifuPanel2);
-            this.tpagMatricular.Controls.Add(this.pnlTCEstudiante);
-            this.menuTransition.SetDecoration(this.tpagMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.tpagMatricular.Location = new System.Drawing.Point(4, 4);
-            this.tpagMatricular.Name = "tpagMatricular";
-            this.tpagMatricular.Padding = new System.Windows.Forms.Padding(3);
-            this.tpagMatricular.Size = new System.Drawing.Size(1001, 723);
-            this.tpagMatricular.TabIndex = 1;
-            this.tpagMatricular.Text = "Matricular";
-            // 
-            // bunifuPanel2
-            // 
-            this.bunifuPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuPanel2.AutoScroll = true;
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 20;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.uscNewEstudent);
-            this.menuTransition.SetDecoration(this.bunifuPanel2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuPanel2.Location = new System.Drawing.Point(33, 98);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(931, 608);
-            this.bunifuPanel2.TabIndex = 3;
-            // 
-            // uscNewEstudent
-            // 
-            this.uscNewEstudent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.uscNewEstudent.BackColor = System.Drawing.Color.White;
-            this.menuTransition.SetDecoration(this.uscNewEstudent, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
-            this.uscNewEstudent.MainWindow = null;
-            this.uscNewEstudent.Name = "uscNewEstudent";
-            this.uscNewEstudent.Size = new System.Drawing.Size(846, 1950);
-            this.uscNewEstudent.TabIndex = 0;
-            this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
-            // 
-            // pnlTCEstudiante
-            // 
-            this.pnlTCEstudiante.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlTCEstudiante.BackgroundColor = System.Drawing.Color.White;
-            this.pnlTCEstudiante.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTCEstudiante.BackgroundImage")));
-            this.pnlTCEstudiante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlTCEstudiante.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlTCEstudiante.BorderRadius = 20;
-            this.pnlTCEstudiante.BorderThickness = 1;
-            this.pnlTCEstudiante.Controls.Add(this.lblTCEstudiante);
-            this.menuTransition.SetDecoration(this.pnlTCEstudiante, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.pnlTCEstudiante.Location = new System.Drawing.Point(33, 16);
-            this.pnlTCEstudiante.Name = "pnlTCEstudiante";
-            this.pnlTCEstudiante.ShowBorders = true;
-            this.pnlTCEstudiante.Size = new System.Drawing.Size(931, 57);
-            this.pnlTCEstudiante.TabIndex = 2;
-            // 
-            // lblTCEstudiante
-            // 
-            this.lblTCEstudiante.AutoSize = true;
-            this.lblTCEstudiante.BackColor = System.Drawing.Color.Transparent;
-            this.menuTransition.SetDecoration(this.lblTCEstudiante, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.lblTCEstudiante.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            this.lblTCEstudiante.ForeColor = System.Drawing.Color.DimGray;
-            this.lblTCEstudiante.Location = new System.Drawing.Point(22, 7);
-            this.lblTCEstudiante.Name = "lblTCEstudiante";
-            this.lblTCEstudiante.Size = new System.Drawing.Size(234, 37);
-            this.lblTCEstudiante.TabIndex = 0;
-            this.lblTCEstudiante.Text = "Nuevo Estudiante";
             // 
             // MouseDetect
             // 
@@ -1646,6 +1597,10 @@ namespace Capa_Presentacion
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pagCentral.ResumeLayout(false);
+            this.tpagMatricular.ResumeLayout(false);
+            this.bunifuPanel2.ResumeLayout(false);
+            this.pnlTCEstudiante.ResumeLayout(false);
+            this.pnlTCEstudiante.PerformLayout();
             this.tpagTutGeneral.ResumeLayout(false);
             this.bunifuPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
@@ -1660,10 +1615,6 @@ namespace Capa_Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
             this.pnlTituloGeneral.ResumeLayout(false);
             this.pnlTituloGeneral.PerformLayout();
-            this.tpagMatricular.ResumeLayout(false);
-            this.bunifuPanel2.ResumeLayout(false);
-            this.pnlTCEstudiante.ResumeLayout(false);
-            this.pnlTCEstudiante.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1694,12 +1645,6 @@ namespace Capa_Presentacion
         private System.Windows.Forms.TabPage tpagMatricular;
         private Bunifu.UI.WinForms.BunifuTextBox txtSearchEst;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDeshabilitar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private Bunifu.UI.WinForms.BunifuPanel pnlTCEstudiante;
         private System.Windows.Forms.Label lblTCEstudiante;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;

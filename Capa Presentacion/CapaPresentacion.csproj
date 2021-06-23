@@ -293,5 +293,15 @@
   <ItemGroup>
     <None Include="Resources\icon\course_26px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Entidad\CapaEntidad.csproj">
+      <Project>{e88bf622-2128-49b3-9ece-a9a2c72091d2}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa Logica\CapaLogica.csproj">
+      <Project>{4ecead6b-7fcb-4c0f-ac8b-57f2dab9633b}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -21,7 +21,7 @@ namespace CapaDatos
         {
             SqlConnection cn = new SqlConnection
             {
-                ConnectionString = "Data Source=.; Initial Catalog=SistemaVenta; Integrated Security=true"
+                ConnectionString = "Data Source=.; Initial Catalog=IntegralClass; Integrated Security=true"
             };
             return cn;
         }

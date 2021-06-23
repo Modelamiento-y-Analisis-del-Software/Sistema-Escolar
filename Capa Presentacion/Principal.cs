@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaLogica;
 using KimtToo.VisualReactive;
 
 namespace Capa_Presentacion
@@ -17,6 +18,7 @@ namespace Capa_Presentacion
         public frmMainWindow()
         {
             InitializeComponent();
+            ListarEstudiantesHabilitados();
             frmSubMenu1.MainWindow = this;
             uscNewEstudent.MainWindow = this;
             uscNewEstudent.keypress += new KeyPressEventHandler(TxtEstDni_KeyPress);
@@ -62,6 +64,11 @@ namespace Capa_Presentacion
                 }
             }
 
+        }
+
+        private void ListarEstudiantesHabilitados()
+        {
+            dgvEstudiantes.DataSource = LgcEstudiante.Instancia.ListarEstudiantesHabilitados();
         }
 
         private void SideMenu_Click(object sender, EventArgs e)

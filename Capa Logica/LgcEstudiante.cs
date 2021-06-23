@@ -12,9 +12,9 @@ namespace CapaLogica
     {
         public static LgcEstudiante Instancia { get; } = new LgcEstudiante();
 
-        public List<Estudiante> ListarEstudiantes() 
+        public List<Estudiante> ListarEstudiantesHabilitados() 
         {
-            return SqlEstudiante.Instancia.ListarEstudiantes();
+            return SqlEstudiante.Instancia.ListarEstudiantesHabilitados();
         }
     }
 }
