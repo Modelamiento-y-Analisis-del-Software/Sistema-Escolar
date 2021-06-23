@@ -42,7 +42,13 @@ namespace Capa_Presentacion
 
         private void btnOption3_2_Click(object sender, EventArgs e)
         {
-            mainWindow.PagCentral.SetPage("EstRegistrar"); 
+            mainWindow.PagCentral.SetPage("Matricular"); 
+        }
+
+        private void btnOption1_2_Click(object sender, EventArgs e)
+        {
+            mainWindow.PagCentral.SetPage("Matricular");
+
         }
     }
 }

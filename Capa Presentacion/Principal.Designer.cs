@@ -101,7 +101,7 @@ namespace Capa_Presentacion
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlTituloGeneral = new Bunifu.UI.WinForms.BunifuPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tpagEstRegistrar = new System.Windows.Forms.TabPage();
+            this.tpagMatricular = new System.Windows.Forms.TabPage();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.uscNewEstudent = new Capa_Presentacion.Matricular();
             this.pnlTCEstudiante = new Bunifu.UI.WinForms.BunifuPanel();
@@ -127,7 +127,7 @@ namespace Capa_Presentacion
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.pnlTituloGeneral.SuspendLayout();
-            this.tpagEstRegistrar.SuspendLayout();
+            this.tpagMatricular.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.pnlTCEstudiante.SuspendLayout();
             this.SuspendLayout();
@@ -711,19 +711,19 @@ namespace Capa_Presentacion
             this.pagCentral.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.pagCentral.AllowTransitions = false;
             this.pagCentral.Controls.Add(this.tpagVacio);
+            this.pagCentral.Controls.Add(this.tpagMatricular);
             this.pagCentral.Controls.Add(this.tpagTutGeneral);
             this.pagCentral.Controls.Add(this.tpagRegTutor);
             this.pagCentral.Controls.Add(this.tpagEstGeneral);
-            this.pagCentral.Controls.Add(this.tpagEstRegistrar);
             this.menuTransition.SetDecoration(this.pagCentral, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pagCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pagCentral.Location = new System.Drawing.Point(255, 0);
             this.pagCentral.Multiline = true;
             this.pagCentral.Name = "pagCentral";
-            this.pagCentral.Page = this.tpagEstRegistrar;
-            this.pagCentral.PageIndex = 4;
-            this.pagCentral.PageName = "tpagEstRegistrar";
-            this.pagCentral.PageTitle = "EstRegistrar";
+            this.pagCentral.Page = this.tpagMatricular;
+            this.pagCentral.PageIndex = 1;
+            this.pagCentral.PageName = "tpagMatricular";
+            this.pagCentral.PageTitle = "Matricular";
             this.pagCentral.SelectedIndex = 0;
             this.pagCentral.Size = new System.Drawing.Size(1009, 749);
             this.pagCentral.TabIndex = 5;
@@ -1123,7 +1123,7 @@ namespace Capa_Presentacion
             this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.createTutor1.Location = new System.Drawing.Point(0, 15);
             this.createTutor1.Name = "createTutor1";
-            this.createTutor1.Size = new System.Drawing.Size(780, 743);
+            this.createTutor1.Size = new System.Drawing.Size(746, 743);
             this.createTutor1.TabIndex = 0;
             // 
             // bunifuPanel6
@@ -1500,18 +1500,18 @@ namespace Capa_Presentacion
             this.label1.TabIndex = 0;
             this.label1.Text = "Estudiantes";
             // 
-            // tpagEstRegistrar
+            // tpagMatricular
             // 
-            this.tpagEstRegistrar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tpagEstRegistrar.Controls.Add(this.bunifuPanel2);
-            this.tpagEstRegistrar.Controls.Add(this.pnlTCEstudiante);
-            this.menuTransition.SetDecoration(this.tpagEstRegistrar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.tpagEstRegistrar.Location = new System.Drawing.Point(4, 4);
-            this.tpagEstRegistrar.Name = "tpagEstRegistrar";
-            this.tpagEstRegistrar.Padding = new System.Windows.Forms.Padding(3);
-            this.tpagEstRegistrar.Size = new System.Drawing.Size(1001, 723);
-            this.tpagEstRegistrar.TabIndex = 1;
-            this.tpagEstRegistrar.Text = "EstRegistrar";
+            this.tpagMatricular.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tpagMatricular.Controls.Add(this.bunifuPanel2);
+            this.tpagMatricular.Controls.Add(this.pnlTCEstudiante);
+            this.menuTransition.SetDecoration(this.tpagMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.tpagMatricular.Location = new System.Drawing.Point(4, 4);
+            this.tpagMatricular.Name = "tpagMatricular";
+            this.tpagMatricular.Padding = new System.Windows.Forms.Padding(3);
+            this.tpagMatricular.Size = new System.Drawing.Size(1001, 723);
+            this.tpagMatricular.TabIndex = 1;
+            this.tpagMatricular.Text = "Matricular";
             // 
             // bunifuPanel2
             // 
@@ -1542,7 +1542,7 @@ namespace Capa_Presentacion
             this.uscNewEstudent.Location = new System.Drawing.Point(13, 13);
             this.uscNewEstudent.MainWindow = null;
             this.uscNewEstudent.Name = "uscNewEstudent";
-            this.uscNewEstudent.Size = new System.Drawing.Size(880, 1795);
+            this.uscNewEstudent.Size = new System.Drawing.Size(846, 1950);
             this.uscNewEstudent.TabIndex = 0;
             this.uscNewEstudent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEstDni_KeyPress);
             // 
@@ -1660,7 +1660,7 @@ namespace Capa_Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
             this.pnlTituloGeneral.ResumeLayout(false);
             this.pnlTituloGeneral.PerformLayout();
-            this.tpagEstRegistrar.ResumeLayout(false);
+            this.tpagMatricular.ResumeLayout(false);
             this.bunifuPanel2.ResumeLayout(false);
             this.pnlTCEstudiante.ResumeLayout(false);
             this.pnlTCEstudiante.PerformLayout();
@@ -1691,7 +1691,7 @@ namespace Capa_Presentacion
         private Bunifu.UI.WinForms.BunifuDataGridView dgvEstudiantes;
         private Bunifu.UI.WinForms.BunifuPanel pnlTituloGeneral;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tpagEstRegistrar;
+        private System.Windows.Forms.TabPage tpagMatricular;
         private Bunifu.UI.WinForms.BunifuTextBox txtSearchEst;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDeshabilitar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
