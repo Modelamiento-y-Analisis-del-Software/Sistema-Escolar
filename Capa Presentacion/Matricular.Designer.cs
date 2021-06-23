@@ -744,7 +744,7 @@ namespace Capa_Presentacion
             this.bunifuButton1.IdleBorderRadius = 37;
             this.bunifuButton1.IdleBorderThickness = 1;
             this.bunifuButton1.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuButton1.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.search_white;
+            this.bunifuButton1.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.search_white;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
             this.bunifuButton1.Location = new System.Drawing.Point(369, 22);
@@ -771,7 +771,7 @@ namespace Capa_Presentacion
             this.bunifuButton1.OnIdleState.BorderThickness = 1;
             this.bunifuButton1.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
             this.bunifuButton1.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton1.OnIdleState.IconLeftImage = global::Capa_Presentacion.Properties.Resources.search_white;
+            this.bunifuButton1.OnIdleState.IconLeftImage = global::CapaPresentacion.Properties.Resources.search_white;
             this.bunifuButton1.OnIdleState.IconRightImage = null;
             this.bunifuButton1.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.bunifuButton1.OnPressedState.BorderRadius = 1;

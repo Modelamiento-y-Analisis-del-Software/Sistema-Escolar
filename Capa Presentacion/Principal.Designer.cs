@@ -194,7 +194,7 @@ namespace Capa_Presentacion
             this.bunifuButton2.IdleBorderRadius = 1;
             this.bunifuButton2.IdleBorderThickness = 1;
             this.bunifuButton2.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
-            this.bunifuButton2.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.course_26px;
+            this.bunifuButton2.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.course_26px;
             this.bunifuButton2.IdleIconRightImage = null;
             this.bunifuButton2.IndicateFocus = true;
             this.bunifuButton2.Location = new System.Drawing.Point(0, 282);
@@ -221,7 +221,7 @@ namespace Capa_Presentacion
             this.bunifuButton2.OnIdleState.BorderThickness = 1;
             this.bunifuButton2.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
             this.bunifuButton2.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton2.OnIdleState.IconLeftImage = global::Capa_Presentacion.Properties.Resources.course_26px;
+            this.bunifuButton2.OnIdleState.IconLeftImage = global::CapaPresentacion.Properties.Resources.course_26px;
             this.bunifuButton2.OnIdleState.IconRightImage = null;
             this.bunifuButton2.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
             this.bunifuButton2.OnPressedState.BorderRadius = 1;
@@ -286,7 +286,7 @@ namespace Capa_Presentacion
             this.btnDocente.IdleBorderRadius = 1;
             this.btnDocente.IdleBorderThickness = 1;
             this.btnDocente.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
-            this.btnDocente.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.maestro;
+            this.btnDocente.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.maestro;
             this.btnDocente.IdleIconRightImage = null;
             this.btnDocente.IndicateFocus = true;
             this.btnDocente.Location = new System.Drawing.Point(0, 237);
@@ -313,7 +313,7 @@ namespace Capa_Presentacion
             this.btnDocente.OnIdleState.BorderThickness = 1;
             this.btnDocente.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
             this.btnDocente.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnDocente.OnIdleState.IconLeftImage = global::Capa_Presentacion.Properties.Resources.maestro;
+            this.btnDocente.OnIdleState.IconLeftImage = global::CapaPresentacion.Properties.Resources.maestro;
             this.btnDocente.OnIdleState.IconRightImage = null;
             this.btnDocente.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
             this.btnDocente.OnPressedState.BorderRadius = 1;
@@ -379,7 +379,7 @@ namespace Capa_Presentacion
             this.btnEstudiante.IdleBorderRadius = 1;
             this.btnEstudiante.IdleBorderThickness = 1;
             this.btnEstudiante.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
-            this.btnEstudiante.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.student;
+            this.btnEstudiante.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.student;
             this.btnEstudiante.IdleIconRightImage = null;
             this.btnEstudiante.IndicateFocus = true;
             this.btnEstudiante.Location = new System.Drawing.Point(0, 192);
@@ -406,7 +406,7 @@ namespace Capa_Presentacion
             this.btnEstudiante.OnIdleState.BorderThickness = 1;
             this.btnEstudiante.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
             this.btnEstudiante.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnEstudiante.OnIdleState.IconLeftImage = global::Capa_Presentacion.Properties.Resources.student;
+            this.btnEstudiante.OnIdleState.IconLeftImage = global::CapaPresentacion.Properties.Resources.student;
             this.btnEstudiante.OnIdleState.IconRightImage = null;
             this.btnEstudiante.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
             this.btnEstudiante.OnPressedState.BorderRadius = 1;
@@ -472,7 +472,7 @@ namespace Capa_Presentacion
             this.btnTutor.IdleBorderRadius = 1;
             this.btnTutor.IdleBorderThickness = 1;
             this.btnTutor.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
-            this.btnTutor.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.tutor;
+            this.btnTutor.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.tutor;
             this.btnTutor.IdleIconRightImage = null;
             this.btnTutor.IndicateFocus = true;
             this.btnTutor.Location = new System.Drawing.Point(0, 147);
@@ -499,7 +499,7 @@ namespace Capa_Presentacion
             this.btnTutor.OnIdleState.BorderThickness = 1;
             this.btnTutor.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
             this.btnTutor.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnTutor.OnIdleState.IconLeftImage = global::Capa_Presentacion.Properties.Resources.tutor;
+            this.btnTutor.OnIdleState.IconLeftImage = global::CapaPresentacion.Properties.Resources.tutor;
             this.btnTutor.OnIdleState.IconRightImage = null;
             this.btnTutor.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
             this.btnTutor.OnPressedState.BorderRadius = 1;
@@ -565,7 +565,7 @@ namespace Capa_Presentacion
             this.btnInicio.IdleBorderRadius = 1;
             this.btnInicio.IdleBorderThickness = 1;
             this.btnInicio.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
-            this.btnInicio.IdleIconLeftImage = global::Capa_Presentacion.Properties.Resources.menu;
+            this.btnInicio.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.menu;
             this.btnInicio.IdleIconRightImage = null;
             this.btnInicio.IndicateFocus = true;
             this.btnInicio.Location = new System.Drawing.Point(0, 102);
@@ -592,7 +592,7 @@ namespace Capa_Presentacion
             this.btnInicio.OnIdleState.BorderThickness = 1;
             this.btnInicio.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
             this.btnInicio.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnInicio.OnIdleState.IconLeftImage = global::Capa_Presentacion.Properties.Resources.menu;
+            this.btnInicio.OnIdleState.IconLeftImage = global::CapaPresentacion.Properties.Resources.menu;
             this.btnInicio.OnIdleState.IconRightImage = null;
             this.btnInicio.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
             this.btnInicio.OnPressedState.BorderRadius = 1;
@@ -698,7 +698,7 @@ namespace Capa_Presentacion
             // pictureBox1
             // 
             this.menuTransition.SetDecoration(this.pictureBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.pictureBox1.Image = global::Capa_Presentacion.Properties.Resources.logo;
+            this.pictureBox1.Image = global::CapaPresentacion.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(17, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 60);
@@ -905,7 +905,7 @@ namespace Capa_Presentacion
             this.bunifuTextBox1.IconLeft = null;
             this.bunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.IconPadding = 10;
-            this.bunifuTextBox1.IconRight = global::Capa_Presentacion.Properties.Resources.search;
+            this.bunifuTextBox1.IconRight = global::CapaPresentacion.Properties.Resources.search;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
             this.bunifuTextBox1.Location = new System.Drawing.Point(663, 8);
@@ -1308,7 +1308,7 @@ namespace Capa_Presentacion
             this.txtSearchEst.IconLeft = null;
             this.txtSearchEst.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchEst.IconPadding = 10;
-            this.txtSearchEst.IconRight = global::Capa_Presentacion.Properties.Resources.search;
+            this.txtSearchEst.IconRight = global::CapaPresentacion.Properties.Resources.search;
             this.txtSearchEst.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSearchEst.Lines = new string[0];
             this.txtSearchEst.Location = new System.Drawing.Point(663, 8);
