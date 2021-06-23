@@ -13,14 +13,14 @@ namespace CapaDatos
     {
         public static SqlEstudiante Instancia { get; } = new SqlEstudiante();
 
-        public List<Estudiante> ListarEstudiantes()
+        public List<Estudiante> ListarEstudiantesHabilitados()
         {
             SqlCommand cmd = null;
             var lista = new List<Estudiante>();
             try
             {
                 var cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spListarEstudiantes", cn)
+                cmd = new SqlCommand("uspListarEstudiantesHabilitados", cn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -30,7 +30,7 @@ namespace CapaDatos
                 {
                     var e = new Estudiante
                     {
-                        IdEstudiante = Convert.ToInt32(dr["IdEstudiante"]),
+                        Id = Convert.ToInt32(dr["IdEstudiante"]),
                         Dni = dr["Dni"].ToString(),
                         Nombres = dr["Nombres"].ToString(),
                         ApPaterno = dr["ApPaterno"].ToString(),
@@ -39,6 +39,7 @@ namespace CapaDatos
                         FecNacimiento = Convert.ToDateTime(dr["FecNacimiento"]),
                         Direccion = dr["Direccion"].ToString(),
                         Email = dr["Email"].ToString(),
+                        Telefono = dr["Telefono"].ToString()
                     };
                     lista.Add(e);
                 }
