@@ -100,5 +100,11 @@ namespace CapaPresentacion
             dgvEstudiantes.DataSource = LgcEstudiante.Instancia.BuscarEstudiante(txtSearchEst.Text.ToString());
             txtSearchEst.Text = "";
         }
+
+        private void btnRefreshEst_Click(object sender, EventArgs e)
+        {
+            txtSearchEst.Text = "";
+            ListarEstudiantesHabilitados();
+        }
     }
 }
