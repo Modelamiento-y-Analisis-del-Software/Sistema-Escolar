@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Capa_Presentacion
 {
-    public partial class CreateEstudiante : UserControl
+    public partial class Matricular : UserControl
     {
         public event KeyPressEventHandler keypress;
         public frmMainWindow MainWindow { get; set; }
-        public CreateEstudiante()
+        public Matricular()
         {
             InitializeComponent();
             
@@ -23,6 +23,16 @@ namespace Capa_Presentacion
         protected void txtDni_KeyPress(object sender, KeyPressEventArgs e)
         {
             keypress?.Invoke(this, e);
+        }
+
+        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGroupBox7_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

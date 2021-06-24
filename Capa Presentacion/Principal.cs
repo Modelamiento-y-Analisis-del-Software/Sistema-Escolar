@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaLogica;
 using KimtToo.VisualReactive;
 
 namespace Capa_Presentacion
@@ -64,11 +65,32 @@ namespace Capa_Presentacion
 
         }
 
+        public void ListarEstudiantesHabilitados()
+        {
+            dgvEstudiantes.DataSource = LgcEstudiante.Instancia.ListarEstudiantesHabilitados();
+        }
+
+        public void ListarTutores()
+        {
+            dgvTutor.DataSource = LgcTutor.Instancia.ListarTutores();
+        }
+
         private void SideMenu_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
         }
         
-        
+        private void BtnTutor_Click(object sender, EventArgs e)
+        {
+            VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
+            PagCentral.SetPage("TutGeneral");
+            ListarTutores();
+        }
+        private void BtnEstudiante_Click(object sender, EventArgs e)
+        {
+            VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
+            PagCentral.SetPage("EstGeneral"); 
+            ListarEstudiantesHabilitados();
+        }
     }
 }

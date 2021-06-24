@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{929565EF-6524-4080-8EC0-10824BEF19AE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Capa_Presentacion</RootNamespace>
-    <AssemblyName>Capa Presentacion</AssemblyName>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -167,11 +167,17 @@
     <Compile Include="Coreplanificacioncurricular.Designer.cs">
       <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateEstudiante.cs">
+    <Compile Include="Matricular.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CreateEstudiante.Designer.cs">
-      <DependentUpon>CreateEstudiante.cs</DependentUpon>
+    <Compile Include="Matricular.Designer.cs">
+      <DependentUpon>Matricular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTutor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateTutor.Designer.cs">
+      <DependentUpon>CreateTutor.cs</DependentUpon>
     </Compile>
     <Compile Include="CrudAlumno.cs">
       <SubType>Form</SubType>
@@ -223,8 +229,11 @@
     <EmbeddedResource Include="Coreplanificacioncurricular.resx">
       <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateEstudiante.resx">
-      <DependentUpon>CreateEstudiante.cs</DependentUpon>
+    <EmbeddedResource Include="Matricular.resx">
+      <DependentUpon>Matricular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTutor.resx">
+      <DependentUpon>CreateTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrudAlumno.resx">
       <DependentUpon>CrudAlumno.cs</DependentUpon>
@@ -298,6 +307,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon\search_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\course_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Entidad\CapaEntidad.csproj">
+      <Project>{e88bf622-2128-49b3-9ece-a9a2c72091d2}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa Logica\CapaLogica.csproj">
+      <Project>{4ecead6b-7fcb-4c0f-ac8b-57f2dab9633b}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
