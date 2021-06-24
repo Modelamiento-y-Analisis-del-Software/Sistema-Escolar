@@ -1,5 +1,5 @@
 ﻿
-namespace Capa_Presentacion
+namespace CapaPresentacion
 {
     partial class Silabo
     {

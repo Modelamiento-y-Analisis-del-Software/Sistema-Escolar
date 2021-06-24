@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using CapaLogica;
 using KimtToo.VisualReactive;
 
-namespace Capa_Presentacion
+namespace CapaPresentacion
 {
     public partial class frmMainWindow : Form
     {
@@ -19,8 +19,8 @@ namespace Capa_Presentacion
         {
             InitializeComponent();
             frmSubMenu1.MainWindow = this;
-            uscNewEstudent.MainWindow = this;
-            uscNewEstudent.keypress += new KeyPressEventHandler(TxtEstDni_KeyPress);
+            uscMatricular.MainWindow = this;
+            uscMatricular.keyp += new KeyPressEventHandler(TxtEstDni_KeyPress);
         }
 
         public void TxtEstDni_KeyPress(object sender, KeyPressEventArgs e)
@@ -29,14 +29,16 @@ namespace Capa_Presentacion
             {
                 e.Handled = false;
             }
-            else
-            if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
             {
                 e.Handled = false;
             }
             else
             {
-                //el resto de teclas pulsadas se desactivan
                 e.Handled = true;
             }
         }
@@ -91,6 +93,12 @@ namespace Capa_Presentacion
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
             PagCentral.SetPage("EstGeneral"); 
             ListarEstudiantesHabilitados();
+        }
+
+        private void txtSearchEst_OnIconRightClick(object sender, EventArgs e)
+        {
+            dgvEstudiantes.DataSource = LgcEstudiante.Instancia.BuscarEstudiante(txtSearchEst.Text.ToString());
+            txtSearchEst.Text = "";
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿
-namespace Capa_Presentacion
+namespace CapaPresentacion
 {
     partial class Matricular
     {
@@ -115,9 +115,9 @@ namespace Capa_Presentacion
             this.bunifuGroupBox10 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.lblNuevoNo = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblNuevoSi = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuRadioButton16 = new Bunifu.UI.WinForms.BunifuRadioButton();
-            this.bunifuRadioButton10 = new Bunifu.UI.WinForms.BunifuRadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbTutorNuevoNo = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.rdbTutorNuevoSi = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.grbTutorExistente = new System.Windows.Forms.GroupBox();
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -131,7 +131,7 @@ namespace Capa_Presentacion
             this.lblParEstDireccion = new System.Windows.Forms.Label();
             this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnUploadImage = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.imgEstPerfil = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.lblParEstFechaNac = new System.Windows.Forms.Label();
             this.bunifuDatePicker1 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.lblParEstApellido = new System.Windows.Forms.Label();
@@ -166,7 +166,7 @@ namespace Capa_Presentacion
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuTextBox4 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.bunifuGroupBox7 = new Bunifu.UI.WinForms.BunifuGroupBox();
+            this.grbNuevoTutor = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.label28 = new System.Windows.Forms.Label();
             this.bunifuTextBox16 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -197,14 +197,14 @@ namespace Capa_Presentacion
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.grpbDatosDelEstudiante.SuspendLayout();
             this.bunifuGroupBox10.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.grbTutorExistente.SuspendLayout();
             this.bunifuGroupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgEstPerfil)).BeginInit();
             this.bunifuGroupBox1.SuspendLayout();
             this.bunifuGroupBox5.SuspendLayout();
             this.bunifuGroupBox3.SuspendLayout();
             this.bunifuGroupBox2.SuspendLayout();
-            this.bunifuGroupBox7.SuspendLayout();
+            this.grbNuevoTutor.SuspendLayout();
             this.bunifuGroupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -223,7 +223,7 @@ namespace Capa_Presentacion
             this.grpbDatosDelEstudiante.Controls.Add(this.label25);
             this.grpbDatosDelEstudiante.Controls.Add(this.bunifuTextBox13);
             this.grpbDatosDelEstudiante.Controls.Add(this.bunifuGroupBox10);
-            this.grpbDatosDelEstudiante.Controls.Add(this.groupBox1);
+            this.grpbDatosDelEstudiante.Controls.Add(this.grbTutorExistente);
             this.grpbDatosDelEstudiante.Controls.Add(this.label3);
             this.grpbDatosDelEstudiante.Controls.Add(this.bunifuTextBox5);
             this.grpbDatosDelEstudiante.Controls.Add(this.label1);
@@ -231,7 +231,7 @@ namespace Capa_Presentacion
             this.grpbDatosDelEstudiante.Controls.Add(this.lblParEstDireccion);
             this.grpbDatosDelEstudiante.Controls.Add(this.bunifuTextBox3);
             this.grpbDatosDelEstudiante.Controls.Add(this.btnUploadImage);
-            this.grpbDatosDelEstudiante.Controls.Add(this.bunifuPictureBox1);
+            this.grpbDatosDelEstudiante.Controls.Add(this.imgEstPerfil);
             this.grpbDatosDelEstudiante.Controls.Add(this.lblParEstFechaNac);
             this.grpbDatosDelEstudiante.Controls.Add(this.bunifuDatePicker1);
             this.grpbDatosDelEstudiante.Controls.Add(this.lblParEstApellido);
@@ -529,8 +529,8 @@ namespace Capa_Presentacion
             this.bunifuGroupBox10.BorderThickness = 1;
             this.bunifuGroupBox10.Controls.Add(this.lblNuevoNo);
             this.bunifuGroupBox10.Controls.Add(this.lblNuevoSi);
-            this.bunifuGroupBox10.Controls.Add(this.bunifuRadioButton16);
-            this.bunifuGroupBox10.Controls.Add(this.bunifuRadioButton10);
+            this.bunifuGroupBox10.Controls.Add(this.rdbTutorNuevoNo);
+            this.bunifuGroupBox10.Controls.Add(this.rdbTutorNuevoSi);
             this.bunifuGroupBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuGroupBox10.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox10.LabelIndent = 10;
@@ -576,55 +576,57 @@ namespace Capa_Presentacion
             this.lblNuevoSi.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblNuevoSi.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuRadioButton16
+            // rdbTutorNuevoNo
             // 
-            this.bunifuRadioButton16.AllowBindingControlLocation = true;
-            this.bunifuRadioButton16.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuRadioButton16.BindingControl = this.lblNuevoNo;
-            this.bunifuRadioButton16.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
-            this.bunifuRadioButton16.BorderThickness = 1;
-            this.bunifuRadioButton16.Checked = false;
-            this.bunifuRadioButton16.Location = new System.Drawing.Point(169, 25);
-            this.bunifuRadioButton16.Name = "bunifuRadioButton16";
-            this.bunifuRadioButton16.OutlineColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuRadioButton16.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuRadioButton16.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
-            this.bunifuRadioButton16.RadioColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuRadioButton16.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuRadioButton16.Size = new System.Drawing.Size(21, 21);
-            this.bunifuRadioButton16.TabIndex = 1;
-            this.bunifuRadioButton16.Text = null;
+            this.rdbTutorNuevoNo.AllowBindingControlLocation = true;
+            this.rdbTutorNuevoNo.BackColor = System.Drawing.Color.Transparent;
+            this.rdbTutorNuevoNo.BindingControl = this.lblNuevoNo;
+            this.rdbTutorNuevoNo.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
+            this.rdbTutorNuevoNo.BorderThickness = 1;
+            this.rdbTutorNuevoNo.Checked = false;
+            this.rdbTutorNuevoNo.Location = new System.Drawing.Point(169, 25);
+            this.rdbTutorNuevoNo.Name = "rdbTutorNuevoNo";
+            this.rdbTutorNuevoNo.OutlineColor = System.Drawing.Color.DodgerBlue;
+            this.rdbTutorNuevoNo.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.rdbTutorNuevoNo.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
+            this.rdbTutorNuevoNo.RadioColor = System.Drawing.Color.DodgerBlue;
+            this.rdbTutorNuevoNo.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.rdbTutorNuevoNo.Size = new System.Drawing.Size(21, 21);
+            this.rdbTutorNuevoNo.TabIndex = 1;
+            this.rdbTutorNuevoNo.Text = null;
+            this.rdbTutorNuevoNo.CheckedChanged2 += new System.EventHandler<Bunifu.UI.WinForms.BunifuRadioButton.CheckedChangedEventArgs>(this.rdbTutorNuevoNo_CheckedChanged2);
             // 
-            // bunifuRadioButton10
+            // rdbTutorNuevoSi
             // 
-            this.bunifuRadioButton10.AllowBindingControlLocation = true;
-            this.bunifuRadioButton10.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuRadioButton10.BindingControl = this.lblNuevoSi;
-            this.bunifuRadioButton10.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
-            this.bunifuRadioButton10.BorderThickness = 1;
-            this.bunifuRadioButton10.Checked = true;
-            this.bunifuRadioButton10.Location = new System.Drawing.Point(85, 25);
-            this.bunifuRadioButton10.Name = "bunifuRadioButton10";
-            this.bunifuRadioButton10.OutlineColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuRadioButton10.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuRadioButton10.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
-            this.bunifuRadioButton10.RadioColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuRadioButton10.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuRadioButton10.Size = new System.Drawing.Size(21, 21);
-            this.bunifuRadioButton10.TabIndex = 0;
-            this.bunifuRadioButton10.Text = null;
+            this.rdbTutorNuevoSi.AllowBindingControlLocation = true;
+            this.rdbTutorNuevoSi.BackColor = System.Drawing.Color.Transparent;
+            this.rdbTutorNuevoSi.BindingControl = this.lblNuevoSi;
+            this.rdbTutorNuevoSi.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
+            this.rdbTutorNuevoSi.BorderThickness = 1;
+            this.rdbTutorNuevoSi.Checked = true;
+            this.rdbTutorNuevoSi.Location = new System.Drawing.Point(85, 25);
+            this.rdbTutorNuevoSi.Name = "rdbTutorNuevoSi";
+            this.rdbTutorNuevoSi.OutlineColor = System.Drawing.Color.DodgerBlue;
+            this.rdbTutorNuevoSi.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.rdbTutorNuevoSi.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
+            this.rdbTutorNuevoSi.RadioColor = System.Drawing.Color.DodgerBlue;
+            this.rdbTutorNuevoSi.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.rdbTutorNuevoSi.Size = new System.Drawing.Size(21, 21);
+            this.rdbTutorNuevoSi.TabIndex = 0;
+            this.rdbTutorNuevoSi.Text = null;
+            this.rdbTutorNuevoSi.CheckedChanged2 += new System.EventHandler<Bunifu.UI.WinForms.BunifuRadioButton.CheckedChangedEventArgs>(this.rdbTutorNuevoSi_CheckedChanged2);
             // 
-            // groupBox1
+            // grbTutorExistente
             // 
-            this.groupBox1.Controls.Add(this.bunifuTextBox2);
-            this.groupBox1.Controls.Add(this.bunifuButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(377, 504);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(423, 74);
-            this.groupBox1.TabIndex = 45;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Existente";
+            this.grbTutorExistente.Controls.Add(this.bunifuTextBox2);
+            this.grbTutorExistente.Controls.Add(this.bunifuButton1);
+            this.grbTutorExistente.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbTutorExistente.Location = new System.Drawing.Point(377, 504);
+            this.grbTutorExistente.Name = "grbTutorExistente";
+            this.grbTutorExistente.Size = new System.Drawing.Size(423, 74);
+            this.grbTutorExistente.TabIndex = 45;
+            this.grbTutorExistente.TabStop = false;
+            this.grbTutorExistente.Text = "Existente";
             // 
             // bunifuTextBox2
             // 
@@ -1166,22 +1168,23 @@ namespace Capa_Presentacion
             this.btnUploadImage.TextMarginLeft = 0;
             this.btnUploadImage.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnUploadImage.UseDefaultRadiusAndThickness = true;
+            this.btnUploadImage.Click += new System.EventHandler(this.btnUploadImage_Click);
             // 
-            // bunifuPictureBox1
+            // imgEstPerfil
             // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 102;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(604, 63);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(204, 204);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 30;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.imgEstPerfil.AllowFocused = false;
+            this.imgEstPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.imgEstPerfil.AutoSizeHeight = true;
+            this.imgEstPerfil.BorderRadius = 102;
+            this.imgEstPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgEstPerfil.Image")));
+            this.imgEstPerfil.IsCircle = true;
+            this.imgEstPerfil.Location = new System.Drawing.Point(604, 63);
+            this.imgEstPerfil.Name = "imgEstPerfil";
+            this.imgEstPerfil.Size = new System.Drawing.Size(204, 204);
+            this.imgEstPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgEstPerfil.TabIndex = 30;
+            this.imgEstPerfil.TabStop = false;
+            this.imgEstPerfil.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // lblParEstFechaNac
             // 
@@ -1358,7 +1361,7 @@ namespace Capa_Presentacion
             this.txtEstDni.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEstDni.Lines = new string[0];
             this.txtEstDni.Location = new System.Drawing.Point(20, 63);
-            this.txtEstDni.MaxLength = 20;
+            this.txtEstDni.MaxLength = 8;
             this.txtEstDni.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEstDni.Modified = false;
             this.txtEstDni.Multiline = false;
@@ -1990,49 +1993,49 @@ namespace Capa_Presentacion
             this.label5.TabIndex = 22;
             this.label5.Text = "Nivel y año/grado escolar";
             // 
-            // bunifuGroupBox7
+            // grbNuevoTutor
             // 
-            this.bunifuGroupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.grbNuevoTutor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuGroupBox7.BackColor = System.Drawing.Color.White;
-            this.bunifuGroupBox7.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuGroupBox7.BorderRadius = 10;
-            this.bunifuGroupBox7.BorderThickness = 1;
-            this.bunifuGroupBox7.Controls.Add(this.label28);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuTextBox16);
-            this.bunifuGroupBox7.Controls.Add(this.comboBox3);
-            this.bunifuGroupBox7.Controls.Add(this.label24);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuTextBox6);
-            this.bunifuGroupBox7.Controls.Add(this.label11);
-            this.bunifuGroupBox7.Controls.Add(this.comboBox2);
-            this.bunifuGroupBox7.Controls.Add(this.label17);
-            this.bunifuGroupBox7.Controls.Add(this.label18);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuTextBox7);
-            this.bunifuGroupBox7.Controls.Add(this.label19);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuTextBox8);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuGroupBox8);
-            this.bunifuGroupBox7.Controls.Add(this.label20);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuTextBox9);
-            this.bunifuGroupBox7.Controls.Add(this.label21);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuDatePicker3);
-            this.bunifuGroupBox7.Controls.Add(this.lblParEstApellidoP);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuTextBox10);
-            this.bunifuGroupBox7.Controls.Add(this.label22);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuTextBox11);
-            this.bunifuGroupBox7.Controls.Add(this.label23);
-            this.bunifuGroupBox7.Controls.Add(this.bunifuTextBox12);
-            this.bunifuGroupBox7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuGroupBox7.ForeColor = System.Drawing.Color.SlateGray;
-            this.bunifuGroupBox7.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuGroupBox7.LabelIndent = 10;
-            this.bunifuGroupBox7.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox7.Location = new System.Drawing.Point(18, 1163);
-            this.bunifuGroupBox7.Name = "bunifuGroupBox7";
-            this.bunifuGroupBox7.Size = new System.Drawing.Size(827, 723);
-            this.bunifuGroupBox7.TabIndex = 19;
-            this.bunifuGroupBox7.TabStop = false;
-            this.bunifuGroupBox7.Text = "Datos del Tutor";
-            this.bunifuGroupBox7.Enter += new System.EventHandler(this.bunifuGroupBox7_Enter);
+            this.grbNuevoTutor.BackColor = System.Drawing.Color.White;
+            this.grbNuevoTutor.BorderColor = System.Drawing.Color.Silver;
+            this.grbNuevoTutor.BorderRadius = 10;
+            this.grbNuevoTutor.BorderThickness = 1;
+            this.grbNuevoTutor.Controls.Add(this.label28);
+            this.grbNuevoTutor.Controls.Add(this.bunifuTextBox16);
+            this.grbNuevoTutor.Controls.Add(this.comboBox3);
+            this.grbNuevoTutor.Controls.Add(this.label24);
+            this.grbNuevoTutor.Controls.Add(this.bunifuTextBox6);
+            this.grbNuevoTutor.Controls.Add(this.label11);
+            this.grbNuevoTutor.Controls.Add(this.comboBox2);
+            this.grbNuevoTutor.Controls.Add(this.label17);
+            this.grbNuevoTutor.Controls.Add(this.label18);
+            this.grbNuevoTutor.Controls.Add(this.bunifuTextBox7);
+            this.grbNuevoTutor.Controls.Add(this.label19);
+            this.grbNuevoTutor.Controls.Add(this.bunifuTextBox8);
+            this.grbNuevoTutor.Controls.Add(this.bunifuGroupBox8);
+            this.grbNuevoTutor.Controls.Add(this.label20);
+            this.grbNuevoTutor.Controls.Add(this.bunifuTextBox9);
+            this.grbNuevoTutor.Controls.Add(this.label21);
+            this.grbNuevoTutor.Controls.Add(this.bunifuDatePicker3);
+            this.grbNuevoTutor.Controls.Add(this.lblParEstApellidoP);
+            this.grbNuevoTutor.Controls.Add(this.bunifuTextBox10);
+            this.grbNuevoTutor.Controls.Add(this.label22);
+            this.grbNuevoTutor.Controls.Add(this.bunifuTextBox11);
+            this.grbNuevoTutor.Controls.Add(this.label23);
+            this.grbNuevoTutor.Controls.Add(this.bunifuTextBox12);
+            this.grbNuevoTutor.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbNuevoTutor.ForeColor = System.Drawing.Color.SlateGray;
+            this.grbNuevoTutor.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.grbNuevoTutor.LabelIndent = 10;
+            this.grbNuevoTutor.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
+            this.grbNuevoTutor.Location = new System.Drawing.Point(18, 1163);
+            this.grbNuevoTutor.Name = "grbNuevoTutor";
+            this.grbNuevoTutor.Size = new System.Drawing.Size(827, 723);
+            this.grbNuevoTutor.TabIndex = 19;
+            this.grbNuevoTutor.TabStop = false;
+            this.grbNuevoTutor.Text = "Datos del Tutor";
+            this.grbNuevoTutor.Enter += new System.EventHandler(this.bunifuGroupBox7_Enter);
             // 
             // label28
             // 
@@ -3029,7 +3032,7 @@ namespace Capa_Presentacion
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.bunifuButton2);
-            this.Controls.Add(this.bunifuGroupBox7);
+            this.Controls.Add(this.grbNuevoTutor);
             this.Controls.Add(this.bunifuGroupBox1);
             this.Controls.Add(this.grpbDatosDelEstudiante);
             this.Name = "Matricular";
@@ -3038,10 +3041,10 @@ namespace Capa_Presentacion
             this.grpbDatosDelEstudiante.PerformLayout();
             this.bunifuGroupBox10.ResumeLayout(false);
             this.bunifuGroupBox10.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.grbTutorExistente.ResumeLayout(false);
             this.bunifuGroupBox6.ResumeLayout(false);
             this.bunifuGroupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgEstPerfil)).EndInit();
             this.bunifuGroupBox1.ResumeLayout(false);
             this.bunifuGroupBox1.PerformLayout();
             this.bunifuGroupBox5.ResumeLayout(false);
@@ -3049,8 +3052,8 @@ namespace Capa_Presentacion
             this.bunifuGroupBox3.PerformLayout();
             this.bunifuGroupBox2.ResumeLayout(false);
             this.bunifuGroupBox2.PerformLayout();
-            this.bunifuGroupBox7.ResumeLayout(false);
-            this.bunifuGroupBox7.PerformLayout();
+            this.grbNuevoTutor.ResumeLayout(false);
+            this.grbNuevoTutor.PerformLayout();
             this.bunifuGroupBox8.ResumeLayout(false);
             this.bunifuGroupBox8.PerformLayout();
             this.ResumeLayout(false);
@@ -3065,7 +3068,7 @@ namespace Capa_Presentacion
         private Bunifu.UI.WinForms.BunifuLabel lblFemenino;
         private Bunifu.UI.WinForms.BunifuLabel lblMasculino;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnUploadImage;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
+        private Bunifu.UI.WinForms.BunifuPictureBox imgEstPerfil;
         private System.Windows.Forms.Label lblParEstFechaNac;
         private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePicker1;
         private System.Windows.Forms.Label lblParEstApellido;
@@ -3105,11 +3108,11 @@ namespace Capa_Presentacion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox5;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbTutorExistente;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox7;
+        private Bunifu.UI.WinForms.BunifuGroupBox grbNuevoTutor;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -3136,8 +3139,8 @@ namespace Capa_Presentacion
         private Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox10;
         private Bunifu.UI.WinForms.BunifuLabel lblNuevoNo;
         private Bunifu.UI.WinForms.BunifuLabel lblNuevoSi;
-        private Bunifu.UI.WinForms.BunifuRadioButton bunifuRadioButton16;
-        private Bunifu.UI.WinForms.BunifuRadioButton bunifuRadioButton10;
+        private Bunifu.UI.WinForms.BunifuRadioButton rdbTutorNuevoNo;
+        private Bunifu.UI.WinForms.BunifuRadioButton rdbTutorNuevoSi;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label24;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;

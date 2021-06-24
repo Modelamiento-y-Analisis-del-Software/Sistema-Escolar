@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaPresentacion;
 using KimtToo.VisualReactive;
 
-namespace Capa_Presentacion
+namespace CapaPresentacion
 {
     public partial class frmSubMenu : UserControl
     {
