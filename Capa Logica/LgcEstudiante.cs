@@ -21,5 +21,6 @@ namespace CapaLogica
         {
             return SqlEstudiante.Instancia.BuscarEstudiante(dni);
         }
+
     }
 }

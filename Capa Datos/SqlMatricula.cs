@@ -28,17 +28,24 @@ namespace CapaDatos
                 var dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    var e = new Matricula
+                    var e = new Estudiante
                     {
-                        Id = Convert.ToInt32(dr["IdEstudiante"]),
+                        Id = Convert.ToInt32(dr["IdEstudiante"])
+                    };
+
+                    var m = new Matricula
+                    {
+                        Id = Convert.ToInt32(dr["IdMatricula"]),
                         GradoEscolar = Convert.ToInt32(dr["Dni"]),
                         Seccion = dr["Seccion"].ToString().ElementAt(0),
                         Turno = dr["Turno"].ToString().ElementAt(0),
                         EscuelaProcedencia = dr["EscuelaProcedencia"].ToString(),
                         Estado = Convert.ToBoolean(dr["Nombres"]),
-                    
                     };
-                    lista.Add(e);
+
+                    m.Estudiante = e;
+
+                    lista.Add(m);
                 }
             }
             catch (Exception e)

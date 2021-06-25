@@ -78,8 +78,6 @@ namespace CapaPresentacion
                 Telefono = txtEstTelefono.Text.ToString().Trim(),
             };
 
-            
-
             if (rdbTutorNuevoSi.Checked)
             {
                 Tutor t = new Tutor
@@ -94,10 +92,7 @@ namespace CapaPresentacion
                     Ocupacion = txtTutOcupacion.Text.ToString().Trim(),
                     Telefono = txtTutTelefono.Text.ToString().Trim(),
                 };
-
             }
-
-
         }
     }
 }
