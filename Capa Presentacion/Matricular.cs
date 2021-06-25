@@ -74,7 +74,11 @@ namespace CapaPresentacion
                 Sexo = rdbEstMasculino.Checked ? 'M' : 'F',
                 FecNacimiento = dpkEstFecNacimiento.Value,
                 Direccion = txtEstDireccion.Text.ToString().Trim(),
+                Email = txtEstEmail.Text.ToString().Trim(),
+                Telefono = txtEstTelefono.Text.ToString().Trim(),
             };
+
+            
 
             if (rdbTutorNuevoSi.Checked)
             {
@@ -85,7 +89,10 @@ namespace CapaPresentacion
                     ApPaterno = txtTutApPaterno.Text.ToString().Trim(),
                     ApMaterno = txtTutApMaterno.Text.ToString().Trim(),
                     Sexo = rdbTutMasculino.Checked ? 'M' : 'F',
-                    FecNacimiento = dpkTutFecNacimiento
+                    FecNacimiento = dpkTutFecNacimiento.Value,
+                    Direccion = txtTutDireccion.Text.ToString().Trim(),
+                    Ocupacion = txtTutOcupacion.Text.ToString().Trim(),
+                    Telefono = txtTutTelefono.Text.ToString().Trim(),
                 };
 
             }
