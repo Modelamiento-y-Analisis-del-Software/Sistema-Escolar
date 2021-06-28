@@ -19,5 +19,14 @@ namespace CapaEntidad
         public string Email { get; set; }
         public string Telefono { get; set; }
 
+        public string ApPaternoNombres()
+        {
+            return ApPaterno + Nombres;
+        }
+
+        public int Edad()
+        {
+            return DateTime.Today.Year - FecNacimiento.Year; 
+        }
     }
 }

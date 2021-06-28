@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Capa_Presentacion
+namespace CapaPresentacion
 {
-    public partial class Mantenedordocente : Form
+    public partial class EstudianteDetalle : UserControl
     {
-        public Mantenedordocente()
+        public EstudianteDetalle()
         {
             InitializeComponent();
         }

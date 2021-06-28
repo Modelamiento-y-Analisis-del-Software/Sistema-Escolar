@@ -16,5 +16,17 @@ namespace CapaLogica
         {
             return SqlTutor.Instancia.ListarTutores();
         }
+
+        public List<Tutor> SearchTutor(string dni)
+        {
+            var lista = SqlTutor.Instancia.ListarTutores();
+            List<Tutor> encontrados = new List<Tutor>();
+            foreach(var e in lista)
+            {
+                if (e.Dni.StartsWith(dni))
+                    encontrados.Add(e);
+            }
+            return encontrados;
+        }
     }
 }
