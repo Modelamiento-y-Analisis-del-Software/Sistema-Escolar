@@ -95,6 +95,12 @@ namespace CapaPresentacion
             this.btnEstDeshabilitar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtSearchEst = new Bunifu.UI.WinForms.BunifuTextBox();
             this.dgvEstudiantes = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apPaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apMaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estudianteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlTituloGeneral = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblEstGeneral = new System.Windows.Forms.Label();
             this.tpgEstDetalles = new System.Windows.Forms.TabPage();
@@ -104,12 +110,6 @@ namespace CapaPresentacion
             this.MouseDetect = new System.Windows.Forms.Timer(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.estudianteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apPaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apMaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uscMatricular = new CapaPresentacion.Matricular();
             this.createTutor1 = new CapaPresentacion.CreateTutor();
             this.frmSubMenu1 = new CapaPresentacion.frmSubMenu();
@@ -133,10 +133,10 @@ namespace CapaPresentacion
             this.tpgEstGeneral.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).BeginInit();
             this.pnlTituloGeneral.SuspendLayout();
             this.tpgEstDetalles.SuspendLayout();
             this.pnlEstDetalleTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMainMenu
@@ -717,10 +717,10 @@ namespace CapaPresentacion
             this.pagCentral.Location = new System.Drawing.Point(255, 0);
             this.pagCentral.Multiline = true;
             this.pagCentral.Name = "pagCentral";
-            this.pagCentral.Page = this.tpgEstGeneral;
-            this.pagCentral.PageIndex = 4;
-            this.pagCentral.PageName = "tpgEstGeneral";
-            this.pagCentral.PageTitle = "EstGeneral";
+            this.pagCentral.Page = this.tpgMatricular;
+            this.pagCentral.PageIndex = 1;
+            this.pagCentral.PageName = "tpgMatricular";
+            this.pagCentral.PageTitle = "Matricular";
             this.pagCentral.SelectedIndex = 0;
             this.pagCentral.Size = new System.Drawing.Size(1009, 749);
             this.pagCentral.TabIndex = 5;
@@ -767,7 +767,8 @@ namespace CapaPresentacion
             // 
             // bunifuPanel2
             // 
-            this.bunifuPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.bunifuPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPanel2.AutoScroll = true;
             this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
@@ -1638,6 +1639,45 @@ namespace CapaPresentacion
             this.dgvEstudiantes.TabIndex = 0;
             this.dgvEstudiantes.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dniDataGridViewTextBoxColumn
+            // 
+            this.dniDataGridViewTextBoxColumn.DataPropertyName = "Dni";
+            this.dniDataGridViewTextBoxColumn.HeaderText = "Dni";
+            this.dniDataGridViewTextBoxColumn.Name = "dniDataGridViewTextBoxColumn";
+            this.dniDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombresDataGridViewTextBoxColumn
+            // 
+            this.nombresDataGridViewTextBoxColumn.DataPropertyName = "Nombres";
+            this.nombresDataGridViewTextBoxColumn.HeaderText = "Nombres";
+            this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
+            this.nombresDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // apPaternoDataGridViewTextBoxColumn
+            // 
+            this.apPaternoDataGridViewTextBoxColumn.DataPropertyName = "ApPaterno";
+            this.apPaternoDataGridViewTextBoxColumn.HeaderText = "ApPaterno";
+            this.apPaternoDataGridViewTextBoxColumn.Name = "apPaternoDataGridViewTextBoxColumn";
+            this.apPaternoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // apMaternoDataGridViewTextBoxColumn
+            // 
+            this.apMaternoDataGridViewTextBoxColumn.DataPropertyName = "ApMaterno";
+            this.apMaternoDataGridViewTextBoxColumn.HeaderText = "ApMaterno";
+            this.apMaternoDataGridViewTextBoxColumn.Name = "apMaternoDataGridViewTextBoxColumn";
+            this.apMaternoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // estudianteBindingSource
+            // 
+            this.estudianteBindingSource.DataSource = typeof(CapaEntidad.Estudiante);
+            // 
             // pnlTituloGeneral
             // 
             this.pnlTituloGeneral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1779,55 +1819,18 @@ namespace CapaPresentacion
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // estudianteBindingSource
-            // 
-            this.estudianteBindingSource.DataSource = typeof(CapaEntidad.Estudiante);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dniDataGridViewTextBoxColumn
-            // 
-            this.dniDataGridViewTextBoxColumn.DataPropertyName = "Dni";
-            this.dniDataGridViewTextBoxColumn.HeaderText = "Dni";
-            this.dniDataGridViewTextBoxColumn.Name = "dniDataGridViewTextBoxColumn";
-            this.dniDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombresDataGridViewTextBoxColumn
-            // 
-            this.nombresDataGridViewTextBoxColumn.DataPropertyName = "Nombres";
-            this.nombresDataGridViewTextBoxColumn.HeaderText = "Nombres";
-            this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
-            this.nombresDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // apPaternoDataGridViewTextBoxColumn
-            // 
-            this.apPaternoDataGridViewTextBoxColumn.DataPropertyName = "ApPaterno";
-            this.apPaternoDataGridViewTextBoxColumn.HeaderText = "ApPaterno";
-            this.apPaternoDataGridViewTextBoxColumn.Name = "apPaternoDataGridViewTextBoxColumn";
-            this.apPaternoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // apMaternoDataGridViewTextBoxColumn
-            // 
-            this.apMaternoDataGridViewTextBoxColumn.DataPropertyName = "ApMaterno";
-            this.apMaternoDataGridViewTextBoxColumn.HeaderText = "ApMaterno";
-            this.apMaternoDataGridViewTextBoxColumn.Name = "apMaternoDataGridViewTextBoxColumn";
-            this.apMaternoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // uscMatricular
             // 
+            this.uscMatricular.AutoScroll = true;
             this.uscMatricular.BackColor = System.Drawing.Color.White;
             this.menuTransition.SetDecoration(this.uscMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.uscMatricular.Location = new System.Drawing.Point(16, 20);
+            this.uscMatricular.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uscMatricular.Location = new System.Drawing.Point(0, 0);
             this.uscMatricular.MainWindow = null;
             this.uscMatricular.Margin = new System.Windows.Forms.Padding(0);
             this.uscMatricular.MBTutor = null;
             this.uscMatricular.Name = "uscMatricular";
-            this.uscMatricular.Size = new System.Drawing.Size(863, 1921);
+            this.uscMatricular.Size = new System.Drawing.Size(931, 608);
             this.uscMatricular.TabIndex = 0;
             // 
             // createTutor1
@@ -1838,7 +1841,7 @@ namespace CapaPresentacion
             this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.createTutor1.Location = new System.Drawing.Point(0, 15);
             this.createTutor1.Name = "createTutor1";
-            this.createTutor1.Size = new System.Drawing.Size(576, 743);
+            this.createTutor1.Size = new System.Drawing.Size(559, 743);
             this.createTutor1.TabIndex = 0;
             // 
             // frmSubMenu1
@@ -1888,12 +1891,12 @@ namespace CapaPresentacion
             this.tpgEstGeneral.ResumeLayout(false);
             this.bunifuPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).EndInit();
             this.pnlTituloGeneral.ResumeLayout(false);
             this.pnlTituloGeneral.PerformLayout();
             this.tpgEstDetalles.ResumeLayout(false);
             this.pnlEstDetalleTitulo.ResumeLayout(false);
             this.pnlEstDetalleTitulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

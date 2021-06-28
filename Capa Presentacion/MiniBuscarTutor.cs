@@ -14,7 +14,7 @@ namespace CapaPresentacion
 {
     public partial class MiniBuscarTutor : Form
     {
-        Tutor EntidadTutor { get; set; }
+        public Tutor EntidadTutor { get; set; }
         Matricular uscMatricular;
 
         public MiniBuscarTutor()

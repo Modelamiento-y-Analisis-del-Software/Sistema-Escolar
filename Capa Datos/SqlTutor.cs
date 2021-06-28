@@ -53,5 +53,48 @@ namespace CapaDatos
             finally { cmd?.Connection.Close(); }
             return lista;
         }
+        public bool InsertarTutor(Tutor t, Estudiante e, string parentesco)
+        {
+            bool exito = false;
+            SqlCommand cmd = null;
+
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+
+                cmd = new SqlCommand("uspInsertarTutor", cn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                cmd.Parameters.AddWithValue("@Dni", t.Dni);
+                cmd.Parameters.AddWithValue("@Nombres", t.Nombres);
+                cmd.Parameters.AddWithValue("@ApPaterno", t.ApPaterno);
+                cmd.Parameters.AddWithValue("@ApMaterno", t.ApMaterno);
+                cmd.Parameters.AddWithValue("@Sexo", t.Sexo);
+                cmd.Parameters.AddWithValue("@FecNacimiento", t.FecNacimiento);
+                cmd.Parameters.AddWithValue("@Direccion", t.Direccion);
+                cmd.Parameters.AddWithValue("@Email", t.Email);
+                cmd.Parameters.AddWithValue("@Telefono", t.Telefono);
+                cmd.Parameters.AddWithValue("@Ocupacion", t.Ocupacion);
+                cmd.Parameters.AddWithValue("@NvAcademico", t.NvAcademico);
+                cmd.Parameters.AddWithValue("@IdEstudiante", e.Id);
+                cmd.Parameters.AddWithValue("@parentesco", parentesco);
+                cn.Open();
+                var i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    exito = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+            finally { cmd?.Connection.Close(); }
+            return exito;
+        }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,7 +61,8 @@ namespace CapaDatos
         {
             var exito = false;
             SqlCommand cmd = null;
-
+            ImageConverter converter = new ImageConverter();
+            var imgbytes = (byte[])converter.ConvertTo(m.Estudnte.Foto, typeof(byte[]));
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
@@ -79,6 +81,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@Direccion", m.Estudnte.Direccion);
                 cmd.Parameters.AddWithValue("@Email", m.Estudnte.Email);
                 cmd.Parameters.AddWithValue("@Telefono", m.Estudnte.Telefono);
+                cmd.Parameters.AddWithValue("@Foto", imgbytes);
                 cmd.Parameters.AddWithValue("@GradoEscolar", m.GradoEscolar);
                 cmd.Parameters.AddWithValue("@Seccion", m.Seccion);
                 cmd.Parameters.AddWithValue("@Turno", m.Turno);

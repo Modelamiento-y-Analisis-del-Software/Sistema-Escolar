@@ -28,5 +28,10 @@ namespace CapaLogica
             }
             return encontrados;
         }
+        
+        public bool InsertarTutor(Tutor t, Estudiante e, string parentesco)
+        {
+            return SqlTutor.Instancia.InsertarTutor(t, e, parentesco);
+        }
     }
 }

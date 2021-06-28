@@ -23,6 +23,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             InitialState();
+            CleanScreen();
         }
 
         private void InitialState()
@@ -73,6 +74,7 @@ namespace CapaPresentacion
                 Direccion = txtEstDireccion.Text.ToString().Trim(),
                 Email = txtEstEmail.Text.ToString().Trim(),
                 Telefono = txtEstTelefono.Text.ToString().Trim(),
+                Foto = imgEstPerfil.Image,
             };
 
             Matricula m = new Matricula
@@ -95,9 +97,13 @@ namespace CapaPresentacion
             };
 
             LgcMatricula.Instancia.InsertarMatricula(m);
+            e.Id = LgcEstudiante.Instancia.BuscarEstudiante(e.Dni).First().Id;
+            Tutor t;
+            string parentesco;
 
+            if (rdbTutorNuevoSi.Checked)
             {
-                Tutor t = new Tutor
+                t = new Tutor
                 {
                     Dni = txtTutDni.Text.ToString().Trim(),
                     Nombres = txtTutNombres.Text.ToString().Trim(),
@@ -106,22 +112,62 @@ namespace CapaPresentacion
                     Sexo = rdbTutMasculino.Checked ? 'M' : 'F',
                     FecNacimiento = dpkTutFecNacimiento.Value,
                     Direccion = txtTutDireccion.Text.ToString().Trim(),
-                    Ocupacion = txtTutOcupacion.Text.ToString().Trim(),
+                    Email = txtTutEmail.Text.ToString().Trim(),
                     Telefono = txtTutTelefono.Text.ToString().Trim(),
+                    Ocupacion = txtTutOcupacion.Text.ToString().Trim(),
+                    NvAcademico = cmbTutGrado.Text.ToString().Trim()
                 };
-            MessageBox.Show("Exito al guardar");
+                parentesco = CmbParentescoNew.Text.ToString().Trim();
             }
+            else
+            {
+                t = MBTutor.EntidadTutor;
+                parentesco = cmbTutParentescoExist.Text.ToString().Trim();
+            }
+
+            LgcTutor.Instancia.InsertarTutor(t, e, parentesco);
+            MessageBox.Show("Exito al guardar");
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             RealizarMatricula();
+            CleanScreen();
         }
 
         private void btnTutSearch_Click(object sender, EventArgs e)
         {
             MBTutor =  new MiniBuscarTutor(this);
             MBTutor.Show();
+        }
+
+        public void CleanScreen()
+        {
+            txtEstDni.Text = "";
+            txtEstNombre.Text = "";
+            txtEstApPaterno.Text = "";
+            txtEstApMaterno.Text = "";
+            rdbEstMasculino.Checked = true;
+            txtEstDireccion.Text = "";
+            txtEstEmail.Text = "";
+            txtEstTelefono.Text = "";
+
+            rdbGrado1.Checked = true;
+            cbbSeccion.SelectedIndex = 0;
+            rdbMañana.Checked = true;
+            txtEscuelaProc.Text = "";
+
+            txtTutDni.Text = "";
+            txtTutNombres.Text = "";
+            txtTutApPaterno.Text = "";
+            txtTutApMaterno.Text = "";
+            rdbTutMasculino.Checked = true;
+            txtTutDireccion.Text = "";
+            txtTutEmail.Text = "";
+            txtTutTelefono.Text = "";
+            txtTutOcupacion.Text = "";
+            cmbTutGrado.SelectedIndex = 0;
+            CmbParentescoNew.SelectedIndex = 0;
         }
     }
 }

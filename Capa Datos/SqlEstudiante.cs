@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CapaEntidad;
+using System.Drawing;
+using System.IO;
 
 namespace CapaDatos
 {
@@ -28,9 +30,10 @@ namespace CapaDatos
                 var dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
+                    var ms = new MemoryStream((byte[])dr["Foto"]);
                     var e = new Estudiante
                     {
-                        Id = Convert.ToInt32(dr["IdEstudiante"]),
+                    Id = Convert.ToInt32(dr["IdEstudiante"]),
                         Dni = dr["Dni"].ToString(),
                         Nombres = dr["Nombres"].ToString(),
                         ApPaterno = dr["ApPaterno"].ToString(),
@@ -39,7 +42,8 @@ namespace CapaDatos
                         FecNacimiento = Convert.ToDateTime(dr["FecNacimiento"]),
                         Direccion = dr["Direccion"].ToString(),
                         Email = dr["Email"].ToString(),
-                        Telefono = dr["Telefono"].ToString()
+                        Telefono = dr["Telefono"].ToString(),
+                        Foto = Image.FromStream(ms)
                     };
                     lista.Add(e);
                 }
@@ -70,6 +74,7 @@ namespace CapaDatos
                 var dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
+                    var ms = new MemoryStream((byte[])dr["Foto"]);
                     var e = new Estudiante
                     {
                         Id = Convert.ToInt32(dr["IdEstudiante"]),
@@ -81,7 +86,8 @@ namespace CapaDatos
                         FecNacimiento = Convert.ToDateTime(dr["FecNacimiento"]),
                         Direccion = dr["Direccion"].ToString(),
                         Email = dr["Email"].ToString(),
-                        Telefono = dr["Telefono"].ToString()
+                        Telefono = dr["Telefono"].ToString(),
+                        Foto = Image.FromStream(ms),
                     };
                     lista.Add(e);
                 }
