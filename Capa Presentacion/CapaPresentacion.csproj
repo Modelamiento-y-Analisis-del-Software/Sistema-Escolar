@@ -167,6 +167,12 @@
     <Compile Include="Coreplanificacioncurricular.Designer.cs">
       <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstudianteDetalle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EstudianteDetalle.Designer.cs">
+      <DependentUpon>EstudianteDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Matricular.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -197,6 +203,12 @@
     <Compile Include="Mantenedordocente.Designer.cs">
       <DependentUpon>Mantenedordocente.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiniBuscarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniBuscarTutor.Designer.cs">
+      <DependentUpon>MiniBuscarTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,6 +229,9 @@
     <EmbeddedResource Include="Coreplanificacioncurricular.resx">
       <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EstudianteDetalle.resx">
+      <DependentUpon>EstudianteDetalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Matricular.resx">
       <DependentUpon>Matricular.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +247,9 @@
     <EmbeddedResource Include="Mantenedordocente.resx">
       <DependentUpon>Mantenedordocente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MiniBuscarTutor.resx">
+      <DependentUpon>MiniBuscarTutor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +263,8 @@
       <DependentUpon>Silabo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaEntidad.Estudiante.datasource" />
+    <None Include="Properties\DataSources\CapaEntidad.Tutor.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

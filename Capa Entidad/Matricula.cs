@@ -9,7 +9,7 @@ namespace CapaEntidad
     public class Matricula
     {
         public int Id { get; set; }
-        public Estudiante Estudiante { get; set; }
+        public Estudiante Estudnte { get; set; }
         public int GradoEscolar { get; set; }
         public char Seccion { get; set; }
         public char Turno { get; set; }

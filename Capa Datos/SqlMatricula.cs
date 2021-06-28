@@ -43,7 +43,7 @@ namespace CapaDatos
                         Estado = Convert.ToBoolean(dr["Nombres"]),
                     };
 
-                    m.Estudiante = e;
+                    m.Estudnte = e;
 
                     lista.Add(m);
                 }
@@ -56,5 +56,50 @@ namespace CapaDatos
             return lista;
         }
 
+        public bool InsertarMatricula(Matricula m)
+        {
+            var exito = false;
+            SqlCommand cmd = null;
+
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+
+                cmd = new SqlCommand("uspMatricular", cn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                cmd.Parameters.AddWithValue("@Dni", m.Estudnte.Dni);
+                cmd.Parameters.AddWithValue("@Nombres", m.Estudnte.Nombres);
+                cmd.Parameters.AddWithValue("@ApPaterno", m.Estudnte.ApPaterno);
+                cmd.Parameters.AddWithValue("@ApMaterno", m.Estudnte.ApMaterno);
+                cmd.Parameters.AddWithValue("@Sexo", m.Estudnte.Sexo);
+                cmd.Parameters.AddWithValue("@FecNacimiento", m.Estudnte.FecNacimiento);
+                cmd.Parameters.AddWithValue("@Direccion", m.Estudnte.Direccion);
+                cmd.Parameters.AddWithValue("@Email", m.Estudnte.Email);
+                cmd.Parameters.AddWithValue("@Telefono", m.Estudnte.Telefono);
+                cmd.Parameters.AddWithValue("@GradoEscolar", m.GradoEscolar);
+                cmd.Parameters.AddWithValue("@Seccion", m.Seccion);
+                cmd.Parameters.AddWithValue("@Turno", m.Turno);
+                cmd.Parameters.AddWithValue("@EscuelaProc", m.EscuelaProcedencia);
+                cmd.Parameters.AddWithValue("@FecInscripcion", m.FecInscripcion);
+                cmd.Parameters.AddWithValue("@Estado", m.Estado);
+                cn.Open();
+                var i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    exito = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+            finally { cmd?.Connection.Close(); }
+            return exito;
+        }
     }
 }

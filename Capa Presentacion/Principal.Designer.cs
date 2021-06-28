@@ -72,34 +72,44 @@ namespace CapaPresentacion
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pagCentral = new Bunifu.UI.WinForms.BunifuPages();
-            this.tpagVacio = new System.Windows.Forms.TabPage();
-            this.tpagMatricular = new System.Windows.Forms.TabPage();
+            this.tpgVacio = new System.Windows.Forms.TabPage();
+            this.tpgMatricular = new System.Windows.Forms.TabPage();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlTCEstudiante = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblTCEstudiante = new System.Windows.Forms.Label();
-            this.tpagTutGeneral = new System.Windows.Forms.TabPage();
+            this.tpgTutGeneral = new System.Windows.Forms.TabPage();
             this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.dgvTutor = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.tpagRegTutor = new System.Windows.Forms.TabPage();
+            this.tpgRegTutor = new System.Windows.Forms.TabPage();
             this.bunifuPanel7 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.tpagEstGeneral = new System.Windows.Forms.TabPage();
+            this.tpgEstGeneral = new System.Windows.Forms.TabPage();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnRefreshEst = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnDeshabilitar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnEstDetalle = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnEstRefresh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnEstDeshabilitar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtSearchEst = new Bunifu.UI.WinForms.BunifuTextBox();
             this.dgvEstudiantes = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.pnlTituloGeneral = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblEstGeneral = new System.Windows.Forms.Label();
+            this.tpgEstDetalles = new System.Windows.Forms.TabPage();
+            this.bunifuPanel8 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pnlEstDetalleTitulo = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lblEstDetalleTitulo = new System.Windows.Forms.Label();
             this.MouseDetect = new System.Windows.Forms.Timer(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.estudianteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apPaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apMaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uscMatricular = new CapaPresentacion.Matricular();
             this.createTutor1 = new CapaPresentacion.CreateTutor();
             this.frmSubMenu1 = new CapaPresentacion.frmSubMenu();
@@ -110,20 +120,23 @@ namespace CapaPresentacion
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pagCentral.SuspendLayout();
-            this.tpagMatricular.SuspendLayout();
+            this.tpgMatricular.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.pnlTCEstudiante.SuspendLayout();
-            this.tpagTutGeneral.SuspendLayout();
+            this.tpgTutGeneral.SuspendLayout();
             this.bunifuPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTutor)).BeginInit();
             this.bunifuPanel4.SuspendLayout();
-            this.tpagRegTutor.SuspendLayout();
+            this.tpgRegTutor.SuspendLayout();
             this.bunifuPanel7.SuspendLayout();
             this.bunifuPanel6.SuspendLayout();
-            this.tpagEstGeneral.SuspendLayout();
+            this.tpgEstGeneral.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             this.pnlTituloGeneral.SuspendLayout();
+            this.tpgEstDetalles.SuspendLayout();
+            this.pnlEstDetalleTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMainMenu
@@ -693,20 +706,21 @@ namespace CapaPresentacion
             // 
             this.pagCentral.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.pagCentral.AllowTransitions = false;
-            this.pagCentral.Controls.Add(this.tpagVacio);
-            this.pagCentral.Controls.Add(this.tpagMatricular);
-            this.pagCentral.Controls.Add(this.tpagTutGeneral);
-            this.pagCentral.Controls.Add(this.tpagRegTutor);
-            this.pagCentral.Controls.Add(this.tpagEstGeneral);
+            this.pagCentral.Controls.Add(this.tpgVacio);
+            this.pagCentral.Controls.Add(this.tpgMatricular);
+            this.pagCentral.Controls.Add(this.tpgTutGeneral);
+            this.pagCentral.Controls.Add(this.tpgRegTutor);
+            this.pagCentral.Controls.Add(this.tpgEstGeneral);
+            this.pagCentral.Controls.Add(this.tpgEstDetalles);
             this.menuTransition.SetDecoration(this.pagCentral, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pagCentral.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pagCentral.Location = new System.Drawing.Point(255, 0);
             this.pagCentral.Multiline = true;
             this.pagCentral.Name = "pagCentral";
-            this.pagCentral.Page = this.tpagMatricular;
-            this.pagCentral.PageIndex = 1;
-            this.pagCentral.PageName = "tpagMatricular";
-            this.pagCentral.PageTitle = "Matricular";
+            this.pagCentral.Page = this.tpgEstGeneral;
+            this.pagCentral.PageIndex = 4;
+            this.pagCentral.PageName = "tpgEstGeneral";
+            this.pagCentral.PageTitle = "EstGeneral";
             this.pagCentral.SelectedIndex = 0;
             this.pagCentral.Size = new System.Drawing.Size(1009, 749);
             this.pagCentral.TabIndex = 5;
@@ -728,31 +742,33 @@ namespace CapaPresentacion
             this.pagCentral.Transition = animation2;
             this.pagCentral.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
-            // tpagVacio
+            // tpgVacio
             // 
-            this.tpagVacio.BackColor = System.Drawing.Color.Transparent;
-            this.menuTransition.SetDecoration(this.tpagVacio, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.tpagVacio.Location = new System.Drawing.Point(4, 4);
-            this.tpagVacio.Name = "tpagVacio";
-            this.tpagVacio.Size = new System.Drawing.Size(1001, 723);
-            this.tpagVacio.TabIndex = 2;
-            this.tpagVacio.Text = "Vacio";
+            this.tpgVacio.BackColor = System.Drawing.Color.Transparent;
+            this.menuTransition.SetDecoration(this.tpgVacio, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.tpgVacio.Location = new System.Drawing.Point(4, 4);
+            this.tpgVacio.Name = "tpgVacio";
+            this.tpgVacio.Size = new System.Drawing.Size(1001, 723);
+            this.tpgVacio.TabIndex = 2;
+            this.tpgVacio.Text = "Vacio";
             // 
-            // tpagMatricular
+            // tpgMatricular
             // 
-            this.tpagMatricular.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tpagMatricular.Controls.Add(this.bunifuPanel2);
-            this.tpagMatricular.Controls.Add(this.pnlTCEstudiante);
-            this.menuTransition.SetDecoration(this.tpagMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.tpagMatricular.Location = new System.Drawing.Point(4, 4);
-            this.tpagMatricular.Name = "tpagMatricular";
-            this.tpagMatricular.Padding = new System.Windows.Forms.Padding(3);
-            this.tpagMatricular.Size = new System.Drawing.Size(1001, 723);
-            this.tpagMatricular.TabIndex = 1;
-            this.tpagMatricular.Text = "Matricular";
+            this.tpgMatricular.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tpgMatricular.Controls.Add(this.bunifuPanel2);
+            this.tpgMatricular.Controls.Add(this.pnlTCEstudiante);
+            this.menuTransition.SetDecoration(this.tpgMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.tpgMatricular.Location = new System.Drawing.Point(4, 4);
+            this.tpgMatricular.Name = "tpgMatricular";
+            this.tpgMatricular.Padding = new System.Windows.Forms.Padding(3);
+            this.tpgMatricular.Size = new System.Drawing.Size(1001, 723);
+            this.tpgMatricular.TabIndex = 1;
+            this.tpgMatricular.Text = "Matricular";
             // 
             // bunifuPanel2
             // 
+            this.bunifuPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPanel2.AutoScroll = true;
             this.bunifuPanel2.BackgroundColor = System.Drawing.Color.White;
             this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
@@ -799,17 +815,17 @@ namespace CapaPresentacion
             this.lblTCEstudiante.TabIndex = 0;
             this.lblTCEstudiante.Text = "Nuevo Estudiante";
             // 
-            // tpagTutGeneral
+            // tpgTutGeneral
             // 
-            this.tpagTutGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tpagTutGeneral.Controls.Add(this.bunifuPanel5);
-            this.tpagTutGeneral.Controls.Add(this.bunifuPanel4);
-            this.menuTransition.SetDecoration(this.tpagTutGeneral, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.tpagTutGeneral.Location = new System.Drawing.Point(4, 4);
-            this.tpagTutGeneral.Name = "tpagTutGeneral";
-            this.tpagTutGeneral.Size = new System.Drawing.Size(1001, 723);
-            this.tpagTutGeneral.TabIndex = 3;
-            this.tpagTutGeneral.Text = "TutGeneral";
+            this.tpgTutGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tpgTutGeneral.Controls.Add(this.bunifuPanel5);
+            this.tpgTutGeneral.Controls.Add(this.bunifuPanel4);
+            this.menuTransition.SetDecoration(this.tpgTutGeneral, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.tpgTutGeneral.Location = new System.Drawing.Point(4, 4);
+            this.tpgTutGeneral.Name = "tpgTutGeneral";
+            this.tpgTutGeneral.Size = new System.Drawing.Size(1001, 723);
+            this.tpgTutGeneral.TabIndex = 3;
+            this.tpgTutGeneral.Text = "TutGeneral";
             // 
             // bunifuPanel5
             // 
@@ -1098,17 +1114,17 @@ namespace CapaPresentacion
             this.label2.TabIndex = 0;
             this.label2.Text = "Tutores";
             // 
-            // tpagRegTutor
+            // tpgRegTutor
             // 
-            this.tpagRegTutor.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tpagRegTutor.Controls.Add(this.bunifuPanel7);
-            this.tpagRegTutor.Controls.Add(this.bunifuPanel6);
-            this.menuTransition.SetDecoration(this.tpagRegTutor, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.tpagRegTutor.Location = new System.Drawing.Point(4, 4);
-            this.tpagRegTutor.Name = "tpagRegTutor";
-            this.tpagRegTutor.Size = new System.Drawing.Size(1001, 723);
-            this.tpagRegTutor.TabIndex = 4;
-            this.tpagRegTutor.Text = "TutRegistrar";
+            this.tpgRegTutor.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tpgRegTutor.Controls.Add(this.bunifuPanel7);
+            this.tpgRegTutor.Controls.Add(this.bunifuPanel6);
+            this.menuTransition.SetDecoration(this.tpgRegTutor, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.tpgRegTutor.Location = new System.Drawing.Point(4, 4);
+            this.tpgRegTutor.Name = "tpgRegTutor";
+            this.tpgRegTutor.Size = new System.Drawing.Size(1001, 723);
+            this.tpgRegTutor.TabIndex = 4;
+            this.tpgRegTutor.Text = "TutRegistrar";
             // 
             // bunifuPanel7
             // 
@@ -1161,18 +1177,18 @@ namespace CapaPresentacion
             this.label3.TabIndex = 0;
             this.label3.Text = "Nuevo Tutor";
             // 
-            // tpagEstGeneral
+            // tpgEstGeneral
             // 
-            this.tpagEstGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tpagEstGeneral.Controls.Add(this.bunifuPanel3);
-            this.tpagEstGeneral.Controls.Add(this.pnlTituloGeneral);
-            this.menuTransition.SetDecoration(this.tpagEstGeneral, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.tpagEstGeneral.Location = new System.Drawing.Point(4, 4);
-            this.tpagEstGeneral.Name = "tpagEstGeneral";
-            this.tpagEstGeneral.Padding = new System.Windows.Forms.Padding(3);
-            this.tpagEstGeneral.Size = new System.Drawing.Size(1001, 723);
-            this.tpagEstGeneral.TabIndex = 0;
-            this.tpagEstGeneral.Text = "EstGeneral";
+            this.tpgEstGeneral.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tpgEstGeneral.Controls.Add(this.bunifuPanel3);
+            this.tpgEstGeneral.Controls.Add(this.pnlTituloGeneral);
+            this.menuTransition.SetDecoration(this.tpgEstGeneral, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.tpgEstGeneral.Location = new System.Drawing.Point(4, 4);
+            this.tpgEstGeneral.Name = "tpgEstGeneral";
+            this.tpgEstGeneral.Padding = new System.Windows.Forms.Padding(3);
+            this.tpgEstGeneral.Size = new System.Drawing.Size(1001, 723);
+            this.tpgEstGeneral.TabIndex = 0;
+            this.tpgEstGeneral.Text = "EstGeneral";
             // 
             // bunifuPanel3
             // 
@@ -1185,9 +1201,9 @@ namespace CapaPresentacion
             this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel3.BorderRadius = 20;
             this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.bunifuButton3);
-            this.bunifuPanel3.Controls.Add(this.btnRefreshEst);
-            this.bunifuPanel3.Controls.Add(this.btnDeshabilitar);
+            this.bunifuPanel3.Controls.Add(this.btnEstDetalle);
+            this.bunifuPanel3.Controls.Add(this.btnEstRefresh);
+            this.bunifuPanel3.Controls.Add(this.btnEstDeshabilitar);
             this.bunifuPanel3.Controls.Add(this.txtSearchEst);
             this.bunifuPanel3.Controls.Add(this.dgvEstudiantes);
             this.menuTransition.SetDecoration(this.bunifuPanel3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
@@ -1197,276 +1213,276 @@ namespace CapaPresentacion
             this.bunifuPanel3.Size = new System.Drawing.Size(931, 608);
             this.bunifuPanel3.TabIndex = 2;
             // 
-            // bunifuButton3
+            // btnEstDetalle
             // 
-            this.bunifuButton3.AllowAnimations = true;
-            this.bunifuButton3.AllowMouseEffects = true;
-            this.bunifuButton3.AllowToggling = false;
-            this.bunifuButton3.AnimationSpeed = 200;
-            this.bunifuButton3.AutoGenerateColors = false;
-            this.bunifuButton3.AutoRoundBorders = false;
-            this.bunifuButton3.AutoSizeLeftIcon = true;
-            this.bunifuButton3.AutoSizeRightIcon = true;
-            this.bunifuButton3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton3.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.bunifuButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton3.BackgroundImage")));
-            this.bunifuButton3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.ButtonText = "Modificar";
-            this.bunifuButton3.ButtonTextMarginLeft = 0;
-            this.bunifuButton3.ColorContrastOnClick = 10;
-            this.bunifuButton3.ColorContrastOnHover = 45;
-            this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstDetalle.AllowAnimations = true;
+            this.btnEstDetalle.AllowMouseEffects = true;
+            this.btnEstDetalle.AllowToggling = false;
+            this.btnEstDetalle.AnimationSpeed = 200;
+            this.btnEstDetalle.AutoGenerateColors = false;
+            this.btnEstDetalle.AutoRoundBorders = false;
+            this.btnEstDetalle.AutoSizeLeftIcon = true;
+            this.btnEstDetalle.AutoSizeRightIcon = true;
+            this.btnEstDetalle.BackColor = System.Drawing.Color.Transparent;
+            this.btnEstDetalle.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnEstDetalle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEstDetalle.BackgroundImage")));
+            this.btnEstDetalle.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDetalle.ButtonText = "Detalles";
+            this.btnEstDetalle.ButtonTextMarginLeft = 0;
+            this.btnEstDetalle.ColorContrastOnClick = 10;
+            this.btnEstDetalle.ColorContrastOnHover = 45;
+            this.btnEstDetalle.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges7.BottomLeft = true;
             borderEdges7.BottomRight = true;
             borderEdges7.TopLeft = true;
             borderEdges7.TopRight = true;
-            this.bunifuButton3.CustomizableEdges = borderEdges7;
-            this.menuTransition.SetDecoration(this.bunifuButton3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton3.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton3.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bunifuButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuButton3.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton3.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuButton3.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton3.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.bunifuButton3.IconMarginLeft = 11;
-            this.bunifuButton3.IconPadding = 10;
-            this.bunifuButton3.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.bunifuButton3.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuButton3.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.bunifuButton3.IconSize = 25;
-            this.bunifuButton3.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuButton3.IdleBorderRadius = 35;
-            this.bunifuButton3.IdleBorderThickness = 1;
-            this.bunifuButton3.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuButton3.IdleIconLeftImage = null;
-            this.bunifuButton3.IdleIconRightImage = null;
-            this.bunifuButton3.IndicateFocus = false;
-            this.bunifuButton3.Location = new System.Drawing.Point(423, 8);
-            this.bunifuButton3.Name = "bunifuButton3";
-            this.bunifuButton3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.bunifuButton3.OnDisabledState.BorderRadius = 35;
-            this.bunifuButton3.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.OnDisabledState.BorderThickness = 1;
-            this.bunifuButton3.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuButton3.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bunifuButton3.OnDisabledState.IconLeftImage = null;
-            this.bunifuButton3.OnDisabledState.IconRightImage = null;
-            this.bunifuButton3.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuButton3.onHoverState.BorderRadius = 35;
-            this.bunifuButton3.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.onHoverState.BorderThickness = 1;
-            this.bunifuButton3.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuButton3.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton3.onHoverState.IconLeftImage = null;
-            this.bunifuButton3.onHoverState.IconRightImage = null;
-            this.bunifuButton3.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuButton3.OnIdleState.BorderRadius = 35;
-            this.bunifuButton3.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.OnIdleState.BorderThickness = 1;
-            this.bunifuButton3.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuButton3.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton3.OnIdleState.IconLeftImage = null;
-            this.bunifuButton3.OnIdleState.IconRightImage = null;
-            this.bunifuButton3.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButton3.OnPressedState.BorderRadius = 35;
-            this.bunifuButton3.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bunifuButton3.OnPressedState.BorderThickness = 1;
-            this.bunifuButton3.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.bunifuButton3.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.bunifuButton3.OnPressedState.IconLeftImage = null;
-            this.bunifuButton3.OnPressedState.IconRightImage = null;
-            this.bunifuButton3.Size = new System.Drawing.Size(93, 37);
-            this.bunifuButton3.TabIndex = 4;
-            this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.bunifuButton3.TextMarginLeft = 0;
-            this.bunifuButton3.TextPadding = new System.Windows.Forms.Padding(0);
-            this.bunifuButton3.UseDefaultRadiusAndThickness = true;
+            this.btnEstDetalle.CustomizableEdges = borderEdges7;
+            this.menuTransition.SetDecoration(this.btnEstDetalle, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnEstDetalle.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEstDetalle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnEstDetalle.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnEstDetalle.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnEstDetalle.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnEstDetalle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEstDetalle.ForeColor = System.Drawing.Color.White;
+            this.btnEstDetalle.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstDetalle.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstDetalle.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnEstDetalle.IconMarginLeft = 11;
+            this.btnEstDetalle.IconPadding = 10;
+            this.btnEstDetalle.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEstDetalle.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstDetalle.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnEstDetalle.IconSize = 25;
+            this.btnEstDetalle.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstDetalle.IdleBorderRadius = 35;
+            this.btnEstDetalle.IdleBorderThickness = 1;
+            this.btnEstDetalle.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstDetalle.IdleIconLeftImage = null;
+            this.btnEstDetalle.IdleIconRightImage = null;
+            this.btnEstDetalle.IndicateFocus = false;
+            this.btnEstDetalle.Location = new System.Drawing.Point(423, 8);
+            this.btnEstDetalle.Name = "btnEstDetalle";
+            this.btnEstDetalle.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnEstDetalle.OnDisabledState.BorderRadius = 35;
+            this.btnEstDetalle.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDetalle.OnDisabledState.BorderThickness = 1;
+            this.btnEstDetalle.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnEstDetalle.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnEstDetalle.OnDisabledState.IconLeftImage = null;
+            this.btnEstDetalle.OnDisabledState.IconRightImage = null;
+            this.btnEstDetalle.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnEstDetalle.onHoverState.BorderRadius = 35;
+            this.btnEstDetalle.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDetalle.onHoverState.BorderThickness = 1;
+            this.btnEstDetalle.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnEstDetalle.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnEstDetalle.onHoverState.IconLeftImage = null;
+            this.btnEstDetalle.onHoverState.IconRightImage = null;
+            this.btnEstDetalle.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstDetalle.OnIdleState.BorderRadius = 35;
+            this.btnEstDetalle.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDetalle.OnIdleState.BorderThickness = 1;
+            this.btnEstDetalle.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstDetalle.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnEstDetalle.OnIdleState.IconLeftImage = null;
+            this.btnEstDetalle.OnIdleState.IconRightImage = null;
+            this.btnEstDetalle.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnEstDetalle.OnPressedState.BorderRadius = 35;
+            this.btnEstDetalle.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDetalle.OnPressedState.BorderThickness = 1;
+            this.btnEstDetalle.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnEstDetalle.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnEstDetalle.OnPressedState.IconLeftImage = null;
+            this.btnEstDetalle.OnPressedState.IconRightImage = null;
+            this.btnEstDetalle.Size = new System.Drawing.Size(93, 37);
+            this.btnEstDetalle.TabIndex = 5;
+            this.btnEstDetalle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEstDetalle.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEstDetalle.TextMarginLeft = 0;
+            this.btnEstDetalle.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnEstDetalle.UseDefaultRadiusAndThickness = true;
             // 
-            // btnRefreshEst
+            // btnEstRefresh
             // 
-            this.btnRefreshEst.AllowAnimations = true;
-            this.btnRefreshEst.AllowMouseEffects = true;
-            this.btnRefreshEst.AllowToggling = false;
-            this.btnRefreshEst.AnimationSpeed = 200;
-            this.btnRefreshEst.AutoGenerateColors = false;
-            this.btnRefreshEst.AutoRoundBorders = false;
-            this.btnRefreshEst.AutoSizeLeftIcon = true;
-            this.btnRefreshEst.AutoSizeRightIcon = true;
-            this.btnRefreshEst.BackColor = System.Drawing.Color.Transparent;
-            this.btnRefreshEst.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.btnRefreshEst.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefreshEst.BackgroundImage")));
-            this.btnRefreshEst.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnRefreshEst.ButtonText = "";
-            this.btnRefreshEst.ButtonTextMarginLeft = 0;
-            this.btnRefreshEst.ColorContrastOnClick = 10;
-            this.btnRefreshEst.ColorContrastOnHover = 45;
-            this.btnRefreshEst.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstRefresh.AllowAnimations = true;
+            this.btnEstRefresh.AllowMouseEffects = true;
+            this.btnEstRefresh.AllowToggling = false;
+            this.btnEstRefresh.AnimationSpeed = 200;
+            this.btnEstRefresh.AutoGenerateColors = false;
+            this.btnEstRefresh.AutoRoundBorders = false;
+            this.btnEstRefresh.AutoSizeLeftIcon = true;
+            this.btnEstRefresh.AutoSizeRightIcon = true;
+            this.btnEstRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnEstRefresh.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnEstRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEstRefresh.BackgroundImage")));
+            this.btnEstRefresh.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstRefresh.ButtonText = "";
+            this.btnEstRefresh.ButtonTextMarginLeft = 0;
+            this.btnEstRefresh.ColorContrastOnClick = 10;
+            this.btnEstRefresh.ColorContrastOnHover = 45;
+            this.btnEstRefresh.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges8.BottomLeft = true;
             borderEdges8.BottomRight = true;
             borderEdges8.TopLeft = true;
             borderEdges8.TopRight = true;
-            this.btnRefreshEst.CustomizableEdges = borderEdges8;
-            this.menuTransition.SetDecoration(this.btnRefreshEst, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnRefreshEst.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnRefreshEst.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnRefreshEst.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnRefreshEst.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnRefreshEst.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnRefreshEst.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnRefreshEst.ForeColor = System.Drawing.Color.White;
-            this.btnRefreshEst.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefreshEst.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnRefreshEst.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnRefreshEst.IconMarginLeft = 11;
-            this.btnRefreshEst.IconPadding = 10;
-            this.btnRefreshEst.IconRightAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRefreshEst.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnRefreshEst.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnRefreshEst.IconSize = 25;
-            this.btnRefreshEst.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnRefreshEst.IdleBorderRadius = 35;
-            this.btnRefreshEst.IdleBorderThickness = 1;
-            this.btnRefreshEst.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnRefreshEst.IdleIconLeftImage = null;
-            this.btnRefreshEst.IdleIconRightImage = global::CapaPresentacion.Properties.Resources.refresh_26px;
-            this.btnRefreshEst.IndicateFocus = false;
-            this.btnRefreshEst.Location = new System.Drawing.Point(621, 8);
-            this.btnRefreshEst.Name = "btnRefreshEst";
-            this.btnRefreshEst.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnRefreshEst.OnDisabledState.BorderRadius = 35;
-            this.btnRefreshEst.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnRefreshEst.OnDisabledState.BorderThickness = 1;
-            this.btnRefreshEst.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnRefreshEst.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnRefreshEst.OnDisabledState.IconLeftImage = null;
-            this.btnRefreshEst.OnDisabledState.IconRightImage = null;
-            this.btnRefreshEst.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnRefreshEst.onHoverState.BorderRadius = 35;
-            this.btnRefreshEst.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnRefreshEst.onHoverState.BorderThickness = 1;
-            this.btnRefreshEst.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnRefreshEst.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnRefreshEst.onHoverState.IconLeftImage = null;
-            this.btnRefreshEst.onHoverState.IconRightImage = null;
-            this.btnRefreshEst.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnRefreshEst.OnIdleState.BorderRadius = 35;
-            this.btnRefreshEst.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnRefreshEst.OnIdleState.BorderThickness = 1;
-            this.btnRefreshEst.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.btnRefreshEst.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnRefreshEst.OnIdleState.IconLeftImage = null;
-            this.btnRefreshEst.OnIdleState.IconRightImage = global::CapaPresentacion.Properties.Resources.refresh_26px;
-            this.btnRefreshEst.OnPressedState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnRefreshEst.OnPressedState.BorderRadius = 35;
-            this.btnRefreshEst.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnRefreshEst.OnPressedState.BorderThickness = 1;
-            this.btnRefreshEst.OnPressedState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.btnRefreshEst.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnRefreshEst.OnPressedState.IconLeftImage = null;
-            this.btnRefreshEst.OnPressedState.IconRightImage = null;
-            this.btnRefreshEst.Size = new System.Drawing.Size(36, 37);
-            this.btnRefreshEst.TabIndex = 3;
-            this.btnRefreshEst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRefreshEst.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnRefreshEst.TextMarginLeft = 0;
-            this.btnRefreshEst.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnRefreshEst.UseDefaultRadiusAndThickness = true;
-            this.btnRefreshEst.Click += new System.EventHandler(this.btnRefreshEst_Click);
+            this.btnEstRefresh.CustomizableEdges = borderEdges8;
+            this.menuTransition.SetDecoration(this.btnEstRefresh, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnEstRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEstRefresh.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnEstRefresh.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnEstRefresh.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnEstRefresh.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnEstRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEstRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnEstRefresh.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstRefresh.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstRefresh.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnEstRefresh.IconMarginLeft = 11;
+            this.btnEstRefresh.IconPadding = 10;
+            this.btnEstRefresh.IconRightAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEstRefresh.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstRefresh.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnEstRefresh.IconSize = 25;
+            this.btnEstRefresh.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstRefresh.IdleBorderRadius = 35;
+            this.btnEstRefresh.IdleBorderThickness = 1;
+            this.btnEstRefresh.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstRefresh.IdleIconLeftImage = null;
+            this.btnEstRefresh.IdleIconRightImage = global::CapaPresentacion.Properties.Resources.refresh_26px;
+            this.btnEstRefresh.IndicateFocus = false;
+            this.btnEstRefresh.Location = new System.Drawing.Point(621, 8);
+            this.btnEstRefresh.Name = "btnEstRefresh";
+            this.btnEstRefresh.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnEstRefresh.OnDisabledState.BorderRadius = 35;
+            this.btnEstRefresh.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstRefresh.OnDisabledState.BorderThickness = 1;
+            this.btnEstRefresh.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnEstRefresh.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnEstRefresh.OnDisabledState.IconLeftImage = null;
+            this.btnEstRefresh.OnDisabledState.IconRightImage = null;
+            this.btnEstRefresh.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnEstRefresh.onHoverState.BorderRadius = 35;
+            this.btnEstRefresh.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstRefresh.onHoverState.BorderThickness = 1;
+            this.btnEstRefresh.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnEstRefresh.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnEstRefresh.onHoverState.IconLeftImage = null;
+            this.btnEstRefresh.onHoverState.IconRightImage = null;
+            this.btnEstRefresh.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstRefresh.OnIdleState.BorderRadius = 35;
+            this.btnEstRefresh.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstRefresh.OnIdleState.BorderThickness = 1;
+            this.btnEstRefresh.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstRefresh.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnEstRefresh.OnIdleState.IconLeftImage = null;
+            this.btnEstRefresh.OnIdleState.IconRightImage = global::CapaPresentacion.Properties.Resources.refresh_26px;
+            this.btnEstRefresh.OnPressedState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstRefresh.OnPressedState.BorderRadius = 35;
+            this.btnEstRefresh.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstRefresh.OnPressedState.BorderThickness = 1;
+            this.btnEstRefresh.OnPressedState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstRefresh.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnEstRefresh.OnPressedState.IconLeftImage = null;
+            this.btnEstRefresh.OnPressedState.IconRightImage = null;
+            this.btnEstRefresh.Size = new System.Drawing.Size(36, 37);
+            this.btnEstRefresh.TabIndex = 3;
+            this.btnEstRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEstRefresh.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEstRefresh.TextMarginLeft = 0;
+            this.btnEstRefresh.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnEstRefresh.UseDefaultRadiusAndThickness = true;
+            this.btnEstRefresh.Click += new System.EventHandler(this.btnRefreshEst_Click);
             // 
-            // btnDeshabilitar
+            // btnEstDeshabilitar
             // 
-            this.btnDeshabilitar.AllowAnimations = true;
-            this.btnDeshabilitar.AllowMouseEffects = true;
-            this.btnDeshabilitar.AllowToggling = false;
-            this.btnDeshabilitar.AnimationSpeed = 200;
-            this.btnDeshabilitar.AutoGenerateColors = false;
-            this.btnDeshabilitar.AutoRoundBorders = false;
-            this.btnDeshabilitar.AutoSizeLeftIcon = true;
-            this.btnDeshabilitar.AutoSizeRightIcon = true;
-            this.btnDeshabilitar.BackColor = System.Drawing.Color.Transparent;
-            this.btnDeshabilitar.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.btnDeshabilitar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeshabilitar.BackgroundImage")));
-            this.btnDeshabilitar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDeshabilitar.ButtonText = "Deshabilitar";
-            this.btnDeshabilitar.ButtonTextMarginLeft = 0;
-            this.btnDeshabilitar.ColorContrastOnClick = 10;
-            this.btnDeshabilitar.ColorContrastOnHover = 45;
-            this.btnDeshabilitar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstDeshabilitar.AllowAnimations = true;
+            this.btnEstDeshabilitar.AllowMouseEffects = true;
+            this.btnEstDeshabilitar.AllowToggling = false;
+            this.btnEstDeshabilitar.AnimationSpeed = 200;
+            this.btnEstDeshabilitar.AutoGenerateColors = false;
+            this.btnEstDeshabilitar.AutoRoundBorders = false;
+            this.btnEstDeshabilitar.AutoSizeLeftIcon = true;
+            this.btnEstDeshabilitar.AutoSizeRightIcon = true;
+            this.btnEstDeshabilitar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEstDeshabilitar.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnEstDeshabilitar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEstDeshabilitar.BackgroundImage")));
+            this.btnEstDeshabilitar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDeshabilitar.ButtonText = "Deshabilitar";
+            this.btnEstDeshabilitar.ButtonTextMarginLeft = 0;
+            this.btnEstDeshabilitar.ColorContrastOnClick = 10;
+            this.btnEstDeshabilitar.ColorContrastOnHover = 45;
+            this.btnEstDeshabilitar.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges9.BottomLeft = true;
             borderEdges9.BottomRight = true;
             borderEdges9.TopLeft = true;
             borderEdges9.TopRight = true;
-            this.btnDeshabilitar.CustomizableEdges = borderEdges9;
-            this.menuTransition.SetDecoration(this.btnDeshabilitar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnDeshabilitar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDeshabilitar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnDeshabilitar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnDeshabilitar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnDeshabilitar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnDeshabilitar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeshabilitar.ForeColor = System.Drawing.Color.White;
-            this.btnDeshabilitar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeshabilitar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnDeshabilitar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnDeshabilitar.IconMarginLeft = 11;
-            this.btnDeshabilitar.IconPadding = 10;
-            this.btnDeshabilitar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDeshabilitar.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnDeshabilitar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnDeshabilitar.IconSize = 25;
-            this.btnDeshabilitar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnDeshabilitar.IdleBorderRadius = 35;
-            this.btnDeshabilitar.IdleBorderThickness = 1;
-            this.btnDeshabilitar.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnDeshabilitar.IdleIconLeftImage = null;
-            this.btnDeshabilitar.IdleIconRightImage = null;
-            this.btnDeshabilitar.IndicateFocus = false;
-            this.btnDeshabilitar.Location = new System.Drawing.Point(522, 8);
-            this.btnDeshabilitar.Name = "btnDeshabilitar";
-            this.btnDeshabilitar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnDeshabilitar.OnDisabledState.BorderRadius = 35;
-            this.btnDeshabilitar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDeshabilitar.OnDisabledState.BorderThickness = 1;
-            this.btnDeshabilitar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnDeshabilitar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnDeshabilitar.OnDisabledState.IconLeftImage = null;
-            this.btnDeshabilitar.OnDisabledState.IconRightImage = null;
-            this.btnDeshabilitar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnDeshabilitar.onHoverState.BorderRadius = 35;
-            this.btnDeshabilitar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDeshabilitar.onHoverState.BorderThickness = 1;
-            this.btnDeshabilitar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnDeshabilitar.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnDeshabilitar.onHoverState.IconLeftImage = null;
-            this.btnDeshabilitar.onHoverState.IconRightImage = null;
-            this.btnDeshabilitar.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnDeshabilitar.OnIdleState.BorderRadius = 35;
-            this.btnDeshabilitar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDeshabilitar.OnIdleState.BorderThickness = 1;
-            this.btnDeshabilitar.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.btnDeshabilitar.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnDeshabilitar.OnIdleState.IconLeftImage = null;
-            this.btnDeshabilitar.OnIdleState.IconRightImage = null;
-            this.btnDeshabilitar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnDeshabilitar.OnPressedState.BorderRadius = 35;
-            this.btnDeshabilitar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDeshabilitar.OnPressedState.BorderThickness = 1;
-            this.btnDeshabilitar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnDeshabilitar.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnDeshabilitar.OnPressedState.IconLeftImage = null;
-            this.btnDeshabilitar.OnPressedState.IconRightImage = null;
-            this.btnDeshabilitar.Size = new System.Drawing.Size(93, 37);
-            this.btnDeshabilitar.TabIndex = 2;
-            this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDeshabilitar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnDeshabilitar.TextMarginLeft = 0;
-            this.btnDeshabilitar.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnDeshabilitar.UseDefaultRadiusAndThickness = true;
+            this.btnEstDeshabilitar.CustomizableEdges = borderEdges9;
+            this.menuTransition.SetDecoration(this.btnEstDeshabilitar, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnEstDeshabilitar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEstDeshabilitar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnEstDeshabilitar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnEstDeshabilitar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnEstDeshabilitar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnEstDeshabilitar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEstDeshabilitar.ForeColor = System.Drawing.Color.White;
+            this.btnEstDeshabilitar.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEstDeshabilitar.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstDeshabilitar.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnEstDeshabilitar.IconMarginLeft = 11;
+            this.btnEstDeshabilitar.IconPadding = 10;
+            this.btnEstDeshabilitar.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEstDeshabilitar.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnEstDeshabilitar.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnEstDeshabilitar.IconSize = 25;
+            this.btnEstDeshabilitar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstDeshabilitar.IdleBorderRadius = 35;
+            this.btnEstDeshabilitar.IdleBorderThickness = 1;
+            this.btnEstDeshabilitar.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstDeshabilitar.IdleIconLeftImage = null;
+            this.btnEstDeshabilitar.IdleIconRightImage = null;
+            this.btnEstDeshabilitar.IndicateFocus = false;
+            this.btnEstDeshabilitar.Location = new System.Drawing.Point(522, 8);
+            this.btnEstDeshabilitar.Name = "btnEstDeshabilitar";
+            this.btnEstDeshabilitar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnEstDeshabilitar.OnDisabledState.BorderRadius = 35;
+            this.btnEstDeshabilitar.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDeshabilitar.OnDisabledState.BorderThickness = 1;
+            this.btnEstDeshabilitar.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnEstDeshabilitar.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnEstDeshabilitar.OnDisabledState.IconLeftImage = null;
+            this.btnEstDeshabilitar.OnDisabledState.IconRightImage = null;
+            this.btnEstDeshabilitar.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnEstDeshabilitar.onHoverState.BorderRadius = 35;
+            this.btnEstDeshabilitar.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDeshabilitar.onHoverState.BorderThickness = 1;
+            this.btnEstDeshabilitar.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnEstDeshabilitar.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnEstDeshabilitar.onHoverState.IconLeftImage = null;
+            this.btnEstDeshabilitar.onHoverState.IconRightImage = null;
+            this.btnEstDeshabilitar.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstDeshabilitar.OnIdleState.BorderRadius = 35;
+            this.btnEstDeshabilitar.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDeshabilitar.OnIdleState.BorderThickness = 1;
+            this.btnEstDeshabilitar.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnEstDeshabilitar.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnEstDeshabilitar.OnIdleState.IconLeftImage = null;
+            this.btnEstDeshabilitar.OnIdleState.IconRightImage = null;
+            this.btnEstDeshabilitar.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnEstDeshabilitar.OnPressedState.BorderRadius = 35;
+            this.btnEstDeshabilitar.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnEstDeshabilitar.OnPressedState.BorderThickness = 1;
+            this.btnEstDeshabilitar.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnEstDeshabilitar.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnEstDeshabilitar.OnPressedState.IconLeftImage = null;
+            this.btnEstDeshabilitar.OnPressedState.IconRightImage = null;
+            this.btnEstDeshabilitar.Size = new System.Drawing.Size(93, 37);
+            this.btnEstDeshabilitar.TabIndex = 2;
+            this.btnEstDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEstDeshabilitar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEstDeshabilitar.TextMarginLeft = 0;
+            this.btnEstDeshabilitar.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnEstDeshabilitar.UseDefaultRadiusAndThickness = true;
             // 
             // txtSearchEst
             // 
@@ -1499,7 +1515,7 @@ namespace CapaPresentacion
             this.txtSearchEst.IconRightCursor = System.Windows.Forms.Cursors.Hand;
             this.txtSearchEst.Lines = new string[0];
             this.txtSearchEst.Location = new System.Drawing.Point(663, 8);
-            this.txtSearchEst.MaxLength = 32767;
+            this.txtSearchEst.MaxLength = 9;
             this.txtSearchEst.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtSearchEst.Modified = false;
             this.txtSearchEst.Multiline = false;
@@ -1527,7 +1543,7 @@ namespace CapaPresentacion
             this.txtSearchEst.Padding = new System.Windows.Forms.Padding(3);
             this.txtSearchEst.PasswordChar = '\0';
             this.txtSearchEst.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtSearchEst.PlaceholderText = "Buscar DNI";
+            this.txtSearchEst.PlaceholderText = "";
             this.txtSearchEst.ReadOnly = false;
             this.txtSearchEst.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtSearchEst.SelectedText = "";
@@ -1541,7 +1557,7 @@ namespace CapaPresentacion
             this.txtSearchEst.TextMarginBottom = 0;
             this.txtSearchEst.TextMarginLeft = 3;
             this.txtSearchEst.TextMarginTop = 0;
-            this.txtSearchEst.TextPlaceholder = "Buscar DNI";
+            this.txtSearchEst.TextPlaceholder = "";
             this.txtSearchEst.UseSystemPasswordChar = false;
             this.txtSearchEst.WordWrap = true;
             this.txtSearchEst.OnIconRightClick += new System.EventHandler(this.txtSearchEst_OnIconRightClick);
@@ -1558,6 +1574,7 @@ namespace CapaPresentacion
             this.dgvEstudiantes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvEstudiantes.AutoGenerateColumns = false;
             this.dgvEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvEstudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -1572,6 +1589,12 @@ namespace CapaPresentacion
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvEstudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvEstudiantes.ColumnHeadersHeight = 40;
+            this.dgvEstudiantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.dniDataGridViewTextBoxColumn,
+            this.nombresDataGridViewTextBoxColumn,
+            this.apPaternoDataGridViewTextBoxColumn,
+            this.apMaternoDataGridViewTextBoxColumn});
             this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -1590,6 +1613,7 @@ namespace CapaPresentacion
             this.dgvEstudiantes.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvEstudiantes.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgvEstudiantes.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.DataSource = this.estudianteBindingSource;
             this.menuTransition.SetDecoration(this.dgvEstudiantes, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
@@ -1624,7 +1648,7 @@ namespace CapaPresentacion
             this.pnlTituloGeneral.BorderColor = System.Drawing.Color.Transparent;
             this.pnlTituloGeneral.BorderRadius = 20;
             this.pnlTituloGeneral.BorderThickness = 1;
-            this.pnlTituloGeneral.Controls.Add(this.label1);
+            this.pnlTituloGeneral.Controls.Add(this.lblEstGeneral);
             this.menuTransition.SetDecoration(this.pnlTituloGeneral, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pnlTituloGeneral.Location = new System.Drawing.Point(33, 16);
             this.pnlTituloGeneral.Name = "pnlTituloGeneral";
@@ -1632,18 +1656,79 @@ namespace CapaPresentacion
             this.pnlTituloGeneral.Size = new System.Drawing.Size(931, 57);
             this.pnlTituloGeneral.TabIndex = 1;
             // 
-            // label1
+            // lblEstGeneral
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.menuTransition.SetDecoration(this.label1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(22, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Estudiantes";
+            this.lblEstGeneral.AutoSize = true;
+            this.lblEstGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.menuTransition.SetDecoration(this.lblEstGeneral, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblEstGeneral.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
+            this.lblEstGeneral.ForeColor = System.Drawing.Color.DimGray;
+            this.lblEstGeneral.Location = new System.Drawing.Point(22, 7);
+            this.lblEstGeneral.Name = "lblEstGeneral";
+            this.lblEstGeneral.Size = new System.Drawing.Size(158, 37);
+            this.lblEstGeneral.TabIndex = 0;
+            this.lblEstGeneral.Text = "Estudiantes";
+            // 
+            // tpgEstDetalles
+            // 
+            this.tpgEstDetalles.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tpgEstDetalles.Controls.Add(this.bunifuPanel8);
+            this.tpgEstDetalles.Controls.Add(this.pnlEstDetalleTitulo);
+            this.menuTransition.SetDecoration(this.tpgEstDetalles, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.tpgEstDetalles.Location = new System.Drawing.Point(4, 4);
+            this.tpgEstDetalles.Name = "tpgEstDetalles";
+            this.tpgEstDetalles.Size = new System.Drawing.Size(1001, 723);
+            this.tpgEstDetalles.TabIndex = 5;
+            this.tpgEstDetalles.Text = "EstDetalles";
+            // 
+            // bunifuPanel8
+            // 
+            this.bunifuPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuPanel8.BackgroundColor = System.Drawing.Color.White;
+            this.bunifuPanel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel8.BackgroundImage")));
+            this.bunifuPanel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel8.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel8.BorderRadius = 20;
+            this.bunifuPanel8.BorderThickness = 1;
+            this.menuTransition.SetDecoration(this.bunifuPanel8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuPanel8.Location = new System.Drawing.Point(33, 98);
+            this.bunifuPanel8.Name = "bunifuPanel8";
+            this.bunifuPanel8.ShowBorders = true;
+            this.bunifuPanel8.Size = new System.Drawing.Size(931, 608);
+            this.bunifuPanel8.TabIndex = 3;
+            // 
+            // pnlEstDetalleTitulo
+            // 
+            this.pnlEstDetalleTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlEstDetalleTitulo.BackgroundColor = System.Drawing.Color.White;
+            this.pnlEstDetalleTitulo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlEstDetalleTitulo.BackgroundImage")));
+            this.pnlEstDetalleTitulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlEstDetalleTitulo.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlEstDetalleTitulo.BorderRadius = 20;
+            this.pnlEstDetalleTitulo.BorderThickness = 1;
+            this.pnlEstDetalleTitulo.Controls.Add(this.lblEstDetalleTitulo);
+            this.menuTransition.SetDecoration(this.pnlEstDetalleTitulo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.pnlEstDetalleTitulo.Location = new System.Drawing.Point(33, 16);
+            this.pnlEstDetalleTitulo.Name = "pnlEstDetalleTitulo";
+            this.pnlEstDetalleTitulo.ShowBorders = true;
+            this.pnlEstDetalleTitulo.Size = new System.Drawing.Size(931, 57);
+            this.pnlEstDetalleTitulo.TabIndex = 2;
+            // 
+            // lblEstDetalleTitulo
+            // 
+            this.lblEstDetalleTitulo.AutoSize = true;
+            this.lblEstDetalleTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.menuTransition.SetDecoration(this.lblEstDetalleTitulo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblEstDetalleTitulo.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
+            this.lblEstDetalleTitulo.ForeColor = System.Drawing.Color.DimGray;
+            this.lblEstDetalleTitulo.Location = new System.Drawing.Point(22, 7);
+            this.lblEstDetalleTitulo.Name = "lblEstDetalleTitulo";
+            this.lblEstDetalleTitulo.Size = new System.Drawing.Size(146, 37);
+            this.lblEstDetalleTitulo.TabIndex = 0;
+            this.lblEstDetalleTitulo.Text = "Estudiante";
             // 
             // MouseDetect
             // 
@@ -1694,13 +1779,53 @@ namespace CapaPresentacion
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // estudianteBindingSource
+            // 
+            this.estudianteBindingSource.DataSource = typeof(CapaEntidad.Estudiante);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dniDataGridViewTextBoxColumn
+            // 
+            this.dniDataGridViewTextBoxColumn.DataPropertyName = "Dni";
+            this.dniDataGridViewTextBoxColumn.HeaderText = "Dni";
+            this.dniDataGridViewTextBoxColumn.Name = "dniDataGridViewTextBoxColumn";
+            this.dniDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombresDataGridViewTextBoxColumn
+            // 
+            this.nombresDataGridViewTextBoxColumn.DataPropertyName = "Nombres";
+            this.nombresDataGridViewTextBoxColumn.HeaderText = "Nombres";
+            this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
+            this.nombresDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // apPaternoDataGridViewTextBoxColumn
+            // 
+            this.apPaternoDataGridViewTextBoxColumn.DataPropertyName = "ApPaterno";
+            this.apPaternoDataGridViewTextBoxColumn.HeaderText = "ApPaterno";
+            this.apPaternoDataGridViewTextBoxColumn.Name = "apPaternoDataGridViewTextBoxColumn";
+            this.apPaternoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // apMaternoDataGridViewTextBoxColumn
+            // 
+            this.apMaternoDataGridViewTextBoxColumn.DataPropertyName = "ApMaterno";
+            this.apMaternoDataGridViewTextBoxColumn.HeaderText = "ApMaterno";
+            this.apMaternoDataGridViewTextBoxColumn.Name = "apMaternoDataGridViewTextBoxColumn";
+            this.apMaternoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // uscMatricular
             // 
             this.uscMatricular.BackColor = System.Drawing.Color.White;
             this.menuTransition.SetDecoration(this.uscMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.uscMatricular.Location = new System.Drawing.Point(16, 10);
+            this.uscMatricular.Location = new System.Drawing.Point(16, 20);
             this.uscMatricular.MainWindow = null;
             this.uscMatricular.Margin = new System.Windows.Forms.Padding(0);
+            this.uscMatricular.MBTutor = null;
             this.uscMatricular.Name = "uscMatricular";
             this.uscMatricular.Size = new System.Drawing.Size(863, 1921);
             this.uscMatricular.TabIndex = 0;
@@ -1713,7 +1838,7 @@ namespace CapaPresentacion
             this.menuTransition.SetDecoration(this.createTutor1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.createTutor1.Location = new System.Drawing.Point(0, 15);
             this.createTutor1.Name = "createTutor1";
-            this.createTutor1.Size = new System.Drawing.Size(610, 743);
+            this.createTutor1.Size = new System.Drawing.Size(576, 743);
             this.createTutor1.TabIndex = 0;
             // 
             // frmSubMenu1
@@ -1747,24 +1872,28 @@ namespace CapaPresentacion
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pagCentral.ResumeLayout(false);
-            this.tpagMatricular.ResumeLayout(false);
+            this.tpgMatricular.ResumeLayout(false);
             this.bunifuPanel2.ResumeLayout(false);
             this.pnlTCEstudiante.ResumeLayout(false);
             this.pnlTCEstudiante.PerformLayout();
-            this.tpagTutGeneral.ResumeLayout(false);
+            this.tpgTutGeneral.ResumeLayout(false);
             this.bunifuPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTutor)).EndInit();
             this.bunifuPanel4.ResumeLayout(false);
             this.bunifuPanel4.PerformLayout();
-            this.tpagRegTutor.ResumeLayout(false);
+            this.tpgRegTutor.ResumeLayout(false);
             this.bunifuPanel7.ResumeLayout(false);
             this.bunifuPanel6.ResumeLayout(false);
             this.bunifuPanel6.PerformLayout();
-            this.tpagEstGeneral.ResumeLayout(false);
+            this.tpgEstGeneral.ResumeLayout(false);
             this.bunifuPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
             this.pnlTituloGeneral.ResumeLayout(false);
             this.pnlTituloGeneral.PerformLayout();
+            this.tpgEstDetalles.ResumeLayout(false);
+            this.pnlEstDetalleTitulo.ResumeLayout(false);
+            this.pnlEstDetalleTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1786,20 +1915,20 @@ namespace CapaPresentacion
         private frmSubMenu frmSubMenu1;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.UI.WinForms.BunifuPages pagCentral;
-        private System.Windows.Forms.TabPage tpagVacio;
-        private System.Windows.Forms.TabPage tpagEstGeneral;
+        private System.Windows.Forms.TabPage tpgVacio;
+        private System.Windows.Forms.TabPage tpgEstGeneral;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
         private Bunifu.UI.WinForms.BunifuDataGridView dgvEstudiantes;
         private Bunifu.UI.WinForms.BunifuPanel pnlTituloGeneral;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tpagMatricular;
+        private System.Windows.Forms.Label lblEstGeneral;
+        private System.Windows.Forms.TabPage tpgMatricular;
         private Bunifu.UI.WinForms.BunifuTextBox txtSearchEst;
         private Bunifu.UI.WinForms.BunifuPanel pnlTCEstudiante;
         private System.Windows.Forms.Label lblTCEstudiante;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.TabPage tpagTutGeneral;
-        private System.Windows.Forms.TabPage tpagRegTutor;
+        private System.Windows.Forms.TabPage tpgTutGeneral;
+        private System.Windows.Forms.TabPage tpgRegTutor;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;
         private System.Windows.Forms.Label label2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel5;
@@ -1811,9 +1940,19 @@ namespace CapaPresentacion
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel7;
         private CreateTutor createTutor1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnRefreshEst;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDeshabilitar;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEstRefresh;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEstDeshabilitar;
         private Matricular uscMatricular;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEstDetalle;
+        private System.Windows.Forms.TabPage tpgEstDetalles;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel8;
+        private Bunifu.UI.WinForms.BunifuPanel pnlEstDetalleTitulo;
+        private System.Windows.Forms.Label lblEstDetalleTitulo;
+        private System.Windows.Forms.BindingSource estudianteBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dniDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombresDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apPaternoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apMaternoDataGridViewTextBoxColumn;
     }
 }

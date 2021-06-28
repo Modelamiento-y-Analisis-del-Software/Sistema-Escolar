@@ -26,6 +26,10 @@ namespace CapaPresentacion
         }
 
         public frmMainWindow MainWindow { get => mainWindow; set => mainWindow = value; }
+        private void btnOption1_2_Click(object sender, EventArgs e)
+        {
+            mainWindow.PagCentral.SetPage("Matricular");
+        }
 
         private void btnOption2_1_Click(object sender, EventArgs e)
         {
@@ -43,13 +47,8 @@ namespace CapaPresentacion
 
         private void btnOption3_2_Click(object sender, EventArgs e)
         {
-            mainWindow.PagCentral.SetPage("Matricular"); 
+            mainWindow.PagCentral.SetPage("EstDetalles"); 
         }
 
-        private void btnOption1_2_Click(object sender, EventArgs e)
-        {
-            mainWindow.PagCentral.SetPage("Matricular");
-
-        }
     }
 }
