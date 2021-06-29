@@ -162,12 +162,6 @@
         fSqK4nm6NGRmZmZ265v+ABb65jF0zquYPAAAqcqyPwlYfqntAViWAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="lblMasculino.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
-  <data name="lblFemenino.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
-  </data>
   <data name="txtEstDireccion.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAzUAAAAlCAYAAAB70sfqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -323,6 +317,12 @@
         oe9938dHAADmZbr6s1qtfobueYgJ9CJ88TqU0Y/D4fB7GLwUAgDmYYqftm3H9Xp9rKrqTUyfayGE7kMI
         fSqK4nm6NGRmZmZ265v+ABb65jF0zquYPAAAqcqyPwlYfqntAViWAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="lblMasculino.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="lblFemenino.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
   </data>
   <data name="lblNuevoNo.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>

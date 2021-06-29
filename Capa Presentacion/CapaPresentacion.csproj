@@ -155,11 +155,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EstudianteDetalle.cs">
+    <Compile Include="Detalles\EstudianteDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalles\EstudianteDetalle.Designer.cs">
+      <DependentUpon>EstudianteDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstudianteDetalles.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EstudianteDetalle.Designer.cs">
-      <DependentUpon>EstudianteDetalle.cs</DependentUpon>
+    <Compile Include="EstudianteDetalles.Designer.cs">
+      <DependentUpon>EstudianteDetalles.cs</DependentUpon>
     </Compile>
     <Compile Include="Matricular.cs">
       <SubType>UserControl</SubType>
@@ -199,8 +205,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="EstudianteDetalle.resx">
+    <EmbeddedResource Include="Detalles\EstudianteDetalle.resx">
       <DependentUpon>EstudianteDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstudianteDetalles.resx">
+      <DependentUpon>EstudianteDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Matricular.resx">
       <DependentUpon>Matricular.cs</DependentUpon>
@@ -292,6 +301,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon\checked_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\edit_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

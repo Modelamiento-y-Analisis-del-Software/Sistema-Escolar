@@ -137,6 +137,8 @@ namespace CapaPresentacion
 
             txtEscuelaProc.Text = m.EscuelaProcedencia;
             dpkFecInscripcion.Value = m.FecInscripcion;
+            dgvTutores.DataSource = LgcTutor.Instancia.ParentescoTutor(m.Estudnte).ToArray();
+
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

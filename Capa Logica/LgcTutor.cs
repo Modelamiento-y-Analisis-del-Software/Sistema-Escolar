@@ -33,5 +33,23 @@ namespace CapaLogica
         {
             return SqlTutor.Instancia.InsertarTutor(t, e, parentesco);
         }
+
+        public Dictionary<string, Tutor> ListarTutoresEstudiantes(Estudiante est)
+        {
+            return SqlTutor.Instancia.ListarTutoresEstudiante(est);
+        }
+
+        public Dictionary<string, string> ParentescoTutor(Estudiante est)
+        {
+            var dict = SqlTutor.Instancia.ListarTutoresEstudiante(est);
+            Dictionary<string, string> parentescos = new Dictionary<string, string>();
+            string fullname;
+            foreach(var e in dict)
+            {
+                fullname = e.Value.Nombres + " " + e.Value.ApPaterno + " " + e.Value.ApMaterno; 
+                parentescos.Add(e.Key, fullname);
+            }
+            return parentescos;
+        }
     }
 }

@@ -99,5 +99,39 @@ namespace CapaDatos
             finally { cmd?.Connection.Close(); }
             return lista;
         }
+
+        public bool ActualizarEstudiante(Estudiante e)
+        {
+            bool exito = false;
+            SqlCommand cmd = null;
+
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+
+                cmd = new SqlCommand("uspUpdateEstudiante", cn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                cmd.Parameters.AddWithValue("@IdEstudiante", e.Id);
+                cmd.Parameters.AddWithValue("@Telefono", e.Telefono);
+                cmd.Parameters.AddWithValue("@Direccion", e.Direccion);
+                cmd.Parameters.AddWithValue("@Email", e.Email);
+                cn.Open();
+                var i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    exito = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+            finally { cmd?.Connection.Close(); }
+            return exito;
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
 using CapaLogica;
 using KimtToo.VisualReactive;
 
@@ -20,7 +21,6 @@ namespace CapaPresentacion
             InitializeComponent();
             frmSubMenu1.MainWindow = this;
             uscMatricular.MainWindow = this;
-            uscMatricular.keyp += new KeyPressEventHandler(TxtEstDni_KeyPress);
         }
 
         public void TxtEstDni_KeyPress(object sender, KeyPressEventArgs e)
@@ -105,6 +105,18 @@ namespace CapaPresentacion
         {
             txtSearchEst.Text = "";
             ListarEstudiantesHabilitados();
+        }
+
+        private void btnEstDetalle_Click(object sender, EventArgs e)
+        {
+            CapaEntidad.Estudiante est;
+            if (dgvEstudiantes.CurrentRow != null)
+            {
+                est = (CapaEntidad.Estudiante)dgvEstudiantes.CurrentRow.DataBoundItem;
+                Matricula m = LgcMatricula.Instancia.BuscarMatricula(est.Id);
+                var ed =  new EstudianteDetalle(m);
+                ed.Show();
+            }
         }
     }
 }

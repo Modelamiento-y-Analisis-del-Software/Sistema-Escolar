@@ -14,7 +14,6 @@ namespace CapaPresentacion
 {
     public partial class Matricular : UserControl
     {
-        public event KeyPressEventHandler keyp;
 
         public MiniBuscarTutor MBTutor { get; set; }
         public frmMainWindow MainWindow { get; set; }
@@ -63,7 +62,7 @@ namespace CapaPresentacion
 
         private void RealizarMatricula()
         {
-            Estudiante e = new Estudiante
+            CapaEntidad.Estudiante e = new CapaEntidad.Estudiante
             {
                 Dni = txtEstDni.Text.ToString().Trim(),
                 Nombres = txtEstNombre.Text.ToString().Trim(),
@@ -148,13 +147,21 @@ namespace CapaPresentacion
             txtEstApPaterno.Text = "";
             txtEstApMaterno.Text = "";
             rdbEstMasculino.Checked = true;
+            rdbEstFemenino.Checked = false;
             txtEstDireccion.Text = "";
             txtEstEmail.Text = "";
             txtEstTelefono.Text = "";
 
             rdbGrado1.Checked = true;
+            rdbGrado2.Checked = false;
+            rdbGrado3.Checked = false;
+            rdbGrado4.Checked = false;
+            rdbGrado5.Checked = false;
             cbbSeccion.SelectedIndex = 0;
             rdbMañana.Checked = true;
+            rdbTarde.Checked = false;
+            rdbNoche.Checked = false;
+
             txtEscuelaProc.Text = "";
 
             txtTutDni.Text = "";
@@ -162,6 +169,7 @@ namespace CapaPresentacion
             txtTutApPaterno.Text = "";
             txtTutApMaterno.Text = "";
             rdbTutMasculino.Checked = true;
+            rdbTutFemenino.Checked = false;
             txtTutDireccion.Text = "";
             txtTutEmail.Text = "";
             txtTutTelefono.Text = "";

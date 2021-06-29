@@ -33,6 +33,21 @@ namespace CapaLogica
             return listaM;
         }
 
+
+        public Matricula BuscarMatricula(int idEstudiante)
+        {
+            Matricula encontrado = null;
+            foreach (var m in ListarMatriculas())
+            {
+                if (m.Estudnte.Id == idEstudiante)
+                {
+                    encontrado = m;
+                    break;
+                }
+            }
+            return encontrado;
+        }
+
         public bool InsertarMatricula(Matricula m)
         {
             return SqlMatricula.Instancia.InsertarMatricula(m);

@@ -37,11 +37,12 @@ namespace CapaDatos
                     var m = new Matricula
                     {
                         Id = Convert.ToInt32(dr["IdMatricula"]),
-                        GradoEscolar = Convert.ToInt32(dr["Dni"]),
+                        GradoEscolar = Convert.ToInt32(dr["GradoEscolar"]),
                         Seccion = dr["Seccion"].ToString().ElementAt(0),
                         Turno = dr["Turno"].ToString().ElementAt(0),
-                        EscuelaProcedencia = dr["EscuelaProcedencia"].ToString(),
-                        Estado = Convert.ToBoolean(dr["Nombres"]),
+                        EscuelaProcedencia = dr["EscuelaProc"].ToString(),
+                        FecInscripcion = Convert.ToDateTime(dr["FecInscripcion"]),
+                        Estado = Convert.ToBoolean(dr["Estado"]),
                     };
 
                     m.Estudnte = e;

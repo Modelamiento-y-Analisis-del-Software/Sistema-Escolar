@@ -22,5 +22,10 @@ namespace CapaLogica
             return SqlEstudiante.Instancia.BuscarEstudiante(dni);
         }
 
+        public bool ActualizarEstudiante(Estudiante e)
+        {
+            return SqlEstudiante.Instancia.ActualizarEstudiante(e);
+        }
+
     }
 }

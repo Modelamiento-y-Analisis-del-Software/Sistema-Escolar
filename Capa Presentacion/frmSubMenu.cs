@@ -45,9 +45,10 @@ namespace CapaPresentacion
             mainWindow.PagCentral.SetPage("EstGeneral"); 
         }
 
-        private void btnOption3_2_Click(object sender, EventArgs e)
+        public void btnOption3_2_Click(object sender, EventArgs e)
         {
             mainWindow.PagCentral.SetPage("EstDetalles"); 
+            mainWindow.uscEstDetalles = new EstudianteDetalles();
         }
 
     }

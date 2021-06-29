@@ -133,10 +133,10 @@
   </data>
   <data name="txtEscuelaProc.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAksAAAAlCAYAAABS3K0BAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB0SURBVHhe7cNBDQAwCASw+TfFOQPek0DapA8AAAAAAAAA
+        iVBORw0KGgoAAAANSUhEUgAAAkIAAAAlCAYAAACuyYbLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABySURBVHhe7cMBDQAwCAOw+zfFnAE2HtqkDwAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAC4IUntVlX1nx44FHGfDMP49QAAAABJRU5ErkJggg==
+        AAAAAAAAAAAAAAAAfpekdquq3poeOmtUaNWQOnIAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="imgEstPerfil.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -217,10 +217,10 @@
   </data>
   <data name="txtEstEmail.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAl8AAAAlCAYAAAB8mYyTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVHhe7cNBDQAwCASw+TfFOQNM7EWb9AEAAAAAAAAA
+        iVBORw0KGgoAAAANSUhEUgAAAj0AAAAlCAYAAACpi1jeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABxSURBVHhe7cMBDQAwCAOw+zfFnAE6Tpv0AQAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAMA1SWq3qqq/pwcFqrKLv1qawgAAAABJRU5ErkJggg==
+        AAAAAAAAAAAAAAA3Jandqqr/Tg87KkQtCGUAQwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="txtEstApMaterno.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -239,10 +239,10 @@
   </data>
   <data name="txtEstDireccion.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAk4AAAAlCAYAAAC09WZFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB1SURBVHhe7cMxEQAwCASw+jfFOwMUdGRK7vIAAAAAAAAA
+        iVBORw0KGgoAAAANSUhEUgAAAj0AAAAlCAYAAACpi1jeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABxSURBVHhe7cMBDQAwCAOw+zfFnAE6Tpv0AQAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAuJekdquq+psey7R7XO2PhOkAAAAASUVORK5CYII=
+        AAAAAAAAAAAAAAA3Jandqqr/Tg87KkQtCGUAQwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="dpkEstFecNacimiento.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -337,5 +337,22 @@
         BQAAIxFx5J1Ha6211lr/u/Ntez0AAMDNVgQAoOUxHK1IAAAqhiMAAHOGIwAAFVsRAIAWv6oBAGgxHAEA
         mDMcAQCo+OIIAEDL51a8HvNorbXWWmudNwAANK11AqGvBjo14FrwAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAApUAAAAyCAYAAAAN1yDYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG9SURBVHhe7dshTgNRGIXRkUgkEolEsgSWgEQiK5HdBZJl
+        IZHIJn3TjBze0BdIYYYSLrhzkyMoP/7LC+3MzMzMzP5lfd9fVre73W4NAACT1odXLRmXNx1VT9UIAAAL
+        XmpgXreEPFz95RSUc38EAABfTC+XLSX3G8fxpJTyPHcMAAALNjUsz1pSeqUEAOB3Sik3LSm7rv6wmjsC
+        AIAj1i0p314qp2/0zB0BAMB3RCUAADFRCQBATFQCABATlQAAxEQlAAAxUQkAQExUAgAQE5UAAMREJQAA
+        MVEJAEBMVAIAEBOVAADERCUAADFRCQBATFQCABATlQAAxEQlAAAxUQkAQExUAgAQE5UAAMREJQAAMVEJ
+        AEBMVAIAEBOVAADERCUAADFRCQBATFQCABATlQAAxEQlAAAxUQkAQExUAgAQE5UAAMREJQAAMVEJAEBM
+        VAIAEPuIyr7v72cOAADgmIOovJ45AACAY+5aUnbdZrM5LaUMM0cAALBou91etKTcr3549/kIAACWlFIe
+        WkoebvrfSi+WAAD8wOM4jictI79uGIbzGparejh9IxwAAN5Nj5DVZUtHMzMzM7O/Wte9AscJ1uDIKUz4
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 15.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(109, 109, 109); text-align: left; }</value>
   </data>
 </root>
