@@ -16,21 +16,5 @@ namespace CapaLogica
         {
             return SqlEstudiante.Instancia.ListarEstudiantesHabilitados();
         }
-
-        public List<Estudiante> ListarEstudiantesInHabilitados() 
-        {
-            return SqlEstudiante.Instancia.ListarEstudiantesInHabilitados();
-        }
-
-        public List<Estudiante> BuscarEstudiante(string dni)
-        {
-            return SqlEstudiante.Instancia.BuscarEstudiante(dni);
-        }
-
-        public bool ActualizarEstudiante(Estudiante e)
-        {
-            return SqlEstudiante.Instancia.ActualizarEstudiante(e);
-        }
-
     }
 }

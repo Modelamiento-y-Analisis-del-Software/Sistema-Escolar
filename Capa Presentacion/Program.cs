@@ -1,11 +1,10 @@
-﻿using CapaPresentacion;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace Capa_Presentacion
 {
     static class Program
     {

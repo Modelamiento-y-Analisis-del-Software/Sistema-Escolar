@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Capa_Presentacion
 {
-    public partial class CreateTutor : UserControl
+    public partial class Silabo : Form
     {
-        public CreateTutor()
+        public Silabo()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

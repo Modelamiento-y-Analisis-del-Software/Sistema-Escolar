@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Capa_Presentacion
 {
-    public partial class CreateTutor : UserControl
+    public partial class CORECalificacion : Form
     {
-        public CreateTutor()
+        public CORECalificacion()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
