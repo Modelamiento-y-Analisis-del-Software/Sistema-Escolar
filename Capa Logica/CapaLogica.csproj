@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LgcEstudiante.cs" />
+    <Compile Include="LgcMatricula.cs" />
     <Compile Include="LgcTutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -7,9 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaPresentacion;
 using KimtToo.VisualReactive;
 
-namespace Capa_Presentacion
+namespace CapaPresentacion
 {
     public partial class frmSubMenu : UserControl
     {
@@ -25,6 +26,10 @@ namespace Capa_Presentacion
         }
 
         public frmMainWindow MainWindow { get => mainWindow; set => mainWindow = value; }
+        private void btnOption1_2_Click(object sender, EventArgs e)
+        {
+            mainWindow.PagCentral.SetPage("Matricular");
+        }
 
         private void btnOption2_1_Click(object sender, EventArgs e)
         {
@@ -40,15 +45,15 @@ namespace Capa_Presentacion
             mainWindow.PagCentral.SetPage("EstGeneral"); 
         }
 
-        private void btnOption3_2_Click(object sender, EventArgs e)
+        public void btnOption3_2_Click(object sender, EventArgs e)
         {
-            mainWindow.PagCentral.SetPage("Matricular"); 
+            mainWindow.PagCentral.SetPage("EstDetalles"); 
         }
 
-        private void btnOption1_2_Click(object sender, EventArgs e)
+        private void btnOption3_3_Click(object sender, EventArgs e)
         {
-            mainWindow.PagCentral.SetPage("Matricular");
-
+            mainWindow.PagCentral.SetPage("EstInhabilitados");
+            mainWindow.ListarEstudiantesInHabilitados();
         }
     }
 }

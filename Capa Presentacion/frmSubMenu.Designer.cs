@@ -1,5 +1,5 @@
 ﻿
-namespace Capa_Presentacion
+namespace CapaPresentacion
 {
     partial class frmSubMenu
     {
@@ -39,16 +39,16 @@ namespace Capa_Presentacion
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.hider = new System.Windows.Forms.Panel();
             this.btnOption1_2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnOption1_1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnOption2_2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnOption2_1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnOption3_3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnOption3_2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnOption3_1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.hider = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -80,6 +80,40 @@ namespace Capa_Presentacion
             this.tabPage1.Size = new System.Drawing.Size(226, 682);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "0";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
+            this.tabPage3.Controls.Add(this.btnOption2_2);
+            this.tabPage3.Controls.Add(this.btnOption2_1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(226, 682);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "1";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
+            this.tabPage2.Controls.Add(this.btnOption3_3);
+            this.tabPage2.Controls.Add(this.btnOption3_2);
+            this.tabPage2.Controls.Add(this.btnOption3_1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(226, 682);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "2";
+            // 
+            // hider
+            // 
+            this.hider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
+            this.hider.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hider.Location = new System.Drawing.Point(0, 0);
+            this.hider.Name = "hider";
+            this.hider.Size = new System.Drawing.Size(220, 0);
+            this.hider.TabIndex = 2;
             // 
             // btnOption1_2
             // 
@@ -263,18 +297,6 @@ namespace Capa_Presentacion
             this.btnOption1_1.TextMarginLeft = 0;
             this.btnOption1_1.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnOption1_1.UseDefaultRadiusAndThickness = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.tabPage3.Controls.Add(this.btnOption2_2);
-            this.tabPage3.Controls.Add(this.btnOption2_1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(226, 682);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "1";
             // 
             // btnOption2_2
             // 
@@ -460,19 +482,6 @@ namespace Capa_Presentacion
             this.btnOption2_1.UseDefaultRadiusAndThickness = true;
             this.btnOption2_1.Click += new System.EventHandler(this.btnOption2_1_Click);
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.tabPage2.Controls.Add(this.btnOption3_3);
-            this.tabPage2.Controls.Add(this.btnOption3_2);
-            this.tabPage2.Controls.Add(this.btnOption3_1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(226, 682);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "2";
-            // 
             // btnOption3_3
             // 
             this.btnOption3_3.AllowAnimations = false;
@@ -487,7 +496,7 @@ namespace Capa_Presentacion
             this.btnOption3_3.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
             this.btnOption3_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOption3_3.BackgroundImage")));
             this.btnOption3_3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption3_3.ButtonText = "General";
+            this.btnOption3_3.ButtonText = "Inhabilitados";
             this.btnOption3_3.ButtonTextMarginLeft = 0;
             this.btnOption3_3.ColorContrastOnClick = 45;
             this.btnOption3_3.ColorContrastOnHover = 45;
@@ -563,6 +572,7 @@ namespace Capa_Presentacion
             this.btnOption3_3.TextMarginLeft = 0;
             this.btnOption3_3.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnOption3_3.UseDefaultRadiusAndThickness = true;
+            this.btnOption3_3.Click += new System.EventHandler(this.btnOption3_3_Click);
             // 
             // btnOption3_2
             // 
@@ -578,7 +588,7 @@ namespace Capa_Presentacion
             this.btnOption3_2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
             this.btnOption3_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOption3_2.BackgroundImage")));
             this.btnOption3_2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption3_2.ButtonText = "Registrar Estudiante";
+            this.btnOption3_2.ButtonText = "Detalles Estudiante";
             this.btnOption3_2.ButtonTextMarginLeft = 0;
             this.btnOption3_2.ColorContrastOnClick = 45;
             this.btnOption3_2.ColorContrastOnHover = 45;
@@ -747,15 +757,6 @@ namespace Capa_Presentacion
             this.btnOption3_1.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnOption3_1.UseDefaultRadiusAndThickness = true;
             this.btnOption3_1.Click += new System.EventHandler(this.BtnOption3_1_Click);
-            // 
-            // hider
-            // 
-            this.hider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.hider.Dock = System.Windows.Forms.DockStyle.Top;
-            this.hider.Location = new System.Drawing.Point(0, 0);
-            this.hider.Name = "hider";
-            this.hider.Size = new System.Drawing.Size(220, 0);
-            this.hider.TabIndex = 2;
             // 
             // frmSubMenu
             // 
