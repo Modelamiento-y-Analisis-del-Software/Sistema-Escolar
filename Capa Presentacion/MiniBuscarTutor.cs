@@ -14,7 +14,7 @@ namespace CapaPresentacion
 {
     public partial class MiniBuscarTutor : Form
     {
-        Tutor EntidadTutor { get; set; }
+        public Tutor EntidadTutor { get; set; }
         Matricular uscMatricular;
 
         public MiniBuscarTutor()
@@ -37,7 +37,7 @@ namespace CapaPresentacion
 
         private void txtTutSearch_OnIconRightClick(object sender, EventArgs e)
         {
-            dgvTutores.DataSource = LgcTutor.Instancia.SearchTutor(txtTutSearch.Text.Trim());
+            dgvTutores.DataSource = LgcTutor.Instancia.SearchTutor(txtSearch.Text.Trim());
         }
 
         private void btnEstRefresh_Click(object sender, EventArgs e)

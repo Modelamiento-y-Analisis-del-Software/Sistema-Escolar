@@ -1,7 +1,7 @@
 ﻿
 namespace CapaPresentacion
 {
-    partial class MiniBuscarTutor
+    partial class MiniBuscarEstudiante
     {
         /// <summary>
         /// Required designer variable.
@@ -33,40 +33,42 @@ namespace CapaPresentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MiniBuscarTutor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MiniBuscarEstudiante));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.dgvTutores = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.dgvEstudiantes = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.btnConfirmar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnEstRefresh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tutorBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.apMaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apPaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estudianteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTutores)).BeginInit();
+            this.dniDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apPaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apMaternoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tutorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvTutores
+            // dgvEstudiantes
             // 
-            this.dgvTutores.AllowCustomTheming = false;
-            this.dgvTutores.AllowUserToAddRows = false;
-            this.dgvTutores.AllowUserToDeleteRows = false;
+            this.dgvEstudiantes.AllowCustomTheming = false;
+            this.dgvEstudiantes.AllowUserToAddRows = false;
+            this.dgvEstudiantes.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvTutores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTutores.AutoGenerateColumns = false;
-            this.dgvTutores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvTutores.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvTutores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvTutores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEstudiantes.AutoGenerateColumns = false;
+            this.dgvEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEstudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEstudiantes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvEstudiantes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -74,33 +76,33 @@ namespace CapaPresentacion
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTutores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvTutores.ColumnHeadersHeight = 40;
-            this.dgvTutores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvEstudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvEstudiantes.ColumnHeadersHeight = 40;
+            this.dgvEstudiantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.dniDataGridViewTextBoxColumn,
             this.nombresDataGridViewTextBoxColumn,
             this.apPaternoDataGridViewTextBoxColumn,
             this.apMaternoDataGridViewTextBoxColumn});
-            this.dgvTutores.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dgvTutores.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvTutores.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvTutores.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvTutores.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvTutores.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dgvTutores.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvTutores.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvTutores.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dgvTutores.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvTutores.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.dgvTutores.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvTutores.CurrentTheme.Name = null;
-            this.dgvTutores.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvTutores.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvTutores.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvTutores.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvTutores.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvTutores.DataSource = this.tutorBindingSource;
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.CurrentTheme.Name = null;
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.DataSource = this.estudianteBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -108,21 +110,21 @@ namespace CapaPresentacion
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTutores.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvTutores.EnableHeadersVisualStyles = false;
-            this.dgvTutores.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvTutores.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvTutores.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dgvTutores.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvTutores.Location = new System.Drawing.Point(12, 72);
-            this.dgvTutores.Name = "dgvTutores";
-            this.dgvTutores.ReadOnly = true;
-            this.dgvTutores.RowHeadersVisible = false;
-            this.dgvTutores.RowTemplate.Height = 40;
-            this.dgvTutores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTutores.Size = new System.Drawing.Size(760, 429);
-            this.dgvTutores.TabIndex = 0;
-            this.dgvTutores.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dgvEstudiantes.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvEstudiantes.EnableHeadersVisualStyles = false;
+            this.dgvEstudiantes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEstudiantes.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvEstudiantes.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.Location = new System.Drawing.Point(12, 72);
+            this.dgvEstudiantes.Name = "dgvEstudiantes";
+            this.dgvEstudiantes.ReadOnly = true;
+            this.dgvEstudiantes.RowHeadersVisible = false;
+            this.dgvEstudiantes.RowTemplate.Height = 40;
+            this.dgvEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEstudiantes.Size = new System.Drawing.Size(760, 429);
+            this.dgvEstudiantes.TabIndex = 22;
+            this.dgvEstudiantes.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // btnConfirmar
             // 
@@ -207,7 +209,7 @@ namespace CapaPresentacion
             this.btnConfirmar.OnPressedState.IconLeftImage = null;
             this.btnConfirmar.OnPressedState.IconRightImage = null;
             this.btnConfirmar.Size = new System.Drawing.Size(146, 39);
-            this.btnConfirmar.TabIndex = 21;
+            this.btnConfirmar.TabIndex = 25;
             this.btnConfirmar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnConfirmar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnConfirmar.TextMarginLeft = 0;
@@ -297,7 +299,7 @@ namespace CapaPresentacion
             this.btnEstRefresh.OnPressedState.IconLeftImage = null;
             this.btnEstRefresh.OnPressedState.IconRightImage = null;
             this.btnEstRefresh.Size = new System.Drawing.Size(36, 37);
-            this.btnEstRefresh.TabIndex = 4;
+            this.btnEstRefresh.TabIndex = 24;
             this.btnEstRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEstRefresh.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEstRefresh.TextMarginLeft = 0;
@@ -370,7 +372,7 @@ namespace CapaPresentacion
             this.txtSearch.ShortcutsEnabled = true;
             this.txtSearch.Size = new System.Drawing.Size(337, 37);
             this.txtSearch.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtSearch.TabIndex = 1;
+            this.txtSearch.TabIndex = 23;
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtSearch.TextMarginBottom = 0;
             this.txtSearch.TextMarginLeft = 3;
@@ -378,39 +380,15 @@ namespace CapaPresentacion
             this.txtSearch.TextPlaceholder = "Dni";
             this.txtSearch.UseSystemPasswordChar = false;
             this.txtSearch.WordWrap = true;
-            this.txtSearch.OnIconRightClick += new System.EventHandler(this.txtTutSearch_OnIconRightClick);
+            this.txtSearch.OnIconRightClick += new System.EventHandler(this.txtSearch_OnIconRightClick);
             // 
             // tutorBindingSource
             // 
             this.tutorBindingSource.DataSource = typeof(CapaEntidad.Tutor);
             // 
-            // apMaternoDataGridViewTextBoxColumn
+            // estudianteBindingSource
             // 
-            this.apMaternoDataGridViewTextBoxColumn.DataPropertyName = "ApMaterno";
-            this.apMaternoDataGridViewTextBoxColumn.HeaderText = "ApMaterno";
-            this.apMaternoDataGridViewTextBoxColumn.Name = "apMaternoDataGridViewTextBoxColumn";
-            this.apMaternoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // apPaternoDataGridViewTextBoxColumn
-            // 
-            this.apPaternoDataGridViewTextBoxColumn.DataPropertyName = "ApPaterno";
-            this.apPaternoDataGridViewTextBoxColumn.HeaderText = "ApPaterno";
-            this.apPaternoDataGridViewTextBoxColumn.Name = "apPaternoDataGridViewTextBoxColumn";
-            this.apPaternoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombresDataGridViewTextBoxColumn
-            // 
-            this.nombresDataGridViewTextBoxColumn.DataPropertyName = "Nombres";
-            this.nombresDataGridViewTextBoxColumn.HeaderText = "Nombres";
-            this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
-            this.nombresDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dniDataGridViewTextBoxColumn
-            // 
-            this.dniDataGridViewTextBoxColumn.DataPropertyName = "Dni";
-            this.dniDataGridViewTextBoxColumn.HeaderText = "Dni";
-            this.dniDataGridViewTextBoxColumn.Name = "dniDataGridViewTextBoxColumn";
-            this.dniDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estudianteBindingSource.DataSource = typeof(CapaEntidad.Estudiante);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -419,7 +397,35 @@ namespace CapaPresentacion
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // MiniBuscarTutor
+            // dniDataGridViewTextBoxColumn
+            // 
+            this.dniDataGridViewTextBoxColumn.DataPropertyName = "Dni";
+            this.dniDataGridViewTextBoxColumn.HeaderText = "Dni";
+            this.dniDataGridViewTextBoxColumn.Name = "dniDataGridViewTextBoxColumn";
+            this.dniDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombresDataGridViewTextBoxColumn
+            // 
+            this.nombresDataGridViewTextBoxColumn.DataPropertyName = "Nombres";
+            this.nombresDataGridViewTextBoxColumn.HeaderText = "Nombres";
+            this.nombresDataGridViewTextBoxColumn.Name = "nombresDataGridViewTextBoxColumn";
+            this.nombresDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // apPaternoDataGridViewTextBoxColumn
+            // 
+            this.apPaternoDataGridViewTextBoxColumn.DataPropertyName = "ApPaterno";
+            this.apPaternoDataGridViewTextBoxColumn.HeaderText = "ApPaterno";
+            this.apPaternoDataGridViewTextBoxColumn.Name = "apPaternoDataGridViewTextBoxColumn";
+            this.apPaternoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // apMaternoDataGridViewTextBoxColumn
+            // 
+            this.apMaternoDataGridViewTextBoxColumn.DataPropertyName = "ApMaterno";
+            this.apMaternoDataGridViewTextBoxColumn.HeaderText = "ApMaterno";
+            this.apMaternoDataGridViewTextBoxColumn.Name = "apMaternoDataGridViewTextBoxColumn";
+            this.apMaternoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // MiniBuscarEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -427,24 +433,26 @@ namespace CapaPresentacion
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnEstRefresh);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.dgvTutores);
+            this.Controls.Add(this.dgvEstudiantes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "MiniBuscarTutor";
+            this.Name = "MiniBuscarEstudiante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MiniBuscarTutor";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTutores)).EndInit();
+            this.Text = "Buscar Estudiante";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tutorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.estudianteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Bunifu.UI.WinForms.BunifuDataGridView dgvTutores;
-        private Bunifu.UI.WinForms.BunifuTextBox txtSearch;
-        private System.Windows.Forms.BindingSource tutorBindingSource;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEstRefresh;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnConfirmar;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEstRefresh;
+        private Bunifu.UI.WinForms.BunifuTextBox txtSearch;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvEstudiantes;
+        private System.Windows.Forms.BindingSource tutorBindingSource;
+        private System.Windows.Forms.BindingSource estudianteBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dniDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombresDataGridViewTextBoxColumn;
