@@ -191,6 +191,12 @@
     <Compile Include="frmSubMenu.Designer.cs">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiniBuscarEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniBuscarEstudiante.Designer.cs">
+      <DependentUpon>MiniBuscarEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="MiniBuscarTutor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSubMenu.resx">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniBuscarEstudiante.resx">
+      <DependentUpon>MiniBuscarEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MiniBuscarTutor.resx">
       <DependentUpon>MiniBuscarTutor.cs</DependentUpon>
@@ -304,6 +313,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon\edit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\male_user_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -145,6 +145,7 @@ namespace CapaPresentacion
         {
             btnEditar.Enabled = false;
             btnConfirmar.Enabled = true;
+            btnImage.Enabled = true;
             txtEstTelefono.ReadOnly = false;
             txtEstEmail.ReadOnly = false;
             txtEstDireccion.ReadOnly = false;
@@ -155,6 +156,7 @@ namespace CapaPresentacion
             m.Estudnte.Telefono = txtEstTelefono.Text.Trim();
             m.Estudnte.Email = txtEstEmail.Text.Trim();
             m.Estudnte.Direccion = txtEstDireccion.Text.Trim();
+            m.Estudnte.Foto = imgEstPerfil.Image;
 
             LgcEstudiante.Instancia.ActualizarEstudiante(m.Estudnte);
             txtEstTelefono.ReadOnly = true;
@@ -162,7 +164,18 @@ namespace CapaPresentacion
             txtEstDireccion.ReadOnly = true;
             btnConfirmar.Enabled = false;
             btnEditar.Enabled = true;
+            btnImage.Enabled = true;
 
+        }
+
+        private void btnImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog f = new OpenFileDialog();
+            DialogResult result = f.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                imgEstPerfil.Image = Image.FromFile(f.FileName);
+            }
         }
     }
 }

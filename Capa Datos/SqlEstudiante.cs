@@ -105,6 +105,8 @@ namespace CapaDatos
             bool exito = false;
             SqlCommand cmd = null;
 
+            ImageConverter converter = new ImageConverter();
+            var imgbytes = (byte[])converter.ConvertTo(e.Foto, typeof(byte[]));
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
@@ -118,6 +120,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@Telefono", e.Telefono);
                 cmd.Parameters.AddWithValue("@Direccion", e.Direccion);
                 cmd.Parameters.AddWithValue("@Email", e.Email);
+                cmd.Parameters.AddWithValue("@Foto", imgbytes);
                 cn.Open();
                 var i = cmd.ExecuteNonQuery();
                 if (i > 0)

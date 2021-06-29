@@ -15,7 +15,7 @@ namespace CapaPresentacion
 {
     public partial class frmMainWindow : Form
     {
-        
+
         public frmMainWindow()
         {
             InitializeComponent();
@@ -81,7 +81,7 @@ namespace CapaPresentacion
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
         }
-        
+
         private void BtnTutor_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
@@ -91,7 +91,7 @@ namespace CapaPresentacion
         private void BtnEstudiante_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
-            PagCentral.SetPage("EstGeneral"); 
+            PagCentral.SetPage("EstGeneral");
             ListarEstudiantesHabilitados();
         }
 
@@ -114,9 +114,21 @@ namespace CapaPresentacion
             {
                 est = (CapaEntidad.Estudiante)dgvEstudiantes.CurrentRow.DataBoundItem;
                 Matricula m = LgcMatricula.Instancia.BuscarMatricula(est.Id);
-                var ed =  new EstudianteDetalle(m);
+                var ed = new EstudianteDetalle(m);
                 ed.Show();
             }
+        }
+
+        private void btnTutRefresh_Click(object sender, EventArgs e)
+        {
+            txtTutSearch.Text = "";
+            ListarTutores();
+        }
+
+        private void txtTutSearch_OnIconRightClick(object sender, EventArgs e)
+        {
+            dgvTutor.DataSource = LgcTutor.Instancia.SearchTutor(txtTutSearch.Text.ToString().Trim());
+            txtTutSearch.Text = "";
         }
     }
 }

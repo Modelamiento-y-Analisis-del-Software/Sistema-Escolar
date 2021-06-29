@@ -37,7 +37,7 @@ namespace CapaPresentacion
 
         private void txtTutSearch_OnIconRightClick(object sender, EventArgs e)
         {
-            dgvTutores.DataSource = LgcTutor.Instancia.SearchTutor(txtTutSearch.Text.Trim());
+            dgvTutores.DataSource = LgcTutor.Instancia.SearchTutor(txtSearch.Text.Trim());
         }
 
         private void btnEstRefresh_Click(object sender, EventArgs e)
