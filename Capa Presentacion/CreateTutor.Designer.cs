@@ -1,5 +1,5 @@
 ﻿
-namespace CapaPresentacion
+namespace Capa_Presentacion
 {
     partial class CreateTutor
     {

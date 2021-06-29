@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace Capa_Presentacion
 {
     public partial class CreateTutor : UserControl
     {

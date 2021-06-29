@@ -1,5 +1,5 @@
 ﻿
-namespace CapaPresentacion
+namespace Capa_Presentacion
 {
     partial class frmSubMenu
     {
@@ -487,7 +487,7 @@ namespace CapaPresentacion
             this.btnOption3_3.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
             this.btnOption3_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOption3_3.BackgroundImage")));
             this.btnOption3_3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption3_3.ButtonText = "Inhabilitados";
+            this.btnOption3_3.ButtonText = "General";
             this.btnOption3_3.ButtonTextMarginLeft = 0;
             this.btnOption3_3.ColorContrastOnClick = 45;
             this.btnOption3_3.ColorContrastOnHover = 45;
@@ -578,7 +578,7 @@ namespace CapaPresentacion
             this.btnOption3_2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
             this.btnOption3_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOption3_2.BackgroundImage")));
             this.btnOption3_2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption3_2.ButtonText = "Detalles Estudiante";
+            this.btnOption3_2.ButtonText = "Registrar Estudiante";
             this.btnOption3_2.ButtonTextMarginLeft = 0;
             this.btnOption3_2.ColorContrastOnClick = 45;
             this.btnOption3_2.ColorContrastOnHover = 45;
