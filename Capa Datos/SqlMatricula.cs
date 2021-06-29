@@ -105,5 +105,72 @@ namespace CapaDatos
             finally { cmd?.Connection.Close(); }
             return exito;
         }
+
+        public bool CambiarEstadoMatricula(Matricula m)
+        {
+            bool exito = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+
+                cmd = new SqlCommand("uspCambiarEstadoMatricula", cn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                cmd.Parameters.AddWithValue("@IdMatricula", m.Id);
+                cmd.Parameters.AddWithValue("@Estado", !m.Estado);
+
+                cn.Open();
+                var i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    exito = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { cmd?.Connection.Close(); }
+            return exito;
+        }
+
+        public bool ActualizarMatricula(Matricula m)
+        {
+            bool exito = false;
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+
+                cmd = new SqlCommand("uspUpdateMatricula", cn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                cmd.Parameters.AddWithValue("@IdMatricula", m.Id);
+                cmd.Parameters.AddWithValue("@GradoEscolar", m.GradoEscolar);
+                cmd.Parameters.AddWithValue("@Seccion", m.Seccion);
+                cmd.Parameters.AddWithValue("@Turno", m.Turno);
+                cmd.Parameters.AddWithValue("@EscuelaProc", m.EscuelaProcedencia);
+                cmd.Parameters.AddWithValue("@FecInscripcion", m.FecInscripcion);
+                cmd.Parameters.AddWithValue("@Estado", true);
+
+                cn.Open();
+                var i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    exito = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { cmd?.Connection.Close(); }
+            return exito;
+        }
     }
 }

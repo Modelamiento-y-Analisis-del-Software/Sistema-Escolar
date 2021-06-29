@@ -894,7 +894,7 @@ namespace CapaPresentacion
             this.imgEstPerfil.BorderRadius = 102;
             this.imgEstPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgEstPerfil.Image")));
             this.imgEstPerfil.IsCircle = true;
-            this.imgEstPerfil.Location = new System.Drawing.Point(317, 12);
+            this.imgEstPerfil.Location = new System.Drawing.Point(283, 12);
             this.imgEstPerfil.Name = "imgEstPerfil";
             this.imgEstPerfil.Size = new System.Drawing.Size(204, 204);
             this.imgEstPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -951,7 +951,7 @@ namespace CapaPresentacion
             this.btnConfirmar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmar.IdleIconRightImage = null;
             this.btnConfirmar.IndicateFocus = false;
-            this.btnConfirmar.Location = new System.Drawing.Point(526, 769);
+            this.btnConfirmar.Location = new System.Drawing.Point(492, 769);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmar.OnDisabledState.BorderRadius = 1;
@@ -1043,7 +1043,7 @@ namespace CapaPresentacion
             this.btnImage.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.male_user_32px;
             this.btnImage.IdleIconRightImage = null;
             this.btnImage.IndicateFocus = false;
-            this.btnImage.Location = new System.Drawing.Point(249, 769);
+            this.btnImage.Location = new System.Drawing.Point(215, 769);
             this.btnImage.Name = "btnImage";
             this.btnImage.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnImage.OnDisabledState.BorderRadius = 1;
@@ -1134,7 +1134,7 @@ namespace CapaPresentacion
             this.btnEditar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.edit_32px;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(386, 769);
+            this.btnEditar.Location = new System.Drawing.Point(352, 769);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 1;
@@ -1787,7 +1787,7 @@ namespace CapaPresentacion
             this.txtEstDireccion.SelectionLength = 0;
             this.txtEstDireccion.SelectionStart = 0;
             this.txtEstDireccion.ShortcutsEnabled = true;
-            this.txtEstDireccion.Size = new System.Drawing.Size(573, 37);
+            this.txtEstDireccion.Size = new System.Drawing.Size(539, 37);
             this.txtEstDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstDireccion.TabIndex = 36;
             this.txtEstDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

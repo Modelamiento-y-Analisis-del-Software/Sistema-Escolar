@@ -48,8 +48,12 @@ namespace CapaPresentacion
         public void btnOption3_2_Click(object sender, EventArgs e)
         {
             mainWindow.PagCentral.SetPage("EstDetalles"); 
-            mainWindow.uscEstDetalles = new EstudianteDetalles();
         }
 
+        private void btnOption3_3_Click(object sender, EventArgs e)
+        {
+            mainWindow.PagCentral.SetPage("EstInhabilitados");
+            mainWindow.ListarEstudiantesInHabilitados();
+        }
     }
 }

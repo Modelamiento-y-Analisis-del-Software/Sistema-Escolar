@@ -23,26 +23,6 @@ namespace CapaPresentacion
             uscMatricular.MainWindow = this;
         }
 
-        public void TxtEstDni_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-        }
-
         bool mnuExpanded = false;
         private void MouseDetect_Tick(object sender, EventArgs e)
         {
@@ -129,6 +109,52 @@ namespace CapaPresentacion
         {
             dgvTutor.DataSource = LgcTutor.Instancia.SearchTutor(txtTutSearch.Text.ToString().Trim());
             txtTutSearch.Text = "";
+        }
+
+        private void btnEstInhabiltar_Click(object sender, EventArgs e)
+        {
+            Estudiante est;
+            if (dgvEstudiantes.CurrentRow != null)
+            {
+                est = (Estudiante) dgvEstudiantes.CurrentRow.DataBoundItem;
+                Matricula m = LgcMatricula.Instancia.BuscarMatricula(est.Id);
+                LgcMatricula.Instancia.CambiarEstadoMatricula(m);
+                ListarEstudiantesHabilitados();
+            }
+        }
+
+        private void btnEstInRefresh_Click(object sender, EventArgs e)
+        {
+            ListarEstudiantesInHabilitados();
+            txtEstInSearch.Text = "";
+        }
+
+        private void btnEstInDatalles_Click(object sender, EventArgs e)
+        {
+            CapaEntidad.Estudiante est;
+            if (dgvEstudiantes.CurrentRow != null)
+            {
+                est = (CapaEntidad.Estudiante)dgvEstudiantes.CurrentRow.DataBoundItem;
+                Matricula m = LgcMatricula.Instancia.BuscarMatricula(est.Id);
+                var ed = new EstudianteDetalle(m);
+                ed.Show();
+            }
+        }
+        public void ListarEstudiantesInHabilitados()
+        {
+            dgvEstInhabilitado.DataSource = LgcEstudiante.Instancia.ListarEstudiantesInHabilitados();
+        }
+
+        private void btnEstHabilitar_Click(object sender, EventArgs e)
+        {
+            Estudiante est;
+            if (dgvEstInhabilitado.CurrentRow != null)
+            {
+                est = (Estudiante)dgvEstInhabilitado.CurrentRow.DataBoundItem;
+                Matricula matricula = LgcMatricula.Instancia.BuscarMatriculaI(est.Id);
+                LgcMatricula.Instancia.CambiarEstadoMatricula(matricula);
+                ListarEstudiantesInHabilitados();
+            }
         }
     }
 }

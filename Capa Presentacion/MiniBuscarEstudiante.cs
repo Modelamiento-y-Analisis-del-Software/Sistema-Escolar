@@ -15,7 +15,9 @@ namespace CapaPresentacion
     public partial class MiniBuscarEstudiante : Form
     {
         public Estudiante Est { get; set; }
-        public CreateTutor uscNewTutor;
+        public UserControl usc;
+        public CreateTutor uscCreateTutor;
+        public Matricular uscMatricular;
         public MiniBuscarEstudiante()
         {
             InitializeComponent();
@@ -26,7 +28,15 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             ListarEstudiantes();
-            uscNewTutor = usc;
+            this.usc = usc;
+            uscCreateTutor = usc;
+        }
+        public MiniBuscarEstudiante(Matricular usc)
+        {
+            InitializeComponent();
+            ListarEstudiantes();
+            this.usc = usc;
+            uscMatricular = usc;
         }
 
         void ListarEstudiantes()
@@ -41,11 +51,24 @@ namespace CapaPresentacion
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            if (dgvEstudiantes.CurrentRow != null)
+            if (usc is Matricular)
             {
-                Est = (Estudiante) dgvEstudiantes.CurrentRow.DataBoundItem;
+                if (dgvEstudiantes.CurrentRow != null)
+                {
+                    Est = (Estudiante)dgvEstudiantes.CurrentRow.DataBoundItem;
+                }
+                uscMatricular.txtEstExistSearch.Text = Est.Dni;
+                var m = LgcMatricula.Instancia.BuscarMatricula(Est.Id);
+                uscMatricular.LoadMatricula(m);
             }
-            uscNewTutor.txtEstSearch.Text = Est.Dni;
+            else if (usc is CreateTutor)
+            {
+                if (dgvEstudiantes.CurrentRow != null)
+                {
+                    Est = (Estudiante)dgvEstudiantes.CurrentRow.DataBoundItem;
+                }
+                uscCreateTutor.txtEstSearch.Text = Est.Dni;
+            }
             this.Close();
         }
 

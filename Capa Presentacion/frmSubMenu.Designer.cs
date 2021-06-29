@@ -29,28 +29,26 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSubMenu));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSubMenu));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.hider = new System.Windows.Forms.Panel();
             this.btnOption1_2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnOption1_1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnOption2_2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnOption2_1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnOption3_3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnOption3_2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnOption3_1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.hider = new System.Windows.Forms.Panel();
-            this.btnOption1_3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -74,7 +72,6 @@ namespace CapaPresentacion
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.tabPage1.Controls.Add(this.btnOption1_3);
             this.tabPage1.Controls.Add(this.btnOption1_2);
             this.tabPage1.Controls.Add(this.btnOption1_1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -83,6 +80,40 @@ namespace CapaPresentacion
             this.tabPage1.Size = new System.Drawing.Size(226, 682);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "0";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
+            this.tabPage3.Controls.Add(this.btnOption2_2);
+            this.tabPage3.Controls.Add(this.btnOption2_1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(226, 682);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "1";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
+            this.tabPage2.Controls.Add(this.btnOption3_3);
+            this.tabPage2.Controls.Add(this.btnOption3_2);
+            this.tabPage2.Controls.Add(this.btnOption3_1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(226, 682);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "2";
+            // 
+            // hider
+            // 
+            this.hider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
+            this.hider.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hider.Location = new System.Drawing.Point(0, 0);
+            this.hider.Name = "hider";
+            this.hider.Size = new System.Drawing.Size(220, 0);
+            this.hider.TabIndex = 2;
             // 
             // btnOption1_2
             // 
@@ -98,16 +129,16 @@ namespace CapaPresentacion
             this.btnOption1_2.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
             this.btnOption1_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOption1_2.BackgroundImage")));
             this.btnOption1_2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption1_2.ButtonText = "Matricular Nuevo";
+            this.btnOption1_2.ButtonText = "Matricular";
             this.btnOption1_2.ButtonTextMarginLeft = 0;
             this.btnOption1_2.ColorContrastOnClick = 45;
             this.btnOption1_2.ColorContrastOnHover = 45;
             this.btnOption1_2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnOption1_2.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnOption1_2.CustomizableEdges = borderEdges1;
             this.btnOption1_2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOption1_2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOption1_2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -195,11 +226,11 @@ namespace CapaPresentacion
             this.btnOption1_1.ColorContrastOnClick = 45;
             this.btnOption1_1.ColorContrastOnHover = 45;
             this.btnOption1_1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnOption1_1.CustomizableEdges = borderEdges3;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnOption1_1.CustomizableEdges = borderEdges2;
             this.btnOption1_1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOption1_1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOption1_1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -267,18 +298,6 @@ namespace CapaPresentacion
             this.btnOption1_1.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnOption1_1.UseDefaultRadiusAndThickness = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.tabPage3.Controls.Add(this.btnOption2_2);
-            this.tabPage3.Controls.Add(this.btnOption2_1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(226, 682);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "1";
-            // 
             // btnOption2_2
             // 
             this.btnOption2_2.AllowAnimations = false;
@@ -298,11 +317,11 @@ namespace CapaPresentacion
             this.btnOption2_2.ColorContrastOnClick = 45;
             this.btnOption2_2.ColorContrastOnHover = 45;
             this.btnOption2_2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnOption2_2.CustomizableEdges = borderEdges4;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnOption2_2.CustomizableEdges = borderEdges3;
             this.btnOption2_2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOption2_2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOption2_2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -390,11 +409,11 @@ namespace CapaPresentacion
             this.btnOption2_1.ColorContrastOnClick = 45;
             this.btnOption2_1.ColorContrastOnHover = 45;
             this.btnOption2_1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnOption2_1.CustomizableEdges = borderEdges5;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnOption2_1.CustomizableEdges = borderEdges4;
             this.btnOption2_1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOption2_1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOption2_1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -463,19 +482,6 @@ namespace CapaPresentacion
             this.btnOption2_1.UseDefaultRadiusAndThickness = true;
             this.btnOption2_1.Click += new System.EventHandler(this.btnOption2_1_Click);
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.tabPage2.Controls.Add(this.btnOption3_3);
-            this.tabPage2.Controls.Add(this.btnOption3_2);
-            this.tabPage2.Controls.Add(this.btnOption3_1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(226, 682);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "2";
-            // 
             // btnOption3_3
             // 
             this.btnOption3_3.AllowAnimations = false;
@@ -495,11 +501,11 @@ namespace CapaPresentacion
             this.btnOption3_3.ColorContrastOnClick = 45;
             this.btnOption3_3.ColorContrastOnHover = 45;
             this.btnOption3_3.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnOption3_3.CustomizableEdges = borderEdges6;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnOption3_3.CustomizableEdges = borderEdges5;
             this.btnOption3_3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOption3_3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOption3_3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -566,6 +572,7 @@ namespace CapaPresentacion
             this.btnOption3_3.TextMarginLeft = 0;
             this.btnOption3_3.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnOption3_3.UseDefaultRadiusAndThickness = true;
+            this.btnOption3_3.Click += new System.EventHandler(this.btnOption3_3_Click);
             // 
             // btnOption3_2
             // 
@@ -586,11 +593,11 @@ namespace CapaPresentacion
             this.btnOption3_2.ColorContrastOnClick = 45;
             this.btnOption3_2.ColorContrastOnHover = 45;
             this.btnOption3_2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnOption3_2.CustomizableEdges = borderEdges7;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnOption3_2.CustomizableEdges = borderEdges6;
             this.btnOption3_2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOption3_2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOption3_2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -678,11 +685,11 @@ namespace CapaPresentacion
             this.btnOption3_1.ColorContrastOnClick = 45;
             this.btnOption3_1.ColorContrastOnHover = 45;
             this.btnOption3_1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnOption3_1.CustomizableEdges = borderEdges8;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnOption3_1.CustomizableEdges = borderEdges7;
             this.btnOption3_1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnOption3_1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnOption3_1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -751,106 +758,6 @@ namespace CapaPresentacion
             this.btnOption3_1.UseDefaultRadiusAndThickness = true;
             this.btnOption3_1.Click += new System.EventHandler(this.BtnOption3_1_Click);
             // 
-            // hider
-            // 
-            this.hider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.hider.Dock = System.Windows.Forms.DockStyle.Top;
-            this.hider.Location = new System.Drawing.Point(0, 0);
-            this.hider.Name = "hider";
-            this.hider.Size = new System.Drawing.Size(220, 0);
-            this.hider.TabIndex = 2;
-            // 
-            // btnOption1_3
-            // 
-            this.btnOption1_3.AllowAnimations = false;
-            this.btnOption1_3.AllowMouseEffects = true;
-            this.btnOption1_3.AllowToggling = true;
-            this.btnOption1_3.AnimationSpeed = 200;
-            this.btnOption1_3.AutoGenerateColors = false;
-            this.btnOption1_3.AutoRoundBorders = false;
-            this.btnOption1_3.AutoSizeLeftIcon = true;
-            this.btnOption1_3.AutoSizeRightIcon = true;
-            this.btnOption1_3.BackColor = System.Drawing.Color.Transparent;
-            this.btnOption1_3.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.btnOption1_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOption1_3.BackgroundImage")));
-            this.btnOption1_3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption1_3.ButtonText = "Matricular Existente";
-            this.btnOption1_3.ButtonTextMarginLeft = 0;
-            this.btnOption1_3.ColorContrastOnClick = 45;
-            this.btnOption1_3.ColorContrastOnHover = 45;
-            this.btnOption1_3.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnOption1_3.CustomizableEdges = borderEdges1;
-            this.btnOption1_3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnOption1_3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnOption1_3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnOption1_3.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnOption1_3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnOption1_3.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnOption1_3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOption1_3.ForeColor = System.Drawing.Color.Gray;
-            this.btnOption1_3.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOption1_3.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnOption1_3.IconLeftPadding = new System.Windows.Forms.Padding(23, 3, 3, 3);
-            this.btnOption1_3.IconMarginLeft = 11;
-            this.btnOption1_3.IconPadding = 10;
-            this.btnOption1_3.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnOption1_3.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnOption1_3.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnOption1_3.IconSize = 25;
-            this.btnOption1_3.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.btnOption1_3.IdleBorderRadius = 1;
-            this.btnOption1_3.IdleBorderThickness = 1;
-            this.btnOption1_3.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.btnOption1_3.IdleIconLeftImage = null;
-            this.btnOption1_3.IdleIconRightImage = null;
-            this.btnOption1_3.IndicateFocus = true;
-            this.btnOption1_3.Location = new System.Drawing.Point(3, 93);
-            this.btnOption1_3.Name = "btnOption1_3";
-            this.btnOption1_3.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnOption1_3.OnDisabledState.BorderRadius = 1;
-            this.btnOption1_3.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption1_3.OnDisabledState.BorderThickness = 1;
-            this.btnOption1_3.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnOption1_3.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnOption1_3.OnDisabledState.IconLeftImage = null;
-            this.btnOption1_3.OnDisabledState.IconRightImage = null;
-            this.btnOption1_3.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
-            this.btnOption1_3.onHoverState.BorderRadius = 1;
-            this.btnOption1_3.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption1_3.onHoverState.BorderThickness = 1;
-            this.btnOption1_3.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(73)))), ((int)(((byte)(79)))));
-            this.btnOption1_3.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnOption1_3.onHoverState.IconLeftImage = null;
-            this.btnOption1_3.onHoverState.IconRightImage = null;
-            this.btnOption1_3.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.btnOption1_3.OnIdleState.BorderRadius = 1;
-            this.btnOption1_3.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption1_3.OnIdleState.BorderThickness = 1;
-            this.btnOption1_3.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
-            this.btnOption1_3.OnIdleState.ForeColor = System.Drawing.Color.Gray;
-            this.btnOption1_3.OnIdleState.IconLeftImage = null;
-            this.btnOption1_3.OnIdleState.IconRightImage = null;
-            this.btnOption1_3.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(64)))), ((int)(((byte)(69)))));
-            this.btnOption1_3.OnPressedState.BorderRadius = 1;
-            this.btnOption1_3.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnOption1_3.OnPressedState.BorderThickness = 1;
-            this.btnOption1_3.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(64)))), ((int)(((byte)(69)))));
-            this.btnOption1_3.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnOption1_3.OnPressedState.IconLeftImage = null;
-            this.btnOption1_3.OnPressedState.IconRightImage = null;
-            this.btnOption1_3.Size = new System.Drawing.Size(220, 45);
-            this.btnOption1_3.TabIndex = 2;
-            this.btnOption1_3.Tag = "0";
-            this.btnOption1_3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOption1_3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnOption1_3.TextMarginLeft = 0;
-            this.btnOption1_3.TextPadding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnOption1_3.UseDefaultRadiusAndThickness = true;
-            // 
             // frmSubMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -881,6 +788,5 @@ namespace CapaPresentacion
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnOption1_2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnOption2_2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnOption2_1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnOption1_3;
     }
 }

@@ -16,6 +16,7 @@ namespace CapaPresentacion
     {
 
         public MiniBuscarTutor MBTutor { get; set; }
+        public MiniBuscarEstudiante MBEstudiante { get; set; }
         public frmMainWindow MainWindow { get; set; }
 
         public Matricular()
@@ -60,72 +61,170 @@ namespace CapaPresentacion
             }
         }
 
+        public void LoadMatricula(Matricula m)
+        {
+            if (m.GradoEscolar == 1)
+            {
+                rdbGrado1.Checked = true;
+                rdbGrado2.Checked = false;
+                rdbGrado3.Checked = false;
+                rdbGrado4.Checked = false;
+                rdbGrado5.Checked = false;
+            }
+            else if (m.GradoEscolar == 2)
+            {
+                rdbGrado1.Checked = false;
+                rdbGrado2.Checked = true;
+                rdbGrado3.Checked = false;
+                rdbGrado4.Checked = false;
+                rdbGrado5.Checked = false;
+            }
+            else if (m.GradoEscolar == 3)
+            {
+                rdbGrado1.Checked = false;
+                rdbGrado2.Checked = false;
+                rdbGrado3.Checked = true;
+                rdbGrado4.Checked = false;
+                rdbGrado5.Checked = false;
+            }
+            else if (m.GradoEscolar == 4)
+            {
+                rdbGrado1.Checked = false;
+                rdbGrado2.Checked = false;
+                rdbGrado3.Checked = false;
+                rdbGrado4.Checked = true;
+                rdbGrado5.Checked = false;
+            }
+            else if (m.GradoEscolar == 5)
+            {
+                rdbGrado1.Checked = false;
+                rdbGrado2.Checked = false;
+                rdbGrado3.Checked = false;
+                rdbGrado4.Checked = false;
+                rdbGrado5.Checked = true;
+            }
+
+            cbbSeccion.SelectedItem = m.Seccion;
+
+            if (m.Turno == 'M')
+            {
+                rdbMañana.Checked = true;
+                rdbTarde.Checked = false;
+                rdbNoche.Checked = false;
+            }
+            else if (m.Turno == 'T')
+            {
+                rdbMañana.Checked = false;
+                rdbTarde.Checked = true;
+                rdbNoche.Checked = false;
+
+            }
+            else if (m.Turno == 'N')
+            {
+                rdbMañana.Checked = false;
+                rdbTarde.Checked = false;
+                rdbNoche.Checked = true;
+            }
+
+            txtEscuelaProc.Text = m.EscuelaProcedencia;
+            dpkFecInscripcion.Value = m.FecInscripcion;
+        }
+
         private void RealizarMatricula()
         {
-            CapaEntidad.Estudiante e = new CapaEntidad.Estudiante
+            Estudiante e;
+            Matricula m;
+            bool exito = false;
+            if (rdbNewMatrSi.Checked)
             {
-                Dni = txtEstDni.Text.ToString().Trim(),
-                Nombres = txtEstNombre.Text.ToString().Trim(),
-                ApPaterno = txtEstApPaterno.Text.ToString().Trim(),
-                ApMaterno = txtEstApMaterno.Text.ToString().Trim(),
-                Sexo = rdbEstMasculino.Checked ? 'M' : 'F',
-                FecNacimiento = dpkEstFecNacimiento.Value,
-                Direccion = txtEstDireccion.Text.ToString().Trim(),
-                Email = txtEstEmail.Text.ToString().Trim(),
-                Telefono = txtEstTelefono.Text.ToString().Trim(),
-                Foto = imgEstPerfil.Image,
-            };
+                e = new Estudiante
+                {
+                    Dni = txtEstDni.Text.ToString().Trim(),
+                    Nombres = txtEstNombre.Text.ToString().Trim(),
+                    ApPaterno = txtEstApPaterno.Text.ToString().Trim(),
+                    ApMaterno = txtEstApMaterno.Text.ToString().Trim(),
+                    Sexo = rdbEstMasculino.Checked ? 'M' : 'F',
+                    FecNacimiento = dpkEstFecNacimiento.Value,
+                    Direccion = txtEstDireccion.Text.ToString().Trim(),
+                    Email = txtEstEmail.Text.ToString().Trim(),
+                    Telefono = txtEstTelefono.Text.ToString().Trim(),
+                    Foto = imgEstPerfil.Image,
+                };
 
-            Matricula m = new Matricula
+                m = new Matricula
+                {
+                    Estudnte = e,
+                    GradoEscolar =
+                        rdbGrado1.Checked ? 1 :
+                        rdbGrado2.Checked ? 2 :
+                        rdbGrado3.Checked ? 3 :
+                        rdbGrado4.Checked ? 4 :
+                        rdbGrado5.Checked ? 5 : 0,
+                    Seccion = cbbSeccion.Text.ElementAt(0),
+                    Turno =
+                        rdbMañana.Checked ? 'M' :
+                        rdbTarde.Checked ? 'T' :
+                        rdbNoche.Checked ? 'N' : 'E',
+                    EscuelaProcedencia = txtEscuelaProc.Text.ToString().Trim(),
+                    FecInscripcion = dpkFecInscripcion.Value,
+                    Estado = true
+                };
+
+                exito = LgcMatricula.Instancia.InsertarMatricula(m);
+                e.Id = LgcEstudiante.Instancia.BuscarEstudiante(e.Dni).First().Id;
+                Tutor t;
+                string parentesco;
+
+                if (rdbTutorNuevoSi.Checked)
+                {
+                    t = new Tutor
+                    {
+                        Dni = txtTutDni.Text.ToString().Trim(),
+                        Nombres = txtTutNombres.Text.ToString().Trim(),
+                        ApPaterno = txtTutApPaterno.Text.ToString().Trim(),
+                        ApMaterno = txtTutApMaterno.Text.ToString().Trim(),
+                        Sexo = rdbTutMasculino.Checked ? 'M' : 'F',
+                        FecNacimiento = dpkTutFecNacimiento.Value,
+                        Direccion = txtTutDireccion.Text.ToString().Trim(),
+                        Email = txtTutEmail.Text.ToString().Trim(),
+                        Telefono = txtTutTelefono.Text.ToString().Trim(),
+                        Ocupacion = txtTutOcupacion.Text.ToString().Trim(),
+                        NvAcademico = cmbTutGrado.Text.ToString().Trim()
+                    };
+                    parentesco = CmbParentescoNew.Text.ToString().Trim();
+                }
+                else
+                {
+                    t = MBTutor.EntidadTutor;
+                    parentesco = cmbTutParentescoExist.Text.ToString().Trim();
+                }
+
+                LgcTutor.Instancia.InsertarTutor(t, e, parentesco);
+
+            }
+            else if (rdbNewMatrNo.Checked)
             {
-                Estudnte = e,
-                GradoEscolar =
+                e = MBEstudiante.Est;
+                m = LgcMatricula.Instancia.BuscarMatricula(e.Id);
+                m.GradoEscolar =
                     rdbGrado1.Checked ? 1 :
                     rdbGrado2.Checked ? 2 :
                     rdbGrado3.Checked ? 3 :
                     rdbGrado4.Checked ? 4 :
-                    rdbGrado5.Checked ? 5 : 0,
-                Seccion = cbbSeccion.Text.ElementAt(0),
-                Turno =
+                    rdbGrado5.Checked ? 5 : 0;
+                m.Seccion = cbbSeccion.Text.ElementAt(0);
+                m.Turno =
                     rdbMañana.Checked ? 'M' :
                     rdbTarde.Checked ? 'T' :
-                    rdbNoche.Checked ? 'N' : 'E',
-                EscuelaProcedencia = txtEscuelaProc.Text.ToString().Trim(),
-                FecInscripcion = dpkFecInscripcion.Value,
-                Estado = true
-            };
-
-            LgcMatricula.Instancia.InsertarMatricula(m);
-            e.Id = LgcEstudiante.Instancia.BuscarEstudiante(e.Dni).First().Id;
-            Tutor t;
-            string parentesco;
-
-            if (rdbTutorNuevoSi.Checked)
-            {
-                t = new Tutor
-                {
-                    Dni = txtTutDni.Text.ToString().Trim(),
-                    Nombres = txtTutNombres.Text.ToString().Trim(),
-                    ApPaterno = txtTutApPaterno.Text.ToString().Trim(),
-                    ApMaterno = txtTutApMaterno.Text.ToString().Trim(),
-                    Sexo = rdbTutMasculino.Checked ? 'M' : 'F',
-                    FecNacimiento = dpkTutFecNacimiento.Value,
-                    Direccion = txtTutDireccion.Text.ToString().Trim(),
-                    Email = txtTutEmail.Text.ToString().Trim(),
-                    Telefono = txtTutTelefono.Text.ToString().Trim(),
-                    Ocupacion = txtTutOcupacion.Text.ToString().Trim(),
-                    NvAcademico = cmbTutGrado.Text.ToString().Trim()
-                };
-                parentesco = CmbParentescoNew.Text.ToString().Trim();
+                    rdbNoche.Checked ? 'N' : 'E';
+                m.EscuelaProcedencia = txtEscuelaProc.Text.ToString().Trim();
+                m.FecInscripcion = dpkFecInscripcion.Value;
+                exito = LgcMatricula.Instancia.ActualizarMatricula(m);
             }
+            if (exito)
+                MessageBox.Show("Exito al guardar");
             else
-            {
-                t = MBTutor.EntidadTutor;
-                parentesco = cmbTutParentescoExist.Text.ToString().Trim();
-            }
-
-            LgcTutor.Instancia.InsertarTutor(t, e, parentesco);
-            MessageBox.Show("Exito al guardar");
+                MessageBox.Show("Fallo al guardar");
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
@@ -136,7 +235,7 @@ namespace CapaPresentacion
 
         private void btnTutSearch_Click(object sender, EventArgs e)
         {
-            MBTutor =  new MiniBuscarTutor(this);
+            MBTutor = new MiniBuscarTutor(this);
             MBTutor.Show();
         }
 
@@ -176,6 +275,34 @@ namespace CapaPresentacion
             txtTutOcupacion.Text = "";
             cmbTutGrado.SelectedIndex = 0;
             CmbParentescoNew.SelectedIndex = 0;
+        }
+
+        private void btnEstSearch_Click(object sender, EventArgs e)
+        {
+            MBEstudiante = new MiniBuscarEstudiante(this);
+            MBEstudiante.Show();
+        }
+
+        private void rdbNewMatrSi_CheckedChanged2(object sender, Bunifu.UI.WinForms.BunifuRadioButton.CheckedChangedEventArgs e)
+        {
+            if (rdbNewMatrSi.Checked)
+            {
+                grpbDatosDelEstudiante.Enabled = true;
+                grbMatriculaExistente.Enabled = false;
+                grbNuevoTutor.Enabled = true;
+                grbRdbNuevoT.Enabled = true;
+            }
+        }
+
+        private void rdbNewMatrNo_CheckedChanged2(object sender, Bunifu.UI.WinForms.BunifuRadioButton.CheckedChangedEventArgs e)
+        {
+            if (rdbNewMatrNo.Checked)
+            {
+                grpbDatosDelEstudiante.Enabled = false;
+                grbMatriculaExistente.Enabled = true;
+                grbNuevoTutor.Enabled = false;
+                grbRdbNuevoT.Enabled = false;
+            }
         }
     }
 }
