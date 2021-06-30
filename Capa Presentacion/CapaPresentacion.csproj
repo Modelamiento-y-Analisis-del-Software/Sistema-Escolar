@@ -155,17 +155,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CORECalificacion.cs">
+    <Compile Include="Detalles\EstudianteDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECalificacion.Designer.cs">
-      <DependentUpon>CORECalificacion.cs</DependentUpon>
+    <Compile Include="Detalles\EstudianteDetalle.Designer.cs">
+      <DependentUpon>EstudianteDetalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Coreplanificacioncurricular.cs">
+    <Compile Include="Detalles\TutorDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Coreplanificacioncurricular.Designer.cs">
-      <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
+    <Compile Include="Detalles\TutorDetalle.Designer.cs">
+      <DependentUpon>TutorDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstudianteDetalles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EstudianteDetalles.Designer.cs">
+      <DependentUpon>EstudianteDetalles.cs</DependentUpon>
     </Compile>
     <Compile Include="Matricular.cs">
       <SubType>UserControl</SubType>
@@ -179,6 +185,7 @@
     <Compile Include="CreateTutor.Designer.cs">
       <DependentUpon>CreateTutor.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="CrudAlumno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,17 +204,25 @@
     <Compile Include="RealizarMatrícula.Designer.cs">
       <DependentUpon>RealizarMatrícula.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> Milton
     <Compile Include="frmSubMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="frmSubMenu.Designer.cs">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenedordocente.cs">
+    <Compile Include="MiniBuscarEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mantenedordocente.Designer.cs">
-      <DependentUpon>Mantenedordocente.cs</DependentUpon>
+    <Compile Include="MiniBuscarEstudiante.Designer.cs">
+      <DependentUpon>MiniBuscarEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniBuscarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniBuscarTutor.Designer.cs">
+      <DependentUpon>MiniBuscarTutor.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -217,17 +232,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Silabo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Silabo.Designer.cs">
-      <DependentUpon>Silabo.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="CORECalificacion.resx">
-      <DependentUpon>CORECalificacion.cs</DependentUpon>
+    <EmbeddedResource Include="Detalles\EstudianteDetalle.resx">
+      <DependentUpon>EstudianteDetalle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Coreplanificacioncurricular.resx">
-      <DependentUpon>Coreplanificacioncurricular.cs</DependentUpon>
+    <EmbeddedResource Include="Detalles\TutorDetalle.resx">
+      <DependentUpon>TutorDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstudianteDetalles.resx">
+      <DependentUpon>EstudianteDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Matricular.resx">
       <DependentUpon>Matricular.cs</DependentUpon>
@@ -235,17 +247,23 @@
     <EmbeddedResource Include="CreateTutor.resx">
       <DependentUpon>CreateTutor.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="CrudAlumno.resx">
       <DependentUpon>CrudAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RealizarPagoPension.resx">
       <DependentUpon>RealizarPagoPension.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> Milton
     <EmbeddedResource Include="frmSubMenu.resx">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mantenedordocente.resx">
-      <DependentUpon>Mantenedordocente.cs</DependentUpon>
+    <EmbeddedResource Include="MiniBuscarEstudiante.resx">
+      <DependentUpon>MiniBuscarEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniBuscarTutor.resx">
+      <DependentUpon>MiniBuscarTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -256,13 +274,18 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="RealizarMatrícula.resx">
       <DependentUpon>RealizarMatrícula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Silabo.resx">
       <DependentUpon>Silabo.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> Milton
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaEntidad.Estudiante.datasource" />
+    <None Include="Properties\DataSources\CapaEntidad.Tutor.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -320,6 +343,18 @@
       <Project>{4ecead6b-7fcb-4c0f-ac8b-57f2dab9633b}</Project>
       <Name>CapaLogica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\refresh_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\checked_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\edit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\male_user_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
