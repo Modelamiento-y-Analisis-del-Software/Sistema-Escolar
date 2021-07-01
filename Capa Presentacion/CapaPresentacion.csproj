@@ -155,11 +155,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateDocente.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="CreateDocente.cs" />
     <Compile Include="CreateDocente.Designer.cs">
       <DependentUpon>CreateDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detalles\DocenteDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detalles\DocenteDetalle.Designer.cs">
+      <DependentUpon>DocenteDetalle.cs</DependentUpon>
     </Compile>
     <Compile Include="Detalles\EstudianteDetalle.cs">
       <SubType>Form</SubType>
@@ -173,15 +177,11 @@
     <Compile Include="Detalles\TutorDetalle.Designer.cs">
       <DependentUpon>TutorDetalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocenteDetalles.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="DocenteDetalles.cs" />
     <Compile Include="DocenteDetalles.Designer.cs">
       <DependentUpon>DocenteDetalles.cs</DependentUpon>
     </Compile>
-    <Compile Include="EstudianteDetalles.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="EstudianteDetalles.cs" />
     <Compile Include="EstudianteDetalles.Designer.cs">
       <DependentUpon>EstudianteDetalles.cs</DependentUpon>
     </Compile>
@@ -203,15 +203,11 @@
     <Compile Include="frmSubMenu.Designer.cs">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MiniBuscarEstudiante.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MiniBuscarEstudiante.cs" />
     <Compile Include="MiniBuscarEstudiante.Designer.cs">
       <DependentUpon>MiniBuscarEstudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="MiniBuscarTutor.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MiniBuscarTutor.cs" />
     <Compile Include="MiniBuscarTutor.Designer.cs">
       <DependentUpon>MiniBuscarTutor.cs</DependentUpon>
     </Compile>
@@ -225,6 +221,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CreateDocente.resx">
       <DependentUpon>CreateDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalles\DocenteDetalle.resx">
+      <DependentUpon>DocenteDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Detalles\EstudianteDetalle.resx">
       <DependentUpon>EstudianteDetalle.cs</DependentUpon>

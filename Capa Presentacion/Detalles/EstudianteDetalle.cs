@@ -177,5 +177,30 @@ namespace CapaPresentacion
                 imgEstPerfil.Image = Image.FromFile(f.FileName);
             }
         }
+
+        private void txtEstApPaterno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEstNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblParEstNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgEstPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblParEstApellido_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
