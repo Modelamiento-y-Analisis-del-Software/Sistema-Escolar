@@ -10,8 +10,7 @@ namespace CapaEntidad
     {
         public int Id { get; set; }
         public Estudiante Estudnte { get; set; }
-        public int GradoEscolar { get; set; }
-        public Aula EntAula { get; set; }
+        public Grado GradoEsc { get; set; }
         public char Turno { get; set; }
         public string EscuelaProcedencia { get; set; }
         public DateTime FecInscripcion { get; set; }

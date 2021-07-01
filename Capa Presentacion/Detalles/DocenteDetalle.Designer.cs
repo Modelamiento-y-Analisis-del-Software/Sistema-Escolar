@@ -65,7 +65,6 @@ namespace CapaPresentacion.Detalles
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            this.imgDocPerfil = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.txtDocTelefono = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtDocNombre = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -93,26 +92,10 @@ namespace CapaPresentacion.Detalles
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDocEsp = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.imgDocPerfil)).BeginInit();
+            this.imgDocPerfil = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.gbDoc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDocPerfil)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imgDocPerfil
-            // 
-            this.imgDocPerfil.AllowFocused = false;
-            this.imgDocPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.imgDocPerfil.AutoSizeHeight = true;
-            this.imgDocPerfil.BorderRadius = 102;
-            this.imgDocPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgDocPerfil.Image")));
-            this.imgDocPerfil.IsCircle = true;
-            this.imgDocPerfil.Location = new System.Drawing.Point(290, -1);
-            this.imgDocPerfil.Name = "imgDocPerfil";
-            this.imgDocPerfil.Size = new System.Drawing.Size(204, 204);
-            this.imgDocPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgDocPerfil.TabIndex = 65;
-            this.imgDocPerfil.TabStop = false;
-            this.imgDocPerfil.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // label27
             // 
@@ -369,7 +352,7 @@ namespace CapaPresentacion.Detalles
             this.label25.Enabled = false;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.DimGray;
-            this.label25.Location = new System.Drawing.Point(103, 359);
+            this.label25.Location = new System.Drawing.Point(100, 359);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(126, 20);
             this.label25.TabIndex = 63;
@@ -383,7 +366,7 @@ namespace CapaPresentacion.Detalles
             this.lblParamEstDni.Enabled = false;
             this.lblParamEstDni.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParamEstDni.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParamEstDni.Location = new System.Drawing.Point(41, 362);
+            this.lblParamEstDni.Location = new System.Drawing.Point(100, 432);
             this.lblParamEstDni.Name = "lblParamEstDni";
             this.lblParamEstDni.Size = new System.Drawing.Size(32, 20);
             this.lblParamEstDni.TabIndex = 61;
@@ -408,7 +391,6 @@ namespace CapaPresentacion.Detalles
             this.txtDocApMaterno.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDocApMaterno.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtDocApMaterno.DefaultText = "";
-            this.txtDocApMaterno.Enabled = false;
             this.txtDocApMaterno.FillColor = System.Drawing.Color.White;
             this.txtDocApMaterno.HideSelection = true;
             this.txtDocApMaterno.IconLeft = null;
@@ -546,7 +528,7 @@ namespace CapaPresentacion.Detalles
             this.lblParEstApellido.Enabled = false;
             this.lblParEstApellido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParEstApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstApellido.Location = new System.Drawing.Point(41, 362);
+            this.lblParEstApellido.Location = new System.Drawing.Point(103, 286);
             this.lblParEstApellido.Name = "lblParEstApellido";
             this.lblParEstApellido.Size = new System.Drawing.Size(120, 20);
             this.lblParEstApellido.TabIndex = 62;
@@ -613,7 +595,7 @@ namespace CapaPresentacion.Detalles
             this.btnConfirmarDoc.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmarDoc.IdleIconRightImage = null;
             this.btnConfirmarDoc.IndicateFocus = false;
-            this.btnConfirmarDoc.Location = new System.Drawing.Point(526, 851);
+            this.btnConfirmarDoc.Location = new System.Drawing.Point(492, 851);
             this.btnConfirmarDoc.Name = "btnConfirmarDoc";
             this.btnConfirmarDoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmarDoc.OnDisabledState.BorderRadius = 1;
@@ -705,7 +687,7 @@ namespace CapaPresentacion.Detalles
             this.btnImageDoc.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.male_user_32px;
             this.btnImageDoc.IdleIconRightImage = null;
             this.btnImageDoc.IndicateFocus = false;
-            this.btnImageDoc.Location = new System.Drawing.Point(252, 851);
+            this.btnImageDoc.Location = new System.Drawing.Point(218, 851);
             this.btnImageDoc.Name = "btnImageDoc";
             this.btnImageDoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnImageDoc.OnDisabledState.BorderRadius = 1;
@@ -796,7 +778,7 @@ namespace CapaPresentacion.Detalles
             this.btnEditarDoc.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.edit_32px;
             this.btnEditarDoc.IdleIconRightImage = null;
             this.btnEditarDoc.IndicateFocus = false;
-            this.btnEditarDoc.Location = new System.Drawing.Point(389, 851);
+            this.btnEditarDoc.Location = new System.Drawing.Point(355, 851);
             this.btnEditarDoc.Name = "btnEditarDoc";
             this.btnEditarDoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditarDoc.OnDisabledState.BorderRadius = 1;
@@ -918,7 +900,6 @@ namespace CapaPresentacion.Detalles
             this.gbDoc.BorderColor = System.Drawing.Color.LightGray;
             this.gbDoc.BorderRadius = 1;
             this.gbDoc.BorderThickness = 1;
-            this.gbDoc.Controls.Add(this.bunifuLabel1);
             this.gbDoc.Controls.Add(this.rdbDocMasculino);
             this.gbDoc.Controls.Add(this.lblMasculino);
             this.gbDoc.Controls.Add(this.lblFemenino);
@@ -942,7 +923,7 @@ namespace CapaPresentacion.Detalles
             this.rdbDocMasculino.BindingControl = this.lblMasculino;
             this.rdbDocMasculino.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rdbDocMasculino.BorderThickness = 1;
-            this.rdbDocMasculino.Checked = false;
+            this.rdbDocMasculino.Checked = true;
             this.rdbDocMasculino.Enabled = false;
             this.rdbDocMasculino.Location = new System.Drawing.Point(17, 22);
             this.rdbDocMasculino.Name = "rdbDocMasculino";
@@ -975,6 +956,7 @@ namespace CapaPresentacion.Detalles
             // 
             // lblFemenino
             // 
+            this.lblFemenino.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.lblFemenino.AllowParentOverrides = false;
             this.lblFemenino.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -983,7 +965,7 @@ namespace CapaPresentacion.Detalles
             this.lblFemenino.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblFemenino.Enabled = false;
             this.lblFemenino.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblFemenino.Location = new System.Drawing.Point(41, 26);
+            this.lblFemenino.Location = new System.Drawing.Point(126, 26);
             this.lblFemenino.Name = "lblFemenino";
             this.lblFemenino.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblFemenino.Size = new System.Drawing.Size(53, 15);
@@ -999,7 +981,7 @@ namespace CapaPresentacion.Detalles
             this.rdbDocFemenino.BindingControl = this.lblFemenino;
             this.rdbDocFemenino.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rdbDocFemenino.BorderThickness = 1;
-            this.rdbDocFemenino.Checked = true;
+            this.rdbDocFemenino.Checked = false;
             this.rdbDocFemenino.Enabled = false;
             this.rdbDocFemenino.Location = new System.Drawing.Point(102, 22);
             this.rdbDocFemenino.Name = "rdbDocFemenino";
@@ -1019,7 +1001,7 @@ namespace CapaPresentacion.Detalles
             this.lblParEstDireccion.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblParEstDireccion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParEstDireccion.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstDireccion.Location = new System.Drawing.Point(41, 362);
+            this.lblParEstDireccion.Location = new System.Drawing.Point(83, 587);
             this.lblParEstDireccion.Name = "lblParEstDireccion";
             this.lblParEstDireccion.Size = new System.Drawing.Size(72, 20);
             this.lblParEstDireccion.TabIndex = 72;
@@ -1116,7 +1098,7 @@ namespace CapaPresentacion.Detalles
             this.txtDocDireccion.SelectionLength = 0;
             this.txtDocDireccion.SelectionStart = 0;
             this.txtDocDireccion.ShortcutsEnabled = true;
-            this.txtDocDireccion.Size = new System.Drawing.Size(276, 37);
+            this.txtDocDireccion.Size = new System.Drawing.Size(242, 37);
             this.txtDocDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtDocDireccion.TabIndex = 71;
             this.txtDocDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1136,7 +1118,7 @@ namespace CapaPresentacion.Detalles
             this.lblParEstFechaNac.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblParEstFechaNac.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParEstFechaNac.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstFechaNac.Location = new System.Drawing.Point(41, 362);
+            this.lblParEstFechaNac.Location = new System.Drawing.Point(330, 505);
             this.lblParEstFechaNac.Name = "lblParEstFechaNac";
             this.lblParEstFechaNac.Size = new System.Drawing.Size(149, 20);
             this.lblParEstFechaNac.TabIndex = 70;
@@ -1234,7 +1216,7 @@ namespace CapaPresentacion.Detalles
             this.txtDocEsp.SelectionLength = 0;
             this.txtDocEsp.SelectionStart = 0;
             this.txtDocEsp.ShortcutsEnabled = true;
-            this.txtDocEsp.Size = new System.Drawing.Size(276, 37);
+            this.txtDocEsp.Size = new System.Drawing.Size(242, 37);
             this.txtDocEsp.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtDocEsp.TabIndex = 77;
             this.txtDocEsp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1245,25 +1227,21 @@ namespace CapaPresentacion.Detalles
             this.txtDocEsp.UseSystemPasswordChar = false;
             this.txtDocEsp.WordWrap = true;
             // 
-            // bunifuLabel1
+            // imgDocPerfil
             // 
-            this.bunifuLabel1.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Enabled = false;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(129, 26);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(53, 15);
-            this.bunifuLabel1.TabIndex = 79;
-            this.bunifuLabel1.Text = "Femenino";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.imgDocPerfil.AllowFocused = false;
+            this.imgDocPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.imgDocPerfil.AutoSizeHeight = true;
+            this.imgDocPerfil.BorderRadius = 102;
+            this.imgDocPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgDocPerfil.Image")));
+            this.imgDocPerfil.IsCircle = true;
+            this.imgDocPerfil.Location = new System.Drawing.Point(278, 12);
+            this.imgDocPerfil.Name = "imgDocPerfil";
+            this.imgDocPerfil.Size = new System.Drawing.Size(204, 204);
+            this.imgDocPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgDocPerfil.TabIndex = 79;
+            this.imgDocPerfil.TabStop = false;
+            this.imgDocPerfil.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
             // DocenteDetalle
             // 
@@ -1271,7 +1249,8 @@ namespace CapaPresentacion.Detalles
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(801, 561);
+            this.Controls.Add(this.imgDocPerfil);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDocEsp);
             this.Controls.Add(this.bunifuPanel2);
@@ -1285,7 +1264,6 @@ namespace CapaPresentacion.Detalles
             this.Controls.Add(this.dpkDocFecNacimiento);
             this.Controls.Add(this.txtDocDireccion);
             this.Controls.Add(this.lblParEstFechaNac);
-            this.Controls.Add(this.imgDocPerfil);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.txtDocTelefono);
             this.Controls.Add(this.txtDocNombre);
@@ -1300,17 +1278,15 @@ namespace CapaPresentacion.Detalles
             this.Name = "DocenteDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalle del Docente";
-            ((System.ComponentModel.ISupportInitialize)(this.imgDocPerfil)).EndInit();
             this.gbDoc.ResumeLayout(false);
             this.gbDoc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDocPerfil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuPictureBox imgDocPerfil;
         private System.Windows.Forms.Label label27;
         private Bunifu.UI.WinForms.BunifuTextBox txtDocTelefono;
         public Bunifu.UI.WinForms.BunifuTextBox txtDocNombre;
@@ -1338,6 +1314,6 @@ namespace CapaPresentacion.Detalles
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuTextBox txtDocEsp;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuPictureBox imgDocPerfil;
     }
 }

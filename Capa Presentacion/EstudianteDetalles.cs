@@ -69,7 +69,7 @@ namespace CapaPresentacion
                 rdbEstFemenino.Checked = true;
             }
 
-            if (m.GradoEscolar == 1)
+            if (m.GradoEsc.Id == 1)
             {
                 rdbGrado1.Checked = true;
                 rdbGrado2.Checked = false;
@@ -77,7 +77,7 @@ namespace CapaPresentacion
                 rdbGrado4.Checked = false;
                 rdbGrado5.Checked = false;
             }
-            else if (m.GradoEscolar == 2)
+            else if (m.GradoEsc.Id == 2)
             {
                 rdbGrado1.Checked = false;
                 rdbGrado2.Checked = true;
@@ -85,7 +85,7 @@ namespace CapaPresentacion
                 rdbGrado4.Checked = false;
                 rdbGrado5.Checked = false;
             }
-            else if (m.GradoEscolar == 3)
+            else if (m.GradoEsc.Id == 3)
             {
                 rdbGrado1.Checked = false;
                 rdbGrado2.Checked = false;
@@ -93,7 +93,7 @@ namespace CapaPresentacion
                 rdbGrado4.Checked = false;
                 rdbGrado5.Checked = false;
             }
-            else if (m.GradoEscolar == 4)
+            else if (m.GradoEsc.Id == 4)
             {
                 rdbGrado1.Checked = false;
                 rdbGrado2.Checked = false;
@@ -101,7 +101,7 @@ namespace CapaPresentacion
                 rdbGrado4.Checked = true;
                 rdbGrado5.Checked = false;
             }
-            else if (m.GradoEscolar == 5)
+            else if (m.GradoEsc.Id == 5)
             {
                 rdbGrado1.Checked = false;
                 rdbGrado2.Checked = false;
@@ -110,7 +110,7 @@ namespace CapaPresentacion
                 rdbGrado5.Checked = true;
             }
 
-            cbbSeccion.SelectedItem = m.EntAula.Seccion;
+            //cbbSeccion.SelectedItem = m.EntAula.Seccion;
 
             if (m.Turno == 'M')
             {

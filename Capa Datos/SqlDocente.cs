@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using CapaEntidad;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
-
+using CapaEntidad;
 namespace CapaDatos
 {
     public class SqlDocente
