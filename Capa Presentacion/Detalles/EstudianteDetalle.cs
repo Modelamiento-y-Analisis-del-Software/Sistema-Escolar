@@ -113,7 +113,7 @@ namespace CapaPresentacion
                 rdbGrado5.Checked = true;
             }
 
-            cbbSeccion.SelectedItem = m.Seccion;
+            cbbSeccion.SelectedItem = m.EntAula.Seccion;
 
             if (m.Turno == 'M')
             {

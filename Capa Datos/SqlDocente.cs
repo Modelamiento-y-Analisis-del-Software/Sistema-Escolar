@@ -32,22 +32,20 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     var ms = new MemoryStream((byte[])dr["Foto"]);
-                    var e = new Docente
-                    {
-                        ID = Convert.ToInt32(dr["IDDocente"]),
-                        Dni = dr["Dni"].ToString(),
-                        Nombre = dr["Nombre"].ToString(),
-                        ApPaterno = dr["ApPaterno"].ToString(),
-                        ApMaterno = dr["ApMaterno"].ToString(),
-                        Sexo = dr["Sexo"].ToString().ElementAt(0),
-                        FecNacimiento = Convert.ToDateTime(dr["FecNacimiento"]),
-                        Direccion = dr["Direccion"].ToString(),
-                        Email = dr["Email"].ToString(),
-                        Telefono = dr["Telefono"].ToString(),
-                        Especialidad = dr["Especialidad"].ToString(),
-                        Foto = Image.FromStream(ms)
-                    };
-                    lista.Add(e);
+                    var d = new Docente();
+                        d.Id = Convert.ToInt32(dr["IDDocente"]);
+                        d.Dni = dr["Dni"].ToString();
+                        d.Nombres = dr["Nombre"].ToString();
+                        d.ApPaterno = dr["ApPaterno"].ToString();
+                        d.ApMaterno = dr["ApMaterno"].ToString();
+                        d.Sexo = dr["Sexo"].ToString().ElementAt(0);
+                        d.FecNacimiento = Convert.ToDateTime(dr["FecNacimiento"]);
+                        d.Direccion = dr["Direccion"].ToString();
+                        d.Email = dr["Email"].ToString();
+                        d.Telefono = dr["Telefono"].ToString();
+                        d.Especialidad = dr["Especialidad"].ToString();
+                        d.Foto = Image.FromStream(ms);
+                    lista.Add(d);
                 }
             }
             catch (Exception e)
@@ -76,7 +74,7 @@ namespace CapaDatos
                 };
 
                 cmd.Parameters.AddWithValue("@Dni", D.Dni);
-                cmd.Parameters.AddWithValue("@Nombres", D.Nombre);
+                cmd.Parameters.AddWithValue("@Nombres", D.Nombres);
                 cmd.Parameters.AddWithValue("@ApPaterno", D.ApPaterno);
                 cmd.Parameters.AddWithValue("@ApMaterno", D.ApMaterno);
                 cmd.Parameters.AddWithValue("@Sexo", D.Sexo);
@@ -124,9 +122,9 @@ namespace CapaDatos
                     var ms = new MemoryStream((byte[])dr["Foto"]);
                     var e = new Docente
                     {
-                        ID = Convert.ToInt32(dr["IDDocente"]),
+                        Id = Convert.ToInt32(dr["IDDocente"]),
                         Dni = dr["Dni"].ToString(),
-                        Nombre = dr["Nombre"].ToString(),
+                        Nombres = dr["Nombre"].ToString(),
                         ApPaterno = dr["ApPaterno"].ToString(),
                         ApMaterno = dr["ApMaterno"].ToString(),
                         Sexo = dr["Sexo"].ToString().ElementAt(0),

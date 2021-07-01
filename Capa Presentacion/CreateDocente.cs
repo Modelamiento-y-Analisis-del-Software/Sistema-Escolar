@@ -39,7 +39,7 @@ namespace CapaPresentacion
             var D = new Docente
             {
                 Dni = txtDocDni.Text.ToString().Trim(),
-                Nombre = txtDocNombres.Text.ToString().Trim(),
+                Nombres = txtDocNombres.Text.ToString().Trim(),
                 ApPaterno = txtDocApPaterno.Text.ToString().Trim(),
                 ApMaterno = txtDocApMaterno.Text.ToString().Trim(),
                 Sexo = rdbDocMasculino.Checked ? 'M' : 'F',

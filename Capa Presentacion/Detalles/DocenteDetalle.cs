@@ -37,7 +37,7 @@ namespace CapaPresentacion.Detalles
         public void LoadData()
         {
             imgDocPerfil.Image = d.Foto;
-            txtDocNombre.Text = d.Nombre.ToString();
+            txtDocNombre.Text = d.Nombres.ToString();
             txtDocDni.Text = d.Dni;
             txtDocApPaterno.Text = d.ApPaterno;
             txtDocApMaterno.Text = d.ApMaterno;

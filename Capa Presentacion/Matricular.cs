@@ -104,7 +104,7 @@ namespace CapaPresentacion
                 rdbGrado5.Checked = true;
             }
 
-            cbbSeccion.SelectedItem = m.Seccion;
+            cbbSeccion.SelectedItem = m.EntAula.Seccion;
 
             if (m.Turno == 'M')
             {
@@ -151,24 +151,22 @@ namespace CapaPresentacion
                     Foto = imgEstPerfil.Image,
                 };
 
-                m = new Matricula
-                {
-                    Estudnte = e,
-                    GradoEscolar =
-                        rdbGrado1.Checked ? 1 :
-                        rdbGrado2.Checked ? 2 :
-                        rdbGrado3.Checked ? 3 :
-                        rdbGrado4.Checked ? 4 :
-                        rdbGrado5.Checked ? 5 : 0,
-                    Seccion = cbbSeccion.Text.ElementAt(0),
-                    Turno =
+                m = new Matricula();
+                    m.Estudnte = e;
+                m.GradoEscolar =
+                    rdbGrado1.Checked ? 1 :
+                    rdbGrado2.Checked ? 2 :
+                    rdbGrado3.Checked ? 3 :
+                    rdbGrado4.Checked ? 4 :
+                    rdbGrado5.Checked ? 5 : 0;
+                m.EntAula.Seccion = cbbSeccion.Text.ElementAt(0);
+                    m.Turno =
                         rdbMañana.Checked ? 'M' :
                         rdbTarde.Checked ? 'T' :
-                        rdbNoche.Checked ? 'N' : 'E',
-                    EscuelaProcedencia = txtEscuelaProc.Text.ToString().Trim(),
-                    FecInscripcion = dpkFecInscripcion.Value,
-                    Estado = true
-                };
+                        rdbNoche.Checked ? 'N' : 'E';
+                    m.EscuelaProcedencia = txtEscuelaProc.Text.ToString().Trim();
+                    m.FecInscripcion = dpkFecInscripcion.Value;
+                    m.Estado = true;
 
                 exito = LgcMatricula.Instancia.InsertarMatricula(m);
                 e.Id = LgcEstudiante.Instancia.BuscarEstudiante(e.Dni).First().Id;
@@ -212,7 +210,7 @@ namespace CapaPresentacion
                     rdbGrado3.Checked ? 3 :
                     rdbGrado4.Checked ? 4 :
                     rdbGrado5.Checked ? 5 : 0;
-                m.Seccion = cbbSeccion.Text.ElementAt(0);
+                m.EntAula.Seccion = cbbSeccion.Text.ElementAt(0);
                 m.Turno =
                     rdbMañana.Checked ? 'M' :
                     rdbTarde.Checked ? 'T' :
