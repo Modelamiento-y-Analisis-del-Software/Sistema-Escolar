@@ -9,8 +9,8 @@ namespace CapaEntidad
     public class Aula
     {
         public int Id { get; set; }
-        public int Grado { get; set; }
-        public int Seccion { get; set; }
-        public List<Curso> Cursos { get; set; }
+        public char Seccion { get; set; }
+        public int Capacidad { get; set; }
+        public bool isCompleted { get; set; }
     }
 }

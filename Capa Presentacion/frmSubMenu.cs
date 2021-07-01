@@ -65,5 +65,11 @@ namespace CapaPresentacion
         {
             mainWindow.PagCentral.SetPage("DocRegistrar");
         }
+
+        private void btnOption5_1_Click(object sender, EventArgs e)
+        {
+            mainWindow.PagCentral.SetPage("AulGeneral");
+
+        }
     }
 }

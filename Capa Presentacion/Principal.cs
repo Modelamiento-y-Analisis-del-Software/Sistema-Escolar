@@ -68,11 +68,23 @@ namespace CapaPresentacion
             PagCentral.SetPage("TutGeneral");
             ListarTutores();
         }
+        private void btnCursos_Click(object sender, EventArgs e)
+        {
+            VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
+            PagCentral.SetPage("TutGeneral");
+        }
+
         private void BtnEstudiante_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
             PagCentral.SetPage("EstGeneral");
             ListarEstudiantesHabilitados();
+        }
+
+        private void btnAulas_Click(object sender, EventArgs e)
+        {
+            VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
+            PagCentral.SetPage("AulGeneral");
         }
 
         private void txtSearchEst_OnIconRightClick(object sender, EventArgs e)
@@ -168,5 +180,6 @@ namespace CapaPresentacion
             }
 
         }
+
     }
 }
