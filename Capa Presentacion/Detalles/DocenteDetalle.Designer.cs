@@ -81,7 +81,6 @@ namespace CapaPresentacion.Detalles
             this.btnEditarDoc = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtDocEmail = new Bunifu.UI.WinForms.BunifuTextBox();
             this.gbDoc = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.rdbDocMasculino = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.lblMasculino = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblFemenino = new Bunifu.UI.WinForms.BunifuLabel();
@@ -596,7 +595,7 @@ namespace CapaPresentacion.Detalles
             this.btnConfirmarDoc.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmarDoc.IdleIconRightImage = null;
             this.btnConfirmarDoc.IndicateFocus = false;
-            this.btnConfirmarDoc.Location = new System.Drawing.Point(509, 851);
+            this.btnConfirmarDoc.Location = new System.Drawing.Point(492, 851);
             this.btnConfirmarDoc.Name = "btnConfirmarDoc";
             this.btnConfirmarDoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmarDoc.OnDisabledState.BorderRadius = 1;
@@ -688,7 +687,7 @@ namespace CapaPresentacion.Detalles
             this.btnImageDoc.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.male_user_32px;
             this.btnImageDoc.IdleIconRightImage = null;
             this.btnImageDoc.IndicateFocus = false;
-            this.btnImageDoc.Location = new System.Drawing.Point(235, 851);
+            this.btnImageDoc.Location = new System.Drawing.Point(218, 851);
             this.btnImageDoc.Name = "btnImageDoc";
             this.btnImageDoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnImageDoc.OnDisabledState.BorderRadius = 1;
@@ -779,7 +778,7 @@ namespace CapaPresentacion.Detalles
             this.btnEditarDoc.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.edit_32px;
             this.btnEditarDoc.IdleIconRightImage = null;
             this.btnEditarDoc.IndicateFocus = false;
-            this.btnEditarDoc.Location = new System.Drawing.Point(372, 851);
+            this.btnEditarDoc.Location = new System.Drawing.Point(355, 851);
             this.btnEditarDoc.Name = "btnEditarDoc";
             this.btnEditarDoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditarDoc.OnDisabledState.BorderRadius = 1;
@@ -901,7 +900,6 @@ namespace CapaPresentacion.Detalles
             this.gbDoc.BorderColor = System.Drawing.Color.LightGray;
             this.gbDoc.BorderRadius = 1;
             this.gbDoc.BorderThickness = 1;
-            this.gbDoc.Controls.Add(this.bunifuLabel1);
             this.gbDoc.Controls.Add(this.rdbDocMasculino);
             this.gbDoc.Controls.Add(this.lblMasculino);
             this.gbDoc.Controls.Add(this.lblFemenino);
@@ -918,26 +916,6 @@ namespace CapaPresentacion.Detalles
             this.gbDoc.TabStop = false;
             this.gbDoc.Text = "Sexo";
             // 
-            // bunifuLabel1
-            // 
-            this.bunifuLabel1.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Enabled = false;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(129, 26);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(53, 15);
-            this.bunifuLabel1.TabIndex = 79;
-            this.bunifuLabel1.Text = "Femenino";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // rdbDocMasculino
             // 
             this.rdbDocMasculino.AllowBindingControlLocation = true;
@@ -945,7 +923,7 @@ namespace CapaPresentacion.Detalles
             this.rdbDocMasculino.BindingControl = this.lblMasculino;
             this.rdbDocMasculino.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rdbDocMasculino.BorderThickness = 1;
-            this.rdbDocMasculino.Checked = false;
+            this.rdbDocMasculino.Checked = true;
             this.rdbDocMasculino.Enabled = false;
             this.rdbDocMasculino.Location = new System.Drawing.Point(17, 22);
             this.rdbDocMasculino.Name = "rdbDocMasculino";
@@ -1003,7 +981,7 @@ namespace CapaPresentacion.Detalles
             this.rdbDocFemenino.BindingControl = this.lblFemenino;
             this.rdbDocFemenino.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rdbDocFemenino.BorderThickness = 1;
-            this.rdbDocFemenino.Checked = true;
+            this.rdbDocFemenino.Checked = false;
             this.rdbDocFemenino.Enabled = false;
             this.rdbDocFemenino.Location = new System.Drawing.Point(102, 22);
             this.rdbDocFemenino.Name = "rdbDocFemenino";
@@ -1120,7 +1098,7 @@ namespace CapaPresentacion.Detalles
             this.txtDocDireccion.SelectionLength = 0;
             this.txtDocDireccion.SelectionStart = 0;
             this.txtDocDireccion.ShortcutsEnabled = true;
-            this.txtDocDireccion.Size = new System.Drawing.Size(259, 37);
+            this.txtDocDireccion.Size = new System.Drawing.Size(242, 37);
             this.txtDocDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtDocDireccion.TabIndex = 71;
             this.txtDocDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1238,7 +1216,7 @@ namespace CapaPresentacion.Detalles
             this.txtDocEsp.SelectionLength = 0;
             this.txtDocEsp.SelectionStart = 0;
             this.txtDocEsp.ShortcutsEnabled = true;
-            this.txtDocEsp.Size = new System.Drawing.Size(259, 37);
+            this.txtDocEsp.Size = new System.Drawing.Size(242, 37);
             this.txtDocEsp.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtDocEsp.TabIndex = 77;
             this.txtDocEsp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1257,7 +1235,7 @@ namespace CapaPresentacion.Detalles
             this.imgDocPerfil.BorderRadius = 102;
             this.imgDocPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgDocPerfil.Image")));
             this.imgDocPerfil.IsCircle = true;
-            this.imgDocPerfil.Location = new System.Drawing.Point(295, 12);
+            this.imgDocPerfil.Location = new System.Drawing.Point(278, 12);
             this.imgDocPerfil.Name = "imgDocPerfil";
             this.imgDocPerfil.Size = new System.Drawing.Size(204, 204);
             this.imgDocPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1336,7 +1314,6 @@ namespace CapaPresentacion.Detalles
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private System.Windows.Forms.Label label1;
         private Bunifu.UI.WinForms.BunifuTextBox txtDocEsp;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuPictureBox imgDocPerfil;
     }
 }

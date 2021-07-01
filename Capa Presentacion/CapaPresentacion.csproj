@@ -156,6 +156,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateCurso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateCurso.Designer.cs">
+      <DependentUpon>CreateCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateDocente.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -199,6 +205,12 @@
     <Compile Include="frmSubMenu.Designer.cs">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiniBuscarDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniBuscarDocente.Designer.cs">
+      <DependentUpon>MiniBuscarDocente.cs</DependentUpon>
+    </Compile>
     <Compile Include="MiniBuscarEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +237,9 @@
     <Compile Include="TutorDetalle.Designer.cs">
       <DependentUpon>TutorDetalle.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateCurso.resx">
+      <DependentUpon>CreateCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateDocente.resx">
       <DependentUpon>CreateDocente.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSubMenu.resx">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniBuscarDocente.resx">
+      <DependentUpon>MiniBuscarDocente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MiniBuscarEstudiante.resx">
       <DependentUpon>MiniBuscarEstudiante.cs</DependentUpon>

@@ -45,6 +45,7 @@ namespace CapaPresentacion.Detalles
             txtDocEmail.Text = d.Email;
             txtDocDireccion.Text = d.Direccion;
             dpkDocFecNacimiento.Value = d.FecNacimiento;
+            txtDocEsp.Text = d.Especialidad;
 
             if (d.Sexo == 'M')
             {
@@ -93,7 +94,7 @@ namespace CapaPresentacion.Detalles
             d.Direccion = txtDocDireccion.Text.Trim();
             d.Especialidad = txtDocEsp.Text.Trim();
             d.Foto = imgDocPerfil.Image;
-            //LgcEstudiante.Instancia.ActualizarEstudiante(m.Estudnte);
+            LgcDocente.Instancia.ActualizarDocente(d);
             txtDocTelefono.ReadOnly = true;
             txtDocEmail.ReadOnly = true;
             txtDocDireccion.ReadOnly = true;
