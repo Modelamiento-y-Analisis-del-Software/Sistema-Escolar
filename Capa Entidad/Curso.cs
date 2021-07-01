@@ -11,6 +11,6 @@ namespace CapaEntidad
         public int Id { get; set; }
         public string Nombre { get; set; }
         public Docente EntDocente { get; set; }
-        public List<Curso> Aulas { get; set; }
+        public List<Grado> gra { get; set; }
     }
 }

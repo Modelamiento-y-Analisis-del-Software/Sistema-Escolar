@@ -45,6 +45,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlAula.cs" />
+    <Compile Include="SqlCurso.cs" />
     <Compile Include="SqlDocente.cs" />
     <Compile Include="SqlEstudiante.cs" />
     <Compile Include="SqlGrado.cs" />

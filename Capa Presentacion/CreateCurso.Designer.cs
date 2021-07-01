@@ -41,14 +41,14 @@ namespace CapaPresentacion
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.grbDocExistente = new System.Windows.Forms.GroupBox();
-            this.btnConfirmarCurso = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.txtDocExistSearch = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btnDocSearch = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.txtDocCurso = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.cbbGrado = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbbGrado = new System.Windows.Forms.ComboBox();
+            this.btnConfirmarCurso = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.grbDocExistente = new System.Windows.Forms.GroupBox();
+            this.txtDocExistSearch = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.btnDocCurSearch = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtDocCurso = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuGroupBox1.SuspendLayout();
             this.grbDocExistente.SuspendLayout();
             this.SuspendLayout();
@@ -77,33 +77,33 @@ namespace CapaPresentacion
             this.bunifuGroupBox1.TabStop = false;
             this.bunifuGroupBox1.Text = "CREAR CURSO";
             // 
-            // label22
+            // label1
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label22.Location = new System.Drawing.Point(47, 27);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 20);
-            this.label22.TabIndex = 24;
-            this.label22.Text = "Nombre";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(321, 121);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Grado";
             // 
-            // grbDocExistente
+            // cbbGrado
             // 
-            this.grbDocExistente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.grbDocExistente.Controls.Add(this.txtDocExistSearch);
-            this.grbDocExistente.Controls.Add(this.btnDocSearch);
-            this.grbDocExistente.Enabled = false;
-            this.grbDocExistente.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDocExistente.Location = new System.Drawing.Point(325, 26);
-            this.grbDocExistente.Name = "grbDocExistente";
-            this.grbDocExistente.Size = new System.Drawing.Size(417, 80);
-            this.grbDocExistente.TabIndex = 50;
-            this.grbDocExistente.TabStop = false;
-            this.grbDocExistente.Text = "Escoger";
+            this.cbbGrado.FormattingEnabled = true;
+            this.cbbGrado.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"});
+            this.cbbGrado.Location = new System.Drawing.Point(325, 155);
+            this.cbbGrado.Name = "cbbGrado";
+            this.cbbGrado.Size = new System.Drawing.Size(209, 27);
+            this.cbbGrado.TabIndex = 53;
             // 
             // btnConfirmarCurso
             // 
@@ -196,6 +196,20 @@ namespace CapaPresentacion
             this.btnConfirmarCurso.UseDefaultRadiusAndThickness = true;
             this.btnConfirmarCurso.Click += new System.EventHandler(this.btnConfirmarCurso_Click);
             // 
+            // grbDocExistente
+            // 
+            this.grbDocExistente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbDocExistente.Controls.Add(this.txtDocExistSearch);
+            this.grbDocExistente.Controls.Add(this.btnDocCurSearch);
+            this.grbDocExistente.Enabled = false;
+            this.grbDocExistente.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbDocExistente.Location = new System.Drawing.Point(325, 26);
+            this.grbDocExistente.Name = "grbDocExistente";
+            this.grbDocExistente.Size = new System.Drawing.Size(417, 80);
+            this.grbDocExistente.TabIndex = 50;
+            this.grbDocExistente.TabStop = false;
+            this.grbDocExistente.Text = "Escoger";
+            // 
             // txtDocExistSearch
             // 
             this.txtDocExistSearch.AcceptsReturn = false;
@@ -270,94 +284,108 @@ namespace CapaPresentacion
             this.txtDocExistSearch.UseSystemPasswordChar = false;
             this.txtDocExistSearch.WordWrap = true;
             // 
-            // btnDocSearch
+            // btnDocCurSearch
             // 
-            this.btnDocSearch.AllowAnimations = true;
-            this.btnDocSearch.AllowMouseEffects = true;
-            this.btnDocSearch.AllowToggling = false;
-            this.btnDocSearch.AnimationSpeed = 200;
-            this.btnDocSearch.AutoGenerateColors = false;
-            this.btnDocSearch.AutoRoundBorders = true;
-            this.btnDocSearch.AutoSizeLeftIcon = true;
-            this.btnDocSearch.AutoSizeRightIcon = true;
-            this.btnDocSearch.BackColor = System.Drawing.Color.Transparent;
-            this.btnDocSearch.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.btnDocSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDocSearch.BackgroundImage")));
-            this.btnDocSearch.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDocSearch.ButtonText = "";
-            this.btnDocSearch.ButtonTextMarginLeft = 0;
-            this.btnDocSearch.ColorContrastOnClick = 45;
-            this.btnDocSearch.ColorContrastOnHover = 45;
-            this.btnDocSearch.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnDocCurSearch.AllowAnimations = true;
+            this.btnDocCurSearch.AllowMouseEffects = true;
+            this.btnDocCurSearch.AllowToggling = false;
+            this.btnDocCurSearch.AnimationSpeed = 200;
+            this.btnDocCurSearch.AutoGenerateColors = false;
+            this.btnDocCurSearch.AutoRoundBorders = true;
+            this.btnDocCurSearch.AutoSizeLeftIcon = true;
+            this.btnDocCurSearch.AutoSizeRightIcon = true;
+            this.btnDocCurSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnDocCurSearch.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnDocCurSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDocCurSearch.BackgroundImage")));
+            this.btnDocCurSearch.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnDocCurSearch.ButtonText = "";
+            this.btnDocCurSearch.ButtonTextMarginLeft = 0;
+            this.btnDocCurSearch.ColorContrastOnClick = 45;
+            this.btnDocCurSearch.ColorContrastOnHover = 45;
+            this.btnDocCurSearch.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges2.BottomLeft = true;
             borderEdges2.BottomRight = true;
             borderEdges2.TopLeft = true;
             borderEdges2.TopRight = true;
-            this.btnDocSearch.CustomizableEdges = borderEdges2;
-            this.btnDocSearch.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDocSearch.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnDocSearch.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnDocSearch.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnDocSearch.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnDocSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDocSearch.ForeColor = System.Drawing.Color.White;
-            this.btnDocSearch.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDocSearch.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnDocSearch.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnDocSearch.IconMarginLeft = 11;
-            this.btnDocSearch.IconPadding = 10;
-            this.btnDocSearch.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDocSearch.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnDocSearch.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnDocSearch.IconSize = 25;
-            this.btnDocSearch.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnDocSearch.IdleBorderRadius = 37;
-            this.btnDocSearch.IdleBorderThickness = 1;
-            this.btnDocSearch.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnDocSearch.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.search_white;
-            this.btnDocSearch.IdleIconRightImage = null;
-            this.btnDocSearch.IndicateFocus = false;
-            this.btnDocSearch.Location = new System.Drawing.Point(369, 22);
-            this.btnDocSearch.Name = "btnDocSearch";
-            this.btnDocSearch.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnDocSearch.OnDisabledState.BorderRadius = 1;
-            this.btnDocSearch.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDocSearch.OnDisabledState.BorderThickness = 1;
-            this.btnDocSearch.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnDocSearch.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnDocSearch.OnDisabledState.IconLeftImage = null;
-            this.btnDocSearch.OnDisabledState.IconRightImage = null;
-            this.btnDocSearch.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnDocSearch.onHoverState.BorderRadius = 1;
-            this.btnDocSearch.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDocSearch.onHoverState.BorderThickness = 1;
-            this.btnDocSearch.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnDocSearch.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnDocSearch.onHoverState.IconLeftImage = null;
-            this.btnDocSearch.onHoverState.IconRightImage = null;
-            this.btnDocSearch.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnDocSearch.OnIdleState.BorderRadius = 1;
-            this.btnDocSearch.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDocSearch.OnIdleState.BorderThickness = 1;
-            this.btnDocSearch.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.btnDocSearch.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnDocSearch.OnIdleState.IconLeftImage = global::CapaPresentacion.Properties.Resources.search_white;
-            this.btnDocSearch.OnIdleState.IconRightImage = null;
-            this.btnDocSearch.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnDocSearch.OnPressedState.BorderRadius = 1;
-            this.btnDocSearch.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnDocSearch.OnPressedState.BorderThickness = 1;
-            this.btnDocSearch.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnDocSearch.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnDocSearch.OnPressedState.IconLeftImage = null;
-            this.btnDocSearch.OnPressedState.IconRightImage = null;
-            this.btnDocSearch.Size = new System.Drawing.Size(36, 39);
-            this.btnDocSearch.TabIndex = 42;
-            this.btnDocSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDocSearch.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnDocSearch.TextMarginLeft = 0;
-            this.btnDocSearch.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnDocSearch.UseDefaultRadiusAndThickness = true;
+            this.btnDocCurSearch.CustomizableEdges = borderEdges2;
+            this.btnDocCurSearch.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnDocCurSearch.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnDocCurSearch.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnDocCurSearch.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnDocCurSearch.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnDocCurSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDocCurSearch.ForeColor = System.Drawing.Color.White;
+            this.btnDocCurSearch.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDocCurSearch.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnDocCurSearch.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnDocCurSearch.IconMarginLeft = 11;
+            this.btnDocCurSearch.IconPadding = 10;
+            this.btnDocCurSearch.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDocCurSearch.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnDocCurSearch.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnDocCurSearch.IconSize = 25;
+            this.btnDocCurSearch.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnDocCurSearch.IdleBorderRadius = 37;
+            this.btnDocCurSearch.IdleBorderThickness = 1;
+            this.btnDocCurSearch.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnDocCurSearch.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.search_white;
+            this.btnDocCurSearch.IdleIconRightImage = null;
+            this.btnDocCurSearch.IndicateFocus = false;
+            this.btnDocCurSearch.Location = new System.Drawing.Point(369, 22);
+            this.btnDocCurSearch.Name = "btnDocCurSearch";
+            this.btnDocCurSearch.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnDocCurSearch.OnDisabledState.BorderRadius = 1;
+            this.btnDocCurSearch.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnDocCurSearch.OnDisabledState.BorderThickness = 1;
+            this.btnDocCurSearch.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnDocCurSearch.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnDocCurSearch.OnDisabledState.IconLeftImage = null;
+            this.btnDocCurSearch.OnDisabledState.IconRightImage = null;
+            this.btnDocCurSearch.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnDocCurSearch.onHoverState.BorderRadius = 1;
+            this.btnDocCurSearch.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnDocCurSearch.onHoverState.BorderThickness = 1;
+            this.btnDocCurSearch.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnDocCurSearch.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnDocCurSearch.onHoverState.IconLeftImage = null;
+            this.btnDocCurSearch.onHoverState.IconRightImage = null;
+            this.btnDocCurSearch.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnDocCurSearch.OnIdleState.BorderRadius = 1;
+            this.btnDocCurSearch.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnDocCurSearch.OnIdleState.BorderThickness = 1;
+            this.btnDocCurSearch.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnDocCurSearch.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnDocCurSearch.OnIdleState.IconLeftImage = global::CapaPresentacion.Properties.Resources.search_white;
+            this.btnDocCurSearch.OnIdleState.IconRightImage = null;
+            this.btnDocCurSearch.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnDocCurSearch.OnPressedState.BorderRadius = 1;
+            this.btnDocCurSearch.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnDocCurSearch.OnPressedState.BorderThickness = 1;
+            this.btnDocCurSearch.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnDocCurSearch.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnDocCurSearch.OnPressedState.IconLeftImage = null;
+            this.btnDocCurSearch.OnPressedState.IconRightImage = null;
+            this.btnDocCurSearch.Size = new System.Drawing.Size(36, 39);
+            this.btnDocCurSearch.TabIndex = 42;
+            this.btnDocCurSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDocCurSearch.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDocCurSearch.TextMarginLeft = 0;
+            this.btnDocCurSearch.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnDocCurSearch.UseDefaultRadiusAndThickness = true;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label22.Location = new System.Drawing.Point(47, 27);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(64, 20);
+            this.label22.TabIndex = 24;
+            this.label22.Text = "Nombre";
             // 
             // txtDocCurso
             // 
@@ -435,34 +463,6 @@ namespace CapaPresentacion
             this.txtDocCurso.UseSystemPasswordChar = false;
             this.txtDocCurso.WordWrap = true;
             // 
-            // cbbGrado
-            // 
-            this.cbbGrado.FormattingEnabled = true;
-            this.cbbGrado.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E"});
-            this.cbbGrado.Location = new System.Drawing.Point(325, 155);
-            this.cbbGrado.Name = "cbbGrado";
-            this.cbbGrado.Size = new System.Drawing.Size(209, 27);
-            this.cbbGrado.TabIndex = 53;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(321, 121);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
-            this.label1.TabIndex = 54;
-            this.label1.Text = "Grado";
-            // 
             // CreateCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -484,7 +484,7 @@ namespace CapaPresentacion
         private Bunifu.UI.WinForms.BunifuTextBox txtDocCurso;
         private System.Windows.Forms.GroupBox grbDocExistente;
         public Bunifu.UI.WinForms.BunifuTextBox txtDocExistSearch;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDocSearch;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDocCurSearch;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnConfirmarCurso;
         private System.Windows.Forms.ComboBox cbbGrado;
         private System.Windows.Forms.Label label1;

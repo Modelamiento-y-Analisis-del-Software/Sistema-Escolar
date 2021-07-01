@@ -23,10 +23,9 @@ namespace CapaDatos
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-
                 cmd.Parameters.AddWithValue("@Nombre", cu.Nombre);
                 cmd.Parameters.AddWithValue("@Dni",cu.EntDocente.Dni);
-                cmd.Parameters.AddWithValue("@GradoEscolar", m.GradoEscolar);
+                cmd.Parameters.AddWithValue("@NGraco",cu.gra);
                 cn.Open();
                 var i = cmd.ExecuteNonQuery();
                 if (i > 0)
