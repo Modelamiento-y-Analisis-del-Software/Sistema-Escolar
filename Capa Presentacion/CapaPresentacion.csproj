@@ -156,7 +156,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateDocente.cs" />
+    <Compile Include="CreateDocente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="CreateDocente.Designer.cs">
       <DependentUpon>CreateDocente.cs</DependentUpon>
     </Compile>
@@ -197,11 +199,15 @@
     <Compile Include="frmSubMenu.Designer.cs">
       <DependentUpon>frmSubMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MiniBuscarEstudiante.cs" />
+    <Compile Include="MiniBuscarEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MiniBuscarEstudiante.Designer.cs">
       <DependentUpon>MiniBuscarEstudiante.cs</DependentUpon>
     </Compile>
-    <Compile Include="MiniBuscarTutor.cs" />
+    <Compile Include="MiniBuscarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MiniBuscarTutor.Designer.cs">
       <DependentUpon>MiniBuscarTutor.cs</DependentUpon>
     </Compile>
