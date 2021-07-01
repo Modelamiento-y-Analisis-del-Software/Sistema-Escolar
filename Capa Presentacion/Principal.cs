@@ -155,5 +155,17 @@ namespace CapaPresentacion
                 ListarEstudiantesInHabilitados();
             }
         }
+
+        private void btnTutDetalles_Click(object sender, EventArgs e)
+        {
+            Tutor tu = null;
+            if (dgvTutor.CurrentRow != null)
+            {
+                tu = (Tutor)dgvTutor.CurrentRow.DataBoundItem;
+                var ed = new TutorDetalle(tu);
+                ed.Show();
+            }
+
+        }
     }
 }

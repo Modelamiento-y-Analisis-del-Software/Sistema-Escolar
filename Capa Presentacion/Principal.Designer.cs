@@ -61,9 +61,6 @@ namespace CapaPresentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -71,6 +68,9 @@ namespace CapaPresentacion
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlMainMenu = new System.Windows.Forms.Panel();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnDocente = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -81,12 +81,14 @@ namespace CapaPresentacion
             this.imgLogoMini = new System.Windows.Forms.PictureBox();
             this.menuTransition = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.pnlSubMenu = new System.Windows.Forms.Panel();
+            this.frmSubMenu1 = new CapaPresentacion.frmSubMenu();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pagCentral = new Bunifu.UI.WinForms.BunifuPages();
             this.tpgVacio = new System.Windows.Forms.TabPage();
             this.tpgMatricular = new System.Windows.Forms.TabPage();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.uscMatricular = new CapaPresentacion.Matricular();
             this.pnlTCEstudiante = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblTCEstudiante = new System.Windows.Forms.Label();
             this.tpgTutGeneral = new System.Windows.Forms.TabPage();
@@ -106,6 +108,7 @@ namespace CapaPresentacion
             this.label2 = new System.Windows.Forms.Label();
             this.tpgRegTutor = new System.Windows.Forms.TabPage();
             this.pnlTutInsert = new Bunifu.UI.WinForms.BunifuPanel();
+            this.usrTutInsert = new CapaPresentacion.CreateTutor();
             this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.tpgEstGeneral = new System.Windows.Forms.TabPage();
@@ -125,29 +128,26 @@ namespace CapaPresentacion
             this.lblEstGeneral = new System.Windows.Forms.Label();
             this.tpgEstDetalles = new System.Windows.Forms.TabPage();
             this.bunifuPanel8 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.uscEstDetalles = new CapaPresentacion.EstudianteDetalles();
             this.pnlEstDetalleTitulo = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblEstDetalleTitulo = new System.Windows.Forms.Label();
-            this.MouseDetect = new System.Windows.Forms.Timer(this.components);
-            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.EstInhabiliados = new System.Windows.Forms.TabPage();
             this.bunifuPanel7 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuPanel9 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnEstInDatalles = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnEstInRefresh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnEstHabilitar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.txtEstInSearch = new Bunifu.UI.WinForms.BunifuTextBox();
             this.dgvEstInhabilitado = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuPanel9 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.btnEstInDatalles = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnEstInRefresh = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnEstHabilitar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.txtEstInSearch = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.uscMatricular = new CapaPresentacion.Matricular();
-            this.usrTutInsert = new CapaPresentacion.CreateTutor();
-            this.uscEstDetalles = new CapaPresentacion.EstudianteDetalles();
-            this.frmSubMenu1 = new CapaPresentacion.frmSubMenu();
+            this.MouseDetect = new System.Windows.Forms.Timer(this.components);
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnlMainMenu.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoMini)).BeginInit();
@@ -176,8 +176,8 @@ namespace CapaPresentacion
             this.pnlEstDetalleTitulo.SuspendLayout();
             this.EstInhabiliados.SuspendLayout();
             this.bunifuPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEstInhabilitado)).BeginInit();
             this.bunifuPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstInhabilitado)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMainMenu
@@ -721,6 +721,17 @@ namespace CapaPresentacion
             this.pnlSubMenu.Size = new System.Drawing.Size(200, 749);
             this.pnlSubMenu.TabIndex = 2;
             // 
+            // frmSubMenu1
+            // 
+            this.menuTransition.SetDecoration(this.frmSubMenu1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.frmSubMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.frmSubMenu1.Location = new System.Drawing.Point(0, 74);
+            this.frmSubMenu1.MainWindow = null;
+            this.frmSubMenu1.Margin = new System.Windows.Forms.Padding(4);
+            this.frmSubMenu1.Name = "frmSubMenu1";
+            this.frmSubMenu1.Size = new System.Drawing.Size(200, 675);
+            this.frmSubMenu1.TabIndex = 1;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(42)))), ((int)(((byte)(49)))));
@@ -759,10 +770,10 @@ namespace CapaPresentacion
             this.pagCentral.Location = new System.Drawing.Point(255, 0);
             this.pagCentral.Multiline = true;
             this.pagCentral.Name = "pagCentral";
-            this.pagCentral.Page = this.EstInhabiliados;
-            this.pagCentral.PageIndex = 6;
-            this.pagCentral.PageName = "EstInhabiliados";
-            this.pagCentral.PageTitle = "EstInhabilitados";
+            this.pagCentral.Page = this.tpgTutGeneral;
+            this.pagCentral.PageIndex = 2;
+            this.pagCentral.PageName = "tpgTutGeneral";
+            this.pagCentral.PageTitle = "TutGeneral";
             this.pagCentral.SelectedIndex = 0;
             this.pagCentral.Size = new System.Drawing.Size(1009, 749);
             this.pagCentral.TabIndex = 5;
@@ -826,6 +837,21 @@ namespace CapaPresentacion
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(931, 608);
             this.bunifuPanel2.TabIndex = 3;
+            // 
+            // uscMatricular
+            // 
+            this.uscMatricular.AutoScroll = true;
+            this.uscMatricular.BackColor = System.Drawing.Color.White;
+            this.menuTransition.SetDecoration(this.uscMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.uscMatricular.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uscMatricular.Location = new System.Drawing.Point(0, 0);
+            this.uscMatricular.MainWindow = null;
+            this.uscMatricular.Margin = new System.Windows.Forms.Padding(0);
+            this.uscMatricular.MBEstudiante = null;
+            this.uscMatricular.MBTutor = null;
+            this.uscMatricular.Name = "uscMatricular";
+            this.uscMatricular.Size = new System.Drawing.Size(931, 608);
+            this.uscMatricular.TabIndex = 0;
             // 
             // pnlTCEstudiante
             // 
@@ -982,6 +1008,7 @@ namespace CapaPresentacion
             this.btnTutDetalles.TextMarginLeft = 0;
             this.btnTutDetalles.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnTutDetalles.UseDefaultRadiusAndThickness = true;
+            this.btnTutDetalles.Click += new System.EventHandler(this.btnTutDetalles_Click);
             // 
             // btnTutRefresh
             // 
@@ -1418,6 +1445,17 @@ namespace CapaPresentacion
             this.pnlTutInsert.ShowBorders = true;
             this.pnlTutInsert.Size = new System.Drawing.Size(931, 608);
             this.pnlTutInsert.TabIndex = 4;
+            // 
+            // usrTutInsert
+            // 
+            this.usrTutInsert.AutoScroll = true;
+            this.usrTutInsert.BackColor = System.Drawing.Color.White;
+            this.menuTransition.SetDecoration(this.usrTutInsert, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.usrTutInsert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usrTutInsert.Location = new System.Drawing.Point(0, 0);
+            this.usrTutInsert.Name = "usrTutInsert";
+            this.usrTutInsert.Size = new System.Drawing.Size(931, 608);
+            this.usrTutInsert.TabIndex = 0;
             // 
             // bunifuPanel6
             // 
@@ -2014,6 +2052,17 @@ namespace CapaPresentacion
             this.bunifuPanel8.Size = new System.Drawing.Size(931, 608);
             this.bunifuPanel8.TabIndex = 3;
             // 
+            // uscEstDetalles
+            // 
+            this.uscEstDetalles.AutoScroll = true;
+            this.uscEstDetalles.BackColor = System.Drawing.Color.White;
+            this.menuTransition.SetDecoration(this.uscEstDetalles, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.uscEstDetalles.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uscEstDetalles.Location = new System.Drawing.Point(0, 0);
+            this.uscEstDetalles.Name = "uscEstDetalles";
+            this.uscEstDetalles.Size = new System.Drawing.Size(931, 608);
+            this.uscEstDetalles.TabIndex = 0;
+            // 
             // pnlEstDetalleTitulo
             // 
             this.pnlEstDetalleTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -2044,55 +2093,6 @@ namespace CapaPresentacion
             this.lblEstDetalleTitulo.Size = new System.Drawing.Size(146, 37);
             this.lblEstDetalleTitulo.TabIndex = 0;
             this.lblEstDetalleTitulo.Text = "Estudiante";
-            // 
-            // MouseDetect
-            // 
-            this.MouseDetect.Enabled = true;
-            this.MouseDetect.Tick += new System.EventHandler(this.MouseDetect_Tick);
-            // 
-            // bunifuFormDock1
-            // 
-            this.bunifuFormDock1.AllowFormDragging = true;
-            this.bunifuFormDock1.AllowFormDropShadow = true;
-            this.bunifuFormDock1.AllowFormResizing = true;
-            this.bunifuFormDock1.AllowHidingBottomRegion = true;
-            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
-            this.bunifuFormDock1.ContainerControl = this;
-            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
-            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
-            this.bunifuFormDock1.DockingOptions.DockAll = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
-            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
-            this.bunifuFormDock1.DockingOptions.DockLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockRight = true;
-            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
-            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
-            this.bunifuFormDock1.ParentForm = this;
-            this.bunifuFormDock1.ShowCursorChanges = true;
-            this.bunifuFormDock1.ShowDockingIndicators = true;
-            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
-            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
-            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
-            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // EstInhabiliados
             // 
@@ -2137,117 +2137,6 @@ namespace CapaPresentacion
             this.label1.Size = new System.Drawing.Size(324, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Estudiantes Inhabilitados";
-            // 
-            // dgvEstInhabilitado
-            // 
-            this.dgvEstInhabilitado.AllowCustomTheming = false;
-            this.dgvEstInhabilitado.AllowUserToAddRows = false;
-            this.dgvEstInhabilitado.AllowUserToDeleteRows = false;
-            this.dgvEstInhabilitado.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            this.dgvEstInhabilitado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvEstInhabilitado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvEstInhabilitado.AutoGenerateColumns = false;
-            this.dgvEstInhabilitado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvEstInhabilitado.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvEstInhabilitado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvEstInhabilitado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvEstInhabilitado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEstInhabilitado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvEstInhabilitado.ColumnHeadersHeight = 40;
-            this.dgvEstInhabilitado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvEstInhabilitado.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dgvEstInhabilitado.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvEstInhabilitado.CurrentTheme.Name = null;
-            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvEstInhabilitado.DataSource = this.estudianteBindingSource;
-            this.menuTransition.SetDecoration(this.dgvEstInhabilitado, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvEstInhabilitado.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvEstInhabilitado.EnableHeadersVisualStyles = false;
-            this.dgvEstInhabilitado.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvEstInhabilitado.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvEstInhabilitado.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dgvEstInhabilitado.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvEstInhabilitado.Location = new System.Drawing.Point(9, 51);
-            this.dgvEstInhabilitado.Name = "dgvEstInhabilitado";
-            this.dgvEstInhabilitado.ReadOnly = true;
-            this.dgvEstInhabilitado.RowHeadersVisible = false;
-            this.dgvEstInhabilitado.RowTemplate.Height = 40;
-            this.dgvEstInhabilitado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEstInhabilitado.Size = new System.Drawing.Size(914, 548);
-            this.dgvEstInhabilitado.TabIndex = 0;
-            this.dgvEstInhabilitado.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Dni";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Dni";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nombres";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nombres";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ApPaterno";
-            this.dataGridViewTextBoxColumn4.HeaderText = "ApPaterno";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ApMaterno";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ApMaterno";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // bunifuPanel9
             // 
@@ -2622,52 +2511,165 @@ namespace CapaPresentacion
             this.txtEstInSearch.UseSystemPasswordChar = false;
             this.txtEstInSearch.WordWrap = true;
             // 
-            // uscMatricular
+            // dgvEstInhabilitado
             // 
-            this.uscMatricular.AutoScroll = true;
-            this.uscMatricular.BackColor = System.Drawing.Color.White;
-            this.menuTransition.SetDecoration(this.uscMatricular, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.uscMatricular.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uscMatricular.Location = new System.Drawing.Point(0, 0);
-            this.uscMatricular.MainWindow = null;
-            this.uscMatricular.Margin = new System.Windows.Forms.Padding(0);
-            this.uscMatricular.MBTutor = null;
-            this.uscMatricular.Name = "uscMatricular";
-            this.uscMatricular.Size = new System.Drawing.Size(931, 608);
-            this.uscMatricular.TabIndex = 0;
+            this.dgvEstInhabilitado.AllowCustomTheming = false;
+            this.dgvEstInhabilitado.AllowUserToAddRows = false;
+            this.dgvEstInhabilitado.AllowUserToDeleteRows = false;
+            this.dgvEstInhabilitado.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.dgvEstInhabilitado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvEstInhabilitado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvEstInhabilitado.AutoGenerateColumns = false;
+            this.dgvEstInhabilitado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEstInhabilitado.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvEstInhabilitado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEstInhabilitado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvEstInhabilitado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEstInhabilitado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvEstInhabilitado.ColumnHeadersHeight = 40;
+            this.dgvEstInhabilitado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEstInhabilitado.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEstInhabilitado.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvEstInhabilitado.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvEstInhabilitado.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvEstInhabilitado.CurrentTheme.Name = null;
+            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEstInhabilitado.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEstInhabilitado.DataSource = this.estudianteBindingSource;
+            this.menuTransition.SetDecoration(this.dgvEstInhabilitado, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEstInhabilitado.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvEstInhabilitado.EnableHeadersVisualStyles = false;
+            this.dgvEstInhabilitado.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEstInhabilitado.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEstInhabilitado.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvEstInhabilitado.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvEstInhabilitado.Location = new System.Drawing.Point(9, 51);
+            this.dgvEstInhabilitado.Name = "dgvEstInhabilitado";
+            this.dgvEstInhabilitado.ReadOnly = true;
+            this.dgvEstInhabilitado.RowHeadersVisible = false;
+            this.dgvEstInhabilitado.RowTemplate.Height = 40;
+            this.dgvEstInhabilitado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEstInhabilitado.Size = new System.Drawing.Size(914, 548);
+            this.dgvEstInhabilitado.TabIndex = 0;
+            this.dgvEstInhabilitado.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
-            // usrTutInsert
+            // dataGridViewTextBoxColumn1
             // 
-            this.usrTutInsert.AutoScroll = true;
-            this.usrTutInsert.BackColor = System.Drawing.Color.White;
-            this.menuTransition.SetDecoration(this.usrTutInsert, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.usrTutInsert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usrTutInsert.Location = new System.Drawing.Point(0, 0);
-            this.usrTutInsert.Name = "usrTutInsert";
-            this.usrTutInsert.Size = new System.Drawing.Size(931, 608);
-            this.usrTutInsert.TabIndex = 0;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // uscEstDetalles
+            // dataGridViewTextBoxColumn2
             // 
-            this.uscEstDetalles.AutoScroll = true;
-            this.uscEstDetalles.BackColor = System.Drawing.Color.White;
-            this.menuTransition.SetDecoration(this.uscEstDetalles, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.uscEstDetalles.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uscEstDetalles.Location = new System.Drawing.Point(0, 0);
-            this.uscEstDetalles.Name = "uscEstDetalles";
-            this.uscEstDetalles.Size = new System.Drawing.Size(931, 608);
-            this.uscEstDetalles.TabIndex = 0;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Dni";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Dni";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // frmSubMenu1
+            // dataGridViewTextBoxColumn3
             // 
-            this.menuTransition.SetDecoration(this.frmSubMenu1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.frmSubMenu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.frmSubMenu1.Location = new System.Drawing.Point(0, 74);
-            this.frmSubMenu1.MainWindow = null;
-            this.frmSubMenu1.Margin = new System.Windows.Forms.Padding(4);
-            this.frmSubMenu1.Name = "frmSubMenu1";
-            this.frmSubMenu1.Size = new System.Drawing.Size(200, 675);
-            this.frmSubMenu1.TabIndex = 1;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Nombres";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nombres";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ApPaterno";
+            this.dataGridViewTextBoxColumn4.HeaderText = "ApPaterno";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ApMaterno";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ApMaterno";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // MouseDetect
+            // 
+            this.MouseDetect.Enabled = true;
+            this.MouseDetect.Tick += new System.EventHandler(this.MouseDetect_Tick);
+            // 
+            // bunifuFormDock1
+            // 
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = true;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // frmMainWindow
             // 
@@ -2716,8 +2718,8 @@ namespace CapaPresentacion
             this.EstInhabiliados.ResumeLayout(false);
             this.bunifuPanel7.ResumeLayout(false);
             this.bunifuPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEstInhabilitado)).EndInit();
             this.bunifuPanel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstInhabilitado)).EndInit();
             this.ResumeLayout(false);
 
         }
