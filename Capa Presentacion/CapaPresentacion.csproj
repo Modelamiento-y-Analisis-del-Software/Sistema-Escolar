@@ -171,15 +171,8 @@
     <Compile Include="Detalles\EstudianteDetalle.Designer.cs">
       <DependentUpon>EstudianteDetalle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Detalles\TutorDetalle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Detalles\TutorDetalle.Designer.cs">
-      <DependentUpon>TutorDetalle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DocenteDetalles.cs" />
-    <Compile Include="DocenteDetalles.Designer.cs">
-      <DependentUpon>DocenteDetalles.cs</DependentUpon>
+    <Compile Include="EstudianteDetalles.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="EstudianteDetalles.cs" />
     <Compile Include="EstudianteDetalles.Designer.cs">
@@ -219,20 +212,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CreateDocente.resx">
-      <DependentUpon>CreateDocente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Detalles\DocenteDetalle.resx">
-      <DependentUpon>DocenteDetalle.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="TutorDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TutorDetalle.Designer.cs">
+      <DependentUpon>TutorDetalle.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Detalles\EstudianteDetalle.resx">
       <DependentUpon>EstudianteDetalle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Detalles\TutorDetalle.resx">
-      <DependentUpon>TutorDetalle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DocenteDetalles.resx">
-      <DependentUpon>DocenteDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstudianteDetalles.resx">
       <DependentUpon>EstudianteDetalles.cs</DependentUpon>
@@ -260,6 +247,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorDetalle.resx">
+      <DependentUpon>TutorDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CapaEntidad.Estudiante.datasource" />
