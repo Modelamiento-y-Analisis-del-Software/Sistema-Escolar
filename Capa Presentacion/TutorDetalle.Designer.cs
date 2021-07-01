@@ -132,7 +132,7 @@ namespace CapaPresentacion
             this.grpbDatosDelEstudiante.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.grpbDatosDelEstudiante.Location = new System.Drawing.Point(7, 12);
             this.grpbDatosDelEstudiante.Name = "grpbDatosDelEstudiante";
-            this.grpbDatosDelEstudiante.Size = new System.Drawing.Size(731, 715);
+            this.grpbDatosDelEstudiante.Size = new System.Drawing.Size(697, 715);
             this.grpbDatosDelEstudiante.TabIndex = 20;
             this.grpbDatosDelEstudiante.TabStop = false;
             this.grpbDatosDelEstudiante.Text = "Datos del Tutor";
@@ -217,7 +217,7 @@ namespace CapaPresentacion
             this.txtTutOcupacion.SelectionLength = 0;
             this.txtTutOcupacion.SelectionStart = 0;
             this.txtTutOcupacion.ShortcutsEnabled = true;
-            this.txtTutOcupacion.Size = new System.Drawing.Size(335, 37);
+            this.txtTutOcupacion.Size = new System.Drawing.Size(301, 37);
             this.txtTutOcupacion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutOcupacion.TabIndex = 55;
             this.txtTutOcupacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -239,9 +239,9 @@ namespace CapaPresentacion
             this.bunifuGroupBox5.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox5.LabelIndent = 10;
             this.bunifuGroupBox5.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox5.Location = new System.Drawing.Point(606, 620);
+            this.bunifuGroupBox5.Location = new System.Drawing.Point(406, 622);
             this.bunifuGroupBox5.Name = "bunifuGroupBox5";
-            this.bunifuGroupBox5.Size = new System.Drawing.Size(214, 74);
+            this.bunifuGroupBox5.Size = new System.Drawing.Size(251, 74);
             this.bunifuGroupBox5.TabIndex = 42;
             this.bunifuGroupBox5.TabStop = false;
             this.bunifuGroupBox5.Text = "Nivel Académico";
@@ -249,6 +249,7 @@ namespace CapaPresentacion
             // cbbNivelAcademico
             // 
             this.cbbNivelAcademico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbNivelAcademico.Enabled = false;
             this.cbbNivelAcademico.FormattingEnabled = true;
             this.cbbNivelAcademico.Items.AddRange(new object[] {
             "Ninguno",
@@ -340,7 +341,7 @@ namespace CapaPresentacion
             this.txtTutTelefono.SelectionLength = 0;
             this.txtTutTelefono.SelectionStart = 0;
             this.txtTutTelefono.ShortcutsEnabled = true;
-            this.txtTutTelefono.Size = new System.Drawing.Size(251, 37);
+            this.txtTutTelefono.Size = new System.Drawing.Size(217, 37);
             this.txtTutTelefono.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutTelefono.TabIndex = 52;
             this.txtTutTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -431,7 +432,7 @@ namespace CapaPresentacion
             this.txtTutEmail.SelectionLength = 0;
             this.txtTutEmail.SelectionStart = 0;
             this.txtTutEmail.ShortcutsEnabled = true;
-            this.txtTutEmail.Size = new System.Drawing.Size(654, 37);
+            this.txtTutEmail.Size = new System.Drawing.Size(620, 37);
             this.txtTutEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutEmail.TabIndex = 50;
             this.txtTutEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -522,7 +523,7 @@ namespace CapaPresentacion
             this.txtTutApMaterno.SelectionLength = 0;
             this.txtTutApMaterno.SelectionStart = 0;
             this.txtTutApMaterno.ShortcutsEnabled = true;
-            this.txtTutApMaterno.Size = new System.Drawing.Size(654, 37);
+            this.txtTutApMaterno.Size = new System.Drawing.Size(620, 37);
             this.txtTutApMaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutApMaterno.TabIndex = 48;
             this.txtTutApMaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -562,6 +563,7 @@ namespace CapaPresentacion
             this.rdbTutMasculino.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rdbTutMasculino.BorderThickness = 1;
             this.rdbTutMasculino.Checked = false;
+            this.rdbTutMasculino.Enabled = false;
             this.rdbTutMasculino.Location = new System.Drawing.Point(17, 22);
             this.rdbTutMasculino.Name = "rdbTutMasculino";
             this.rdbTutMasculino.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -617,6 +619,7 @@ namespace CapaPresentacion
             this.rdbTutFemenino.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rdbTutFemenino.BorderThickness = 1;
             this.rdbTutFemenino.Checked = true;
+            this.rdbTutFemenino.Enabled = false;
             this.rdbTutFemenino.Location = new System.Drawing.Point(102, 22);
             this.rdbTutFemenino.Name = "rdbTutFemenino";
             this.rdbTutFemenino.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -708,7 +711,7 @@ namespace CapaPresentacion
             this.txtTutDireccion.SelectionLength = 0;
             this.txtTutDireccion.SelectionStart = 0;
             this.txtTutDireccion.ShortcutsEnabled = true;
-            this.txtTutDireccion.Size = new System.Drawing.Size(654, 37);
+            this.txtTutDireccion.Size = new System.Drawing.Size(620, 37);
             this.txtTutDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutDireccion.TabIndex = 36;
             this.txtTutDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -757,7 +760,7 @@ namespace CapaPresentacion
             this.dpkTutFecNacimiento.Location = new System.Drawing.Point(280, 399);
             this.dpkTutFecNacimiento.MinimumSize = new System.Drawing.Size(4, 32);
             this.dpkTutFecNacimiento.Name = "dpkTutFecNacimiento";
-            this.dpkTutFecNacimiento.Size = new System.Drawing.Size(256, 32);
+            this.dpkTutFecNacimiento.Size = new System.Drawing.Size(222, 32);
             this.dpkTutFecNacimiento.TabIndex = 26;
             this.dpkTutFecNacimiento.Value = new System.DateTime(2021, 6, 23, 0, 0, 0, 0);
             // 
@@ -841,7 +844,7 @@ namespace CapaPresentacion
             this.txtTutApPaterno.SelectionLength = 0;
             this.txtTutApPaterno.SelectionStart = 0;
             this.txtTutApPaterno.ShortcutsEnabled = true;
-            this.txtTutApPaterno.Size = new System.Drawing.Size(654, 37);
+            this.txtTutApPaterno.Size = new System.Drawing.Size(620, 37);
             this.txtTutApPaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutApPaterno.TabIndex = 23;
             this.txtTutApPaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -932,7 +935,7 @@ namespace CapaPresentacion
             this.txtTutDni.SelectionLength = 0;
             this.txtTutDni.SelectionStart = 0;
             this.txtTutDni.ShortcutsEnabled = true;
-            this.txtTutDni.Size = new System.Drawing.Size(88, 37);
+            this.txtTutDni.Size = new System.Drawing.Size(54, 37);
             this.txtTutDni.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutDni.TabIndex = 21;
             this.txtTutDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -978,6 +981,7 @@ namespace CapaPresentacion
             this.txtTutNombres.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutNombres.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutNombres.DefaultText = "";
+            this.txtTutNombres.Enabled = false;
             this.txtTutNombres.FillColor = System.Drawing.Color.White;
             this.txtTutNombres.HideSelection = true;
             this.txtTutNombres.IconLeft = null;
@@ -1022,7 +1026,7 @@ namespace CapaPresentacion
             this.txtTutNombres.SelectionLength = 0;
             this.txtTutNombres.SelectionStart = 0;
             this.txtTutNombres.ShortcutsEnabled = true;
-            this.txtTutNombres.Size = new System.Drawing.Size(654, 37);
+            this.txtTutNombres.Size = new System.Drawing.Size(620, 37);
             this.txtTutNombres.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutNombres.TabIndex = 19;
             this.txtTutNombres.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1081,7 +1085,7 @@ namespace CapaPresentacion
             this.btnEditar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.edit_32px;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(466, 733);
+            this.btnEditar.Location = new System.Drawing.Point(432, 733);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 1;
@@ -1172,7 +1176,7 @@ namespace CapaPresentacion
             this.btnConfirmar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmar.IdleIconRightImage = null;
             this.btnConfirmar.IndicateFocus = false;
-            this.btnConfirmar.Location = new System.Drawing.Point(603, 733);
+            this.btnConfirmar.Location = new System.Drawing.Point(569, 733);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmar.OnDisabledState.BorderRadius = 1;
@@ -1213,6 +1217,7 @@ namespace CapaPresentacion
             this.btnConfirmar.TextMarginLeft = 0;
             this.btnConfirmar.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnConfirmar.UseDefaultRadiusAndThickness = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // TutorDetalle
             // 

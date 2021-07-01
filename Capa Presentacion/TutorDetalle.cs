@@ -13,18 +13,18 @@ namespace CapaPresentacion
 {
     public partial class TutorDetalle : Form
     {
-        Tutor e ;
+        Tutor t ;
         public TutorDetalle()
         {
             InitializeComponent();
             CleanScreen();
                 //aea
         }
-        public TutorDetalle(Tutor e )
+        public TutorDetalle(Tutor t )
         {
             InitializeComponent();
             CleanScreen();
-            this.e = e;
+            this.t = t;
             LoadData();
             //aea
         }
@@ -47,17 +47,17 @@ namespace CapaPresentacion
 
         public void LoadData()
         {
-            txtTutNombres.Text = e.Nombres.ToString();
-            txtTutDni.Text = e.Dni;
-            txtTutApPaterno.Text = e.ApPaterno;
-            txtTutApMaterno.Text = e.ApMaterno;
-            txtTutTelefono.Text = e.Telefono;
-            txtTutEmail.Text = e.Email;
-            txtTutDireccion.Text = e.Direccion;
-            txtTutOcupacion.Text = e.Ocupacion;
-            dpkTutFecNacimiento.Value = e.FecNacimiento;
+            txtTutNombres.Text = t.Nombres.ToString();
+            txtTutDni.Text = t.Dni;
+            txtTutApPaterno.Text = t.ApPaterno;
+            txtTutApMaterno.Text = t.ApMaterno;
+            txtTutTelefono.Text = t.Telefono;
+            txtTutEmail.Text = t.Email;
+            txtTutDireccion.Text = t.Direccion;
+            txtTutOcupacion.Text = t.Ocupacion;
+            dpkTutFecNacimiento.Value = t.FecNacimiento;
 
-            if (e.Sexo == 'M')
+            if (t.Sexo == 'M')
             {
                 rdbTutMasculino.Checked = true;
                 rdbTutFemenino.Checked = false;
@@ -68,13 +68,35 @@ namespace CapaPresentacion
                 rdbTutFemenino.Checked = true;
             }
 
-            cbbNivelAcademico.SelectedItem = e.NvAcademico;
+            cbbNivelAcademico.SelectedItem = t.NvAcademico;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             btnEditar.Enabled = false;
+            btnConfirmar.Enabled = true;
+            txtTutTelefono.Enabled = true;
+            txtTutEmail.Enabled = true;
+            txtTutDireccion.Enabled = true;
+            txtTutOcupacion.Enabled = true;
+            cbbNivelAcademico.Enabled = true;
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            btnEditar.Enabled = true;
             btnConfirmar.Enabled = false;
+            txtTutTelefono.Enabled = false;
+            txtTutEmail.Enabled = false;
+            txtTutDireccion.Enabled = false;
+            txtTutOcupacion.Enabled = false;
+            cbbNivelAcademico.Enabled = false;
+
+            t.Telefono = txtTutTelefono.Text.ToString().Trim();
+            t.Email = txtTutEmail.Text.ToString().Trim();
+            t.Direccion = txtTutDireccion.Text.ToString().Trim();
+            t.Ocupacion = txtTutOcupacion.Text.ToString().Trim();
+            t.NvAcademico = cbbNivelAcademico.Text.ToString().Trim();
         }
     }
 }
