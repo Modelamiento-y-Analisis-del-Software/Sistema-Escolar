@@ -105,7 +105,7 @@ namespace CapaPresentacion
                 rdbGrado5.Checked = true;
             }
 
-            cbbSeccion.SelectedItem = m.EntAula.Seccion;
+            //cbbSeccion.SelectedItem = m.EntAula.Seccion;
 
             if (m.Turno == 'M')
             {
@@ -154,13 +154,14 @@ namespace CapaPresentacion
                 };
 
                 m = new Matricula();
-                m.Estudnte = e;
-                m.GradoEsc.Id =
+                Grado grado = new Grado();
+                grado.Id = 
                     rdbGrado1.Checked ? 1 :
                     rdbGrado2.Checked ? 2 :
                     rdbGrado3.Checked ? 3 :
                     rdbGrado4.Checked ? 4 :
                     rdbGrado5.Checked ? 5 : 0;
+                m.Estudnte = e;
                 aula.Seccion = cbbSeccion.Text.ElementAt(0);
                 m.Turno =
                     rdbMañana.Checked ? 'M' :
@@ -169,6 +170,7 @@ namespace CapaPresentacion
                 m.EscuelaProcedencia = txtEscuelaProc.Text.ToString().Trim();
                 m.FecInscripcion = dpkFecInscripcion.Value;
                 m.Estado = true;
+                m.GradoEsc = grado;
 
                 exito = LgcMatricula.Instancia.InsertarMatricula(m);
                 e.Id = LgcEstudiante.Instancia.BuscarEstudiante(e.Dni).First().Id;
@@ -206,6 +208,7 @@ namespace CapaPresentacion
             {
                 e = MBEstudiante.Est;
                 m = LgcMatricula.Instancia.BuscarMatricula(e.Id);
+
                 m.GradoEsc.Id =
                     rdbGrado1.Checked ? 1 :
                     rdbGrado2.Checked ? 2 :
