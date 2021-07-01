@@ -211,6 +211,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TutorDetalles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TutorDetalles.Designer.cs">
+      <DependentUpon>TutorDetalles.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Detalles\EstudianteDetalle.resx">
       <DependentUpon>EstudianteDetalle.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +249,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TutorDetalles.resx">
+      <DependentUpon>TutorDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CapaEntidad.Estudiante.datasource" />
