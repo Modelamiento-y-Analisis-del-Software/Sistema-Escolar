@@ -19,6 +19,16 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+        
+        private void btnUploadImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog f = new OpenFileDialog();
+            DialogResult result = f.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                imgEstPerfil.Image = Image.FromFile(f.FileName);
+            }
+        }
 
         public void CleanScreen ()
         {
@@ -47,9 +57,10 @@ namespace CapaPresentacion
                 Direccion = txtDocDireccion.Text.ToString().Trim(),
                 Email = txtDocEmail.Text.ToString().Trim(),
                 Telefono = txtDocTelefono.Text.ToString().Trim(),
-                Especialidad = txtDocEspecialidad.Text.ToString().Trim()
+                //Especialidad = txtDocEspecialidad.Text.ToString().Trim()
+                //Foto = imgEstPerfil.Image;
             };
             LgcDocente.Instancia.InsertarDocente(D);
-        }
+        }    
     }
 }

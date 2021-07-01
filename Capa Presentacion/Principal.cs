@@ -56,10 +56,16 @@ namespace CapaPresentacion
             dgvTutor.DataSource = LgcTutor.Instancia.ListarTutores();
         }
 
+        public void ListarDocentes ()
+        {
+            dgvDocentes.DataSource = LgcDocente.Instancia.ListarDocente();
+        }
+
         private void SideMenu_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
-            //pagCentral.SetPage("DocGeneral");
+            pagCentral.SetPage("DocGeneral");
+            ListarDocentes();
         }
 
         private void BtnTutor_Click(object sender, EventArgs e)
@@ -167,6 +173,18 @@ namespace CapaPresentacion
                 ed.Show();
             }
 
+        }
+
+        private void btnActDocente_Click(object sender, EventArgs e)
+        {
+            txtBusDocente.Text = "";
+            ListarDocentes();
+        }
+
+        private void txtBusDocente_OnIconRightClick(object sender, EventArgs e)
+        {
+            dgvDocentes.DataSource = LgcDocente.Instancia.BuscarDocente(txtBusDocente.Text.ToString().Trim());
+            txtBusDocente.Text = "";
         }
     }
 }

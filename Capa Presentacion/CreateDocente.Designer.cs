@@ -29,7 +29,6 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateDocente));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -62,6 +61,8 @@ namespace CapaPresentacion
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateDocente));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.grbNuevoDocente = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -88,8 +89,11 @@ namespace CapaPresentacion
             this.label23 = new System.Windows.Forms.Label();
             this.txtDocNombres = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnConfirmarRDoc = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnUploadImage = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.imgEstPerfil = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.grbNuevoDocente.SuspendLayout();
             this.grbDocSexo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgEstPerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // grbNuevoDocente
@@ -100,6 +104,8 @@ namespace CapaPresentacion
             this.grbNuevoDocente.BorderColor = System.Drawing.Color.Silver;
             this.grbNuevoDocente.BorderRadius = 10;
             this.grbNuevoDocente.BorderThickness = 1;
+            this.grbNuevoDocente.Controls.Add(this.btnUploadImage);
+            this.grbNuevoDocente.Controls.Add(this.imgEstPerfil);
             this.grbNuevoDocente.Controls.Add(this.label28);
             this.grbNuevoDocente.Controls.Add(this.txtDocEmail);
             this.grbNuevoDocente.Controls.Add(this.txtDocTelefono);
@@ -128,7 +134,7 @@ namespace CapaPresentacion
             this.grbNuevoDocente.Margin = new System.Windows.Forms.Padding(4);
             this.grbNuevoDocente.Name = "grbNuevoDocente";
             this.grbNuevoDocente.Padding = new System.Windows.Forms.Padding(4);
-            this.grbNuevoDocente.Size = new System.Drawing.Size(1011, 796);
+            this.grbNuevoDocente.Size = new System.Drawing.Size(1163, 796);
             this.grbNuevoDocente.TabIndex = 22;
             this.grbNuevoDocente.TabStop = false;
             this.grbNuevoDocente.Text = "Datos del Docente";
@@ -214,7 +220,7 @@ namespace CapaPresentacion
             this.txtDocEmail.SelectionLength = 0;
             this.txtDocEmail.SelectionStart = 0;
             this.txtDocEmail.ShortcutsEnabled = true;
-            this.txtDocEmail.Size = new System.Drawing.Size(952, 44);
+            this.txtDocEmail.Size = new System.Drawing.Size(1104, 44);
             this.txtDocEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDocEmail.TabIndex = 54;
             this.txtDocEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -254,7 +260,7 @@ namespace CapaPresentacion
             this.txtDocTelefono.IconRight = null;
             this.txtDocTelefono.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDocTelefono.Lines = new string[0];
-            this.txtDocTelefono.Location = new System.Drawing.Point(652, 626);
+            this.txtDocTelefono.Location = new System.Drawing.Point(704, 626);
             this.txtDocTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtDocTelefono.MaxLength = 9;
             this.txtDocTelefono.MinimumSize = new System.Drawing.Size(1, 1);
@@ -291,7 +297,7 @@ namespace CapaPresentacion
             this.txtDocTelefono.SelectionLength = 0;
             this.txtDocTelefono.SelectionStart = 0;
             this.txtDocTelefono.ShortcutsEnabled = true;
-            this.txtDocTelefono.Size = new System.Drawing.Size(327, 44);
+            this.txtDocTelefono.Size = new System.Drawing.Size(427, 44);
             this.txtDocTelefono.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDocTelefono.TabIndex = 50;
             this.txtDocTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -310,7 +316,7 @@ namespace CapaPresentacion
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(647, 597);
+            this.label11.Location = new System.Drawing.Point(699, 597);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(84, 25);
@@ -398,7 +404,7 @@ namespace CapaPresentacion
             this.txtDocEspecialidad.SelectionLength = 0;
             this.txtDocEspecialidad.SelectionStart = 0;
             this.txtDocEspecialidad.ShortcutsEnabled = true;
-            this.txtDocEspecialidad.Size = new System.Drawing.Size(562, 44);
+            this.txtDocEspecialidad.Size = new System.Drawing.Size(646, 44);
             this.txtDocEspecialidad.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDocEspecialidad.TabIndex = 45;
             this.txtDocEspecialidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -490,7 +496,7 @@ namespace CapaPresentacion
             this.txtDocApMaterno.SelectionLength = 0;
             this.txtDocApMaterno.SelectionStart = 0;
             this.txtDocApMaterno.ShortcutsEnabled = true;
-            this.txtDocApMaterno.Size = new System.Drawing.Size(952, 44);
+            this.txtDocApMaterno.Size = new System.Drawing.Size(704, 44);
             this.txtDocApMaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDocApMaterno.TabIndex = 43;
             this.txtDocApMaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -682,7 +688,7 @@ namespace CapaPresentacion
             this.txtDocDireccion.SelectionLength = 0;
             this.txtDocDireccion.SelectionStart = 0;
             this.txtDocDireccion.ShortcutsEnabled = true;
-            this.txtDocDireccion.Size = new System.Drawing.Size(952, 44);
+            this.txtDocDireccion.Size = new System.Drawing.Size(1104, 44);
             this.txtDocDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDocDireccion.TabIndex = 36;
             this.txtDocDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -732,7 +738,7 @@ namespace CapaPresentacion
             this.dpkDocFecNacimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dpkDocFecNacimiento.MinimumSize = new System.Drawing.Size(4, 32);
             this.dpkDocFecNacimiento.Name = "dpkDocFecNacimiento";
-            this.dpkDocFecNacimiento.Size = new System.Drawing.Size(517, 32);
+            this.dpkDocFecNacimiento.Size = new System.Drawing.Size(669, 32);
             this.dpkDocFecNacimiento.TabIndex = 26;
             this.dpkDocFecNacimiento.Value = new System.DateTime(2021, 6, 3, 10, 42, 0, 0);
             // 
@@ -817,7 +823,7 @@ namespace CapaPresentacion
             this.txtDocApPaterno.SelectionLength = 0;
             this.txtDocApPaterno.SelectionStart = 0;
             this.txtDocApPaterno.ShortcutsEnabled = true;
-            this.txtDocApPaterno.Size = new System.Drawing.Size(952, 44);
+            this.txtDocApPaterno.Size = new System.Drawing.Size(704, 44);
             this.txtDocApPaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDocApPaterno.TabIndex = 23;
             this.txtDocApPaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -909,7 +915,7 @@ namespace CapaPresentacion
             this.txtDocDni.SelectionLength = 0;
             this.txtDocDni.SelectionStart = 0;
             this.txtDocDni.ShortcutsEnabled = true;
-            this.txtDocDni.Size = new System.Drawing.Size(311, 44);
+            this.txtDocDni.Size = new System.Drawing.Size(463, 44);
             this.txtDocDni.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDocDni.TabIndex = 21;
             this.txtDocDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1001,7 +1007,7 @@ namespace CapaPresentacion
             this.txtDocNombres.SelectionLength = 0;
             this.txtDocNombres.SelectionStart = 0;
             this.txtDocNombres.ShortcutsEnabled = true;
-            this.txtDocNombres.Size = new System.Drawing.Size(952, 44);
+            this.txtDocNombres.Size = new System.Drawing.Size(704, 44);
             this.txtDocNombres.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtDocNombres.TabIndex = 19;
             this.txtDocNombres.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1032,11 +1038,11 @@ namespace CapaPresentacion
             this.btnConfirmarRDoc.ColorContrastOnClick = 45;
             this.btnConfirmarRDoc.ColorContrastOnHover = 45;
             this.btnConfirmarRDoc.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnConfirmarRDoc.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnConfirmarRDoc.CustomizableEdges = borderEdges2;
             this.btnConfirmarRDoc.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnConfirmarRDoc.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmarRDoc.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1060,7 +1066,7 @@ namespace CapaPresentacion
             this.btnConfirmarRDoc.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmarRDoc.IdleIconRightImage = null;
             this.btnConfirmarRDoc.IndicateFocus = false;
-            this.btnConfirmarRDoc.Location = new System.Drawing.Point(820, 812);
+            this.btnConfirmarRDoc.Location = new System.Drawing.Point(972, 812);
             this.btnConfirmarRDoc.Margin = new System.Windows.Forms.Padding(4);
             this.btnConfirmarRDoc.Name = "btnConfirmarRDoc";
             this.btnConfirmarRDoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1104,18 +1110,129 @@ namespace CapaPresentacion
             this.btnConfirmarRDoc.UseDefaultRadiusAndThickness = true;
             this.btnConfirmarRDoc.Click += new System.EventHandler(this.btnConfirmarRDoc_Click);
             // 
+            // btnUploadImage
+            // 
+            this.btnUploadImage.AllowAnimations = true;
+            this.btnUploadImage.AllowMouseEffects = true;
+            this.btnUploadImage.AllowToggling = false;
+            this.btnUploadImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUploadImage.AnimationSpeed = 200;
+            this.btnUploadImage.AutoGenerateColors = false;
+            this.btnUploadImage.AutoRoundBorders = true;
+            this.btnUploadImage.AutoSizeLeftIcon = true;
+            this.btnUploadImage.AutoSizeRightIcon = true;
+            this.btnUploadImage.BackColor = System.Drawing.Color.Transparent;
+            this.btnUploadImage.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnUploadImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUploadImage.BackgroundImage")));
+            this.btnUploadImage.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUploadImage.ButtonText = "Subir Imagen";
+            this.btnUploadImage.ButtonTextMarginLeft = 0;
+            this.btnUploadImage.ColorContrastOnClick = 45;
+            this.btnUploadImage.ColorContrastOnHover = 45;
+            this.btnUploadImage.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnUploadImage.CustomizableEdges = borderEdges1;
+            this.btnUploadImage.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnUploadImage.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnUploadImage.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnUploadImage.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnUploadImage.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnUploadImage.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUploadImage.ForeColor = System.Drawing.Color.White;
+            this.btnUploadImage.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUploadImage.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnUploadImage.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnUploadImage.IconMarginLeft = 11;
+            this.btnUploadImage.IconPadding = 10;
+            this.btnUploadImage.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUploadImage.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnUploadImage.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnUploadImage.IconSize = 25;
+            this.btnUploadImage.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnUploadImage.IdleBorderRadius = 46;
+            this.btnUploadImage.IdleBorderThickness = 1;
+            this.btnUploadImage.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnUploadImage.IdleIconLeftImage = null;
+            this.btnUploadImage.IdleIconRightImage = null;
+            this.btnUploadImage.IndicateFocus = false;
+            this.btnUploadImage.Location = new System.Drawing.Point(890, 323);
+            this.btnUploadImage.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUploadImage.Name = "btnUploadImage";
+            this.btnUploadImage.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnUploadImage.OnDisabledState.BorderRadius = 1;
+            this.btnUploadImage.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUploadImage.OnDisabledState.BorderThickness = 1;
+            this.btnUploadImage.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnUploadImage.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnUploadImage.OnDisabledState.IconLeftImage = null;
+            this.btnUploadImage.OnDisabledState.IconRightImage = null;
+            this.btnUploadImage.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnUploadImage.onHoverState.BorderRadius = 1;
+            this.btnUploadImage.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUploadImage.onHoverState.BorderThickness = 1;
+            this.btnUploadImage.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnUploadImage.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnUploadImage.onHoverState.IconLeftImage = null;
+            this.btnUploadImage.onHoverState.IconRightImage = null;
+            this.btnUploadImage.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnUploadImage.OnIdleState.BorderRadius = 1;
+            this.btnUploadImage.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUploadImage.OnIdleState.BorderThickness = 1;
+            this.btnUploadImage.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnUploadImage.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnUploadImage.OnIdleState.IconLeftImage = null;
+            this.btnUploadImage.OnIdleState.IconRightImage = null;
+            this.btnUploadImage.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnUploadImage.OnPressedState.BorderRadius = 1;
+            this.btnUploadImage.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnUploadImage.OnPressedState.BorderThickness = 1;
+            this.btnUploadImage.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnUploadImage.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnUploadImage.OnPressedState.IconLeftImage = null;
+            this.btnUploadImage.OnPressedState.IconRightImage = null;
+            this.btnUploadImage.Size = new System.Drawing.Size(200, 48);
+            this.btnUploadImage.TabIndex = 57;
+            this.btnUploadImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUploadImage.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnUploadImage.TextMarginLeft = 0;
+            this.btnUploadImage.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnUploadImage.UseDefaultRadiusAndThickness = true;
+            this.btnUploadImage.Click += new System.EventHandler(this.btnUploadImage_Click);
+            // 
+            // imgEstPerfil
+            // 
+            this.imgEstPerfil.AllowFocused = false;
+            this.imgEstPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.imgEstPerfil.AutoSizeHeight = true;
+            this.imgEstPerfil.BorderRadius = 136;
+            this.imgEstPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgEstPerfil.Image")));
+            this.imgEstPerfil.IsCircle = true;
+            this.imgEstPerfil.Location = new System.Drawing.Point(848, 65);
+            this.imgEstPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.imgEstPerfil.Name = "imgEstPerfil";
+            this.imgEstPerfil.Size = new System.Drawing.Size(272, 272);
+            this.imgEstPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imgEstPerfil.TabIndex = 56;
+            this.imgEstPerfil.TabStop = false;
+            this.imgEstPerfil.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
             // CreateDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.Controls.Add(this.btnConfirmarRDoc);
             this.Controls.Add(this.grbNuevoDocente);
             this.Name = "CreateDocente";
-            this.Size = new System.Drawing.Size(1041, 875);
+            this.Size = new System.Drawing.Size(1193, 874);
             this.grbNuevoDocente.ResumeLayout(false);
             this.grbNuevoDocente.PerformLayout();
             this.grbDocSexo.ResumeLayout(false);
             this.grbDocSexo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgEstPerfil)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1147,5 +1264,7 @@ namespace CapaPresentacion
         private Bunifu.UI.WinForms.BunifuTextBox txtDocDni;
         private System.Windows.Forms.Label label23;
         private Bunifu.UI.WinForms.BunifuTextBox txtDocNombres;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnUploadImage;
+        private Bunifu.UI.WinForms.BunifuPictureBox imgEstPerfil;
     }
 }

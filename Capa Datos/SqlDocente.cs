@@ -23,7 +23,7 @@ namespace CapaDatos
             try
             {
                 var cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("uspListarDocentes", cn)
+                cmd = new SqlCommand("uspListarDocente", cn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -33,9 +33,9 @@ namespace CapaDatos
                 {
                     var ms = new MemoryStream((byte[])dr["Foto"]);
                     var d = new Docente();
-                        d.Id = Convert.ToInt32(dr["IDDocente"]);
+                        d.Id = Convert.ToInt32(dr["IdDocente"]);
                         d.Dni = dr["Dni"].ToString();
-                        d.Nombres = dr["Nombre"].ToString();
+                        d.Nombres = dr["Nombres"].ToString();
                         d.ApPaterno = dr["ApPaterno"].ToString();
                         d.ApMaterno = dr["ApMaterno"].ToString();
                         d.Sexo = dr["Sexo"].ToString().ElementAt(0);
@@ -43,7 +43,7 @@ namespace CapaDatos
                         d.Direccion = dr["Direccion"].ToString();
                         d.Email = dr["Email"].ToString();
                         d.Telefono = dr["Telefono"].ToString();
-                        d.Especialidad = dr["Especialidad"].ToString();
+                        d.Especialidad = Convert.ToInt32(dr["Especialidad"]);
                         d.Foto = Image.FromStream(ms);
                     lista.Add(d);
                 }
@@ -68,7 +68,7 @@ namespace CapaDatos
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
 
-                cmd = new SqlCommand("uspInsertarDocentes", cn)
+                cmd = new SqlCommand("uspInsertarDocente", cn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -101,7 +101,7 @@ namespace CapaDatos
             return exito;
         }
 
-        public List<Docente> BuscarDocentes (string dni)
+        public List<Docente> BuscarDocentes(string dni)
         {
             SqlCommand cmd = null;
             var lista = new List<Docente>();
@@ -132,7 +132,7 @@ namespace CapaDatos
                         Direccion = dr["Direccion"].ToString(),
                         Email = dr["Email"].ToString(),
                         Telefono = dr["Telefono"].ToString(),
-                        Especialidad = dr["Especialidad"].ToString(),
+                        Especialidad = Convert.ToInt32(dr["Especialidad"]),
                         Foto = Image.FromStream(ms)
                     };
                     lista.Add(e);
@@ -144,43 +144,6 @@ namespace CapaDatos
             }
             finally { cmd?.Connection.Close(); }
             return lista;
-        }
-
-        public bool ActualizarDocentes (Docente D)
-        {
-            bool exito = false;
-            SqlCommand cmd = null;
-
-            ImageConverter converter = new ImageConverter();
-            var imgbytes = (byte[])converter.ConvertTo(D.Foto, typeof(byte[]));
-            try
-            {
-                SqlConnection cn = Conexion.Instancia.Conectar();
-
-                cmd = new SqlCommand("uspUpdateDocente", cn)
-                {
-                    CommandType = CommandType.StoredProcedure
-                };
-
-                cmd.Parameters.AddWithValue("@Direccion", D.Direccion);
-                cmd.Parameters.AddWithValue("@Email", D.Email);
-                cmd.Parameters.AddWithValue("@Telefono", D.Telefono);
-                cmd.Parameters.AddWithValue("@Especialidad", D.Especialidad);
-                cmd.Parameters.AddWithValue("@Foto", imgbytes);
-                cn.Open();
-                var i = cmd.ExecuteNonQuery();
-                if (i > 0)
-                {
-                    exito = true;
-                }
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-
-            }
-            finally { cmd?.Connection.Close(); }
-            return exito;
         }
     }
 }
