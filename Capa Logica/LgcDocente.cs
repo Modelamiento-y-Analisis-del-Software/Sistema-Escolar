@@ -27,10 +27,5 @@ namespace CapaLogica
         {
             return SqlDocente.Instancia.BuscarDocentes(dni);
         }
-
-        public bool ActualizarDocente (Docente D)
-        {
-            return SqlDocente.Instancia.ActualizarDocentes(D);
-        }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,7 +36,7 @@ namespace CapaPresentacion.Detalles
         }
         public void LoadData()
         {
-            imgDocPerfil.Image = d.Foto;
+            //imgDocPerfil.Image = d.Foto;
             txtDocNombre.Text = d.Nombres.ToString();
             txtDocDni.Text = d.Dni;
             txtDocApPaterno.Text = d.ApPaterno;
@@ -67,12 +67,12 @@ namespace CapaPresentacion.Detalles
 
         private void btnImageDoc_Click(object sender, EventArgs e)
         {
-            OpenFileDialog f = new OpenFileDialog();
-            DialogResult result = f.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                imgDocPerfil.Image = Image.FromFile(f.FileName);
-            }
+            //    OpenFileDialog f = new OpenFileDialog();
+            //    DialogResult result = f.ShowDialog();
+            //    if (result == DialogResult.OK)
+            //    {
+            //        imgDocPerfil.Image = Image.FromFile(f.FileName);
+            //    }
 
         }
 
