@@ -34,16 +34,14 @@ namespace CapaDatos
                         Id = Convert.ToInt32(dr["IdEstudiante"])
                     };
 
-                    var m = new Matricula
-                    {
-                        Id = Convert.ToInt32(dr["IdMatricula"]),
-                        GradoEscolar = Convert.ToInt32(dr["GradoEscolar"]),
-                        EntAula.Seccion = dr["Seccion"].ToString().ElementAt(0),
-                        Turno = dr["Turno"].ToString().ElementAt(0),
-                        EscuelaProcedencia = dr["EscuelaProc"].ToString(),
-                        FecInscripcion = Convert.ToDateTime(dr["FecInscripcion"]),
-                        Estado = Convert.ToBoolean(dr["Estado"]),
-                    };
+                    var m = new Matricula();
+                        m.Id = Convert.ToInt32(dr["IdMatricula"]);
+                        m.GradoEscolar = Convert.ToInt32(dr["GradoEscolar"]);
+                        m.EntAula.Seccion = dr["Seccion"].ToString().ElementAt(0);
+                        m.Turno = dr["Turno"].ToString().ElementAt(0);
+                        m.EscuelaProcedencia = dr["EscuelaProc"].ToString();
+                        m.FecInscripcion = Convert.ToDateTime(dr["FecInscripcion"]);
+                        m.Estado = Convert.ToBoolean(dr["Estado"]);
 
                     m.Estudnte = e;
 
@@ -84,7 +82,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@Telefono", m.Estudnte.Telefono);
                 cmd.Parameters.AddWithValue("@Foto", imgbytes);
                 cmd.Parameters.AddWithValue("@GradoEscolar", m.GradoEscolar);
-                cmd.Parameters.AddWithValue("@Seccion", m.Seccion);
+                cmd.Parameters.AddWithValue("@Seccion", m.EntAula.Seccion);
                 cmd.Parameters.AddWithValue("@Turno", m.Turno);
                 cmd.Parameters.AddWithValue("@EscuelaProc", m.EscuelaProcedencia);
                 cmd.Parameters.AddWithValue("@FecInscripcion", m.FecInscripcion);
@@ -152,7 +150,7 @@ namespace CapaDatos
 
                 cmd.Parameters.AddWithValue("@IdMatricula", m.Id);
                 cmd.Parameters.AddWithValue("@GradoEscolar", m.GradoEscolar);
-                cmd.Parameters.AddWithValue("@Seccion", m.Seccion);
+                cmd.Parameters.AddWithValue("@Seccion", m.EntAula.Seccion);
                 cmd.Parameters.AddWithValue("@Turno", m.Turno);
                 cmd.Parameters.AddWithValue("@EscuelaProc", m.EscuelaProcedencia);
                 cmd.Parameters.AddWithValue("@FecInscripcion", m.FecInscripcion);

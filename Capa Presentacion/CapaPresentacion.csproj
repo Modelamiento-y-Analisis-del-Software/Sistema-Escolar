@@ -218,6 +218,9 @@
     <Compile Include="TutorDetalle.Designer.cs">
       <DependentUpon>TutorDetalle.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateDocente.resx">
+      <DependentUpon>CreateDocente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Detalles\EstudianteDetalle.resx">
       <DependentUpon>EstudianteDetalle.cs</DependentUpon>
     </EmbeddedResource>
