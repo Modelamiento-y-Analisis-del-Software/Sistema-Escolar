@@ -38,7 +38,7 @@ namespace CapaDatos
                     {
                         Id = Convert.ToInt32(dr["IdMatricula"]),
                         GradoEscolar = Convert.ToInt32(dr["GradoEscolar"]),
-                        Seccion = dr["Seccion"].ToString().ElementAt(0),
+                        EntAula.Seccion = dr["Seccion"].ToString().ElementAt(0),
                         Turno = dr["Turno"].ToString().ElementAt(0),
                         EscuelaProcedencia = dr["EscuelaProc"].ToString(),
                         FecInscripcion = Convert.ToDateTime(dr["FecInscripcion"]),
