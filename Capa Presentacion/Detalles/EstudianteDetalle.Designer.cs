@@ -140,10 +140,9 @@ namespace CapaPresentacion
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(147, 1287);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(110, 1046);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 25);
+            this.label2.Size = new System.Drawing.Size(137, 20);
             this.label2.TabIndex = 42;
             this.label2.Text = "Fecha de Incripcion";
             // 
@@ -158,11 +157,9 @@ namespace CapaPresentacion
             this.bunifuGroupBox5.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox5.LabelIndent = 10;
             this.bunifuGroupBox5.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox5.Location = new System.Drawing.Point(500, 1106);
-            this.bunifuGroupBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuGroupBox5.Location = new System.Drawing.Point(375, 899);
             this.bunifuGroupBox5.Name = "bunifuGroupBox5";
-            this.bunifuGroupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.bunifuGroupBox5.Size = new System.Drawing.Size(205, 71);
+            this.bunifuGroupBox5.Size = new System.Drawing.Size(154, 58);
             this.bunifuGroupBox5.TabIndex = 41;
             this.bunifuGroupBox5.TabStop = false;
             this.bunifuGroupBox5.Text = "Seccion";
@@ -177,10 +174,9 @@ namespace CapaPresentacion
             "C",
             "D",
             "E"});
-            this.cbbSeccion.Location = new System.Drawing.Point(9, 27);
-            this.cbbSeccion.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbSeccion.Location = new System.Drawing.Point(7, 22);
             this.cbbSeccion.Name = "cbbSeccion";
-            this.cbbSeccion.Size = new System.Drawing.Size(160, 28);
+            this.cbbSeccion.Size = new System.Drawing.Size(121, 23);
             this.cbbSeccion.TabIndex = 0;
             // 
             // bunifuGroupBox3
@@ -199,11 +195,9 @@ namespace CapaPresentacion
             this.bunifuGroupBox3.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox3.LabelIndent = 10;
             this.bunifuGroupBox3.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox3.Location = new System.Drawing.Point(717, 1106);
-            this.bunifuGroupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuGroupBox3.Location = new System.Drawing.Point(538, 899);
             this.bunifuGroupBox3.Name = "bunifuGroupBox3";
-            this.bunifuGroupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.bunifuGroupBox3.Size = new System.Drawing.Size(205, 71);
+            this.bunifuGroupBox3.Size = new System.Drawing.Size(154, 58);
             this.bunifuGroupBox3.TabIndex = 39;
             this.bunifuGroupBox3.TabStop = false;
             this.bunifuGroupBox3.Text = "Turno";
@@ -215,10 +209,9 @@ namespace CapaPresentacion
             this.label13.Cursor = System.Windows.Forms.Cursors.Default;
             this.label13.Enabled = false;
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(161, 31);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(127, 26);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(20, 20);
+            this.label13.Size = new System.Drawing.Size(16, 15);
             this.label13.TabIndex = 5;
             this.label13.Text = "N";
             // 
@@ -231,15 +224,14 @@ namespace CapaPresentacion
             this.rdbNoche.BorderThickness = 1;
             this.rdbNoche.Checked = false;
             this.rdbNoche.Enabled = false;
-            this.rdbNoche.Location = new System.Drawing.Point(137, 27);
-            this.rdbNoche.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbNoche.Location = new System.Drawing.Point(103, 22);
             this.rdbNoche.Name = "rdbNoche";
             this.rdbNoche.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbNoche.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbNoche.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbNoche.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbNoche.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbNoche.Size = new System.Drawing.Size(28, 28);
+            this.rdbNoche.Size = new System.Drawing.Size(21, 23);
             this.rdbNoche.TabIndex = 4;
             this.rdbNoche.Text = null;
             // 
@@ -250,10 +242,9 @@ namespace CapaPresentacion
             this.label14.Cursor = System.Windows.Forms.Cursors.Default;
             this.label14.Enabled = false;
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(97, 31);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(79, 26);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 20);
+            this.label14.Size = new System.Drawing.Size(13, 15);
             this.label14.TabIndex = 3;
             this.label14.Text = "T";
             // 
@@ -266,15 +257,14 @@ namespace CapaPresentacion
             this.rdbTarde.BorderThickness = 1;
             this.rdbTarde.Checked = false;
             this.rdbTarde.Enabled = false;
-            this.rdbTarde.Location = new System.Drawing.Point(73, 27);
-            this.rdbTarde.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbTarde.Location = new System.Drawing.Point(55, 22);
             this.rdbTarde.Name = "rdbTarde";
             this.rdbTarde.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbTarde.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbTarde.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbTarde.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbTarde.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbTarde.Size = new System.Drawing.Size(28, 28);
+            this.rdbTarde.Size = new System.Drawing.Size(21, 23);
             this.rdbTarde.TabIndex = 2;
             this.rdbTarde.Text = null;
             // 
@@ -285,10 +275,9 @@ namespace CapaPresentacion
             this.label15.Cursor = System.Windows.Forms.Cursors.Default;
             this.label15.Enabled = false;
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(33, 31);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(31, 26);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(22, 20);
+            this.label15.Size = new System.Drawing.Size(18, 15);
             this.label15.TabIndex = 1;
             this.label15.Text = "M";
             // 
@@ -301,15 +290,14 @@ namespace CapaPresentacion
             this.rdbMañana.BorderThickness = 1;
             this.rdbMañana.Checked = true;
             this.rdbMañana.Enabled = false;
-            this.rdbMañana.Location = new System.Drawing.Point(9, 27);
-            this.rdbMañana.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbMañana.Location = new System.Drawing.Point(7, 22);
             this.rdbMañana.Name = "rdbMañana";
             this.rdbMañana.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbMañana.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbMañana.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbMañana.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbMañana.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbMañana.Size = new System.Drawing.Size(28, 28);
+            this.rdbMañana.Size = new System.Drawing.Size(21, 23);
             this.rdbMañana.TabIndex = 0;
             this.rdbMañana.Text = null;
             // 
@@ -333,11 +321,9 @@ namespace CapaPresentacion
             this.bunifuGroupBox4.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox4.LabelIndent = 10;
             this.bunifuGroupBox4.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox4.Location = new System.Drawing.Point(156, 1106);
-            this.bunifuGroupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuGroupBox4.Location = new System.Drawing.Point(117, 899);
             this.bunifuGroupBox4.Name = "bunifuGroupBox4";
-            this.bunifuGroupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.bunifuGroupBox4.Size = new System.Drawing.Size(329, 71);
+            this.bunifuGroupBox4.Size = new System.Drawing.Size(247, 58);
             this.bunifuGroupBox4.TabIndex = 38;
             this.bunifuGroupBox4.TabStop = false;
             this.bunifuGroupBox4.Text = "Secundaria";
@@ -349,10 +335,9 @@ namespace CapaPresentacion
             this.label10.Cursor = System.Windows.Forms.Cursors.Default;
             this.label10.Enabled = false;
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(289, 31);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(223, 26);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(23, 20);
+            this.label10.Size = new System.Drawing.Size(18, 15);
             this.label10.TabIndex = 9;
             this.label10.Text = "5°";
             // 
@@ -365,15 +350,14 @@ namespace CapaPresentacion
             this.rdbGrado5.BorderThickness = 1;
             this.rdbGrado5.Checked = false;
             this.rdbGrado5.Enabled = false;
-            this.rdbGrado5.Location = new System.Drawing.Point(265, 27);
-            this.rdbGrado5.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbGrado5.Location = new System.Drawing.Point(199, 22);
             this.rdbGrado5.Name = "rdbGrado5";
             this.rdbGrado5.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado5.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbGrado5.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado5.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado5.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado5.Size = new System.Drawing.Size(28, 28);
+            this.rdbGrado5.Size = new System.Drawing.Size(21, 23);
             this.rdbGrado5.TabIndex = 8;
             this.rdbGrado5.Text = null;
             // 
@@ -384,10 +368,9 @@ namespace CapaPresentacion
             this.label9.Cursor = System.Windows.Forms.Cursors.Default;
             this.label9.Enabled = false;
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(225, 31);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(175, 26);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 20);
+            this.label9.Size = new System.Drawing.Size(18, 15);
             this.label9.TabIndex = 7;
             this.label9.Text = "4°";
             // 
@@ -400,15 +383,14 @@ namespace CapaPresentacion
             this.rdbGrado4.BorderThickness = 1;
             this.rdbGrado4.Checked = false;
             this.rdbGrado4.Enabled = false;
-            this.rdbGrado4.Location = new System.Drawing.Point(201, 27);
-            this.rdbGrado4.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbGrado4.Location = new System.Drawing.Point(151, 22);
             this.rdbGrado4.Name = "rdbGrado4";
             this.rdbGrado4.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado4.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbGrado4.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado4.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado4.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado4.Size = new System.Drawing.Size(28, 28);
+            this.rdbGrado4.Size = new System.Drawing.Size(21, 23);
             this.rdbGrado4.TabIndex = 6;
             this.rdbGrado4.Text = null;
             // 
@@ -419,10 +401,9 @@ namespace CapaPresentacion
             this.label8.Cursor = System.Windows.Forms.Cursors.Default;
             this.label8.Enabled = false;
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(161, 31);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(127, 26);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 20);
+            this.label8.Size = new System.Drawing.Size(18, 15);
             this.label8.TabIndex = 5;
             this.label8.Text = "3°";
             // 
@@ -435,15 +416,14 @@ namespace CapaPresentacion
             this.rdbGrado3.BorderThickness = 1;
             this.rdbGrado3.Checked = false;
             this.rdbGrado3.Enabled = false;
-            this.rdbGrado3.Location = new System.Drawing.Point(137, 27);
-            this.rdbGrado3.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbGrado3.Location = new System.Drawing.Point(103, 22);
             this.rdbGrado3.Name = "rdbGrado3";
             this.rdbGrado3.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado3.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbGrado3.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado3.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado3.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado3.Size = new System.Drawing.Size(28, 28);
+            this.rdbGrado3.Size = new System.Drawing.Size(21, 23);
             this.rdbGrado3.TabIndex = 4;
             this.rdbGrado3.Text = null;
             // 
@@ -454,10 +434,9 @@ namespace CapaPresentacion
             this.label7.Cursor = System.Windows.Forms.Cursors.Default;
             this.label7.Enabled = false;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(97, 31);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(79, 26);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 20);
+            this.label7.Size = new System.Drawing.Size(18, 15);
             this.label7.TabIndex = 3;
             this.label7.Text = "2°";
             // 
@@ -470,15 +449,14 @@ namespace CapaPresentacion
             this.rdbGrado2.BorderThickness = 1;
             this.rdbGrado2.Checked = false;
             this.rdbGrado2.Enabled = false;
-            this.rdbGrado2.Location = new System.Drawing.Point(73, 27);
-            this.rdbGrado2.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbGrado2.Location = new System.Drawing.Point(55, 22);
             this.rdbGrado2.Name = "rdbGrado2";
             this.rdbGrado2.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado2.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbGrado2.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado2.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado2.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado2.Size = new System.Drawing.Size(28, 28);
+            this.rdbGrado2.Size = new System.Drawing.Size(21, 23);
             this.rdbGrado2.TabIndex = 2;
             this.rdbGrado2.Text = null;
             // 
@@ -489,10 +467,9 @@ namespace CapaPresentacion
             this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.Enabled = false;
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(33, 31);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(31, 26);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(23, 20);
+            this.label6.Size = new System.Drawing.Size(18, 15);
             this.label6.TabIndex = 1;
             this.label6.Text = "1°";
             // 
@@ -505,15 +482,14 @@ namespace CapaPresentacion
             this.rdbGrado1.BorderThickness = 1;
             this.rdbGrado1.Checked = true;
             this.rdbGrado1.Enabled = false;
-            this.rdbGrado1.Location = new System.Drawing.Point(9, 27);
-            this.rdbGrado1.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbGrado1.Location = new System.Drawing.Point(7, 22);
             this.rdbGrado1.Name = "rdbGrado1";
             this.rdbGrado1.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado1.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbGrado1.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado1.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado1.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado1.Size = new System.Drawing.Size(28, 28);
+            this.rdbGrado1.Size = new System.Drawing.Size(21, 23);
             this.rdbGrado1.TabIndex = 0;
             this.rdbGrado1.Text = null;
             // 
@@ -523,10 +499,9 @@ namespace CapaPresentacion
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(151, 1196);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(113, 972);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(441, 25);
+            this.label4.Size = new System.Drawing.Size(347, 20);
             this.label4.TabIndex = 24;
             this.label4.Text = "Nombre de la Institucion Educativa de Procedencia";
             // 
@@ -536,10 +511,9 @@ namespace CapaPresentacion
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(151, 1077);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(113, 875);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(228, 25);
+            this.label5.Size = new System.Drawing.Size(180, 20);
             this.label5.TabIndex = 22;
             this.label5.Text = "Nivel y año/grado escolar";
             // 
@@ -550,10 +524,9 @@ namespace CapaPresentacion
             this.label27.Enabled = false;
             this.label27.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.DimGray;
-            this.label27.Location = new System.Drawing.Point(559, 553);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Location = new System.Drawing.Point(419, 449);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(84, 25);
+            this.label27.Size = new System.Drawing.Size(67, 20);
             this.label27.TabIndex = 53;
             this.label27.Text = "Telefono";
             // 
@@ -564,10 +537,9 @@ namespace CapaPresentacion
             this.label25.Enabled = false;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.DimGray;
-            this.label25.Location = new System.Drawing.Point(147, 463);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Location = new System.Drawing.Point(110, 376);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(159, 25);
+            this.label25.Size = new System.Drawing.Size(126, 20);
             this.label25.TabIndex = 49;
             this.label25.Text = "Apellido Materno";
             // 
@@ -585,11 +557,9 @@ namespace CapaPresentacion
             this.bunifuGroupBox6.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox6.LabelIndent = 10;
             this.bunifuGroupBox6.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.bunifuGroupBox6.Location = new System.Drawing.Point(152, 654);
-            this.bunifuGroupBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuGroupBox6.Location = new System.Drawing.Point(114, 531);
             this.bunifuGroupBox6.Name = "bunifuGroupBox6";
-            this.bunifuGroupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.bunifuGroupBox6.Size = new System.Drawing.Size(261, 71);
+            this.bunifuGroupBox6.Size = new System.Drawing.Size(196, 58);
             this.bunifuGroupBox6.TabIndex = 39;
             this.bunifuGroupBox6.TabStop = false;
             this.bunifuGroupBox6.Text = "Sexo";
@@ -603,15 +573,14 @@ namespace CapaPresentacion
             this.rdbEstMasculino.BorderThickness = 1;
             this.rdbEstMasculino.Checked = false;
             this.rdbEstMasculino.Enabled = false;
-            this.rdbEstMasculino.Location = new System.Drawing.Point(23, 27);
-            this.rdbEstMasculino.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbEstMasculino.Location = new System.Drawing.Point(17, 22);
             this.rdbEstMasculino.Name = "rdbEstMasculino";
             this.rdbEstMasculino.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbEstMasculino.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbEstMasculino.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbEstMasculino.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbEstMasculino.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbEstMasculino.Size = new System.Drawing.Size(28, 28);
+            this.rdbEstMasculino.Size = new System.Drawing.Size(21, 21);
             this.rdbEstMasculino.TabIndex = 32;
             this.rdbEstMasculino.Text = null;
             // 
@@ -624,11 +593,10 @@ namespace CapaPresentacion
             this.lblMasculino.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblMasculino.Enabled = false;
             this.lblMasculino.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblMasculino.Location = new System.Drawing.Point(47, 31);
-            this.lblMasculino.Margin = new System.Windows.Forms.Padding(4);
+            this.lblMasculino.Location = new System.Drawing.Point(31, 21);
             this.lblMasculino.Name = "lblMasculino";
             this.lblMasculino.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblMasculino.Size = new System.Drawing.Size(67, 20);
+            this.lblMasculino.Size = new System.Drawing.Size(55, 15);
             this.lblMasculino.TabIndex = 28;
             this.lblMasculino.Text = "Masculino";
             this.lblMasculino.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -645,11 +613,10 @@ namespace CapaPresentacion
             this.lblFemenino.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblFemenino.Enabled = false;
             this.lblFemenino.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblFemenino.Location = new System.Drawing.Point(160, 31);
-            this.lblFemenino.Margin = new System.Windows.Forms.Padding(4);
+            this.lblFemenino.Location = new System.Drawing.Point(126, 26);
             this.lblFemenino.Name = "lblFemenino";
             this.lblFemenino.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblFemenino.Size = new System.Drawing.Size(65, 20);
+            this.lblFemenino.Size = new System.Drawing.Size(53, 15);
             this.lblFemenino.TabIndex = 29;
             this.lblFemenino.Text = "Femenino";
             this.lblFemenino.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -664,15 +631,14 @@ namespace CapaPresentacion
             this.rdbEstFemenino.BorderThickness = 1;
             this.rdbEstFemenino.Checked = true;
             this.rdbEstFemenino.Enabled = false;
-            this.rdbEstFemenino.Location = new System.Drawing.Point(136, 27);
-            this.rdbEstFemenino.Margin = new System.Windows.Forms.Padding(4);
+            this.rdbEstFemenino.Location = new System.Drawing.Point(102, 22);
             this.rdbEstFemenino.Name = "rdbEstFemenino";
             this.rdbEstFemenino.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdbEstFemenino.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.rdbEstFemenino.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbEstFemenino.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbEstFemenino.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbEstFemenino.Size = new System.Drawing.Size(28, 28);
+            this.rdbEstFemenino.Size = new System.Drawing.Size(21, 21);
             this.rdbEstFemenino.TabIndex = 33;
             this.rdbEstFemenino.Text = null;
             // 
@@ -682,10 +648,9 @@ namespace CapaPresentacion
             this.lblParEstDireccion.BackColor = System.Drawing.Color.Transparent;
             this.lblParEstDireccion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParEstDireccion.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstDireccion.Location = new System.Drawing.Point(147, 754);
-            this.lblParEstDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblParEstDireccion.Location = new System.Drawing.Point(110, 613);
             this.lblParEstDireccion.Name = "lblParEstDireccion";
-            this.lblParEstDireccion.Size = new System.Drawing.Size(92, 25);
+            this.lblParEstDireccion.Size = new System.Drawing.Size(72, 20);
             this.lblParEstDireccion.TabIndex = 37;
             this.lblParEstDireccion.Text = "Direccion";
             // 
@@ -697,10 +662,9 @@ namespace CapaPresentacion
             this.lblParEstFechaNac.BackColor = System.Drawing.Color.Transparent;
             this.lblParEstFechaNac.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParEstFechaNac.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstFechaNac.Location = new System.Drawing.Point(475, 654);
-            this.lblParEstFechaNac.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblParEstFechaNac.Location = new System.Drawing.Point(356, 531);
             this.lblParEstFechaNac.Name = "lblParEstFechaNac";
-            this.lblParEstFechaNac.Size = new System.Drawing.Size(189, 25);
+            this.lblParEstFechaNac.Size = new System.Drawing.Size(149, 20);
             this.lblParEstFechaNac.TabIndex = 27;
             this.lblParEstFechaNac.Text = "Fecha de Nacimiento";
             // 
@@ -711,10 +675,9 @@ namespace CapaPresentacion
             this.lblParEstApellido.Enabled = false;
             this.lblParEstApellido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParEstApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstApellido.Location = new System.Drawing.Point(147, 373);
-            this.lblParEstApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblParEstApellido.Location = new System.Drawing.Point(110, 303);
             this.lblParEstApellido.Name = "lblParEstApellido";
-            this.lblParEstApellido.Size = new System.Drawing.Size(152, 25);
+            this.lblParEstApellido.Size = new System.Drawing.Size(120, 20);
             this.lblParEstApellido.TabIndex = 24;
             this.lblParEstApellido.Text = "Apellido Paterno";
             // 
@@ -725,10 +688,9 @@ namespace CapaPresentacion
             this.lblParamEstDni.Enabled = false;
             this.lblParamEstDni.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParamEstDni.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParamEstDni.Location = new System.Drawing.Point(147, 553);
-            this.lblParamEstDni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblParamEstDni.Location = new System.Drawing.Point(110, 449);
             this.lblParamEstDni.Name = "lblParamEstDni";
-            this.lblParamEstDni.Size = new System.Drawing.Size(41, 25);
+            this.lblParamEstDni.Size = new System.Drawing.Size(32, 20);
             this.lblParamEstDni.TabIndex = 22;
             this.lblParamEstDni.Text = "Dni";
             // 
@@ -739,10 +701,9 @@ namespace CapaPresentacion
             this.lblParEstNombre.Enabled = false;
             this.lblParEstNombre.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblParEstNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstNombre.Location = new System.Drawing.Point(147, 284);
-            this.lblParEstNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblParEstNombre.Location = new System.Drawing.Point(110, 231);
             this.lblParEstNombre.Name = "lblParEstNombre";
-            this.lblParEstNombre.Size = new System.Drawing.Size(89, 25);
+            this.lblParEstNombre.Size = new System.Drawing.Size(70, 20);
             this.lblParEstNombre.TabIndex = 20;
             this.lblParEstNombre.Text = "Nombres";
             // 
@@ -752,10 +713,9 @@ namespace CapaPresentacion
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.DimGray;
-            this.label26.Location = new System.Drawing.Point(147, 853);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Location = new System.Drawing.Point(110, 693);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(58, 25);
+            this.label26.Size = new System.Drawing.Size(46, 20);
             this.label26.TabIndex = 55;
             this.label26.Text = "Email";
             // 
@@ -812,15 +772,14 @@ namespace CapaPresentacion
             this.dgvTutores.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgvTutores.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvTutores.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvTutores.Location = new System.Drawing.Point(152, 1447);
-            this.dgvTutores.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvTutores.Location = new System.Drawing.Point(114, 1176);
             this.dgvTutores.Name = "dgvTutores";
             this.dgvTutores.ReadOnly = true;
             this.dgvTutores.RowHeadersVisible = false;
             this.dgvTutores.RowHeadersWidth = 51;
             this.dgvTutores.RowTemplate.Height = 40;
             this.dgvTutores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTutores.Size = new System.Drawing.Size(783, 186);
+            this.dgvTutores.Size = new System.Drawing.Size(587, 151);
             this.dgvTutores.TabIndex = 59;
             this.dgvTutores.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -833,11 +792,10 @@ namespace CapaPresentacion
             this.bunifuPanel1.BorderRadius = 10;
             this.bunifuPanel1.BorderThickness = 1;
             this.bunifuPanel1.Controls.Add(this.bunifuLabel2);
-            this.bunifuPanel1.Location = new System.Drawing.Point(101, 1378);
-            this.bunifuPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuPanel1.Location = new System.Drawing.Point(76, 1120);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(881, 62);
+            this.bunifuPanel1.Size = new System.Drawing.Size(661, 50);
             this.bunifuPanel1.TabIndex = 58;
             // 
             // bunifuLabel2
@@ -848,11 +806,10 @@ namespace CapaPresentacion
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.bunifuLabel2.Location = new System.Drawing.Point(24, 12);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel2.Location = new System.Drawing.Point(18, 10);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(92, 36);
+            this.bunifuLabel2.Size = new System.Drawing.Size(74, 30);
             this.bunifuLabel2.TabIndex = 0;
             this.bunifuLabel2.Text = "Tutores";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -866,11 +823,10 @@ namespace CapaPresentacion
             this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel2.BorderRadius = 3;
             this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Location = new System.Drawing.Point(111, 1641);
-            this.bunifuPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuPanel2.Location = new System.Drawing.Point(83, 1333);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(872, 17);
+            this.bunifuPanel2.Size = new System.Drawing.Size(654, 14);
             this.bunifuPanel2.TabIndex = 57;
             // 
             // Matricula_Title
@@ -882,11 +838,10 @@ namespace CapaPresentacion
             this.Matricula_Title.BorderRadius = 10;
             this.Matricula_Title.BorderThickness = 1;
             this.Matricula_Title.Controls.Add(this.bunifuLabel1);
-            this.Matricula_Title.Location = new System.Drawing.Point(101, 1012);
-            this.Matricula_Title.Margin = new System.Windows.Forms.Padding(4);
+            this.Matricula_Title.Location = new System.Drawing.Point(76, 822);
             this.Matricula_Title.Name = "Matricula_Title";
             this.Matricula_Title.ShowBorders = true;
-            this.Matricula_Title.Size = new System.Drawing.Size(881, 62);
+            this.Matricula_Title.Size = new System.Drawing.Size(661, 50);
             this.Matricula_Title.TabIndex = 56;
             // 
             // bunifuLabel1
@@ -897,11 +852,10 @@ namespace CapaPresentacion
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.bunifuLabel1.Location = new System.Drawing.Point(24, 12);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuLabel1.Location = new System.Drawing.Point(18, 10);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(272, 36);
+            this.bunifuLabel1.Size = new System.Drawing.Size(222, 30);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "Datos de la inscripcion";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -926,11 +880,10 @@ namespace CapaPresentacion
             this.dpkFecInscripcion.IconColor = System.Drawing.Color.Gray;
             this.dpkFecInscripcion.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dpkFecInscripcion.LeftTextMargin = 5;
-            this.dpkFecInscripcion.Location = new System.Drawing.Point(152, 1316);
-            this.dpkFecInscripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.dpkFecInscripcion.Location = new System.Drawing.Point(114, 1069);
             this.dpkFecInscripcion.MinimumSize = new System.Drawing.Size(4, 32);
             this.dpkFecInscripcion.Name = "dpkFecInscripcion";
-            this.dpkFecInscripcion.Size = new System.Drawing.Size(437, 32);
+            this.dpkFecInscripcion.Size = new System.Drawing.Size(329, 32);
             this.dpkFecInscripcion.TabIndex = 43;
             this.dpkFecInscripcion.Value = new System.DateTime(2021, 6, 3, 10, 42, 0, 0);
             // 
@@ -939,13 +892,12 @@ namespace CapaPresentacion
             this.imgEstPerfil.AllowFocused = false;
             this.imgEstPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.imgEstPerfil.AutoSizeHeight = true;
-            this.imgEstPerfil.BorderRadius = 136;
+            this.imgEstPerfil.BorderRadius = 102;
             this.imgEstPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgEstPerfil.Image")));
             this.imgEstPerfil.IsCircle = true;
-            this.imgEstPerfil.Location = new System.Drawing.Point(379, 15);
-            this.imgEstPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.imgEstPerfil.Location = new System.Drawing.Point(267, 12);
             this.imgEstPerfil.Name = "imgEstPerfil";
-            this.imgEstPerfil.Size = new System.Drawing.Size(272, 272);
+            this.imgEstPerfil.Size = new System.Drawing.Size(204, 204);
             this.imgEstPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgEstPerfil.TabIndex = 54;
             this.imgEstPerfil.TabStop = false;
@@ -994,14 +946,13 @@ namespace CapaPresentacion
             this.btnConfirmar.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnConfirmar.IconSize = 25;
             this.btnConfirmar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnConfirmar.IdleBorderRadius = 35;
+            this.btnConfirmar.IdleBorderRadius = 28;
             this.btnConfirmar.IdleBorderThickness = 1;
             this.btnConfirmar.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.btnConfirmar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmar.IdleIconRightImage = null;
             this.btnConfirmar.IndicateFocus = false;
-            this.btnConfirmar.Location = new System.Drawing.Point(545, 946);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConfirmar.Location = new System.Drawing.Point(392, 769);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmar.OnDisabledState.BorderRadius = 1;
@@ -1035,7 +986,7 @@ namespace CapaPresentacion
             this.btnConfirmar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnConfirmar.OnPressedState.IconLeftImage = null;
             this.btnConfirmar.OnPressedState.IconRightImage = null;
-            this.btnConfirmar.Size = new System.Drawing.Size(171, 37);
+            this.btnConfirmar.Size = new System.Drawing.Size(128, 30);
             this.btnConfirmar.TabIndex = 26;
             this.btnConfirmar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnConfirmar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1087,14 +1038,13 @@ namespace CapaPresentacion
             this.btnImage.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnImage.IconSize = 25;
             this.btnImage.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnImage.IdleBorderRadius = 35;
+            this.btnImage.IdleBorderRadius = 28;
             this.btnImage.IdleBorderThickness = 1;
             this.btnImage.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.btnImage.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.male_user_32px;
             this.btnImage.IdleIconRightImage = null;
             this.btnImage.IndicateFocus = false;
-            this.btnImage.Location = new System.Drawing.Point(175, 946);
-            this.btnImage.Margin = new System.Windows.Forms.Padding(4);
+            this.btnImage.Location = new System.Drawing.Point(114, 769);
             this.btnImage.Name = "btnImage";
             this.btnImage.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnImage.OnDisabledState.BorderRadius = 1;
@@ -1128,7 +1078,7 @@ namespace CapaPresentacion
             this.btnImage.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnImage.OnPressedState.IconLeftImage = null;
             this.btnImage.OnPressedState.IconRightImage = null;
-            this.btnImage.Size = new System.Drawing.Size(175, 37);
+            this.btnImage.Size = new System.Drawing.Size(131, 30);
             this.btnImage.TabIndex = 27;
             this.btnImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnImage.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1179,14 +1129,13 @@ namespace CapaPresentacion
             this.btnEditar.IconRightPadding = new System.Windows.Forms.Padding(3);
             this.btnEditar.IconSize = 25;
             this.btnEditar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnEditar.IdleBorderRadius = 35;
+            this.btnEditar.IdleBorderRadius = 28;
             this.btnEditar.IdleBorderThickness = 1;
             this.btnEditar.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.btnEditar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.edit_32px;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(358, 946);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Location = new System.Drawing.Point(251, 769);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 1;
@@ -1220,7 +1169,7 @@ namespace CapaPresentacion
             this.btnEditar.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnEditar.OnPressedState.IconLeftImage = null;
             this.btnEditar.OnPressedState.IconRightImage = null;
-            this.btnEditar.Size = new System.Drawing.Size(175, 37);
+            this.btnEditar.Size = new System.Drawing.Size(131, 30);
             this.btnEditar.TabIndex = 27;
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEditar.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1256,8 +1205,7 @@ namespace CapaPresentacion
             this.txtEscuelaProc.IconRight = null;
             this.txtEscuelaProc.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEscuelaProc.Lines = new string[0];
-            this.txtEscuelaProc.Location = new System.Drawing.Point(152, 1225);
-            this.txtEscuelaProc.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEscuelaProc.Location = new System.Drawing.Point(114, 995);
             this.txtEscuelaProc.MaxLength = 32767;
             this.txtEscuelaProc.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEscuelaProc.Modified = false;
@@ -1283,7 +1231,7 @@ namespace CapaPresentacion
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEscuelaProc.OnIdleState = stateProperties4;
-            this.txtEscuelaProc.Padding = new System.Windows.Forms.Padding(4);
+            this.txtEscuelaProc.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtEscuelaProc.PasswordChar = '\0';
             this.txtEscuelaProc.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEscuelaProc.PlaceholderText = "Nombre";
@@ -1293,7 +1241,7 @@ namespace CapaPresentacion
             this.txtEscuelaProc.SelectionLength = 0;
             this.txtEscuelaProc.SelectionStart = 0;
             this.txtEscuelaProc.ShortcutsEnabled = true;
-            this.txtEscuelaProc.Size = new System.Drawing.Size(783, 46);
+            this.txtEscuelaProc.Size = new System.Drawing.Size(587, 37);
             this.txtEscuelaProc.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEscuelaProc.TabIndex = 23;
             this.txtEscuelaProc.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1331,8 +1279,7 @@ namespace CapaPresentacion
             this.txtEstTelefono.IconRight = null;
             this.txtEstTelefono.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEstTelefono.Lines = new string[0];
-            this.txtEstTelefono.Location = new System.Drawing.Point(560, 581);
-            this.txtEstTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstTelefono.Location = new System.Drawing.Point(420, 472);
             this.txtEstTelefono.MaxLength = 9;
             this.txtEstTelefono.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEstTelefono.Modified = false;
@@ -1358,7 +1305,7 @@ namespace CapaPresentacion
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEstTelefono.OnIdleState = stateProperties8;
-            this.txtEstTelefono.Padding = new System.Windows.Forms.Padding(4);
+            this.txtEstTelefono.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtEstTelefono.PasswordChar = '\0';
             this.txtEstTelefono.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEstTelefono.PlaceholderText = "Telefono";
@@ -1368,7 +1315,7 @@ namespace CapaPresentacion
             this.txtEstTelefono.SelectionLength = 0;
             this.txtEstTelefono.SelectionStart = 0;
             this.txtEstTelefono.ShortcutsEnabled = true;
-            this.txtEstTelefono.Size = new System.Drawing.Size(375, 46);
+            this.txtEstTelefono.Size = new System.Drawing.Size(281, 37);
             this.txtEstTelefono.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstTelefono.TabIndex = 5;
             this.txtEstTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1406,8 +1353,7 @@ namespace CapaPresentacion
             this.txtEstNombre.IconRight = null;
             this.txtEstNombre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEstNombre.Lines = new string[0];
-            this.txtEstNombre.Location = new System.Drawing.Point(148, 313);
-            this.txtEstNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstNombre.Location = new System.Drawing.Point(111, 254);
             this.txtEstNombre.MaxLength = 32767;
             this.txtEstNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEstNombre.Modified = false;
@@ -1433,7 +1379,7 @@ namespace CapaPresentacion
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEstNombre.OnIdleState = stateProperties12;
-            this.txtEstNombre.Padding = new System.Windows.Forms.Padding(4);
+            this.txtEstNombre.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtEstNombre.PasswordChar = '\0';
             this.txtEstNombre.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEstNombre.PlaceholderText = "Nombres";
@@ -1443,7 +1389,7 @@ namespace CapaPresentacion
             this.txtEstNombre.SelectionLength = 0;
             this.txtEstNombre.SelectionStart = 0;
             this.txtEstNombre.ShortcutsEnabled = true;
-            this.txtEstNombre.Size = new System.Drawing.Size(787, 46);
+            this.txtEstNombre.Size = new System.Drawing.Size(590, 37);
             this.txtEstNombre.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstNombre.TabIndex = 1;
             this.txtEstNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1481,8 +1427,7 @@ namespace CapaPresentacion
             this.txtEstEmail.IconRight = null;
             this.txtEstEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEstEmail.Lines = new string[0];
-            this.txtEstEmail.Location = new System.Drawing.Point(148, 881);
-            this.txtEstEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstEmail.Location = new System.Drawing.Point(111, 716);
             this.txtEstEmail.MaxLength = 200;
             this.txtEstEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEstEmail.Modified = false;
@@ -1508,7 +1453,7 @@ namespace CapaPresentacion
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEstEmail.OnIdleState = stateProperties16;
-            this.txtEstEmail.Padding = new System.Windows.Forms.Padding(4);
+            this.txtEstEmail.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtEstEmail.PasswordChar = '\0';
             this.txtEstEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEstEmail.PlaceholderText = "Email";
@@ -1518,7 +1463,7 @@ namespace CapaPresentacion
             this.txtEstEmail.SelectionLength = 0;
             this.txtEstEmail.SelectionStart = 0;
             this.txtEstEmail.ShortcutsEnabled = true;
-            this.txtEstEmail.Size = new System.Drawing.Size(787, 46);
+            this.txtEstEmail.Size = new System.Drawing.Size(590, 37);
             this.txtEstEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstEmail.TabIndex = 50;
             this.txtEstEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1556,8 +1501,7 @@ namespace CapaPresentacion
             this.txtEstDni.IconRight = null;
             this.txtEstDni.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEstDni.Lines = new string[0];
-            this.txtEstDni.Location = new System.Drawing.Point(148, 581);
-            this.txtEstDni.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstDni.Location = new System.Drawing.Point(111, 472);
             this.txtEstDni.MaxLength = 8;
             this.txtEstDni.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEstDni.Modified = false;
@@ -1583,7 +1527,7 @@ namespace CapaPresentacion
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEstDni.OnIdleState = stateProperties20;
-            this.txtEstDni.Padding = new System.Windows.Forms.Padding(4);
+            this.txtEstDni.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtEstDni.PasswordChar = '\0';
             this.txtEstDni.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEstDni.PlaceholderText = "Dni";
@@ -1593,7 +1537,7 @@ namespace CapaPresentacion
             this.txtEstDni.SelectionLength = 0;
             this.txtEstDni.SelectionStart = 0;
             this.txtEstDni.ShortcutsEnabled = true;
-            this.txtEstDni.Size = new System.Drawing.Size(336, 46);
+            this.txtEstDni.Size = new System.Drawing.Size(252, 37);
             this.txtEstDni.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstDni.TabIndex = 4;
             this.txtEstDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1632,8 +1576,7 @@ namespace CapaPresentacion
             this.txtEstApMaterno.IconRight = null;
             this.txtEstApMaterno.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEstApMaterno.Lines = new string[0];
-            this.txtEstApMaterno.Location = new System.Drawing.Point(148, 491);
-            this.txtEstApMaterno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstApMaterno.Location = new System.Drawing.Point(111, 399);
             this.txtEstApMaterno.MaxLength = 32767;
             this.txtEstApMaterno.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEstApMaterno.Modified = false;
@@ -1659,7 +1602,7 @@ namespace CapaPresentacion
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEstApMaterno.OnIdleState = stateProperties24;
-            this.txtEstApMaterno.Padding = new System.Windows.Forms.Padding(4);
+            this.txtEstApMaterno.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtEstApMaterno.PasswordChar = '\0';
             this.txtEstApMaterno.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEstApMaterno.PlaceholderText = "Materno";
@@ -1669,7 +1612,7 @@ namespace CapaPresentacion
             this.txtEstApMaterno.SelectionLength = 0;
             this.txtEstApMaterno.SelectionStart = 0;
             this.txtEstApMaterno.ShortcutsEnabled = true;
-            this.txtEstApMaterno.Size = new System.Drawing.Size(787, 46);
+            this.txtEstApMaterno.Size = new System.Drawing.Size(590, 37);
             this.txtEstApMaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstApMaterno.TabIndex = 3;
             this.txtEstApMaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1707,8 +1650,7 @@ namespace CapaPresentacion
             this.txtEstApPaterno.IconRight = null;
             this.txtEstApPaterno.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEstApPaterno.Lines = new string[0];
-            this.txtEstApPaterno.Location = new System.Drawing.Point(148, 401);
-            this.txtEstApPaterno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstApPaterno.Location = new System.Drawing.Point(111, 326);
             this.txtEstApPaterno.MaxLength = 32767;
             this.txtEstApPaterno.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEstApPaterno.Modified = false;
@@ -1734,7 +1676,7 @@ namespace CapaPresentacion
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEstApPaterno.OnIdleState = stateProperties28;
-            this.txtEstApPaterno.Padding = new System.Windows.Forms.Padding(4);
+            this.txtEstApPaterno.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtEstApPaterno.PasswordChar = '\0';
             this.txtEstApPaterno.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEstApPaterno.PlaceholderText = "Paterno";
@@ -1744,7 +1686,7 @@ namespace CapaPresentacion
             this.txtEstApPaterno.SelectionLength = 0;
             this.txtEstApPaterno.SelectionStart = 0;
             this.txtEstApPaterno.ShortcutsEnabled = true;
-            this.txtEstApPaterno.Size = new System.Drawing.Size(787, 46);
+            this.txtEstApPaterno.Size = new System.Drawing.Size(590, 37);
             this.txtEstApPaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstApPaterno.TabIndex = 2;
             this.txtEstApPaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1774,11 +1716,10 @@ namespace CapaPresentacion
             this.dpkEstFecNacimiento.IconColor = System.Drawing.Color.Gray;
             this.dpkEstFecNacimiento.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dpkEstFecNacimiento.LeftTextMargin = 5;
-            this.dpkEstFecNacimiento.Location = new System.Drawing.Point(472, 686);
-            this.dpkEstFecNacimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.dpkEstFecNacimiento.Location = new System.Drawing.Point(354, 557);
             this.dpkEstFecNacimiento.MinimumSize = new System.Drawing.Size(4, 32);
             this.dpkEstFecNacimiento.Name = "dpkEstFecNacimiento";
-            this.dpkEstFecNacimiento.Size = new System.Drawing.Size(461, 32);
+            this.dpkEstFecNacimiento.Size = new System.Drawing.Size(347, 32);
             this.dpkEstFecNacimiento.TabIndex = 26;
             this.dpkEstFecNacimiento.Value = new System.DateTime(2021, 6, 23, 0, 0, 0, 0);
             // 
@@ -1811,8 +1752,7 @@ namespace CapaPresentacion
             this.txtEstDireccion.IconRight = null;
             this.txtEstDireccion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEstDireccion.Lines = new string[0];
-            this.txtEstDireccion.Location = new System.Drawing.Point(148, 783);
-            this.txtEstDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEstDireccion.Location = new System.Drawing.Point(111, 636);
             this.txtEstDireccion.MaxLength = 500;
             this.txtEstDireccion.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEstDireccion.Modified = false;
@@ -1838,7 +1778,7 @@ namespace CapaPresentacion
             stateProperties32.ForeColor = System.Drawing.Color.Empty;
             stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtEstDireccion.OnIdleState = stateProperties32;
-            this.txtEstDireccion.Padding = new System.Windows.Forms.Padding(4);
+            this.txtEstDireccion.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.txtEstDireccion.PasswordChar = '\0';
             this.txtEstDireccion.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtEstDireccion.PlaceholderText = "Direccion";
@@ -1848,7 +1788,7 @@ namespace CapaPresentacion
             this.txtEstDireccion.SelectionLength = 0;
             this.txtEstDireccion.SelectionStart = 0;
             this.txtEstDireccion.ShortcutsEnabled = true;
-            this.txtEstDireccion.Size = new System.Drawing.Size(609, 46);
+            this.txtEstDireccion.Size = new System.Drawing.Size(440, 37);
             this.txtEstDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstDireccion.TabIndex = 36;
             this.txtEstDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1861,11 +1801,11 @@ namespace CapaPresentacion
             // 
             // EstudianteDetalle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1113, 690);
+            this.ClientSize = new System.Drawing.Size(835, 561);
             this.Controls.Add(this.dgvTutores);
             this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.bunifuPanel2);
@@ -1900,7 +1840,6 @@ namespace CapaPresentacion
             this.Controls.Add(this.txtEstDireccion);
             this.Controls.Add(this.lblParEstFechaNac);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EstudianteDetalle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalles del Estudiante";
