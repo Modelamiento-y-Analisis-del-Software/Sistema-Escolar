@@ -770,10 +770,10 @@ namespace CapaPresentacion
             this.pagCentral.Location = new System.Drawing.Point(255, 0);
             this.pagCentral.Multiline = true;
             this.pagCentral.Name = "pagCentral";
-            this.pagCentral.Page = this.EstInhabiliados;
-            this.pagCentral.PageIndex = 6;
-            this.pagCentral.PageName = "EstInhabiliados";
-            this.pagCentral.PageTitle = "EstInhabilitados";
+            this.pagCentral.Page = this.tpgTutGeneral;
+            this.pagCentral.PageIndex = 2;
+            this.pagCentral.PageName = "tpgTutGeneral";
+            this.pagCentral.PageTitle = "TutGeneral";
             this.pagCentral.SelectedIndex = 0;
             this.pagCentral.Size = new System.Drawing.Size(1009, 749);
             this.pagCentral.TabIndex = 5;
@@ -1008,6 +1008,7 @@ namespace CapaPresentacion
             this.btnTutDetalles.TextMarginLeft = 0;
             this.btnTutDetalles.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnTutDetalles.UseDefaultRadiusAndThickness = true;
+            this.btnTutDetalles.Click += new System.EventHandler(this.btnTutDetalles_Click);
             // 
             // btnTutRefresh
             // 

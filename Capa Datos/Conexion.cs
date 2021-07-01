@@ -19,15 +19,16 @@ namespace CapaDatos
 
         public SqlConnection Conectar()
         {
-            String cnxnString =
-            "Data Source=DESKTOP-RLKQH58\\SERVIDOR_1;" +
-            "Initial Catalog=IntegralClass" +
-            "User id=sa" +
-            "Password=159753456852" +
-            "Integrated Security=true";
+            //String cnxnString =
+            //"Data Source=DESKTOP-RLKQH58\\SERVIDOR_1;" +
+            //"Initial Catalog=IntegralClass" +
+            //"User id=sa" +
+            //"Password=159753456852" +
+            //"Integrated Security=true";
             SqlConnection cn = new SqlConnection
             {
-                ConnectionString = cnxnString
+                ConnectionString = "Data Source=.; Initial Catalog=IntegralClass; Integrated Security=true"
+                //ConnectionString = cnxnString
             };
             return cn;
         }

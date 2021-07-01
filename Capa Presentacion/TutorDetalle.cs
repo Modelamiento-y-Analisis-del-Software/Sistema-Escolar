@@ -13,11 +13,20 @@ namespace CapaPresentacion
 {
     public partial class TutorDetalle : Form
     {
+        Tutor e ;
         public TutorDetalle()
         {
             InitializeComponent();
-            CleanScreen()
+            CleanScreen();
                 //aea
+        }
+        public TutorDetalle(Tutor e )
+        {
+            InitializeComponent();
+            CleanScreen();
+            this.e = e;
+            LoadData();
+            //aea
         }
         public void CleanScreen()
         {
@@ -36,7 +45,7 @@ namespace CapaPresentacion
             cbbNivelAcademico.SelectedIndex = 0;
         }
 
-        public void LoadData(Tutor e)
+        public void LoadData()
         {
             txtTutNombres.Text = e.Nombres.ToString();
             txtTutDni.Text = e.Dni;

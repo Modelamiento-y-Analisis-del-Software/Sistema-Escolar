@@ -30,65 +30,65 @@ namespace CapaPresentacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TutorDetalle));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties37 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties41 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties42 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties43 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties44 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties45 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties46 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties49 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties50 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties51 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties52 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties53 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties54 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties55 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties56 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties57 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties58 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties59 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties60 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties61 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties62 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties63 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties64 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.grpbDatosDelEstudiante = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtTutOcupacion = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuGroupBox5 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.cbbNivelAcademico = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.txtTutTelefono = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.txtTutEmail = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label25 = new System.Windows.Forms.Label();
+            this.txtTutApMaterno = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuGroupBox6 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.rdbTutMasculino = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.lblMasculino = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblFemenino = new Bunifu.UI.WinForms.BunifuLabel();
             this.rdbTutFemenino = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.lblParEstDireccion = new System.Windows.Forms.Label();
-            this.lblParEstFechaNac = new System.Windows.Forms.Label();
-            this.lblParEstApellido = new System.Windows.Forms.Label();
-            this.lblParamEstDni = new System.Windows.Forms.Label();
-            this.lblParEstNombre = new System.Windows.Forms.Label();
-            this.txtTutOcupacion = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txtTutTelefono = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txtTutEmail = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txtTutApMaterno = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtTutDireccion = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.lblParEstFechaNac = new System.Windows.Forms.Label();
             this.dpkTutFecNacimiento = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.lblParEstApellido = new System.Windows.Forms.Label();
             this.txtTutApPaterno = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.lblParamEstDni = new System.Windows.Forms.Label();
             this.txtTutDni = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.lblParEstNombre = new System.Windows.Forms.Label();
             this.txtTutNombres = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnEditar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnConfirmar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -132,7 +132,7 @@ namespace CapaPresentacion
             this.grpbDatosDelEstudiante.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.grpbDatosDelEstudiante.Location = new System.Drawing.Point(7, 12);
             this.grpbDatosDelEstudiante.Name = "grpbDatosDelEstudiante";
-            this.grpbDatosDelEstudiante.Size = new System.Drawing.Size(860, 715);
+            this.grpbDatosDelEstudiante.Size = new System.Drawing.Size(748, 715);
             this.grpbDatosDelEstudiante.TabIndex = 20;
             this.grpbDatosDelEstudiante.TabStop = false;
             this.grpbDatosDelEstudiante.Text = "Datos del Tutor";
@@ -150,6 +150,83 @@ namespace CapaPresentacion
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 56;
             this.label1.Text = "Ocupacion";
+            // 
+            // txtTutOcupacion
+            // 
+            this.txtTutOcupacion.AcceptsReturn = false;
+            this.txtTutOcupacion.AcceptsTab = false;
+            this.txtTutOcupacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTutOcupacion.AnimationSpeed = 200;
+            this.txtTutOcupacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtTutOcupacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtTutOcupacion.BackColor = System.Drawing.Color.White;
+            this.txtTutOcupacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTutOcupacion.BackgroundImage")));
+            this.txtTutOcupacion.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtTutOcupacion.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtTutOcupacion.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtTutOcupacion.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtTutOcupacion.BorderRadius = 10;
+            this.txtTutOcupacion.BorderThickness = 1;
+            this.txtTutOcupacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtTutOcupacion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutOcupacion.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtTutOcupacion.DefaultText = "";
+            this.txtTutOcupacion.Enabled = false;
+            this.txtTutOcupacion.FillColor = System.Drawing.Color.White;
+            this.txtTutOcupacion.HideSelection = true;
+            this.txtTutOcupacion.IconLeft = null;
+            this.txtTutOcupacion.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutOcupacion.IconPadding = 10;
+            this.txtTutOcupacion.IconRight = null;
+            this.txtTutOcupacion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutOcupacion.Lines = new string[0];
+            this.txtTutOcupacion.Location = new System.Drawing.Point(40, 643);
+            this.txtTutOcupacion.MaxLength = 8;
+            this.txtTutOcupacion.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtTutOcupacion.Modified = false;
+            this.txtTutOcupacion.Multiline = false;
+            this.txtTutOcupacion.Name = "txtTutOcupacion";
+            stateProperties33.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties33.FillColor = System.Drawing.Color.Empty;
+            stateProperties33.ForeColor = System.Drawing.Color.Empty;
+            stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutOcupacion.OnActiveState = stateProperties33;
+            stateProperties34.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties34.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtTutOcupacion.OnDisabledState = stateProperties34;
+            stateProperties35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties35.FillColor = System.Drawing.Color.Empty;
+            stateProperties35.ForeColor = System.Drawing.Color.Empty;
+            stateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutOcupacion.OnHoverState = stateProperties35;
+            stateProperties36.BorderColor = System.Drawing.Color.Silver;
+            stateProperties36.FillColor = System.Drawing.Color.White;
+            stateProperties36.ForeColor = System.Drawing.Color.Empty;
+            stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutOcupacion.OnIdleState = stateProperties36;
+            this.txtTutOcupacion.Padding = new System.Windows.Forms.Padding(3);
+            this.txtTutOcupacion.PasswordChar = '\0';
+            this.txtTutOcupacion.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtTutOcupacion.PlaceholderText = "Ocupacion";
+            this.txtTutOcupacion.ReadOnly = false;
+            this.txtTutOcupacion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtTutOcupacion.SelectedText = "";
+            this.txtTutOcupacion.SelectionLength = 0;
+            this.txtTutOcupacion.SelectionStart = 0;
+            this.txtTutOcupacion.ShortcutsEnabled = true;
+            this.txtTutOcupacion.Size = new System.Drawing.Size(352, 37);
+            this.txtTutOcupacion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtTutOcupacion.TabIndex = 55;
+            this.txtTutOcupacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTutOcupacion.TextMarginBottom = 0;
+            this.txtTutOcupacion.TextMarginLeft = 3;
+            this.txtTutOcupacion.TextMarginTop = 0;
+            this.txtTutOcupacion.TextPlaceholder = "Ocupacion";
+            this.txtTutOcupacion.UseSystemPasswordChar = false;
+            this.txtTutOcupacion.WordWrap = true;
             // 
             // bunifuGroupBox5
             // 
@@ -197,6 +274,83 @@ namespace CapaPresentacion
             this.label27.TabIndex = 53;
             this.label27.Text = "Telefono";
             // 
+            // txtTutTelefono
+            // 
+            this.txtTutTelefono.AcceptsReturn = false;
+            this.txtTutTelefono.AcceptsTab = false;
+            this.txtTutTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTutTelefono.AnimationSpeed = 200;
+            this.txtTutTelefono.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtTutTelefono.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtTutTelefono.BackColor = System.Drawing.Color.White;
+            this.txtTutTelefono.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTutTelefono.BackgroundImage")));
+            this.txtTutTelefono.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtTutTelefono.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtTutTelefono.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtTutTelefono.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtTutTelefono.BorderRadius = 10;
+            this.txtTutTelefono.BorderThickness = 1;
+            this.txtTutTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtTutTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutTelefono.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtTutTelefono.DefaultText = "";
+            this.txtTutTelefono.Enabled = false;
+            this.txtTutTelefono.FillColor = System.Drawing.Color.White;
+            this.txtTutTelefono.HideSelection = true;
+            this.txtTutTelefono.IconLeft = null;
+            this.txtTutTelefono.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutTelefono.IconPadding = 10;
+            this.txtTutTelefono.IconRight = null;
+            this.txtTutTelefono.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutTelefono.Lines = new string[0];
+            this.txtTutTelefono.Location = new System.Drawing.Point(285, 314);
+            this.txtTutTelefono.MaxLength = 9;
+            this.txtTutTelefono.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtTutTelefono.Modified = false;
+            this.txtTutTelefono.Multiline = false;
+            this.txtTutTelefono.Name = "txtTutTelefono";
+            stateProperties37.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties37.FillColor = System.Drawing.Color.Empty;
+            stateProperties37.ForeColor = System.Drawing.Color.Empty;
+            stateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutTelefono.OnActiveState = stateProperties37;
+            stateProperties38.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties38.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtTutTelefono.OnDisabledState = stateProperties38;
+            stateProperties39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties39.FillColor = System.Drawing.Color.Empty;
+            stateProperties39.ForeColor = System.Drawing.Color.Empty;
+            stateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutTelefono.OnHoverState = stateProperties39;
+            stateProperties40.BorderColor = System.Drawing.Color.Silver;
+            stateProperties40.FillColor = System.Drawing.Color.White;
+            stateProperties40.ForeColor = System.Drawing.Color.Empty;
+            stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutTelefono.OnIdleState = stateProperties40;
+            this.txtTutTelefono.Padding = new System.Windows.Forms.Padding(3);
+            this.txtTutTelefono.PasswordChar = '\0';
+            this.txtTutTelefono.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtTutTelefono.PlaceholderText = "Telefono";
+            this.txtTutTelefono.ReadOnly = false;
+            this.txtTutTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtTutTelefono.SelectedText = "";
+            this.txtTutTelefono.SelectionLength = 0;
+            this.txtTutTelefono.SelectionStart = 0;
+            this.txtTutTelefono.ShortcutsEnabled = true;
+            this.txtTutTelefono.Size = new System.Drawing.Size(268, 37);
+            this.txtTutTelefono.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtTutTelefono.TabIndex = 52;
+            this.txtTutTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTutTelefono.TextMarginBottom = 0;
+            this.txtTutTelefono.TextMarginLeft = 3;
+            this.txtTutTelefono.TextMarginTop = 0;
+            this.txtTutTelefono.TextPlaceholder = "Telefono";
+            this.txtTutTelefono.UseSystemPasswordChar = false;
+            this.txtTutTelefono.WordWrap = true;
+            // 
             // label26
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -211,6 +365,83 @@ namespace CapaPresentacion
             this.label26.TabIndex = 51;
             this.label26.Text = "Email";
             // 
+            // txtTutEmail
+            // 
+            this.txtTutEmail.AcceptsReturn = false;
+            this.txtTutEmail.AcceptsTab = false;
+            this.txtTutEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTutEmail.AnimationSpeed = 200;
+            this.txtTutEmail.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtTutEmail.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtTutEmail.BackColor = System.Drawing.Color.White;
+            this.txtTutEmail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTutEmail.BackgroundImage")));
+            this.txtTutEmail.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtTutEmail.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtTutEmail.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtTutEmail.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtTutEmail.BorderRadius = 10;
+            this.txtTutEmail.BorderThickness = 1;
+            this.txtTutEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtTutEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutEmail.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtTutEmail.DefaultText = "";
+            this.txtTutEmail.Enabled = false;
+            this.txtTutEmail.FillColor = System.Drawing.Color.White;
+            this.txtTutEmail.HideSelection = true;
+            this.txtTutEmail.IconLeft = null;
+            this.txtTutEmail.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutEmail.IconPadding = 10;
+            this.txtTutEmail.IconRight = null;
+            this.txtTutEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutEmail.Lines = new string[0];
+            this.txtTutEmail.Location = new System.Drawing.Point(37, 559);
+            this.txtTutEmail.MaxLength = 200;
+            this.txtTutEmail.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtTutEmail.Modified = false;
+            this.txtTutEmail.Multiline = false;
+            this.txtTutEmail.Name = "txtTutEmail";
+            stateProperties41.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties41.FillColor = System.Drawing.Color.Empty;
+            stateProperties41.ForeColor = System.Drawing.Color.Empty;
+            stateProperties41.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutEmail.OnActiveState = stateProperties41;
+            stateProperties42.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties42.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties42.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtTutEmail.OnDisabledState = stateProperties42;
+            stateProperties43.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties43.FillColor = System.Drawing.Color.Empty;
+            stateProperties43.ForeColor = System.Drawing.Color.Empty;
+            stateProperties43.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutEmail.OnHoverState = stateProperties43;
+            stateProperties44.BorderColor = System.Drawing.Color.Silver;
+            stateProperties44.FillColor = System.Drawing.Color.White;
+            stateProperties44.ForeColor = System.Drawing.Color.Empty;
+            stateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutEmail.OnIdleState = stateProperties44;
+            this.txtTutEmail.Padding = new System.Windows.Forms.Padding(3);
+            this.txtTutEmail.PasswordChar = '\0';
+            this.txtTutEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtTutEmail.PlaceholderText = "Email";
+            this.txtTutEmail.ReadOnly = false;
+            this.txtTutEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtTutEmail.SelectedText = "";
+            this.txtTutEmail.SelectionLength = 0;
+            this.txtTutEmail.SelectionStart = 0;
+            this.txtTutEmail.ShortcutsEnabled = true;
+            this.txtTutEmail.Size = new System.Drawing.Size(671, 37);
+            this.txtTutEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtTutEmail.TabIndex = 50;
+            this.txtTutEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTutEmail.TextMarginBottom = 0;
+            this.txtTutEmail.TextMarginLeft = 3;
+            this.txtTutEmail.TextMarginTop = 0;
+            this.txtTutEmail.TextPlaceholder = "Email";
+            this.txtTutEmail.UseSystemPasswordChar = false;
+            this.txtTutEmail.WordWrap = true;
+            // 
             // label25
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -224,6 +455,83 @@ namespace CapaPresentacion
             this.label25.Size = new System.Drawing.Size(126, 20);
             this.label25.TabIndex = 49;
             this.label25.Text = "Apellido Materno";
+            // 
+            // txtTutApMaterno
+            // 
+            this.txtTutApMaterno.AcceptsReturn = false;
+            this.txtTutApMaterno.AcceptsTab = false;
+            this.txtTutApMaterno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTutApMaterno.AnimationSpeed = 200;
+            this.txtTutApMaterno.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtTutApMaterno.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtTutApMaterno.BackColor = System.Drawing.Color.Transparent;
+            this.txtTutApMaterno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTutApMaterno.BackgroundImage")));
+            this.txtTutApMaterno.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtTutApMaterno.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtTutApMaterno.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtTutApMaterno.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtTutApMaterno.BorderRadius = 10;
+            this.txtTutApMaterno.BorderThickness = 1;
+            this.txtTutApMaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtTutApMaterno.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutApMaterno.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtTutApMaterno.DefaultText = "";
+            this.txtTutApMaterno.Enabled = false;
+            this.txtTutApMaterno.FillColor = System.Drawing.Color.White;
+            this.txtTutApMaterno.HideSelection = true;
+            this.txtTutApMaterno.IconLeft = null;
+            this.txtTutApMaterno.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutApMaterno.IconPadding = 10;
+            this.txtTutApMaterno.IconRight = null;
+            this.txtTutApMaterno.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTutApMaterno.Lines = new string[0];
+            this.txtTutApMaterno.Location = new System.Drawing.Point(37, 227);
+            this.txtTutApMaterno.MaxLength = 32767;
+            this.txtTutApMaterno.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtTutApMaterno.Modified = false;
+            this.txtTutApMaterno.Multiline = false;
+            this.txtTutApMaterno.Name = "txtTutApMaterno";
+            stateProperties45.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties45.FillColor = System.Drawing.Color.Empty;
+            stateProperties45.ForeColor = System.Drawing.Color.Empty;
+            stateProperties45.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutApMaterno.OnActiveState = stateProperties45;
+            stateProperties46.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties46.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtTutApMaterno.OnDisabledState = stateProperties46;
+            stateProperties47.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties47.FillColor = System.Drawing.Color.Empty;
+            stateProperties47.ForeColor = System.Drawing.Color.Empty;
+            stateProperties47.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutApMaterno.OnHoverState = stateProperties47;
+            stateProperties48.BorderColor = System.Drawing.Color.Silver;
+            stateProperties48.FillColor = System.Drawing.Color.White;
+            stateProperties48.ForeColor = System.Drawing.Color.Empty;
+            stateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutApMaterno.OnIdleState = stateProperties48;
+            this.txtTutApMaterno.Padding = new System.Windows.Forms.Padding(3);
+            this.txtTutApMaterno.PasswordChar = '\0';
+            this.txtTutApMaterno.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtTutApMaterno.PlaceholderText = "Materno";
+            this.txtTutApMaterno.ReadOnly = false;
+            this.txtTutApMaterno.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtTutApMaterno.SelectedText = "";
+            this.txtTutApMaterno.SelectionLength = 0;
+            this.txtTutApMaterno.SelectionStart = 0;
+            this.txtTutApMaterno.ShortcutsEnabled = true;
+            this.txtTutApMaterno.Size = new System.Drawing.Size(671, 37);
+            this.txtTutApMaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtTutApMaterno.TabIndex = 48;
+            this.txtTutApMaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtTutApMaterno.TextMarginBottom = 0;
+            this.txtTutApMaterno.TextMarginLeft = 3;
+            this.txtTutApMaterno.TextMarginTop = 0;
+            this.txtTutApMaterno.TextPlaceholder = "Materno";
+            this.txtTutApMaterno.UseSystemPasswordChar = false;
+            this.txtTutApMaterno.WordWrap = true;
             // 
             // bunifuGroupBox6
             // 
@@ -334,370 +642,6 @@ namespace CapaPresentacion
             this.lblParEstDireccion.TabIndex = 37;
             this.lblParEstDireccion.Text = "Direccion";
             // 
-            // lblParEstFechaNac
-            // 
-            this.lblParEstFechaNac.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblParEstFechaNac.AutoSize = true;
-            this.lblParEstFechaNac.BackColor = System.Drawing.Color.Transparent;
-            this.lblParEstFechaNac.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblParEstFechaNac.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstFechaNac.Location = new System.Drawing.Point(282, 373);
-            this.lblParEstFechaNac.Name = "lblParEstFechaNac";
-            this.lblParEstFechaNac.Size = new System.Drawing.Size(149, 20);
-            this.lblParEstFechaNac.TabIndex = 27;
-            this.lblParEstFechaNac.Text = "Fecha de Nacimiento";
-            // 
-            // lblParEstApellido
-            // 
-            this.lblParEstApellido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblParEstApellido.AutoSize = true;
-            this.lblParEstApellido.BackColor = System.Drawing.Color.Transparent;
-            this.lblParEstApellido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblParEstApellido.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstApellido.Location = new System.Drawing.Point(36, 131);
-            this.lblParEstApellido.Name = "lblParEstApellido";
-            this.lblParEstApellido.Size = new System.Drawing.Size(120, 20);
-            this.lblParEstApellido.TabIndex = 24;
-            this.lblParEstApellido.Text = "Apellido Paterno";
-            // 
-            // lblParamEstDni
-            // 
-            this.lblParamEstDni.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblParamEstDni.AutoSize = true;
-            this.lblParamEstDni.BackColor = System.Drawing.Color.Transparent;
-            this.lblParamEstDni.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblParamEstDni.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParamEstDni.Location = new System.Drawing.Point(36, 291);
-            this.lblParamEstDni.Name = "lblParamEstDni";
-            this.lblParamEstDni.Size = new System.Drawing.Size(32, 20);
-            this.lblParamEstDni.TabIndex = 22;
-            this.lblParamEstDni.Text = "Dni";
-            // 
-            // lblParEstNombre
-            // 
-            this.lblParEstNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblParEstNombre.AutoSize = true;
-            this.lblParEstNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblParEstNombre.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblParEstNombre.ForeColor = System.Drawing.Color.DimGray;
-            this.lblParEstNombre.Location = new System.Drawing.Point(36, 59);
-            this.lblParEstNombre.Name = "lblParEstNombre";
-            this.lblParEstNombre.Size = new System.Drawing.Size(70, 20);
-            this.lblParEstNombre.TabIndex = 20;
-            this.lblParEstNombre.Text = "Nombres";
-            // 
-            // txtTutOcupacion
-            // 
-            this.txtTutOcupacion.AcceptsReturn = false;
-            this.txtTutOcupacion.AcceptsTab = false;
-            this.txtTutOcupacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTutOcupacion.AnimationSpeed = 200;
-            this.txtTutOcupacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtTutOcupacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtTutOcupacion.BackColor = System.Drawing.Color.White;
-            this.txtTutOcupacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTutOcupacion.BackgroundImage")));
-            this.txtTutOcupacion.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtTutOcupacion.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtTutOcupacion.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtTutOcupacion.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtTutOcupacion.BorderRadius = 10;
-            this.txtTutOcupacion.BorderThickness = 1;
-            this.txtTutOcupacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtTutOcupacion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutOcupacion.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtTutOcupacion.DefaultText = "";
-            this.txtTutOcupacion.Enabled = false;
-            this.txtTutOcupacion.FillColor = System.Drawing.Color.White;
-            this.txtTutOcupacion.HideSelection = true;
-            this.txtTutOcupacion.IconLeft = null;
-            this.txtTutOcupacion.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutOcupacion.IconPadding = 10;
-            this.txtTutOcupacion.IconRight = null;
-            this.txtTutOcupacion.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutOcupacion.Lines = new string[0];
-            this.txtTutOcupacion.Location = new System.Drawing.Point(40, 643);
-            this.txtTutOcupacion.MaxLength = 8;
-            this.txtTutOcupacion.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtTutOcupacion.Modified = false;
-            this.txtTutOcupacion.Multiline = false;
-            this.txtTutOcupacion.Name = "txtTutOcupacion";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutOcupacion.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtTutOcupacion.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutOcupacion.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutOcupacion.OnIdleState = stateProperties4;
-            this.txtTutOcupacion.Padding = new System.Windows.Forms.Padding(3);
-            this.txtTutOcupacion.PasswordChar = '\0';
-            this.txtTutOcupacion.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtTutOcupacion.PlaceholderText = "Ocupacion";
-            this.txtTutOcupacion.ReadOnly = false;
-            this.txtTutOcupacion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtTutOcupacion.SelectedText = "";
-            this.txtTutOcupacion.SelectionLength = 0;
-            this.txtTutOcupacion.SelectionStart = 0;
-            this.txtTutOcupacion.ShortcutsEnabled = true;
-            this.txtTutOcupacion.Size = new System.Drawing.Size(464, 37);
-            this.txtTutOcupacion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtTutOcupacion.TabIndex = 55;
-            this.txtTutOcupacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTutOcupacion.TextMarginBottom = 0;
-            this.txtTutOcupacion.TextMarginLeft = 3;
-            this.txtTutOcupacion.TextMarginTop = 0;
-            this.txtTutOcupacion.TextPlaceholder = "Ocupacion";
-            this.txtTutOcupacion.UseSystemPasswordChar = false;
-            this.txtTutOcupacion.WordWrap = true;
-            // 
-            // txtTutTelefono
-            // 
-            this.txtTutTelefono.AcceptsReturn = false;
-            this.txtTutTelefono.AcceptsTab = false;
-            this.txtTutTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTutTelefono.AnimationSpeed = 200;
-            this.txtTutTelefono.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtTutTelefono.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtTutTelefono.BackColor = System.Drawing.Color.White;
-            this.txtTutTelefono.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTutTelefono.BackgroundImage")));
-            this.txtTutTelefono.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtTutTelefono.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtTutTelefono.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtTutTelefono.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtTutTelefono.BorderRadius = 10;
-            this.txtTutTelefono.BorderThickness = 1;
-            this.txtTutTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtTutTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutTelefono.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtTutTelefono.DefaultText = "";
-            this.txtTutTelefono.Enabled = false;
-            this.txtTutTelefono.FillColor = System.Drawing.Color.White;
-            this.txtTutTelefono.HideSelection = true;
-            this.txtTutTelefono.IconLeft = null;
-            this.txtTutTelefono.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutTelefono.IconPadding = 10;
-            this.txtTutTelefono.IconRight = null;
-            this.txtTutTelefono.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutTelefono.Lines = new string[0];
-            this.txtTutTelefono.Location = new System.Drawing.Point(285, 314);
-            this.txtTutTelefono.MaxLength = 9;
-            this.txtTutTelefono.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtTutTelefono.Modified = false;
-            this.txtTutTelefono.Multiline = false;
-            this.txtTutTelefono.Name = "txtTutTelefono";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutTelefono.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtTutTelefono.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutTelefono.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutTelefono.OnIdleState = stateProperties8;
-            this.txtTutTelefono.Padding = new System.Windows.Forms.Padding(3);
-            this.txtTutTelefono.PasswordChar = '\0';
-            this.txtTutTelefono.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtTutTelefono.PlaceholderText = "Telefono";
-            this.txtTutTelefono.ReadOnly = false;
-            this.txtTutTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtTutTelefono.SelectedText = "";
-            this.txtTutTelefono.SelectionLength = 0;
-            this.txtTutTelefono.SelectionStart = 0;
-            this.txtTutTelefono.ShortcutsEnabled = true;
-            this.txtTutTelefono.Size = new System.Drawing.Size(380, 37);
-            this.txtTutTelefono.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtTutTelefono.TabIndex = 52;
-            this.txtTutTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTutTelefono.TextMarginBottom = 0;
-            this.txtTutTelefono.TextMarginLeft = 3;
-            this.txtTutTelefono.TextMarginTop = 0;
-            this.txtTutTelefono.TextPlaceholder = "Telefono";
-            this.txtTutTelefono.UseSystemPasswordChar = false;
-            this.txtTutTelefono.WordWrap = true;
-            // 
-            // txtTutEmail
-            // 
-            this.txtTutEmail.AcceptsReturn = false;
-            this.txtTutEmail.AcceptsTab = false;
-            this.txtTutEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTutEmail.AnimationSpeed = 200;
-            this.txtTutEmail.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtTutEmail.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtTutEmail.BackColor = System.Drawing.Color.White;
-            this.txtTutEmail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTutEmail.BackgroundImage")));
-            this.txtTutEmail.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtTutEmail.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtTutEmail.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtTutEmail.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtTutEmail.BorderRadius = 10;
-            this.txtTutEmail.BorderThickness = 1;
-            this.txtTutEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtTutEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutEmail.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtTutEmail.DefaultText = "";
-            this.txtTutEmail.Enabled = false;
-            this.txtTutEmail.FillColor = System.Drawing.Color.White;
-            this.txtTutEmail.HideSelection = true;
-            this.txtTutEmail.IconLeft = null;
-            this.txtTutEmail.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutEmail.IconPadding = 10;
-            this.txtTutEmail.IconRight = null;
-            this.txtTutEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutEmail.Lines = new string[0];
-            this.txtTutEmail.Location = new System.Drawing.Point(37, 559);
-            this.txtTutEmail.MaxLength = 200;
-            this.txtTutEmail.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtTutEmail.Modified = false;
-            this.txtTutEmail.Multiline = false;
-            this.txtTutEmail.Name = "txtTutEmail";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutEmail.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtTutEmail.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutEmail.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutEmail.OnIdleState = stateProperties12;
-            this.txtTutEmail.Padding = new System.Windows.Forms.Padding(3);
-            this.txtTutEmail.PasswordChar = '\0';
-            this.txtTutEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtTutEmail.PlaceholderText = "Email";
-            this.txtTutEmail.ReadOnly = false;
-            this.txtTutEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtTutEmail.SelectedText = "";
-            this.txtTutEmail.SelectionLength = 0;
-            this.txtTutEmail.SelectionStart = 0;
-            this.txtTutEmail.ShortcutsEnabled = true;
-            this.txtTutEmail.Size = new System.Drawing.Size(783, 37);
-            this.txtTutEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtTutEmail.TabIndex = 50;
-            this.txtTutEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTutEmail.TextMarginBottom = 0;
-            this.txtTutEmail.TextMarginLeft = 3;
-            this.txtTutEmail.TextMarginTop = 0;
-            this.txtTutEmail.TextPlaceholder = "Email";
-            this.txtTutEmail.UseSystemPasswordChar = false;
-            this.txtTutEmail.WordWrap = true;
-            // 
-            // txtTutApMaterno
-            // 
-            this.txtTutApMaterno.AcceptsReturn = false;
-            this.txtTutApMaterno.AcceptsTab = false;
-            this.txtTutApMaterno.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTutApMaterno.AnimationSpeed = 200;
-            this.txtTutApMaterno.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtTutApMaterno.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtTutApMaterno.BackColor = System.Drawing.Color.Transparent;
-            this.txtTutApMaterno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtTutApMaterno.BackgroundImage")));
-            this.txtTutApMaterno.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtTutApMaterno.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtTutApMaterno.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtTutApMaterno.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtTutApMaterno.BorderRadius = 10;
-            this.txtTutApMaterno.BorderThickness = 1;
-            this.txtTutApMaterno.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtTutApMaterno.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutApMaterno.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtTutApMaterno.DefaultText = "";
-            this.txtTutApMaterno.Enabled = false;
-            this.txtTutApMaterno.FillColor = System.Drawing.Color.White;
-            this.txtTutApMaterno.HideSelection = true;
-            this.txtTutApMaterno.IconLeft = null;
-            this.txtTutApMaterno.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutApMaterno.IconPadding = 10;
-            this.txtTutApMaterno.IconRight = null;
-            this.txtTutApMaterno.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTutApMaterno.Lines = new string[0];
-            this.txtTutApMaterno.Location = new System.Drawing.Point(37, 227);
-            this.txtTutApMaterno.MaxLength = 32767;
-            this.txtTutApMaterno.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtTutApMaterno.Modified = false;
-            this.txtTutApMaterno.Multiline = false;
-            this.txtTutApMaterno.Name = "txtTutApMaterno";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutApMaterno.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtTutApMaterno.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutApMaterno.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutApMaterno.OnIdleState = stateProperties16;
-            this.txtTutApMaterno.Padding = new System.Windows.Forms.Padding(3);
-            this.txtTutApMaterno.PasswordChar = '\0';
-            this.txtTutApMaterno.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtTutApMaterno.PlaceholderText = "Materno";
-            this.txtTutApMaterno.ReadOnly = false;
-            this.txtTutApMaterno.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtTutApMaterno.SelectedText = "";
-            this.txtTutApMaterno.SelectionLength = 0;
-            this.txtTutApMaterno.SelectionStart = 0;
-            this.txtTutApMaterno.ShortcutsEnabled = true;
-            this.txtTutApMaterno.Size = new System.Drawing.Size(783, 37);
-            this.txtTutApMaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtTutApMaterno.TabIndex = 48;
-            this.txtTutApMaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtTutApMaterno.TextMarginBottom = 0;
-            this.txtTutApMaterno.TextMarginLeft = 3;
-            this.txtTutApMaterno.TextMarginTop = 0;
-            this.txtTutApMaterno.TextPlaceholder = "Materno";
-            this.txtTutApMaterno.UseSystemPasswordChar = false;
-            this.txtTutApMaterno.WordWrap = true;
-            // 
             // txtTutDireccion
             // 
             this.txtTutDireccion.AcceptsReturn = false;
@@ -734,26 +678,26 @@ namespace CapaPresentacion
             this.txtTutDireccion.Modified = false;
             this.txtTutDireccion.Multiline = false;
             this.txtTutDireccion.Name = "txtTutDireccion";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutDireccion.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtTutDireccion.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutDireccion.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutDireccion.OnIdleState = stateProperties20;
+            stateProperties49.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties49.FillColor = System.Drawing.Color.Empty;
+            stateProperties49.ForeColor = System.Drawing.Color.Empty;
+            stateProperties49.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutDireccion.OnActiveState = stateProperties49;
+            stateProperties50.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties50.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties50.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtTutDireccion.OnDisabledState = stateProperties50;
+            stateProperties51.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties51.FillColor = System.Drawing.Color.Empty;
+            stateProperties51.ForeColor = System.Drawing.Color.Empty;
+            stateProperties51.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutDireccion.OnHoverState = stateProperties51;
+            stateProperties52.BorderColor = System.Drawing.Color.Silver;
+            stateProperties52.FillColor = System.Drawing.Color.White;
+            stateProperties52.ForeColor = System.Drawing.Color.Empty;
+            stateProperties52.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutDireccion.OnIdleState = stateProperties52;
             this.txtTutDireccion.Padding = new System.Windows.Forms.Padding(3);
             this.txtTutDireccion.PasswordChar = '\0';
             this.txtTutDireccion.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -764,7 +708,7 @@ namespace CapaPresentacion
             this.txtTutDireccion.SelectionLength = 0;
             this.txtTutDireccion.SelectionStart = 0;
             this.txtTutDireccion.ShortcutsEnabled = true;
-            this.txtTutDireccion.Size = new System.Drawing.Size(783, 37);
+            this.txtTutDireccion.Size = new System.Drawing.Size(671, 37);
             this.txtTutDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutDireccion.TabIndex = 36;
             this.txtTutDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -774,6 +718,20 @@ namespace CapaPresentacion
             this.txtTutDireccion.TextPlaceholder = "Direccion";
             this.txtTutDireccion.UseSystemPasswordChar = false;
             this.txtTutDireccion.WordWrap = true;
+            // 
+            // lblParEstFechaNac
+            // 
+            this.lblParEstFechaNac.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblParEstFechaNac.AutoSize = true;
+            this.lblParEstFechaNac.BackColor = System.Drawing.Color.Transparent;
+            this.lblParEstFechaNac.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParEstFechaNac.ForeColor = System.Drawing.Color.DimGray;
+            this.lblParEstFechaNac.Location = new System.Drawing.Point(282, 373);
+            this.lblParEstFechaNac.Name = "lblParEstFechaNac";
+            this.lblParEstFechaNac.Size = new System.Drawing.Size(149, 20);
+            this.lblParEstFechaNac.TabIndex = 27;
+            this.lblParEstFechaNac.Text = "Fecha de Nacimiento";
             // 
             // dpkTutFecNacimiento
             // 
@@ -799,9 +757,23 @@ namespace CapaPresentacion
             this.dpkTutFecNacimiento.Location = new System.Drawing.Point(280, 399);
             this.dpkTutFecNacimiento.MinimumSize = new System.Drawing.Size(4, 32);
             this.dpkTutFecNacimiento.Name = "dpkTutFecNacimiento";
-            this.dpkTutFecNacimiento.Size = new System.Drawing.Size(385, 32);
+            this.dpkTutFecNacimiento.Size = new System.Drawing.Size(273, 32);
             this.dpkTutFecNacimiento.TabIndex = 26;
             this.dpkTutFecNacimiento.Value = new System.DateTime(2021, 6, 23, 0, 0, 0, 0);
+            // 
+            // lblParEstApellido
+            // 
+            this.lblParEstApellido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblParEstApellido.AutoSize = true;
+            this.lblParEstApellido.BackColor = System.Drawing.Color.Transparent;
+            this.lblParEstApellido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParEstApellido.ForeColor = System.Drawing.Color.DimGray;
+            this.lblParEstApellido.Location = new System.Drawing.Point(36, 131);
+            this.lblParEstApellido.Name = "lblParEstApellido";
+            this.lblParEstApellido.Size = new System.Drawing.Size(120, 20);
+            this.lblParEstApellido.TabIndex = 24;
+            this.lblParEstApellido.Text = "Apellido Paterno";
             // 
             // txtTutApPaterno
             // 
@@ -839,26 +811,26 @@ namespace CapaPresentacion
             this.txtTutApPaterno.Modified = false;
             this.txtTutApPaterno.Multiline = false;
             this.txtTutApPaterno.Name = "txtTutApPaterno";
-            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutApPaterno.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtTutApPaterno.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutApPaterno.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.Silver;
-            stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Empty;
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutApPaterno.OnIdleState = stateProperties24;
+            stateProperties53.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties53.FillColor = System.Drawing.Color.Empty;
+            stateProperties53.ForeColor = System.Drawing.Color.Empty;
+            stateProperties53.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutApPaterno.OnActiveState = stateProperties53;
+            stateProperties54.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties54.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties54.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtTutApPaterno.OnDisabledState = stateProperties54;
+            stateProperties55.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties55.FillColor = System.Drawing.Color.Empty;
+            stateProperties55.ForeColor = System.Drawing.Color.Empty;
+            stateProperties55.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutApPaterno.OnHoverState = stateProperties55;
+            stateProperties56.BorderColor = System.Drawing.Color.Silver;
+            stateProperties56.FillColor = System.Drawing.Color.White;
+            stateProperties56.ForeColor = System.Drawing.Color.Empty;
+            stateProperties56.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutApPaterno.OnIdleState = stateProperties56;
             this.txtTutApPaterno.Padding = new System.Windows.Forms.Padding(3);
             this.txtTutApPaterno.PasswordChar = '\0';
             this.txtTutApPaterno.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -869,7 +841,7 @@ namespace CapaPresentacion
             this.txtTutApPaterno.SelectionLength = 0;
             this.txtTutApPaterno.SelectionStart = 0;
             this.txtTutApPaterno.ShortcutsEnabled = true;
-            this.txtTutApPaterno.Size = new System.Drawing.Size(783, 37);
+            this.txtTutApPaterno.Size = new System.Drawing.Size(671, 37);
             this.txtTutApPaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutApPaterno.TabIndex = 23;
             this.txtTutApPaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -879,6 +851,20 @@ namespace CapaPresentacion
             this.txtTutApPaterno.TextPlaceholder = "Paterno";
             this.txtTutApPaterno.UseSystemPasswordChar = false;
             this.txtTutApPaterno.WordWrap = true;
+            // 
+            // lblParamEstDni
+            // 
+            this.lblParamEstDni.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblParamEstDni.AutoSize = true;
+            this.lblParamEstDni.BackColor = System.Drawing.Color.Transparent;
+            this.lblParamEstDni.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParamEstDni.ForeColor = System.Drawing.Color.DimGray;
+            this.lblParamEstDni.Location = new System.Drawing.Point(36, 291);
+            this.lblParamEstDni.Name = "lblParamEstDni";
+            this.lblParamEstDni.Size = new System.Drawing.Size(32, 20);
+            this.lblParamEstDni.TabIndex = 22;
+            this.lblParamEstDni.Text = "Dni";
             // 
             // txtTutDni
             // 
@@ -916,26 +902,26 @@ namespace CapaPresentacion
             this.txtTutDni.Modified = false;
             this.txtTutDni.Multiline = false;
             this.txtTutDni.Name = "txtTutDni";
-            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties25.FillColor = System.Drawing.Color.Empty;
-            stateProperties25.ForeColor = System.Drawing.Color.Empty;
-            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutDni.OnActiveState = stateProperties25;
-            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtTutDni.OnDisabledState = stateProperties26;
-            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties27.FillColor = System.Drawing.Color.Empty;
-            stateProperties27.ForeColor = System.Drawing.Color.Empty;
-            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutDni.OnHoverState = stateProperties27;
-            stateProperties28.BorderColor = System.Drawing.Color.Silver;
-            stateProperties28.FillColor = System.Drawing.Color.White;
-            stateProperties28.ForeColor = System.Drawing.Color.Empty;
-            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutDni.OnIdleState = stateProperties28;
+            stateProperties57.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties57.FillColor = System.Drawing.Color.Empty;
+            stateProperties57.ForeColor = System.Drawing.Color.Empty;
+            stateProperties57.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutDni.OnActiveState = stateProperties57;
+            stateProperties58.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties58.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtTutDni.OnDisabledState = stateProperties58;
+            stateProperties59.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties59.FillColor = System.Drawing.Color.Empty;
+            stateProperties59.ForeColor = System.Drawing.Color.Empty;
+            stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutDni.OnHoverState = stateProperties59;
+            stateProperties60.BorderColor = System.Drawing.Color.Silver;
+            stateProperties60.FillColor = System.Drawing.Color.White;
+            stateProperties60.ForeColor = System.Drawing.Color.Empty;
+            stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutDni.OnIdleState = stateProperties60;
             this.txtTutDni.Padding = new System.Windows.Forms.Padding(3);
             this.txtTutDni.PasswordChar = '\0';
             this.txtTutDni.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -946,7 +932,7 @@ namespace CapaPresentacion
             this.txtTutDni.SelectionLength = 0;
             this.txtTutDni.SelectionStart = 0;
             this.txtTutDni.ShortcutsEnabled = true;
-            this.txtTutDni.Size = new System.Drawing.Size(217, 37);
+            this.txtTutDni.Size = new System.Drawing.Size(105, 37);
             this.txtTutDni.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutDni.TabIndex = 21;
             this.txtTutDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -956,6 +942,20 @@ namespace CapaPresentacion
             this.txtTutDni.TextPlaceholder = "Dni";
             this.txtTutDni.UseSystemPasswordChar = false;
             this.txtTutDni.WordWrap = true;
+            // 
+            // lblParEstNombre
+            // 
+            this.lblParEstNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblParEstNombre.AutoSize = true;
+            this.lblParEstNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblParEstNombre.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParEstNombre.ForeColor = System.Drawing.Color.DimGray;
+            this.lblParEstNombre.Location = new System.Drawing.Point(36, 59);
+            this.lblParEstNombre.Name = "lblParEstNombre";
+            this.lblParEstNombre.Size = new System.Drawing.Size(70, 20);
+            this.lblParEstNombre.TabIndex = 20;
+            this.lblParEstNombre.Text = "Nombres";
             // 
             // txtTutNombres
             // 
@@ -992,26 +992,26 @@ namespace CapaPresentacion
             this.txtTutNombres.Modified = false;
             this.txtTutNombres.Multiline = false;
             this.txtTutNombres.Name = "txtTutNombres";
-            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties29.FillColor = System.Drawing.Color.Empty;
-            stateProperties29.ForeColor = System.Drawing.Color.Empty;
-            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutNombres.OnActiveState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtTutNombres.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutNombres.OnHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Silver;
-            stateProperties32.FillColor = System.Drawing.Color.White;
-            stateProperties32.ForeColor = System.Drawing.Color.Empty;
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtTutNombres.OnIdleState = stateProperties32;
+            stateProperties61.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties61.FillColor = System.Drawing.Color.Empty;
+            stateProperties61.ForeColor = System.Drawing.Color.Empty;
+            stateProperties61.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutNombres.OnActiveState = stateProperties61;
+            stateProperties62.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties62.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties62.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtTutNombres.OnDisabledState = stateProperties62;
+            stateProperties63.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties63.FillColor = System.Drawing.Color.Empty;
+            stateProperties63.ForeColor = System.Drawing.Color.Empty;
+            stateProperties63.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutNombres.OnHoverState = stateProperties63;
+            stateProperties64.BorderColor = System.Drawing.Color.Silver;
+            stateProperties64.FillColor = System.Drawing.Color.White;
+            stateProperties64.ForeColor = System.Drawing.Color.Empty;
+            stateProperties64.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtTutNombres.OnIdleState = stateProperties64;
             this.txtTutNombres.Padding = new System.Windows.Forms.Padding(3);
             this.txtTutNombres.PasswordChar = '\0';
             this.txtTutNombres.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1022,7 +1022,7 @@ namespace CapaPresentacion
             this.txtTutNombres.SelectionLength = 0;
             this.txtTutNombres.SelectionStart = 0;
             this.txtTutNombres.ShortcutsEnabled = true;
-            this.txtTutNombres.Size = new System.Drawing.Size(783, 37);
+            this.txtTutNombres.Size = new System.Drawing.Size(671, 37);
             this.txtTutNombres.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutNombres.TabIndex = 19;
             this.txtTutNombres.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1053,11 +1053,11 @@ namespace CapaPresentacion
             this.btnEditar.ColorContrastOnClick = 45;
             this.btnEditar.ColorContrastOnHover = 45;
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnEditar.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnEditar.CustomizableEdges = borderEdges3;
             this.btnEditar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnEditar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1081,7 +1081,7 @@ namespace CapaPresentacion
             this.btnEditar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.edit_32px;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(595, 733);
+            this.btnEditar.Location = new System.Drawing.Point(483, 733);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 1;
@@ -1143,11 +1143,11 @@ namespace CapaPresentacion
             this.btnConfirmar.ColorContrastOnClick = 45;
             this.btnConfirmar.ColorContrastOnHover = 45;
             this.btnConfirmar.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnConfirmar.CustomizableEdges = borderEdges2;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnConfirmar.CustomizableEdges = borderEdges4;
             this.btnConfirmar.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnConfirmar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1172,7 +1172,7 @@ namespace CapaPresentacion
             this.btnConfirmar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmar.IdleIconRightImage = null;
             this.btnConfirmar.IndicateFocus = false;
-            this.btnConfirmar.Location = new System.Drawing.Point(732, 733);
+            this.btnConfirmar.Location = new System.Drawing.Point(620, 733);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmar.OnDisabledState.BorderRadius = 1;
@@ -1218,12 +1218,15 @@ namespace CapaPresentacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(879, 805);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.grpbDatosDelEstudiante);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TutorDetalle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TutorDetalle";
             this.grpbDatosDelEstudiante.ResumeLayout(false);
             this.grpbDatosDelEstudiante.PerformLayout();
