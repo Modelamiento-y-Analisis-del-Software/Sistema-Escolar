@@ -35,13 +35,13 @@ namespace CapaDatos
                     };
 
                     var m = new Matricula();
-                        m.Id = Convert.ToInt32(dr["IdMatricula"]);
-                        m.GradoEscolar = Convert.ToInt32(dr["GradoEscolar"]);
-                        m.EntAula.Seccion = dr["Seccion"].ToString().ElementAt(0);
-                        m.Turno = dr["Turno"].ToString().ElementAt(0);
-                        m.EscuelaProcedencia = dr["EscuelaProc"].ToString();
-                        m.FecInscripcion = Convert.ToDateTime(dr["FecInscripcion"]);
-                        m.Estado = Convert.ToBoolean(dr["Estado"]);
+                    m.Id = Convert.ToInt32(dr["IdMatricula"]);
+                    m.GradoEscolar = Convert.ToInt32(dr["GradoEscolar"]);
+                    m.EntAula.Seccion = dr["Seccion"].ToString().ElementAt(0);
+                    m.Turno = dr["Turno"].ToString().ElementAt(0);
+                    m.EscuelaProcedencia = dr["EscuelaProc"].ToString();
+                    m.FecInscripcion = Convert.ToDateTime(dr["FecInscripcion"]);
+                    m.Estado = Convert.ToBoolean(dr["Estado"]);
 
                     m.Estudnte = e;
 
