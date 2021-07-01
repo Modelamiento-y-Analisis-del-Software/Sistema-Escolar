@@ -283,6 +283,7 @@
       <DependentUpon>TutorDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CapaEntidad.Aula.datasource" />
     <None Include="Properties\DataSources\CapaEntidad.Estudiante.datasource" />
     <None Include="Properties\DataSources\CapaEntidad.Tutor.datasource" />
     <None Include="Properties\Settings.settings">
@@ -354,6 +355,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon\male_user_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon\class_30px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

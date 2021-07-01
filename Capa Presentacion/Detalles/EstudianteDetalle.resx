@@ -144,9 +144,9 @@
   <data name="bunifuPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAo4AAAAOCAYAAAChIZ0RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACESURBVHhe7dlRCoAgEEVR978e91dKTRAlzHx7DohcV/Co
-        BgAAJb33I+44WmuttdZ67463x+cBAAButiIAACmv4WhFAgCwYjgCAFBnOAIAsGIrAgCQ4lc1AAAphiMA
-        AHWGIwAAK744AgCQ8rsV52McrbXW1xmpxx1npNZ6s543AAAktXYCoa8GOjdW7nsAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB8SURBVHhe7dnRCYAwDEXR7j9P9lMEUxANJN+eA6XcTvDQ
+        BQAAIxFx5J1Ha6211lr/u/Ntez0AAMDNVgQAoOUxHK1IAAAqhiMAAHOGIwAAFVsRAIAWv6oBAGgxHAEA
+        mDMcAQCo+OIIAEDL51a8HvNorbXWWmudNwAANK11AqGvBjo14FrwAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="Matricula_Title.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -365,10 +365,10 @@
   </data>
   <data name="txtEstDireccion.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAZYAAAAlCAYAAABh0c/5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVHhe7cPBCQAwCASw7r+Ut5m6Q19CAnkAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBdktqtqv/TA4n1
-        JfZ/EVxIAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAacAAAAlCAYAAADm4Cb/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVHhe7cMxEQAwCASw+jfFOwM8dGFI7vIAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4kqd2qemN6
+        ABN6XSW4YZ5JAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>
