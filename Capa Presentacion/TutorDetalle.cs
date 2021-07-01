@@ -17,6 +17,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             CleanScreen()
+                //aea
         }
         public void CleanScreen()
         {
