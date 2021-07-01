@@ -15,7 +15,6 @@ namespace CapaPresentacion
 {
     public partial class frmMainWindow : Form
     {
-
         public frmMainWindow()
         {
             InitializeComponent();
