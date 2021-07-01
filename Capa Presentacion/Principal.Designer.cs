@@ -3161,7 +3161,6 @@ namespace CapaPresentacion
             this.bunifuPanel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aulaBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aulaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cursosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aulaBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aulaBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aulaBindingSource4)).EndInit();
