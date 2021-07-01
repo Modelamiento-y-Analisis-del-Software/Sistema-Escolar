@@ -7,38 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
 using CapaLogica;
 using KimtToo.VisualReactive;
 
-namespace Capa_Presentacion
+namespace CapaPresentacion
 {
     public partial class frmMainWindow : Form
     {
-        
         public frmMainWindow()
         {
             InitializeComponent();
             frmSubMenu1.MainWindow = this;
-            uscNewEstudent.MainWindow = this;
-            uscNewEstudent.keypress += new KeyPressEventHandler(TxtEstDni_KeyPress);
-        }
-
-        public void TxtEstDni_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            if (Char.IsControl(e.KeyChar)) //permitir teclas de control como retroceso
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                //el resto de teclas pulsadas se desactivan
-                e.Handled = true;
-            }
+            uscMatricular.MainWindow = this;
         }
 
         bool mnuExpanded = false;
@@ -78,8 +59,9 @@ namespace Capa_Presentacion
         private void SideMenu_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
+            //pagCentral.SetPage("DocGeneral");
         }
-        
+
         private void BtnTutor_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
@@ -89,8 +71,102 @@ namespace Capa_Presentacion
         private void BtnEstudiante_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
-            PagCentral.SetPage("EstGeneral"); 
+            PagCentral.SetPage("EstGeneral");
             ListarEstudiantesHabilitados();
+        }
+
+        private void txtSearchEst_OnIconRightClick(object sender, EventArgs e)
+        {
+            dgvEstudiantes.DataSource = LgcEstudiante.Instancia.BuscarEstudiante(txtSearchEst.Text.ToString());
+            txtSearchEst.Text = "";
+        }
+
+        private void btnRefreshEst_Click(object sender, EventArgs e)
+        {
+            txtSearchEst.Text = "";
+            ListarEstudiantesHabilitados();
+        }
+
+        private void btnEstDetalle_Click(object sender, EventArgs e)
+        {
+            CapaEntidad.Estudiante est;
+            if (dgvEstudiantes.CurrentRow != null)
+            {
+                est = (CapaEntidad.Estudiante)dgvEstudiantes.CurrentRow.DataBoundItem;
+                Matricula m = LgcMatricula.Instancia.BuscarMatricula(est.Id);
+                var ed = new EstudianteDetalle(m);
+                ed.Show();
+            }
+        }
+
+        private void btnTutRefresh_Click(object sender, EventArgs e)
+        {
+            txtTutSearch.Text = "";
+            ListarTutores();
+        }
+
+        private void txtTutSearch_OnIconRightClick(object sender, EventArgs e)
+        {
+            dgvTutor.DataSource = LgcTutor.Instancia.SearchTutor(txtTutSearch.Text.ToString().Trim());
+            txtTutSearch.Text = "";
+        }
+
+        private void btnEstInhabiltar_Click(object sender, EventArgs e)
+        {
+            Estudiante est;
+            if (dgvEstudiantes.CurrentRow != null)
+            {
+                est = (Estudiante) dgvEstudiantes.CurrentRow.DataBoundItem;
+                Matricula m = LgcMatricula.Instancia.BuscarMatricula(est.Id);
+                LgcMatricula.Instancia.CambiarEstadoMatricula(m);
+                ListarEstudiantesHabilitados();
+            }
+        }
+
+        private void btnEstInRefresh_Click(object sender, EventArgs e)
+        {
+            ListarEstudiantesInHabilitados();
+            txtEstInSearch.Text = "";
+        }
+
+        private void btnEstInDatalles_Click(object sender, EventArgs e)
+        {
+            CapaEntidad.Estudiante est;
+            if (dgvEstudiantes.CurrentRow != null)
+            {
+                est = (CapaEntidad.Estudiante)dgvEstudiantes.CurrentRow.DataBoundItem;
+                Matricula m = LgcMatricula.Instancia.BuscarMatricula(est.Id);
+                var ed = new EstudianteDetalle(m);
+                ed.Show();
+            }
+        }
+        public void ListarEstudiantesInHabilitados()
+        {
+            dgvEstInhabilitado.DataSource = LgcEstudiante.Instancia.ListarEstudiantesInHabilitados();
+        }
+
+        private void btnEstHabilitar_Click(object sender, EventArgs e)
+        {
+            Estudiante est;
+            if (dgvEstInhabilitado.CurrentRow != null)
+            {
+                est = (Estudiante)dgvEstInhabilitado.CurrentRow.DataBoundItem;
+                Matricula matricula = LgcMatricula.Instancia.BuscarMatriculaI(est.Id);
+                LgcMatricula.Instancia.CambiarEstadoMatricula(matricula);
+                ListarEstudiantesInHabilitados();
+            }
+        }
+
+        private void btnTutDetalles_Click(object sender, EventArgs e)
+        {
+            Tutor tu = null;
+            if (dgvTutor.CurrentRow != null)
+            {
+                tu = (Tutor)dgvTutor.CurrentRow.DataBoundItem;
+                var ed = new TutorDetalle(tu);
+                ed.Show();
+            }
+
         }
     }
 }
