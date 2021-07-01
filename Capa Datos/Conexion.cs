@@ -21,7 +21,7 @@ namespace CapaDatos
         {
             SqlConnection cn = new SqlConnection
             {
-                ConnectionString = "Data Source=.; Initial Catalog=IntegralClass; Integrated Security=true"
+                ConnectionString = "Data Source=DESKTOP-RSC69OC\\MSSQLSERVER01; Initial Catalog=IntegralClass; Integrated Security=true"
             };
             return cn;
         }

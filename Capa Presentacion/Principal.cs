@@ -60,6 +60,7 @@ namespace CapaPresentacion
         private void SideMenu_Click(object sender, EventArgs e)
         {
             VSReactive<int>.SetState("menu", int.Parse(((Control)sender).Tag.ToString()));
+            //pagCentral.SetPage("DocGeneral");
         }
 
         private void BtnTutor_Click(object sender, EventArgs e)

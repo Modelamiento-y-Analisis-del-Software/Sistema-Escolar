@@ -55,5 +55,15 @@ namespace CapaPresentacion
             mainWindow.PagCentral.SetPage("EstInhabilitados");
             mainWindow.ListarEstudiantesInHabilitados();
         }
+
+        private void btnOpcion4_1_Click(object sender, EventArgs e)
+        {
+            mainWindow.PagCentral.SetPage("DocGeneral");
+        }
+
+        private void btnOpcion4_2_Click(object sender, EventArgs e)
+        {
+            mainWindow.PagCentral.SetPage("DocRegistrar");
+        }
     }
 }

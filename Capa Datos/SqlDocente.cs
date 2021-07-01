@@ -134,7 +134,8 @@ namespace CapaDatos
                         Direccion = dr["Direccion"].ToString(),
                         Email = dr["Email"].ToString(),
                         Telefono = dr["Telefono"].ToString(),
-                        Foto = Image.FromStream(ms),
+                        Especialidad = dr["Especialidad"].ToString(),
+                        Foto = Image.FromStream(ms)
                     };
                     lista.Add(e);
                 }
