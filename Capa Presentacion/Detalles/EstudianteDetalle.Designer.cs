@@ -231,7 +231,7 @@ namespace CapaPresentacion
             this.rdbNoche.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbNoche.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbNoche.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbNoche.Size = new System.Drawing.Size(21, 23);
+            this.rdbNoche.Size = new System.Drawing.Size(21, 21);
             this.rdbNoche.TabIndex = 4;
             this.rdbNoche.Text = null;
             // 
@@ -264,7 +264,7 @@ namespace CapaPresentacion
             this.rdbTarde.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbTarde.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbTarde.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbTarde.Size = new System.Drawing.Size(21, 23);
+            this.rdbTarde.Size = new System.Drawing.Size(21, 21);
             this.rdbTarde.TabIndex = 2;
             this.rdbTarde.Text = null;
             // 
@@ -297,7 +297,7 @@ namespace CapaPresentacion
             this.rdbMañana.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbMañana.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbMañana.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbMañana.Size = new System.Drawing.Size(21, 23);
+            this.rdbMañana.Size = new System.Drawing.Size(21, 21);
             this.rdbMañana.TabIndex = 0;
             this.rdbMañana.Text = null;
             // 
@@ -357,7 +357,7 @@ namespace CapaPresentacion
             this.rdbGrado5.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado5.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado5.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado5.Size = new System.Drawing.Size(21, 23);
+            this.rdbGrado5.Size = new System.Drawing.Size(21, 21);
             this.rdbGrado5.TabIndex = 8;
             this.rdbGrado5.Text = null;
             // 
@@ -390,7 +390,7 @@ namespace CapaPresentacion
             this.rdbGrado4.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado4.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado4.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado4.Size = new System.Drawing.Size(21, 23);
+            this.rdbGrado4.Size = new System.Drawing.Size(21, 21);
             this.rdbGrado4.TabIndex = 6;
             this.rdbGrado4.Text = null;
             // 
@@ -423,7 +423,7 @@ namespace CapaPresentacion
             this.rdbGrado3.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado3.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado3.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado3.Size = new System.Drawing.Size(21, 23);
+            this.rdbGrado3.Size = new System.Drawing.Size(21, 21);
             this.rdbGrado3.TabIndex = 4;
             this.rdbGrado3.Text = null;
             // 
@@ -456,7 +456,7 @@ namespace CapaPresentacion
             this.rdbGrado2.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado2.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado2.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado2.Size = new System.Drawing.Size(21, 23);
+            this.rdbGrado2.Size = new System.Drawing.Size(21, 21);
             this.rdbGrado2.TabIndex = 2;
             this.rdbGrado2.Text = null;
             // 
@@ -489,7 +489,7 @@ namespace CapaPresentacion
             this.rdbGrado1.OutlineColorUnchecked = System.Drawing.Color.DarkGray;
             this.rdbGrado1.RadioColor = System.Drawing.Color.DodgerBlue;
             this.rdbGrado1.RadioColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.rdbGrado1.Size = new System.Drawing.Size(21, 23);
+            this.rdbGrado1.Size = new System.Drawing.Size(21, 21);
             this.rdbGrado1.TabIndex = 0;
             this.rdbGrado1.Text = null;
             // 
@@ -895,7 +895,11 @@ namespace CapaPresentacion
             this.imgEstPerfil.BorderRadius = 102;
             this.imgEstPerfil.Image = ((System.Drawing.Image)(resources.GetObject("imgEstPerfil.Image")));
             this.imgEstPerfil.IsCircle = true;
+<<<<<<< Updated upstream
             this.imgEstPerfil.Location = new System.Drawing.Point(250, 12);
+=======
+            this.imgEstPerfil.Location = new System.Drawing.Point(233, 12);
+>>>>>>> Stashed changes
             this.imgEstPerfil.Name = "imgEstPerfil";
             this.imgEstPerfil.Size = new System.Drawing.Size(204, 204);
             this.imgEstPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -952,7 +956,11 @@ namespace CapaPresentacion
             this.btnConfirmar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmar.IdleIconRightImage = null;
             this.btnConfirmar.IndicateFocus = false;
+<<<<<<< Updated upstream
             this.btnConfirmar.Location = new System.Drawing.Point(375, 769);
+=======
+            this.btnConfirmar.Location = new System.Drawing.Point(358, 769);
+>>>>>>> Stashed changes
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmar.OnDisabledState.BorderRadius = 1;
@@ -1044,7 +1052,11 @@ namespace CapaPresentacion
             this.btnImage.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.male_user_32px;
             this.btnImage.IdleIconRightImage = null;
             this.btnImage.IndicateFocus = false;
+<<<<<<< Updated upstream
             this.btnImage.Location = new System.Drawing.Point(97, 769);
+=======
+            this.btnImage.Location = new System.Drawing.Point(80, 769);
+>>>>>>> Stashed changes
             this.btnImage.Name = "btnImage";
             this.btnImage.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnImage.OnDisabledState.BorderRadius = 1;
@@ -1135,7 +1147,11 @@ namespace CapaPresentacion
             this.btnEditar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.edit_32px;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
+<<<<<<< Updated upstream
             this.btnEditar.Location = new System.Drawing.Point(234, 769);
+=======
+            this.btnEditar.Location = new System.Drawing.Point(217, 769);
+>>>>>>> Stashed changes
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 1;
@@ -1788,7 +1804,11 @@ namespace CapaPresentacion
             this.txtEstDireccion.SelectionLength = 0;
             this.txtEstDireccion.SelectionStart = 0;
             this.txtEstDireccion.ShortcutsEnabled = true;
+<<<<<<< Updated upstream
             this.txtEstDireccion.Size = new System.Drawing.Size(423, 37);
+=======
+            this.txtEstDireccion.Size = new System.Drawing.Size(406, 37);
+>>>>>>> Stashed changes
             this.txtEstDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.txtEstDireccion.TabIndex = 36;
             this.txtEstDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

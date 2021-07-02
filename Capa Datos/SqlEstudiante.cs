@@ -177,5 +177,45 @@ namespace CapaDatos
             finally { cmd?.Connection.Close(); }
             return exito;
         }
+        public Dictionary<string, Estudiante> ListarEstudiantesDeTutor(Tutor t)
+        {
+            Dictionary<string, Estudiante> estudiante = new Dictionary<string, Estudiante>();
+            SqlCommand cmd = null;
+
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+
+                cmd = new SqlCommand("uspListarEstudianteDeTutores", cn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
+                cmd.Parameters.AddWithValue("@Id", t.Id);
+                
+                cn.Open();
+                var dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    string parentesco;
+                    var est = new Estudiante
+                    {
+                        Id = Convert.ToInt32(dr["IdEst"]),
+                        Dni = dr["Dni"].ToString(),
+                        Nombres = dr["Nombres"].ToString(),
+                        ApPaterno = dr["ApPaterno"].ToString(),
+                        ApMaterno = dr["ApMaterno"].ToString(),
+                    };
+                    parentesco = dr["Parentesco"].ToString();
+                    estudiante.Add(parentesco, est);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd?.Connection.Close(); }
+            return estudiante;
+        }
     }
 }

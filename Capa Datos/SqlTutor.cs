@@ -137,5 +137,41 @@ namespace CapaDatos
             finally { cmd?.Connection.Close(); }
             return tutores;
         }
+        
+        public bool ActualizarTutor(Tutor t)
+        {
+            bool exito = false;
+            SqlCommand cmd = null;
+
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+
+                cmd = new SqlCommand("uspUpdateTutor", cn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                
+                cmd.Parameters.AddWithValue("@Telefono", t.Telefono);
+                cmd.Parameters.AddWithValue("@Direccion", t.Direccion);
+                cmd.Parameters.AddWithValue("@Email", t.Email);
+                cmd.Parameters.AddWithValue("@Ocupacion", t.Ocupacion);
+                cmd.Parameters.AddWithValue("@NivelAcademico", t.NvAcademico);
+
+                cn.Open();
+                var i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    exito = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+            finally { cmd?.Connection.Close(); }
+            return exito;
+        }
     }
 }

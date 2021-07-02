@@ -64,6 +64,9 @@ namespace CapaPresentacion
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.grpbDatosDelEstudiante = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTutOcupacion = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -92,9 +95,14 @@ namespace CapaPresentacion
             this.txtTutNombres = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnEditar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnConfirmar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.dgvEstudiantes = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.grpbDatosDelEstudiante.SuspendLayout();
             this.bunifuGroupBox5.SuspendLayout();
             this.bunifuGroupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).BeginInit();
+            this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpbDatosDelEstudiante
@@ -130,9 +138,9 @@ namespace CapaPresentacion
             this.grpbDatosDelEstudiante.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.grpbDatosDelEstudiante.LabelIndent = 10;
             this.grpbDatosDelEstudiante.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
-            this.grpbDatosDelEstudiante.Location = new System.Drawing.Point(7, 12);
+            this.grpbDatosDelEstudiante.Location = new System.Drawing.Point(22, 12);
             this.grpbDatosDelEstudiante.Name = "grpbDatosDelEstudiante";
-            this.grpbDatosDelEstudiante.Size = new System.Drawing.Size(697, 715);
+            this.grpbDatosDelEstudiante.Size = new System.Drawing.Size(663, 696);
             this.grpbDatosDelEstudiante.TabIndex = 20;
             this.grpbDatosDelEstudiante.TabStop = false;
             this.grpbDatosDelEstudiante.Text = "Datos del Tutor";
@@ -172,7 +180,6 @@ namespace CapaPresentacion
             this.txtTutOcupacion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutOcupacion.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutOcupacion.DefaultText = "";
-            this.txtTutOcupacion.Enabled = false;
             this.txtTutOcupacion.FillColor = System.Drawing.Color.White;
             this.txtTutOcupacion.HideSelection = true;
             this.txtTutOcupacion.IconLeft = null;
@@ -211,13 +218,13 @@ namespace CapaPresentacion
             this.txtTutOcupacion.PasswordChar = '\0';
             this.txtTutOcupacion.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTutOcupacion.PlaceholderText = "Ocupacion";
-            this.txtTutOcupacion.ReadOnly = false;
+            this.txtTutOcupacion.ReadOnly = true;
             this.txtTutOcupacion.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTutOcupacion.SelectedText = "";
             this.txtTutOcupacion.SelectionLength = 0;
             this.txtTutOcupacion.SelectionStart = 0;
             this.txtTutOcupacion.ShortcutsEnabled = true;
-            this.txtTutOcupacion.Size = new System.Drawing.Size(301, 37);
+            this.txtTutOcupacion.Size = new System.Drawing.Size(267, 37);
             this.txtTutOcupacion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutOcupacion.TabIndex = 55;
             this.txtTutOcupacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -241,7 +248,7 @@ namespace CapaPresentacion
             this.bunifuGroupBox5.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.bunifuGroupBox5.Location = new System.Drawing.Point(406, 622);
             this.bunifuGroupBox5.Name = "bunifuGroupBox5";
-            this.bunifuGroupBox5.Size = new System.Drawing.Size(251, 74);
+            this.bunifuGroupBox5.Size = new System.Drawing.Size(251, 58);
             this.bunifuGroupBox5.TabIndex = 42;
             this.bunifuGroupBox5.TabStop = false;
             this.bunifuGroupBox5.Text = "Nivel Académico";
@@ -296,7 +303,6 @@ namespace CapaPresentacion
             this.txtTutTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutTelefono.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutTelefono.DefaultText = "";
-            this.txtTutTelefono.Enabled = false;
             this.txtTutTelefono.FillColor = System.Drawing.Color.White;
             this.txtTutTelefono.HideSelection = true;
             this.txtTutTelefono.IconLeft = null;
@@ -335,13 +341,13 @@ namespace CapaPresentacion
             this.txtTutTelefono.PasswordChar = '\0';
             this.txtTutTelefono.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTutTelefono.PlaceholderText = "Telefono";
-            this.txtTutTelefono.ReadOnly = false;
+            this.txtTutTelefono.ReadOnly = true;
             this.txtTutTelefono.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTutTelefono.SelectedText = "";
             this.txtTutTelefono.SelectionLength = 0;
             this.txtTutTelefono.SelectionStart = 0;
             this.txtTutTelefono.ShortcutsEnabled = true;
-            this.txtTutTelefono.Size = new System.Drawing.Size(217, 37);
+            this.txtTutTelefono.Size = new System.Drawing.Size(183, 37);
             this.txtTutTelefono.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutTelefono.TabIndex = 52;
             this.txtTutTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -387,7 +393,6 @@ namespace CapaPresentacion
             this.txtTutEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutEmail.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutEmail.DefaultText = "";
-            this.txtTutEmail.Enabled = false;
             this.txtTutEmail.FillColor = System.Drawing.Color.White;
             this.txtTutEmail.HideSelection = true;
             this.txtTutEmail.IconLeft = null;
@@ -426,13 +431,13 @@ namespace CapaPresentacion
             this.txtTutEmail.PasswordChar = '\0';
             this.txtTutEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTutEmail.PlaceholderText = "Email";
-            this.txtTutEmail.ReadOnly = false;
+            this.txtTutEmail.ReadOnly = true;
             this.txtTutEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTutEmail.SelectedText = "";
             this.txtTutEmail.SelectionLength = 0;
             this.txtTutEmail.SelectionStart = 0;
             this.txtTutEmail.ShortcutsEnabled = true;
-            this.txtTutEmail.Size = new System.Drawing.Size(620, 37);
+            this.txtTutEmail.Size = new System.Drawing.Size(586, 37);
             this.txtTutEmail.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutEmail.TabIndex = 50;
             this.txtTutEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -478,7 +483,6 @@ namespace CapaPresentacion
             this.txtTutApMaterno.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutApMaterno.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutApMaterno.DefaultText = "";
-            this.txtTutApMaterno.Enabled = false;
             this.txtTutApMaterno.FillColor = System.Drawing.Color.White;
             this.txtTutApMaterno.HideSelection = true;
             this.txtTutApMaterno.IconLeft = null;
@@ -517,13 +521,13 @@ namespace CapaPresentacion
             this.txtTutApMaterno.PasswordChar = '\0';
             this.txtTutApMaterno.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTutApMaterno.PlaceholderText = "Materno";
-            this.txtTutApMaterno.ReadOnly = false;
+            this.txtTutApMaterno.ReadOnly = true;
             this.txtTutApMaterno.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTutApMaterno.SelectedText = "";
             this.txtTutApMaterno.SelectionLength = 0;
             this.txtTutApMaterno.SelectionStart = 0;
             this.txtTutApMaterno.ShortcutsEnabled = true;
-            this.txtTutApMaterno.Size = new System.Drawing.Size(620, 37);
+            this.txtTutApMaterno.Size = new System.Drawing.Size(586, 37);
             this.txtTutApMaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutApMaterno.TabIndex = 48;
             this.txtTutApMaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -666,7 +670,6 @@ namespace CapaPresentacion
             this.txtTutDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutDireccion.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutDireccion.DefaultText = "";
-            this.txtTutDireccion.Enabled = false;
             this.txtTutDireccion.FillColor = System.Drawing.Color.White;
             this.txtTutDireccion.HideSelection = true;
             this.txtTutDireccion.IconLeft = null;
@@ -705,13 +708,13 @@ namespace CapaPresentacion
             this.txtTutDireccion.PasswordChar = '\0';
             this.txtTutDireccion.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTutDireccion.PlaceholderText = "Direccion";
-            this.txtTutDireccion.ReadOnly = false;
+            this.txtTutDireccion.ReadOnly = true;
             this.txtTutDireccion.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTutDireccion.SelectedText = "";
             this.txtTutDireccion.SelectionLength = 0;
             this.txtTutDireccion.SelectionStart = 0;
             this.txtTutDireccion.ShortcutsEnabled = true;
-            this.txtTutDireccion.Size = new System.Drawing.Size(620, 37);
+            this.txtTutDireccion.Size = new System.Drawing.Size(586, 37);
             this.txtTutDireccion.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutDireccion.TabIndex = 36;
             this.txtTutDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -760,7 +763,7 @@ namespace CapaPresentacion
             this.dpkTutFecNacimiento.Location = new System.Drawing.Point(280, 399);
             this.dpkTutFecNacimiento.MinimumSize = new System.Drawing.Size(4, 32);
             this.dpkTutFecNacimiento.Name = "dpkTutFecNacimiento";
-            this.dpkTutFecNacimiento.Size = new System.Drawing.Size(222, 32);
+            this.dpkTutFecNacimiento.Size = new System.Drawing.Size(188, 32);
             this.dpkTutFecNacimiento.TabIndex = 26;
             this.dpkTutFecNacimiento.Value = new System.DateTime(2021, 6, 23, 0, 0, 0, 0);
             // 
@@ -799,7 +802,6 @@ namespace CapaPresentacion
             this.txtTutApPaterno.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutApPaterno.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutApPaterno.DefaultText = "";
-            this.txtTutApPaterno.Enabled = false;
             this.txtTutApPaterno.FillColor = System.Drawing.Color.White;
             this.txtTutApPaterno.HideSelection = true;
             this.txtTutApPaterno.IconLeft = null;
@@ -838,13 +840,13 @@ namespace CapaPresentacion
             this.txtTutApPaterno.PasswordChar = '\0';
             this.txtTutApPaterno.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTutApPaterno.PlaceholderText = "Paterno";
-            this.txtTutApPaterno.ReadOnly = false;
+            this.txtTutApPaterno.ReadOnly = true;
             this.txtTutApPaterno.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTutApPaterno.SelectedText = "";
             this.txtTutApPaterno.SelectionLength = 0;
             this.txtTutApPaterno.SelectionStart = 0;
             this.txtTutApPaterno.ShortcutsEnabled = true;
-            this.txtTutApPaterno.Size = new System.Drawing.Size(620, 37);
+            this.txtTutApPaterno.Size = new System.Drawing.Size(586, 37);
             this.txtTutApPaterno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutApPaterno.TabIndex = 23;
             this.txtTutApPaterno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -890,7 +892,6 @@ namespace CapaPresentacion
             this.txtTutDni.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutDni.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutDni.DefaultText = "";
-            this.txtTutDni.Enabled = false;
             this.txtTutDni.FillColor = System.Drawing.Color.White;
             this.txtTutDni.HideSelection = true;
             this.txtTutDni.IconLeft = null;
@@ -929,13 +930,13 @@ namespace CapaPresentacion
             this.txtTutDni.PasswordChar = '\0';
             this.txtTutDni.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTutDni.PlaceholderText = "Dni";
-            this.txtTutDni.ReadOnly = false;
+            this.txtTutDni.ReadOnly = true;
             this.txtTutDni.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTutDni.SelectedText = "";
             this.txtTutDni.SelectionLength = 0;
             this.txtTutDni.SelectionStart = 0;
             this.txtTutDni.ShortcutsEnabled = true;
-            this.txtTutDni.Size = new System.Drawing.Size(54, 37);
+            this.txtTutDni.Size = new System.Drawing.Size(210, 37);
             this.txtTutDni.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutDni.TabIndex = 21;
             this.txtTutDni.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -981,7 +982,6 @@ namespace CapaPresentacion
             this.txtTutNombres.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTutNombres.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtTutNombres.DefaultText = "";
-            this.txtTutNombres.Enabled = false;
             this.txtTutNombres.FillColor = System.Drawing.Color.White;
             this.txtTutNombres.HideSelection = true;
             this.txtTutNombres.IconLeft = null;
@@ -1020,13 +1020,13 @@ namespace CapaPresentacion
             this.txtTutNombres.PasswordChar = '\0';
             this.txtTutNombres.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtTutNombres.PlaceholderText = "Nombres";
-            this.txtTutNombres.ReadOnly = false;
+            this.txtTutNombres.ReadOnly = true;
             this.txtTutNombres.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTutNombres.SelectedText = "";
             this.txtTutNombres.SelectionLength = 0;
             this.txtTutNombres.SelectionStart = 0;
             this.txtTutNombres.ShortcutsEnabled = true;
-            this.txtTutNombres.Size = new System.Drawing.Size(620, 37);
+            this.txtTutNombres.Size = new System.Drawing.Size(586, 37);
             this.txtTutNombres.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTutNombres.TabIndex = 19;
             this.txtTutNombres.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1085,7 +1085,7 @@ namespace CapaPresentacion
             this.btnEditar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.edit_32px;
             this.btnEditar.IdleIconRightImage = null;
             this.btnEditar.IndicateFocus = false;
-            this.btnEditar.Location = new System.Drawing.Point(432, 733);
+            this.btnEditar.Location = new System.Drawing.Point(417, 714);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditar.OnDisabledState.BorderRadius = 1;
@@ -1126,6 +1126,7 @@ namespace CapaPresentacion
             this.btnEditar.TextMarginLeft = 0;
             this.btnEditar.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnEditar.UseDefaultRadiusAndThickness = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnConfirmar
             // 
@@ -1176,7 +1177,7 @@ namespace CapaPresentacion
             this.btnConfirmar.IdleIconLeftImage = global::CapaPresentacion.Properties.Resources.checked_26px;
             this.btnConfirmar.IdleIconRightImage = null;
             this.btnConfirmar.IndicateFocus = false;
-            this.btnConfirmar.Location = new System.Drawing.Point(569, 733);
+            this.btnConfirmar.Location = new System.Drawing.Point(554, 714);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfirmar.OnDisabledState.BorderRadius = 1;
@@ -1219,13 +1220,111 @@ namespace CapaPresentacion
             this.btnConfirmar.UseDefaultRadiusAndThickness = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
+            // dgvEstudiantes
+            // 
+            this.dgvEstudiantes.AllowCustomTheming = false;
+            this.dgvEstudiantes.AllowUserToAddRows = false;
+            this.dgvEstudiantes.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEstudiantes.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvEstudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvEstudiantes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvEstudiantes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEstudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvEstudiantes.ColumnHeadersHeight = 40;
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvEstudiantes.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.CurrentTheme.Name = null;
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEstudiantes.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvEstudiantes.EnableHeadersVisualStyles = false;
+            this.dgvEstudiantes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvEstudiantes.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvEstudiantes.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvEstudiantes.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvEstudiantes.Location = new System.Drawing.Point(79, 806);
+            this.dgvEstudiantes.Name = "dgvEstudiantes";
+            this.dgvEstudiantes.ReadOnly = true;
+            this.dgvEstudiantes.RowHeadersVisible = false;
+            this.dgvEstudiantes.RowHeadersWidth = 51;
+            this.dgvEstudiantes.RowTemplate.Height = 40;
+            this.dgvEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEstudiantes.Size = new System.Drawing.Size(587, 177);
+            this.dgvEstudiantes.TabIndex = 61;
+            this.dgvEstudiantes.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BorderRadius = 10;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.bunifuLabel2);
+            this.bunifuPanel1.Location = new System.Drawing.Point(41, 750);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(661, 50);
+            this.bunifuPanel1.TabIndex = 60;
+            // 
+            // bunifuLabel2
+            // 
+            this.bunifuLabel2.AllowParentOverrides = false;
+            this.bunifuLabel2.AutoEllipsis = false;
+            this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.bunifuLabel2.Location = new System.Drawing.Point(18, 10);
+            this.bunifuLabel2.Name = "bunifuLabel2";
+            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel2.Size = new System.Drawing.Size(112, 30);
+            this.bunifuLabel2.TabIndex = 0;
+            this.bunifuLabel2.Text = "Estudiantes";
+            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // TutorDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(784, 713);
+            this.Controls.Add(this.dgvEstudiantes);
+            this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.grpbDatosDelEstudiante);
@@ -1238,6 +1337,9 @@ namespace CapaPresentacion
             this.bunifuGroupBox5.ResumeLayout(false);
             this.bunifuGroupBox6.ResumeLayout(false);
             this.bunifuGroupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEstudiantes)).EndInit();
+            this.bunifuPanel1.ResumeLayout(false);
+            this.bunifuPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1272,5 +1374,8 @@ namespace CapaPresentacion
         public Bunifu.UI.WinForms.BunifuTextBox txtTutNombres;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnEditar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnConfirmar;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvEstudiantes;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
     }
 }

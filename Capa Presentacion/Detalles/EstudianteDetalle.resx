@@ -365,10 +365,17 @@
   </data>
   <data name="txtEstDireccion.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
+<<<<<<< Updated upstream
         iVBORw0KGgoAAAANSUhEUgAAAacAAAAlCAYAAADm4Cb/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABeSURBVHhe7cMxEQAwCASw+jfFOwM8dGFI7vIAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH4kqd2qemN6
         ABN6XSW4YZ5JAAAAAElFTkSuQmCC
+=======
+        iVBORw0KGgoAAAANSUhEUgAAAZYAAAAlCAYAAABh0c/5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABbSURBVHhe7cPBCQAwCASw7r+Ut5m6Q19CAnkAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBdktqtqv/TA4n1
+        JfZ/EVxIAAAAAElFTkSuQmCC
+>>>>>>> Stashed changes
 </value>
   </data>
 </root>

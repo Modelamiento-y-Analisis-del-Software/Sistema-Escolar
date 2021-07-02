@@ -12,6 +12,7 @@ namespace CapaLogica
     {
         public static LgcTutor Instancia { get; } = new LgcTutor();
 
+
         public List<Tutor> ListarTutores()
         {
             return SqlTutor.Instancia.ListarTutores();
@@ -51,5 +52,10 @@ namespace CapaLogica
             }
             return parentescos;
         }
+        public bool ActualizarTutor(Tutor t)
+        {
+            return SqlTutor.Instancia.ActualizarTutor(t);
+        }
+
     }
 }

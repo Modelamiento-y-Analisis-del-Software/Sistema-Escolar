@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaLogica;
 
 namespace CapaPresentacion
 {
@@ -69,34 +70,38 @@ namespace CapaPresentacion
             }
 
             cbbNivelAcademico.SelectedItem = t.NvAcademico;
+            dgvEstudiantes.DataSource = LgcEstudiante.Instancia.ParentescoEst(t).ToArray();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            btnEditar.Enabled = false;
-            btnConfirmar.Enabled = true;
-            txtTutTelefono.Enabled = true;
-            txtTutEmail.Enabled = true;
-            txtTutDireccion.Enabled = true;
-            txtTutOcupacion.Enabled = true;
-            cbbNivelAcademico.Enabled = true;
+                btnEditar.Enabled = false;
+                btnConfirmar.Enabled = true;
+                txtTutTelefono.ReadOnly = false;
+                txtTutEmail.ReadOnly = false;
+                txtTutDireccion.ReadOnly = false;
+                txtTutOcupacion.ReadOnly = false;
+                cbbNivelAcademico.AllowDrop = true;
+            
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            btnEditar.Enabled = true;
-            btnConfirmar.Enabled = false;
-            txtTutTelefono.Enabled = false;
-            txtTutEmail.Enabled = false;
-            txtTutDireccion.Enabled = false;
-            txtTutOcupacion.Enabled = false;
-            cbbNivelAcademico.Enabled = false;
-
             t.Telefono = txtTutTelefono.Text.ToString().Trim();
             t.Email = txtTutEmail.Text.ToString().Trim();
             t.Direccion = txtTutDireccion.Text.ToString().Trim();
             t.Ocupacion = txtTutOcupacion.Text.ToString().Trim();
             t.NvAcademico = cbbNivelAcademico.Text.ToString().Trim();
+
+            LgcTutor.Instancia.ActualizarTutor(t);
+
+            btnEditar.Enabled = false;
+            btnConfirmar.Enabled = true;
+            txtTutTelefono.ReadOnly = true;
+            txtTutEmail.ReadOnly = true;
+            txtTutDireccion.ReadOnly = true;
+            txtTutOcupacion.ReadOnly = true;
+            cbbNivelAcademico.AllowDrop = false;
         }
     }
 }
